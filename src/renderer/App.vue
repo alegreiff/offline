@@ -2,6 +2,7 @@
   <div id="app" class="mainmaguare">
     <div class="menu">
       <router-link to="/">Inicio</router-link>
+      <router-link to="/biko">BKO</router-link>
       <router-link :to="{name: 'coleccion', params: { id: 'audiosSincoleccion'}}">Sin coleccion</router-link>
       <router-link :to="{name: 'coleccion', params: { id: 'audiosCuentoencanto'}}">Con mi cuento encanto</router-link>
       <router-link :to="{name: 'coleccion', params: { id: 'audiosCuentosaloido'}}">Cuentos al oido</router-link>
