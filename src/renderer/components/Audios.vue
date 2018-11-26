@@ -1,33 +1,37 @@
 <template>
-<div class="internamusica">
+<div class="">
+<p>{{ this.$route.params.id }}</p>
+<audio controls ref="playame1" class="audiofull" autoplay v-if="quesuena!=''">
+  <source :src="quesuena" type="audio/mpeg">
+  Este producto NO es compatible con su computador
+</audio>
+  <div class="internamusica">
 
-  <div class="seleccion">
-    <div class="imagenesmodelo" v-if="selected=='inicio'">
+    <div class="seleccion">
+      <div class="imagenesmodelo" v-if="selected=='inicio'">
 
-      <div class="" v-for="(cancion, index) in coleccion" :key="index">
-        <h4>{{ cancion.titulo }}</h4>
-        <img :src="'static/miniaturas/'+cancion.id+'.jpg'" :alt="cancion.id" class="miniatura" @click.prevent="playSound(cancion)">
+        <div class="" v-for="(cancion, index) in coleccion" :key="index">
+          <h4>{{ cancion.titulo }}</h4>
+          <img :src="'static/miniaturas/'+cancion.id+'.jpg'" :alt="cancion.id" class="miniatura" @click.prevent="playSound(cancion)">
+        </div>
       </div>
     </div>
-  </div>
-  <div class="lirica" v-if="quesuena!=''">
-    <div class="audiosonando">
-      <audio controls ref="playame1" class="audiofull" autoplay>
-        <source :src="quesuena" type="audio/mpeg">
-        Este producto NO es compatible con su computador
-      </audio>
+    <div class="lirica" v-if="quesuena!=''">
+      <div class="audiosonando">
+        
+      </div>
+      <div class="datoscancion" v-if="cancionactiva">
+        <p class="describe">{{ cancionactiva.describe }}</p>
+        <h3>{{ cancionactiva.titulo }}</h3>
+        <h6>{{ cancionactiva.autor }}</h6>
+
+        <p v-if="cancionactiva.letra" v-html="cancionactiva.letra" class="lyrics"></p>
+
+
+      </div>
     </div>
-    <div class="datoscancion" v-if="cancionactiva">
-      <p class="describe">{{ cancionactiva.describe }}</p>
-      <h3>{{ cancionactiva.titulo }}</h3>
-      <h6>{{ cancionactiva.autor }}</h6>
 
-      <p v-if="cancionactiva.letra" v-html="cancionactiva.letra" class="lyrics"></p>
-
-
-    </div>
   </div>
-
 </div>
 </template>
 
@@ -35,6 +39,7 @@
 import SystemInformation from './LandingPage/SystemInformation'
 import { mapState, mapGetters } from 'vuex'
 import path from 'path'
+import _ from 'lodash';
 
 export default {
   //components: { SystemInformation },
@@ -85,6 +90,7 @@ export default {
       }else{
         this.coleccion = this.canciones
       }
+      this.coleccion = _.sortBy(this.coleccion, ['titulo']);
 
     },
     getImage: function (imageData) {
@@ -144,12 +150,13 @@ export default {
     border: 2px white solid;
     border-radius: 0.5em;
     margin: 0 auto;
+    cursor: pointer;
   }
   .imagenesmodelo{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1em;
-  
+
   }
 p.describe{
   padding: 0.6em;
