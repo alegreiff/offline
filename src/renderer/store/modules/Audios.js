@@ -95,6 +95,37 @@ With the alliguieta purs
 Yes, Miss Lucy pay the lady
 With the alliguieta purs`
     },
+    { id: 133,
+      autor: 'Ministerio de Cultura - Observatorio del Caribe Colombiano',
+      coleccion: '',
+      titulo: 'Out and through the window',
+      describe: 'El creole es la lengua que hablan los habitantes nativos del Archipiélago de San Andrés y Providencia. Este karaoke te enseña una canción adaptada a esta lengua para la hora de ir a dormir. ¿Qué te gusta que te canten cuando te vas a dormir?',
+      url: '133-outanthrough.mp3',
+      letra: `Out and through the window
+Out and through the window
+Out and through the window
+To see your rose again
+
+Then you skip across the ocean
+Then you skip across the ocean
+Then you skip across the ocean
+To see your rose again
+
+Then you stand before your lover
+Then you stand before your lover
+Then you stand before your lover
+To see your rose again
+
+Then you bow before your lover
+Then you bow before your lover
+Then you bow before your lover
+To see your rose again
+
+Then you well and take your partner
+Then you well and take your partner
+Then you well and take your partner
+To see your rose again`
+    },
     { id: 156,
       autor: 'Ministerio de Cultura - Observatorio del Caribe Colombiano',
       coleccion: '',

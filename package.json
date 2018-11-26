@@ -18,7 +18,7 @@
     "postinstall": ""
   },
   "build": {
-    "productName": "greg",
+    "productName": "maguare",
     "appId": "com.alegreiff.maguare",
     "directories": {
       "output": "build"

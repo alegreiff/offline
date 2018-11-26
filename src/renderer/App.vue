@@ -1,25 +1,33 @@
 <template>
   <div id="app" class="mainmaguare">
     <div id="menu" >
-      <ul id="nav">
-      <li><router-link to="/">Inicio</router-link></li>
-      <li><router-link to="/biko">BKO</router-link></li>
-      <li><a href="#"><router-link :to="{name: 'coleccion', params: { id: 'all'}}">Audios</router-link></a>
-      <ul id="sub-menu">
-        <li><router-link :to="{name: 'coleccion', params: { id: 'audiosSincoleccion'}}">Sin coleccion</router-link></li>
-        <li><router-link :to="{name: 'coleccion', params: { id: 'audiosCuentoencanto'}}">Con mi cuento encanto</router-link></li>
-        <li><router-link :to="{name: 'coleccion', params: { id: 'audiosCuentosaloido'}}">Cuentos al oido</router-link></li>
-        <li><router-link :to="{name: 'coleccion', params: { id: 'audiosCeiba'}}">Maguaré en la Ceiba</router-link></li>
-      </ul>
-      </li>
-      </ul>
-
-
-
-
-
-
-
+      <nav>
+        <ul class="nav">
+        <li><router-link to="/">Inicio</router-link></li>
+        <li><a href="#">Maguaré</a>
+        <ul>
+          <li><router-link :to="{name: 'coleccion', params: { id: 'all'}}">Canciones y cuentos</router-link>
+          <ul>
+            <li><router-link :to="{name: 'coleccion', params: { id: 'audiosSincoleccion'}}">Sin coleccion</router-link></li>
+            <li><router-link :to="{name: 'coleccion', params: { id: 'audiosCuentoencanto'}}">Con mi cuento encanto</router-link></li>
+            <li><router-link :to="{name: 'coleccion', params: { id: 'audiosCuentosaloido'}}">Cuentos al oido</router-link></li>
+            <li><router-link :to="{name: 'coleccion', params: { id: 'audiosCeiba'}}">Maguaré en la Ceiba</router-link></li>
+          </ul>
+          </li>
+          <li><router-link :to="{name: 'vid', params: { id: 'all'}}">Videos</router-link>
+            <ul>
+              <li><router-link :to="{name: 'vid', params: { id: 'videoskaraokes'}}">Karaokes</router-link></li>
+              <li><router-link :to="{name: 'vid', params: { id: 'videoscuentosnarrados'}}">Cuentos narrados</router-link></li>
+              <li><router-link :to="{name: 'vid', params: { id: 'videossimples'}}">Videos</router-link></li>
+            </ul>
+          </li>
+          <li><a href="#">Libros</a> </li>
+          <li><a href="#">Descargas</a> </li>
+        </ul>
+        </li>
+        <li><a href="#">MaguaRED</a> </li>
+        </ul>
+      </nav>
     </div>
     <div class="contenido">
       <router-view></router-view>
@@ -56,90 +64,88 @@
 
 
 /*ABRE*/
-#menu {
-
+li.iq{
+  text-align: left;
 }
-
-ul#nav {
-
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  background: #dc0000;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+nav {
+	margin: 0;
+	text-align: left;
+  z-index: 100;
 }
-
-ul#nav li {
+ul {
+  text-align: left;
   display: inline;
-}
-
-ul#nav li a {
-  float: left;
-  font: bold 1.1em arial,verdana,tahoma,sans-serif;
-  font-size: 1em;
-  line-height: 40px;
-  color: #fff;
-  text-decoration: none;
-  text-shadow: 1px 1px 1px #880000;
   margin: 0;
-  padding: 0 30px;
-  background: #dc0000;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  padding:0;
+
+}
+nav ul ul { display: none; margin:0; }
+
+nav ul li:hover > ul { display: block; }
+
+nav ul {
+	background:#990;
+	box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.15);
+	list-style: none;
+	position: relative;
+	display: inline-table;
 }
 
-/* APPLIES THE ACTIVE STATE */
-ul#nav .current a, ul#nav li:hover > a  {
-  color: #fff;
-  text-decoration: none;
-  text-shadow: 1px 1px 1px #330000;
-  background: #bb0000;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+nav ul:after {
+
+	clear: both;
+	display: block;
 }
 
-/* THE SUBMENU LIST HIDDEN BY DEFAULT */
-ul#nav  ul {
-  display: none;
+nav ul li { float: left; }
+
+nav ul li:hover { background: #4b545f; }
+
+nav ul li:hover a { color: #fff; }
+
+nav ul li a {
+	color: #fff;
+	font-weight:600;
+	display: block;
+	padding: 15px 35px;
+	text-decoration: none;
+	text-transform: uppercase;
 }
 
-/* WHEN THE FIRST LEVEL MENU ITEM IS HOVERED, THE CHILD MENU APPEARS */
-ul#nav li:hover > ul {
-  position: absolute;
-  display: block;
-  width: 920px;
-  height: 45px;
-  position: absolute;
-  margin: 40px 0 0 0;
-  background: #aa0000;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+nav ul ul {
+	background: #5f6975;
+	border-radius: 0px;
+	padding: 0;
+	position: absolute;
+	top: 100%;
 }
 
-ul#nav li:hover > ul li a {
-  float: left;
-  font: bold 1.1em arial,verdana,tahoma,sans-serif;
-  line-height: 45px;
-  color: #fff;
-  text-decoration: none;
-  text-shadow: 1px 1px 1px #110000;
-  margin: 0;
-  padding: 0 30px 0 0;
-  background: #aa0000 ;
+nav ul ul li {
+	  border-bottom: 1px solid #575F6A;
+    border-top: 1px solid #6B727C;
+    float: none;
+    min-width: 170px;
+    position: relative;
 }
 
-ul#nav li:hover > ul li a:hover {
-  color: #120000;
-  text-decoration: none;
-  text-shadow: none;
+nav ul ul li a {
+	padding: 12px 35px;
+	color: #fff;
+	text-align:left;
+}
+
+nav ul ul li a:hover { background: #4b545f; }
+
+nav ul ul ul {
+	position: absolute;
+	left: 100%;
+	top:0;
 }
 
 /*CIERRE*/
 
 .mainmaguare{
-  background: crimson;
+  background: white;
   display: grid;
   grid-template-rows: 100px 1fr 50px;
   height: 100vh;
@@ -148,13 +154,13 @@ ul#nav li:hover > ul li a:hover {
 }
 
 .menu{
-  background: yellow;
+  background: white;
   position: fixed;
 }
 .contenido{
-  background: red;
+  background: white;
 }
 .interna{
-  background: purple;
+  background: white;
 }
 </style>

@@ -1,35 +1,11 @@
 <template>
   <div id="wrapper">
-    <img id="logo" src="~@/assets/logo.png" alt="electron-vue" style="width:255px">
+    <div class="logosm">
+      <img id="logo" src="static/maguare.png" alt="electron-vue" class="logosmag">
+      <img id="logo" src="static/maguared.png" alt="electron-vue" class="logosmag">
+    </div>
     <main>
-      <div class="left-side">
-        <audio controls>
-
-  <source src="~@/assets/audio/194-dropaletter.mp3" type="audio/mpeg">
-  Your browser does not support the audio tag.
-</audio>
-        <span class="title">
-          Welcome to your new project!
-        </span>
-        <system-information></system-information>
-      </div>
-
-      <div class="right-side">
-        <div class="doc">
-          <div class="title">Getting KOOL</div>
-          <p>
-            electron-vue comes packed with detailed documentation that covers everything from
-            internal configurations, using the project structure, building your application,
-            and so much more.
-          </p>
-          <button @click="open('https://simulatedgreg.gitbooks.io/electron-vue/content/')">Read the Docs</button><br><br>
-        </div>
-        <div class="doc">
-          <div class="title alt">Other Documentation</div>
-          <button class="alt" @click="open('https://electron.atom.io/docs/')">Electron</button>
-          <button class="alt" @click="open('https://vuejs.org/v2/guide/')">Vue.js</button>
-        </div>
-      </div>
+      <a href="static/maguare.png" download>Descargad Logo</a>
     </main>
   </div>
 </template>
@@ -49,5 +25,14 @@
 </script>
 
 <style>
-
+.logosm{
+  display: grid;
+  padding: 1em;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+}
+.logosmag{
+  width: 100%;
+  margin: 0 auto;
+}
 </style>
