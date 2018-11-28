@@ -1,39 +1,81 @@
 <template>
 <div class="">
-<p>{{ this.$route.params.id }}</p>
-<!--<select class="" name="" v-model="selected" @change="onChange()">-->
+  <v-layout row wrap>
+        <v-flex xs12>
+          <v-card>
+            <v-card-text class="">
+              <span>Seleccione un audio</span>
+            </v-card-text>
+
+              <v-select class="px-4 ma-0"
+
+                :items="coleccion"
+                v-model="selected"
+                color="primary"
+
+                item-text="titulo"
+                item-value="id"
+                >
+              </v-select>
+
+          </v-card>
+        </v-flex>
+
+        <!--
+        <v-flex xs6>
+          <v-card dark color="orange">
+            <v-card-text class="px-0">
+                <p>{{ this.$route.params.id }} --- QUE SUENA:  {{ quesuena }}</p>
+                <pre> SELECTED: {{ selected }}</pre>
+                <pre>{{ this.$refs }}</pre>
+            </v-card-text>
+          </v-card>
+        </v-flex>
+        <v-flex xs6>
+          <v-card dark color="orange">
+            <v-card-text class="px-0">
+              <pre>{{ cancionactiva }}</pre>
+            </v-card-text>
+          </v-card>
+        </v-flex>-->
+      </v-layout>
+      <v-layout row wrap v-if="cancionactiva">
+        <v-flex xs12>
+        <v-card dark color="primary">
+          <v-card-text class="pa-2">
+            <h2 class="" ref="tituloref">{{ cancionactiva.titulo }}</h2> <h5>{{ cancionactiva.autor }}</h5>
+          </v-card-text>
+        </v-card>
+      </v-flex>
+      <v-flex xs6 class="pa-2 text-xs-center">
+        <v-card dark color="white" class="text-xs-center">
+          <img :src="'static/miniaturas/'+cancionactiva.id+'.jpg'"
+          :alt="cancionactiva.titulo"
+          class="miniatura">
+
+          <v-card-text class="px-0 grey--text">
+            <h3 class="describe text-xs-center pa-1">{{ cancionactiva.describe }}</h3>
+
+          </v-card-text>
 
 
-  <div class="internamusica">
+        </v-card>
+      </v-flex>
+      <v-flex xs6 class="pa-2">
+          <v-card dark color="white" class="my-0 px-2">
 
-    <div class="seleccion">
-      <div class="">
-        <select class="slct" name="" v-model="selected" size="20">
-          <option value="inicio">Seleccione una canción</option>
-          <option v-for="(cancion, index) in coleccion" :key="index" :value="cancion">{{ cancion.titulo }}</option>
-        </select>
-      </div>
-    </div>
-    <div class="lirica" v-if="quesuena!=''">
-      <div class="audiosonando">
+                <audio controls ref="playame1" class="audiofull" autoplay v-if="quesuena!=''" controlsList="nodownload">
+                  <source :src="quesuena" type="audio/mpeg">
+                  Este producto NO es compatible con su computador
+                </audio>
 
-      </div>
-      <div class="datoscancion" v-if="cancionactiva">
-        <audio controls ref="playame1" class="audiofull" autoplay v-if="quesuena!=''">
-          <source :src="quesuena" type="audio/mpeg">
-          Este producto NO es compatible con su computador
-        </audio>
-        <p class="describe">{{ cancionactiva.describe }}</p>
-        <h3>{{ cancionactiva.titulo }}</h3>
-        <h6>{{ cancionactiva.autor }}</h6>
+            <v-card-text class="px-0 grey--text">
+              <p v-if="cancionactiva.letra" v-html="cancionactiva.letra" class="lyrics"></p>
+            </v-card-text>
+          </v-card>
+        </v-flex>
 
-        <p v-if="cancionactiva.letra" v-html="cancionactiva.letra" class="lyrics"></p>
-
-
-      </div>
-    </div>
-
-  </div>
+      </v-layout>
 </div>
 </template>
 
@@ -55,9 +97,8 @@ export default {
   },
   created() {
 
-    //this.id = this.$route.params.id;
-    //alert(this.$route.params.id)
     this.coleccionactiva(this.$route.params.id);
+
     //this.selected= 'inicio'
     },
     watch: {
@@ -67,8 +108,12 @@ export default {
 
       },
       selected: function(value){
-        console.log("ffff... " + value)
-        this.playSound(value)
+
+        if(value !='inicio'){
+          var t = this.coleccion.find(x => x.id === value)
+          this.playSound(t)
+        }
+
         //this.$refs.playame.play();
       }
     },
@@ -94,7 +139,9 @@ export default {
         this.coleccion = this.canciones
       }
       this.coleccion = _.sortBy(this.coleccion, ['titulo']);
-      this.selected='inicio';
+      this.selected = this.coleccion[0].id;
+      //this.selected='inicio';
+      //this.cancionactiva = '';
 
     },
     getImage: function (imageData) {
@@ -120,44 +167,32 @@ export default {
       this.cancionactiva = cancion;
       if(this.$refs.playame1){
         this.$refs.playame1.load()
+
         //this.$refs.playame1.play()
 
       }
+
     }
 }
 }
 </script>
 
 <style lang="css">
-  .internamusica{
-    background-color: white;
-    display: grid;
-    grid-template-columns: 4fr 3fr;
-  }
-  audio{
-    min-width: 100%;
-    padding: 1em;
-    margin-top: 3em;
-  }
+audio{
+  min-width: 100%;
+}
   p.lyrics{
     padding: 1em;
     margin: 0 auto;
     white-space:pre-line;
-    height: 40vw;
-    width: 95%;
-    overflow: auto;
 
-  }
-  h1.titulo{
-    padding-left: 1em;
-    padding-top: 1em;
+
   }
   img.miniatura{
     max-width: 100%;
-    border: 2px white solid;
     border-radius: 0.5em;
-    margin: 0 auto;
-    cursor: pointer;
+
+
   }
   .imagenesmodelo{
     display: grid;
@@ -170,69 +205,5 @@ p.describe{
 
 }
 
-.datoscancion{
-
-  z-index: 1;
-}
-
-/* Reset Select */
-select {
-  appearance: none;
-  outline: 0;
-  box-shadow: none;
-  border: 0 !important;
-  background: #2c3e50;
-  background-image: none;
-}
-/* Custom Select */
-.select {
-  margin-top: 120px;
-  position: relative;
-  display: block;
-  width: 20em;
-  height: 3em;
-  line-height: 3;
-  background: #2c3e50;
-  overflow: hidden;
-  border-radius: .25em;
-  z-index: 0;
-  font-size: 22px;
-
-}
-
-select {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0 0 0 .5em;
-  color: #fff;
-  cursor: pointer;
-}
-select::-ms-expand {
-  display: none;
-}
-/* Arrow */
-.select::after {
-  content: '\25BC';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  padding: 0 1em;
-  background: #34495e;
-  pointer-events: none;
-}
-/* Transition */
-.select:hover::after {
-  color: #f39c12;
-}
-.select::after {
-  -webkit-transition: .25s all ease;
-  -o-transition: .25s all ease;
-  transition: .25s all ease;
-}
-select option{
-  font-size: 2em;
-}
 
 </style>

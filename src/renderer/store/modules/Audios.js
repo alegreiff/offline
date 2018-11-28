@@ -1233,7 +1233,7 @@ Linio y Tulita están felices de criar
 
 Al llegar la noche tratarán de descansar
 Porque en la mañana otra vez hay que empezar
-Para ellos lo mejor es ser mamá y papá627`
+Para ellos lo mejor es ser mamá y papá`
     },
     { id: 628,
       autor: 'Ricardo Prado',

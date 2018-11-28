@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+ 
+<title>El Cielo Enladrillado</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<link rel="stylesheet" type="text/css" href="css/estilos.css">
+ 
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+<script src="../js/jquery.ui.touch-punch.min.js"></script> 
+<script type="text/javascript">
+
+$(document).ready(function(){
+	document.getElementById('cargando').style.display = "block";
+}) 
+
+$(window).load(function(){ 
+	document.getElementById('cargando').style.display = "none";
+}) 
+  
+// JavaScript will go here
+
+var correctCards = 0;
+$( init );
+ 
+function init() {
+ 
+   // Hide the success message
+  $('#saimiriBaila').hide();
+  $('#reset').hide();
+  $('#resetJuego').hide();
+ 
+  // Reset the game
+  correctCards = 0;
+  $('#cardPile').html( '' );
+  $('#cardSlots').html( '' );
+  $('#wrapper').hide();
+  $('audio')[0].pause();
+ 
+  // Create the pile of shuffled cards
+  var numbers = [ 1, 2 ];
+  numbers.sort( function() { return Math.random() - .5 } );
+ 
+  for ( var i=0; i<2; i++ ) {
+    $('<div>' + '</div>').data( 'number', numbers[i] ).attr( 'id', 'card'+numbers[i] ).appendTo( '#cardPile' ).draggable( {
+      containment: '#content',
+      stack: '#cardPile div',
+      cursor: 'move',
+      revert: true
+    } );
+  }
+ 
+  // Create the card slots
+  var words = [ 'one', 'two' ];
+  for ( var i=1; i<=2; i++ ) {
+    $('<div>' + words[i-1] + '</div>').data( 'number', i ).attr( 'id', 'target'+words[i-1] ).appendTo( '#cardSlots' ).droppable( {
+      accept: '#cardPile div',
+      hoverClass: 'hovered',
+      drop: handleCardDrop
+    } );
+  }
+ 
+}
+
+function handleCardDrop( event, ui ) {
+  var slotNumber = $(this).data( 'number' );
+  var cardNumber = ui.draggable.data( 'number' );
+ 
+  // If the card was dropped to the correct slot,
+  // change the card colour, position it directly
+  // on top of the slot, and prevent it being dragged
+  // again
+ 
+  if ( slotNumber == cardNumber ) {
+    ui.draggable.addClass( 'correct' );
+    ui.draggable.draggable( 'disable' );
+    $(this).droppable( 'disable' );
+    ui.draggable.position( { of: $(this), my: 'left top', at: 'left top' } );
+    ui.draggable.draggable( 'option', 'revert', false );
+    correctCards++;
+  } 
+   
+  // If all the cards have been placed correctly then display a message
+  // and reset the cards for another go
+ 
+  if ( correctCards == 2 ) {
+    $('#successMessage').show();
+    $('#successMessage').animate( {
+      left: '40%',
+      top: '40%',
+      width: '400px',
+      height: '100px',
+      opacity: 1
+    } );
+  }
+  
+   if ( correctCards == 2 ) {
+		    //$('#wrapper').show();
+	$('#reset').show();
+	//$('#saimiriBaila').show();
+		document.getElementById('reset').style.opacity = "1";
+		document.getElementById('saimiriBaila').style.opacity = "1";
+    $('#wrapper').show();
+	//$('#resetJuego').show();
+	$('audio')[0].play();
+			
+  }
+  
+  //RESETEAR MUSICA
+  $( "#reset" ).click(function() {
+		$("audio")[0].pause();
+		$("audio")[0].currentTime = 0;
+		$("audio")[0].play();
+	});
+ 
+}
+ 
+</script>
+
+</head>
+<body style=" overflow:hidden;">
+
+<div id="fondo">
+
+<div id="cargando" style="display:block;"></div>
+<div id="saimiriBaila"></div> <img id="reset" src="img/reset.png"/><div id="resetJuego" onclick="window.location.reload()"></div>
+<div id="contenedor"></div>
+<div id="content">
+  <img src="img/el_cielo_enladrillado.png" id="textoImg"/>
+<!--Contenidos-->
+<!-- <div id="Contenedor_base">
+  <div id="Contenidos1">
+  	   	<div id="colum1">
+        	<div id="divi2"><span>EL</span></div><div id="divi3"><span>ESTÁ</span></div><div id="divi4"><span>,</span></div>
+        </div>
+        <div id="colum2">
+        	<span>¿QUIÉN LO DESENLADRILLARÁ?</span>
+        </div>
+        <div id="colum3">
+        	<span>EL DESENLADRILLADOR QUE LO DESENLADRILLE,</span>
+        </div>
+        <div id="colum4">
+        	<span>BUEN DESENLADRILLADOR SERÁ</span>
+        </div>
+  </div> -->
+  
+  	<div id="cardSlots"> 
+  	</div>
+</div>
+  <div id="cardPile">
+  </div>
+</div>  
+ 
+</div>
+
+<!--Audio1--> 
+        <div id="wrapper">
+			<audio preload="auto" controls style="display:none;">
+				<source src="audio/TRABA_ElCieloEnlad.wav">
+				<source src="audio/TRABA_ElCieloEnlad.ogg">
+				<source src="audio/TRABA_ElCieloEnlad.mp3">
+			</audio>
+        </div> 
+ 
+</body>
+</html>

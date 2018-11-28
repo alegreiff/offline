@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Carrusel</title>
+		<link type="text/css" rel="stylesheet" href="css/style.css"/>
+
+		<script src="js/jquery.js" onload="window.$ = window.jQuery = module.exports;"></script>
+
+		<script type="text/javascript" src="js/jquery-ui.js"></script>
+		<script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
+		<script type="text/javascript" src="js/fit.min.js"></script>
+		<script type="text/javascript" src="js/scripts.js"></script>
+		<script type="text/javascript" src="js/JS.js"></script>
+
+		<script>
+			/*var scriptYoutube = document.createElement("script");
+			scriptYoutube.src = "https://www.youtube.com/iframe_api";
+			document.getElementsByTagName('script')[0].parentNode.insertBefore(scriptYoutube, document.getElementsByTagName('script')[0]);
+*/
+
+
+			var reproductorYT, reproductorYTSalida;
+			function onYouTubeIframeAPIReady(){
+				reproductorYT = new YT.Player('videoIntro',{
+					height: '390',
+					width: '640',
+					videoId: 'viaVbjTfeFY',
+					playerVars:{
+						autoplay: '1',
+						controls: '0',
+						loop: '0',
+						disabekb: '1',
+						iv_load_policy: '3',
+						modestbranding: '1',
+						rel: '0',
+						showinfo: '0',
+
+						enablejsapi: '1',
+						origin: window.location.protocol + "//" + window.location.host
+					},
+					events:{
+						'onReady': FN_VideoIntroListo,
+						'onStateChange': FN_CambioEstadoVideoInicio
+					}
+				});
+
+				reproductorYTSalida = new YT.Player('videoSalida',{
+					height: '390',
+					width: '640',
+					videoId: '6x6Vkx5gnBE',
+					playerVars:{
+						modestbranding: '1',
+						autoplay: '0',
+						controls: '0',
+						loop: '0',
+						disabekb: '1',
+						iv_load_policy: '3',
+						rel: '0',
+						showinfo: '0',
+
+						enablejsapi: '1',
+						origin: window.location.protocol + "//" + window.location.host
+					},
+					events:{
+						'onStateChange': FN_CambioEstadoVideoFin
+					}
+				});
+			}
+
+			function FN_VideoIntroListo(event)
+			{
+				if(tipo_navegador.toLowerCase() == "escritorio")
+				{
+					event.target.playVideo();
+				}
+			}
+
+			function FN_CambioEstadoVideoInicio(event)
+			{
+				var video = document.getElementById("videoIntro");
+				if(event.data == 0)
+				{
+					$(".cont-inicio").hide();
+					$(".cont-actividades").show();
+					$("#container-general").css({
+					"background-size":"0%"
+					});
+					video.style.display= "none";
+					FN_ReproducirAudio("3",false,"audioPrincipal");
+				}
+
+				if(event.data == 1)
+				{
+					FN_CargarAudios();
+					video.style.display= "block";
+					$(".jugar").css("display","none");
+					$(".instrucciones").css("display","none");
+					$("#intro-saltar-video").css("display","block");
+					$("#container-general").css("background-size","0%");
+				}
+			}
+
+			function FN_CambioEstadoVideoFin(event)
+			{
+				if(event.data == 0)
+				{
+					var capaOscuraVideoFin = document.getElementById("capaOscuraVideoSalida");
+					capaOscuraVideoFin.style.display = "none";
+				}
+				if (event.data == 1)
+				{
+					FN_PararAudios();
+					contadorEscenariosTerminados = 0;
+					var capaOscuraVideoFin = document.getElementById("capaOscuraVideoSalida");
+					capaOscuraVideoFin.style.display = "block";
+					var videoFin = document.getElementById("videoSalida");
+					videoFin.style.display = "block";
+					videoFin.style.top = "calc(50% - " + (videoFin.getBoundingClientRect().height / 2) + "px)";
+				}
+			}
+
+			function FN_EnviarMensajePadre(mensaje)
+			{
+				window.parent.postMessage(mensaje, window.location.protocol + "//" + window.location.host);
+			}
+		</script>
+	</head>
+	<body>
+		<audio id="audioPrincipal"></audio>
+		<audio id="audioSecundario"></audio>
+		<audio id="audioSaltarAnimacion">
+			<source src="audios/ogg/Saltar_Animacion.ogg" type="audio/ogg"></source>
+			<source src="audios/mp3/Saltar_Animacion.mp3" type="audio/mp3"></source>
+		</audio>
+
+		<div id='wrapper'>
+			<div id='container-general'>
+				<div class="cont-inicio"><!--Div del intro de la aplicacion -->
+
+					<!-- <div class="hoja-logo-youtube"></div> --><!--este div es para poner una hoja ensima del logo de youtube-->
+
+						<!-- <label id="intro-saltar-video" class="btnSaltarVideo">Salta esta animación</label> -->
+
+					<div class="jugar"></div><!-- inicio del juego -->
+					<div class="titulo"></div>
+					<!-- <div class="instrucciones"></div> --><!-- instrucciones del juego, reinicia el video -->
+				</div>
+
+				<div class="cont-actividades"><!-- contenedor de la vista donde estan la posibilidad de actividades -->
+					<div class="cont-menu">
+						<div class="menu vereda"></div>
+						<div class="menu palabras-al-aire"></div>
+						<div class="menu casa-del-arbol"></div>
+						<div class="menu jardin"></div>
+						<div class="menu parque"></div>
+						<div class="menu playa"></div>
+					</div>
+				</div>
+
+				<div class="cont-vereda"><!-- actividad de la vereda -->
+					<div class="cont-personaje">
+						<div></div>
+						<div class="cara-inicial">
+							<div class="cont-ojos"></div>
+							<div class="cont-boca"></div>
+						</div>
+						<div class="dropOjos drop-vereda"></div>
+						<div class="dropBoca drop-vereda"></div>
+						<div class="cara-final"></div>
+					</div>
+					<!--
+						<label id="vereda-saltar-video" class="btnSaltarVideo">Salta esta animación</label>
+					-->
+					<div class="menu-gestos">
+						<div class="ojos1 dragOjos"></div>
+						<div class="boca1 dragBoca"></div>
+						<div class="ojos2 dragOjos"></div>
+						<div class="boca2 dragBoca"></div>
+						<div class="ojos3 dragOjos"></div>
+						<div class="boca3 dragBoca"></div>
+					</div>
+					<video id="video-vereda" class="repVideo"></video>
+				</div>
+
+				<div class="cont-palabras-al-aire"><!-- actividad de la palabras-al-aire -->
+					<div class="cont-personaje">
+						<div></div>
+						<div class="cara-inicial">
+							<div class="cont-ojos"></div>
+							<div class="cont-boca"></div>
+						</div>
+						<div class="dropOjos drop-palabras-al-aire"></div>
+						<div class="dropBoca drop-palabras-al-aire"></div>
+						<div class="cara-final"></div>
+					</div>
+					<!--
+						<label id="palabras-al-aire-saltar-video" class="btnSaltarVideo">Salta esta animación</label>
+					-->
+					<div class="menu-gestos">
+						<div class="ojos1 dragOjos"></div>
+						<div class="boca1 dragBoca"></div>
+						<div class="ojos2 dragOjos"></div>
+						<div class="boca2 dragBoca"></div>
+						<div class="ojos3 dragOjos"></div>
+						<div class="boca3 dragBoca"></div>
+					</div>
+					<video id="video-palabras-al-aire" class="repVideo"></video>
+				</div>
+
+				<div class="cont-casa-del-arbol"><!-- actividad de la casa-del-arbol -->
+					<div class="cont-personaje">
+						<div></div>
+						<div class="cara-inicial">
+							<div class="cont-ojos"></div>
+							<div class="cont-boca"></div>
+						</div>
+						<div class="dropOjos drop-casa-del-arbol"></div>
+						<div class="dropBoca drop-casa-del-arbol"></div>
+						<div class="cara-final"></div>
+					</div>
+					<!--
+						<label id="casa-del-arbol-saltar-video" class="btnSaltarVideo">Salta esta animación</label>
+					-->
+					<div class="menu-gestos">
+						<div class="ojos1 dragOjos"></div>
+						<div class="boca1 dragBoca"></div>
+						<div class="ojos2 dragOjos"></div>
+						<div class="boca2 dragBoca"></div>
+						<div class="ojos3 dragOjos"></div>
+						<div class="boca3 dragBoca"></div>
+					</div>
+					<video id="video-casa-del-arbol" class="repVideo"></video>
+				</div>
+
+				<div class="cont-jardin"><!-- actividad de la jardin -->
+					<div class="cont-personaje">
+						<div></div>
+						<div class="cara-inicial">
+							<div class="cont-ojos"></div>
+							<div class="cont-boca"></div>
+						</div>
+						<div class="dropOjos drop-jardin"></div>
+						<div class="dropBoca drop-jardin"></div>
+						<div class="cara-final"></div>
+					</div>
+					<!--
+						<label id="jardin-saltar-video" class="btnSaltarVideo">Salta esta animación</label>
+					-->
+					<div class="menu-gestos">
+						<div class="ojos1 dragOjos"></div>
+						<div class="boca1 dragBoca"></div>
+						<div class="ojos2 dragOjos"></div>
+						<div class="boca2 dragBoca"></div>
+						<div class="ojos3 dragOjos"></div>
+						<div class="boca3 dragBoca"></div>
+					</div>
+					<video id="video-jardin" class="repVideo"></video>
+				</div>
+
+				<div class="cont-parque"><!-- actividad de la parque -->
+					<div class="cont-personaje">
+						<div></div>
+						<div class="cara-inicial">
+							<div class="cont-ojos"></div>
+							<div class="cont-boca"></div>
+						</div>
+						<div class="dropOjos drop-parque"></div>
+						<div class="dropBoca drop-parque"></div>
+						<div class="cara-final"></div>
+					</div>
+					<!--
+						<label id="parque-saltar-video" class="btnSaltarVideo">Salta esta animación</label>
+					-->
+					<div class="menu-gestos">
+						<div class="ojos1 dragOjos"></div>
+						<div class="boca1 dragBoca"></div>
+						<div class="ojos2 dragOjos"></div>
+						<div class="boca2 dragBoca"></div>
+						<div class="ojos3 dragOjos"></div>
+						<div class="boca3 dragBoca"></div>
+					</div>
+					<video id="video-parque" class="repVideo"></video>
+				</div>
+
+				<div class="cont-playa"><!-- actividad de la playa -->
+					<div class="cont-personaje">
+						<div></div>
+						<div class="cara-inicial">
+							<div class="cont-ojos"></div>
+							<div class="cont-boca"></div>
+						</div>
+						<div class="dropOjos drop-playa"></div>
+						<div class="dropBoca drop-playa"></div>
+						<div class="cara-final"></div>
+					</div>
+					<!--
+						<label id="playa-saltar-video" class="btnSaltarVideo">Salta esta animación</label>
+					-->
+					<div class="menu-gestos">
+						<div class="ojos1 dragOjos"></div>
+						<div class="boca1 dragBoca"></div>
+						<div class="ojos2 dragOjos"></div>
+						<div class="boca2 dragBoca"></div>
+						<div class="ojos3 dragOjos"></div>
+						<div class="boca3 dragBoca"></div>
+					</div>
+					<video id="video-playa" class="repVideo"></video>
+				</div>
+
+				<div id="btnOtraVez" class="botonFin"></div>
+				<div id="btnCambiarEscenario" class="botonFin"></div>
+			</div>
+
+
+			<div id="capaOscuraVideoSalida">
+				<div></div>
+
+				<div id="videoSalida" class="video"></div>
+			</div>
+
+
+		</div>
+	</body>
+</html>

@@ -1,0 +1,579 @@
+@charset "UTF-8";
+/* Add some margin to the page and set a default font and colour */
+
+@media all and (orientation: portrait) {
+	body html{
+		height:100%;
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+		display:block;
+	}
+
+	body {
+		margin: 0px;
+		line-height: 1.8em;
+		color: #333;
+	}
+
+	#fondo{
+		display: block;
+		float: left;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: -2;
+		width: 100%;
+		height: 100%;
+		background-image:url(../img/fondo.jpg);
+		background-position:50% 100%;
+		background-size:cover;
+		background-repeat:no-repeat;
+	}
+
+	#saimiriBaila{
+		position: absolute;
+		width: 20%;
+		height: 30%;
+		margin: 0;
+		top:0px;
+		left:0px;
+		background-image: url(img/saimiri_baile.gif);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		opacity:0;
+		z-index:0;
+	}
+
+	#reset{
+		background-color:transparent;
+		display: block;
+		float: right;
+		clear: none;
+		width: 12%;
+		left: 1%;
+		top: 1%;
+		position:absolute;
+		height: auto;
+		cursor: pointer;
+		opacity:1;
+		z-index:100;
+	}
+
+	#cargando {
+		position: absolute;
+		margin: 24% 42%;
+		width: 100%;
+		height: 100%;
+		background-image: url(img/load.gif);
+		background-repeat: no-repeat;
+		background-size: 15%;
+		display: block;
+		z-index:999;
+	}
+
+	/* Give headings their own font */
+
+	h1, h2, h3, h4 {
+		font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	}
+
+	/* Main content area */
+
+	#content {
+		margin: 0px;
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		user-select: none;
+		position:absolute;
+		display:block;
+		clear:none;
+		width:100%;
+		height: 74%;
+		background-color:transparent;
+	}
+
+	div#content img {
+		width: 80%;
+		left: 10%;
+		top: 12%;
+		position: absolute;
+	}
+
+	/* Header/footer boxes */
+
+	.wideBox {
+		clear: both;
+		text-align: center;
+		margin: 70px;
+		padding: 10px;
+		background: #ebedf2;
+		border: 1px solid #333;
+	}
+
+	.wideBox h1 {
+		font-weight: bold;
+		margin: 20px;
+		color: #666;
+		font-size: 1.5em;
+	}
+
+
+	/* The initial pile of unsorted cards */
+
+	#cardPile {
+		margin: 0 auto;
+		/*  background: #ffd;*/
+	}
+
+	#cardSlots{
+		width:100%;
+		height: 100%;
+		position: absolute;
+		display:block;
+		clear:none;
+		margin: 0 auto 0 auto;
+		background:transparent;
+	}
+
+	#cardPile{
+		width: 100%;
+		height: 26%;
+		border-style:none;
+		position: absolute;
+		-moz-border-radius: 10px;
+		-webkit-border-radius: 10px;
+		border-radius: 10px;
+  /*  -moz-box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
+  box-shadow: 0 0 .3em rgba(0, 0, 0, .8);*/
+  bottom: 0;
+  background: url(../img/fondofichas.jpg);
+  background-size: contain;
+}
+
+/* Individual cards and slots */
+
+#cardSlots div, #cardPile div {
+}
+
+/*Items Personales Cards*/
+
+#card1{
+	width: 18.2%;
+	height: 17%;
+	padding-top: 6%;
+	background-image:url(../img/sol.png);
+	background-repeat:no-repeat;
+	background-size: 70%;
+	background-position: 50%;
+	border-style:none!important;
+	position: absolute;
+	top: 33%;
+	left: 55%;
+}
+
+
+#targetone{
+	width: 16.8%;
+	height: 9%;
+	padding-top: 4%;
+	font-size:0%;
+	position:absolute;
+	background-image:url(../img/sol_cont.png);
+	background-repeat:no-repeat;
+	background-size: 70% auto;
+	background-position: 50%;
+	display:block;
+	left: 29%;
+	top: 10%;
+	clear:none;
+}
+
+#card2{
+	width: 21.9%;
+	height: 30%;
+	padding-top: 3%;
+	background-image:url(../img/ladrillos.png);
+	background-size: 70% auto;
+	background-repeat:no-repeat;
+	background-position: 50%;
+	border-style:none!important;
+	position: absolute;
+	top: 35%;
+	left: 30%;
+}
+
+#targettwo{
+	width: 22.2%;
+	height: 11%;
+	padding-top: 3%;
+	font-size:0%;
+	position:absolute;
+	background-image:url(../img/ladrillos_cont.png);
+	background-repeat:no-repeat;
+	background-size: 70% auto;
+	background-position: 50%;
+	clear:none;
+	left: 52%;
+	top: 11%;
+}
+
+/*------------------------------*/ 
+#cardSlots div:first-child, #cardPile div:first-child {
+	margin-left: 0;
+}
+
+#cardSlots div.hovered {
+	background-color:rgba(102,102,102,0.8);
+	border-radius:13px;
+}
+
+#cardSlots div {
+	border-style:none;
+}
+
+#cardPile div {
+	/*  background: #666;*/
+	color: #fff;
+	font-size: 50px;
+	text-shadow: 0 0 3px #000;
+}
+
+
+
+	/* "You did it!" message */
+	#successMessage {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 0;
+	height: 0;
+	z-index: 100;
+	background: #dfd;
+	border: 2px solid #333;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	-moz-box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+	-webkit-box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+	box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+	padding: 20px;
+	}/* CSS Document */
+
+
+	#resetJuego{
+		cursor:pointer;
+		position: absolute;
+		width: 9%;
+		height: 19%;
+		margin: 0;
+		top: 23%;
+		left: 15%;
+		background-image: url(../img/rmus1.png);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		opacity: 1;
+		z-index: 100;
+	}
+
+	#resetJuego:hover{
+		background-image: url(../img/rmus2.png);
+	}
+}
+
+
+@media all and (orientation: landscape) {
+
+	body html{
+		height:100%;
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+		display:block;
+	}
+
+	body {
+		margin: 0px;
+		line-height: 1.8em;
+		color: #333;
+	}
+
+	#fondo{
+		display: block;
+		float: left;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: -2;
+		width: 100%;
+		height: 100%;
+		background-image:url(../img/fondo.jpg);
+		background-position:50% 100%;
+		background-size:cover;
+		background-repeat:no-repeat;
+	}
+
+	#saimiriBaila{
+		position: absolute;
+		width: 20%;
+		height: 30%;
+		margin: 0;
+		top:0px;
+		left:0px;
+		background-image: url(img/saimiri_baile.gif);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		opacity:0;
+		z-index:0;
+	}
+
+	#reset{
+		background-color:transparent;
+		display: block;
+		float: right;
+		clear: none;
+		width: 12%;
+		left: 1%;
+		top: 1%;
+		position:absolute;
+		height: auto;
+		cursor: pointer;
+		opacity:1;
+		z-index:100;
+	}
+
+	#cargando {
+		position: absolute;
+		margin: 24% 42%;
+		width: 100%;
+		height: 100%;
+		background-image: url(img/load.gif);
+		background-repeat: no-repeat;
+		background-size: 15%;
+		display: block;
+		z-index:999;
+	}
+
+	/* Give headings their own font */
+
+	h1, h2, h3, h4 {
+		font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	}
+
+	/* Main content area */
+
+	#content {
+		margin: 0px;
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		user-select: none;
+		position:absolute;
+		display:block;
+		clear:none;
+		width: 80%;
+		height: 100%;
+		background-color:transparent;
+		left: 20%;
+	}
+
+	div#content img {
+		width: 80%;
+		left: 10%;
+		top: 12%;
+		position: absolute;
+	}
+
+	/* Header/footer boxes */
+
+	.wideBox {
+		clear: both;
+		text-align: center;
+		margin: 70px;
+		padding: 10px;
+		background: #ebedf2;
+		border: 1px solid #333;
+	}
+
+	.wideBox h1 {
+		font-weight: bold;
+		margin: 20px;
+		color: #666;
+		font-size: 1.5em;
+	}
+
+
+	/* The initial pile of unsorted cards */
+
+	#cardPile {
+		margin: 0 auto;
+		/*  background: #ffd;*/
+	}
+
+	#cardSlots{
+		width:100%;
+		height: 100%;
+		position: absolute;
+		display:block;
+		clear:none;
+		margin: 0 auto 0 auto;
+		background:transparent;
+	}
+
+	#cardPile{
+		width: 20%;
+		height: 100%;
+		border-style:none;
+		position: absolute;
+		-moz-border-radius: 10px;
+		-webkit-border-radius: 10px;
+		border-radius: 10px;
+		/*  -moz-box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
+  box-shadow: 0 0 .3em rgba(0, 0, 0, .8);*/
+		bottom: 0;
+		background: url(../img/fondofichas2.jpg);
+		background-size: contain;
+}
+
+/* Individual cards and slots */
+
+#cardSlots div, #cardPile div {
+}
+
+/*Items Personales Cards*/
+
+#card1{
+	width: 68.2%;
+	height: 20%;
+	padding-top: 0;
+	background-image:url(../img/sol.png);
+	background-repeat:no-repeat;
+	background-size: 70%;
+	background-position: 50%;
+	border-style:none!important;
+	position: absolute;
+	top: 32%;
+	left: 6%;
+}
+
+
+#targetone{
+	width: 16.8%;
+	height: 9%;
+	padding-top: 4%;
+	font-size:0%;
+	position:absolute;
+	background-image:url(../img/sol_cont.png);
+	background-repeat:no-repeat;
+	background-size: 70% auto;
+	background-position: 50%;
+	display:block;
+	left: 29%;
+	top: 11%;
+	clear:none;
+}
+
+#card2{
+	width: 88.9%;
+	height: 14%;
+	padding-top: 3%;
+	background-image:url(../img/ladrillos.png);
+	background-size: 70% auto;
+	background-repeat:no-repeat;
+	background-position: 50%;
+	border-style:none!important;
+	position: absolute;
+	top: 10%;
+	left: 0%;
+}
+
+#targettwo{
+	width: 22.2%;
+	height: 11%;
+	padding-top: 3%;
+	font-size:0%;
+	position:absolute;
+	background-image:url(../img/ladrillos_cont.png);
+	background-repeat:no-repeat;
+	background-size: 70% auto;
+	background-position: 50%;
+	clear:none;
+	left: 52%;
+	top: 11%;
+}
+
+/*------------------------------*/ 
+#cardSlots div:first-child, #cardPile div:first-child {
+	margin-left: 0;
+}
+
+#cardSlots div.hovered {
+	background-color:rgba(102,102,102,0.8);
+	border-radius:13px;
+}
+
+#cardSlots div {
+	border-style:none;
+}
+
+#cardPile div {
+	/*  background: #666;*/
+	color: #fff;
+	font-size: 50px;
+	text-shadow: 0 0 3px #000;
+}
+
+
+
+	/* "You did it!" message */
+	#successMessage {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 0;
+	height: 0;
+	z-index: 100;
+	background: #dfd;
+	border: 2px solid #333;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	-moz-box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+	-webkit-box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+	box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+	padding: 20px;
+	}/* CSS Document */
+
+
+	#resetJuego{
+		cursor:pointer;
+		position: absolute;
+		width: 9%;
+		height: 19%;
+		margin: 0;
+		top: 23%;
+		left: 15%;
+		background-image: url(../img/rmus1.png);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		opacity: 1;
+		z-index: 100;
+	}
+
+	#resetJuego:hover{
+		background-image: url(../img/rmus2.png);
+	}
+
+}
+
+
+
+
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Adivinanza 5</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/estilos.css">
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+		<script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+		<script src="../js/jquery.ui.touch-punch.min.js"></script>
+		<script type="text/javascript" src="../js/script_adivinanzas.js"></script>
+	</head>
+	<body style=" overflow:hidden;">
+		<div style="background: white; height: 30px;">
+			<a style="color: blue; padding: 0.5em 1em" href="#" onclick="function hi(){window.close();};hi()">Cerrar esta ventana</a>
+		</div>
+		<div id="fondo"></div>
+		<div id="cargando" style="display:block;"></div>
+		<div id="saimiriBaila"></div>
+		<div id="resetJuego" onclick="window.location.reload()"></div>
+		<div id="contenedor"></div>
+		<div id="content">
+			<!--Contenidos-->
+			<div id="Contenedor_base">
+				<img id="reset" src="../imagenes/btn_play.png" class="reproduciendo"/>
+				<div id="Contenidos1">
+					<div class="columNormal">
+						<span>Cabeza de hierro,</span>
+					</div>
+					<div class="columNormal">
+						<span>cuerpo de madera,</span>
+					</div>
+					<div class="columNormal">
+						<span>si te piso un dedo,</span>
+					</div>
+					<div class="columNormal">
+						<span>¡tremendo grito pegas!</span>
+					</div>
+				</div>
+				<div id="cardSlots"></div>
+			</div>
+			<div id="cardPile"></div>
+		</div>
+
+		<!--Audio0 ADIVINANZA-->
+		<div id="wrapper">
+			<audio id="reproductorPregunta" preload="auto" controls autoplay>
+				<source src="audio/ADIV_MARTILLO_PREGUNTA.wav">
+				<source src="audio/ADIV_MARTILLO_PREGUNTA.ogg">
+				<source src="audio/ADIV_MARTILLO_PREGUNTA.mp3">
+			</audio>
+		</div>
+		<!--Audio1-->
+		<audio preload="auto" controls style="display:none;">
+			<source src="audio/ADIV_MARTILLO_ALFILER.wav">
+			<source src="audio/ADIV_MARTILLO_ALFILER.ogg">
+			<source src="audio/ADIV_MARTILLO_ALFILER.mp3">
+		</audio>
+
+		<!--Audio2-->
+		<audio preload="auto" controls  style="display:none;">
+			<source src="audio/ADIV_MARTILLO_CARRITO.wav">
+			<source src="audio/ADIV_MARTILLO_CARRITO.ogg">
+			<source src="audio/ADIV_MARTILLO_CARRITO.mp3">
+		</audio>
+		<!--Audio3 Correcto-->
+		<audio preload="auto" controls  style="display:none;">
+			<source src="audio/ADIV_MARTILLO_MARTILLO.wav">
+			<source src="audio/ADIV_MARTILLO_MARTILLO.mp3">
+			<source src="audio/ADIV_MARTILLO_MARTILLO.ogg">
+		</audio>
+	</body>
+</html>

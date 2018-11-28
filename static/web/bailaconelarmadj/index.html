@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Arma DJ</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/device.min.js"></script>
+    <script type="text/javascript" src="js/jquery.jsmovie.1.4.4.js"></script>
+    <script type="text/javascript" src="js/velocity.min.js"></script>
+    <script type="text/javascript" src="js/preloadjs-0.6.1.min.js"></script>
+    <script type="text/javascript" src="js/howler.min.js"></script>
+    <!-- <script src="http://www.youtube.com/player_api"></script> -->
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/fit.min.js"></script>
+
+
+</head>
+<body>
+  <div style="background: white; height: 30px;">
+    <a style="color: blue; padding: 0.5em 1em" href="#" onclick="function hi(){window.close();};hi()">Cerrar esta ventana</a>
+  </div>
+
+
+<div id='wrapper'>
+    <div id='container-general'>
+
+        <div class="fondos"></div><!-- Cambio de fondos -->
+
+        <div class="container-meteoritos">
+            <div class="meteoritos m1"></div>
+            <div class="meteoritos m2 "></div>
+            <div class="meteoritos m3"></div>
+            <div class="meteoritos m4"></div>
+            <div class="meteoritos m5"></div>
+        </div>
+
+        <div class="planetas"></div> <!-- Cambio de planetas -->
+        <div class="armadillo"></div>
+        <div id="personajes"></div> <!-- Cambio de personajes -->
+        <div id="cargador">Cargando personaje...</div>
+
+        <div class="menu-personajes">
+            <div class="camaleona personaje" data-personaje="1"></div>
+            <div class="olinguito personaje" data-personaje="2"></div>
+            <div class="rana personaje" data-personaje="3"></div>
+            <div class="saimiri personaje" data-personaje="5"></div>
+            <div class="peresozo personaje" data-personaje="4"></div>
+        </div>
+        <div class="menu-planetas">
+            <div class="planeta1 audio planeta" id="NAV_muy-lento" data-planeta="5" data-speed="0.6" data-suffix="_muylento"></div>
+            <div class="planeta2 audio planeta" id="NAV_lentisimo" data-planeta="3" data-speed="0.8" data-suffix="_lento"></div>
+            <div class="planeta3 audio planeta" id="NAV_normal" data-planeta="4" data-speed="1" data-suffix=""></div>
+            <div class="planeta4 audio planeta" id="NAV_mas-rapido" data-planeta="2" data-speed="1.2" data-suffix="_rapido"></div>
+            <div class="planeta5 audio planeta" id="NAV_rapidisimo" data-planeta="1" data-speed="1.4" data-suffix="_muyrapido"></div>
+        </div>
+        <div class="cabina-dj audio" id="NAV_scratch"></div> <!-- Cambio el disco del dj -->
+        <div class="a-bailar audio" id="NAV_a-bailar"></div>
+    </div>
+</div>
+</body>
+</html>

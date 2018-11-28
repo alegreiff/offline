@@ -36,7 +36,7 @@ const state = {
       url: '134-casivolando.mp4'
     },
     { id: 137,
-      autor: 'ERROR',
+      autor: 'Ministerio de cultura',
       coleccion: 'KARAOKE',
       titulo: 'Bacetemëng Oyejuayëng (Niños Felices) - Karaoke',
       describe: 'Escucha una lengua diferente, la lengua del grupo indígena Kamëntšá o Kamsá que viven en el Valle del Sibundoy en el Putumayo. Ellos tienen mucho por enseñarte con sus tradiciones. ¿Has escuchado otras canciones en lenguas nativas?',
@@ -71,14 +71,14 @@ const state = {
       url: 'URL'
     },
     { id: 284,
-      autor: 'ERROR',
+      autor: 'Ministerio de cultura',
       coleccion: 'VIDEO',
       titulo: 'Si no te dormís',
       describe: 'La hora de dormir es muy importante, cierra tus ojos rápidamente o un lobito vendrá, ¡pero no te asustes que sólo te acompañará! ¿Qué te gusta que te canten cuando te vas a dormir?',
       url: '284-dormis.mp4'
     },
     { id: 285,
-      autor: 'ERROR',
+      autor: 'Ministerio de cultura',
       coleccion: 'VIDEO',
       titulo: 'Se fue el sol',
       describe: 'Cuando se esconde el sol es hora de descansar para madrugar e ir a la escuela ¡o jugar en casa! El pueblo indígena Kamentsá te invita a ver este video en el que con su propio idioma (y también en español) te cuentan qué hacen cuando se va el sol. ¿Tu que haces cuando se esconde el sol?',
@@ -260,7 +260,9 @@ const getters = {
     videoscuentosnarrados: state => {
       return state.videos.filter(video => video.coleccion == 'Cuentos narrados')
     },
-
+    videoslistos: state => {
+      return state.videos.filter(video => video.url != 'URL')
+    },
     /*audiosCuentoencanto: state => {
       return state.canciones.filter(cancion => cancion.coleccion == 'Con mi cuento encanto')
     },*/

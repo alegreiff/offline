@@ -1,0 +1,2713 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+/*@media screen and (min-width:400px) and (max-width: 768px) {*/
+@media all and (orientation: landscape) {
+#wrapper{
+	position:fixed;
+	width:100%;
+	height:100%;
+
+	background-image: url(../img/fondo_escenarios.jpg);
+	background-repeat: no-repeat;
+	background-position: 0%;
+	background-size: cover;
+}
+#container-general{
+	width: 1280px;
+	height: 720px;
+	position: absolute;
+}
+
+/*estilos del intro de la aplicacion*/
+.video{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	display: none;
+}
+
+.jugar{
+	width: 18%;
+	height: 19%;
+	position: absolute;
+	bottom: 2%;
+	left: 13%;
+	background-image: url(../img/jugar.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+	cursor: pointer;
+}
+
+.titulo{
+	width: 42%;
+	height: 24%;
+	position: absolute;
+	top: 4%;
+	left: 29%;
+	background-image: url(../img/titulo.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+	display: none;
+}
+
+.instrucciones{
+	width: 18%;
+	height: 19%;
+	position: absolute;
+	bottom: 2%;
+	right: 13%;
+	background-image: url(../img/instrucciones.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+	cursor: pointer;
+	transform-style: preserve-3d;
+}
+
+/*Estilos del menu del escenario*/
+.cont-actividades{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0%;
+	right: 0%;
+	/*
+	borrar
+	background-image: url(../img/fondo_escenarios.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+	*/
+	display: none;
+}
+
+.cont-menu{
+	width: 70%;
+	height: 80%;
+	position: relative;
+	margin: 5% 15%;
+}
+
+.menu{
+	width: 30%;
+	height: 42%;
+	position: relative;
+	float: left;
+	margin: 1.6%;
+	cursor: pointer;
+}
+
+.vereda{
+	background-image: url(../img/vereda.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+
+.palabras-al-aire{
+	background-image: url(../img/palabras_al_aire.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+
+.casa-del-arbol{
+	background-image: url(../img/casa_del_arbol.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+
+.jardin{
+	background-image: url(../img/jardin.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+
+.parque{
+	background-image: url(../img/parque.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+
+.playa{
+	background-image: url(../img/playa.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+
+/*estilos de las actividades */
+
+/*vereda*/
+.cont-vereda{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	/*borrar background: #fff;*/
+	display: none;
+}
+#container-general > div.cont-vereda > div.cont-personaje{
+	width: 75%;
+	height: 100%;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+}
+
+#container-general > div.cont-vereda > div.cont-personaje > div:first-child
+{
+	opacity: 0.7;
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/vereda/fondo.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+
+#container-general > div.cont-vereda > div.cont-personaje > div.cara-inicial{
+	width: 90%;
+	height: 86%;
+	position: absolute;
+	top: 7%;
+	left: 5%;
+	background-image: url(../img/vereda/cara_inicial.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 99% auto;
+}
+
+.cont-vereda .cont-ojos
+{
+	background-image: url('../img/vereda/ojos_cara.png');
+	background-position: 0% 70%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 70%;
+}
+.cont-vereda .cont-boca
+{
+	background-image: url('../img/vereda/boca_cara.png');
+	background-position: 0% center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 28%;
+}
+
+.cont-vereda .cont-personaje .cara-final
+{
+	display: none;
+	width: 90%;
+	height: 86%;
+	position: absolute;
+	top: 7%;
+	left: 5%;
+	background-image: url(../img/vereda/cara_final.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+
+/*palabras al aire*/
+.cont-palabras-al-aire{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	/*borrar background: #fff;*/
+	display: none;
+}
+#container-general > div.cont-palabras-al-aire > div.cont-personaje{
+	width: 75%;
+	height: 100%;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+}
+
+#container-general > div.cont-palabras-al-aire > div.cont-personaje > div:first-child
+{
+	opacity: 0.7;
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/palabrasalaire/fondo.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+
+#container-general > div.cont-palabras-al-aire > div.cont-personaje > div.cara-inicial{
+	width: 90%;
+	height: 87%;
+	position: absolute;
+	top: 7%;
+	left: 5%;
+	background-image: url(../img/palabrasalaire/cara_inicial.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 87% auto;
+}
+
+
+
+.cont-palabras-al-aire .cont-ojos
+{
+	background-image: url('../img/palabrasalaire/ojos_cara.png');
+	background-position: 0% center;
+	background-size: 90%;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 70%;
+	margin: 0 5%;
+}
+.cont-palabras-al-aire .cont-boca
+{
+	background-image: url('../img/palabrasalaire/boca_cara.png');
+	background-position: 0% center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 15%;
+}
+
+.cont-palabras-al-aire .cont-personaje .cara-final
+{
+	display: none;
+	width: 90%;
+	height: 86%;
+	position: absolute;
+	top: 7%;
+	left: 5%;
+	background-image: url(../img/palabrasalaire/cara_final.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+
+/*casa-del-arbol*/
+.cont-casa-del-arbol{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	/*borrar background: #fff;*/
+	display: none;
+}
+#container-general > div.cont-casa-del-arbol > div.cont-personaje{
+	width: 75%;
+	height: 100%;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+}
+
+#container-general > div.cont-casa-del-arbol > div.cont-personaje > div:first-child
+{
+	opacity: 0.7;
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/casadelarbol/fondo.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+
+#container-general > div.cont-casa-del-arbol > div.cont-personaje > div.cara-inicial{
+	width: 90%;
+	height: 86%;
+	position: absolute;
+	top: 7%;
+	left: 5%;
+	background-image: url(../img/casadelarbol/cara_inicial.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 77% auto;
+}
+
+.cont-casa-del-arbol .cont-ojos
+{
+	background-image: url('../img/casadelarbol/ojos_cara.png');
+	width: 100%;
+	height: 65%;
+	display: block;
+	background-position: 50% 70%;
+	background-size: 80%;
+	background-repeat: no-repeat;
+}
+.cont-casa-del-arbol .cont-boca
+{
+	background-image: url('../img/casadelarbol/boca_cara.png');
+	width: 100%;
+	height: 40%;
+	background-size: 80%;
+	background-position: 50% -40%;
+	background-repeat: no-repeat;
+}
+
+.cont-casa-del-arbol .cont-personaje .cara-final
+{
+	display: none;
+	width: 90%;
+	height: 86%;
+	position: absolute;
+	top: 7%;
+	left: 5%;
+	background-image: url(../img/casadelarbol/cara_final.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+
+/*jardin*/
+.cont-jardin{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	/*borrar background: #fff;*/
+	display: none;
+}
+#container-general > div.cont-jardin > div.cont-personaje{
+	width: 75%;
+	height: 100%;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+}
+#container-general > div.cont-jardin > div.cont-personaje > div:first-child
+{
+	opacity: 0.7;
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/jardin/fondo.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+
+#container-general > div.cont-jardin > div.cont-personaje > div.cara-inicial{
+	width: 90%;
+	height: 86%;
+	position: absolute;
+	top: 7%;
+	left: 5%;
+	background-image: url(../img/jardin/cara_inicial.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 97% auto;
+}
+.cont-jardin .cont-ojos
+{
+	background-image: url('../img/jardin/ojos_cara.png');
+	width: 100%;
+	height: 70%;
+	display: block;
+	background-position: 0% 70%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+.cont-jardin .cont-boca
+{
+	background-image: url('../img/jardin/boca_cara.png');
+	width: 100%;
+	height: 20%;
+	background-size: 100%;
+	background-position: 0% center;
+	background-repeat: no-repeat;
+}
+
+.cont-jardin .cont-personaje .cara-final
+{
+	display: none;
+	width: 90%;
+	height: 86%;
+	position: absolute;
+	top: 7%;
+	left: 5%;
+	background-image: url(../img/jardin/cara_final.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+
+/*parque*/
+.cont-parque{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	/*borrar background: #fff;*/
+	display: none;
+}
+#container-general > div.cont-parque > div.cont-personaje{
+	width: 75%;
+	height: 100%;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+}
+#container-general > div.cont-parque > div.cont-personaje > div:first-child
+{
+	opacity: 0.7;
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/parque/fondo.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+
+
+#container-general > div.cont-parque > div.cont-personaje > div.cara-inicial{
+	width: 90%;
+	height: 86%;
+	position: absolute;
+	top: 7%;
+	left: 5%;
+	background-image: url(../img/parque/cara_inicial.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 96% auto;
+}
+.cont-parque .cont-ojos
+{
+	background-image: url('../img/parque/ojos_cara.png');
+	width: 100%;
+	height: 56%;
+	display: block;
+	background-position: 0% 70%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+.cont-parque .cont-boca
+{
+	background-image: url('../img/parque/boca_cara.png');
+	width: 100%;
+	height: 30%;
+	background-size: 100%;
+	background-position: 0% center;
+	background-repeat: no-repeat;
+}
+
+.cont-parque .cont-personaje .cara-final
+{
+	display: none;
+	width: 90%;
+	height: 86%;
+	position: absolute;
+	top: 7%;
+	left: 5%;
+	background-image: url(../img/parque/cara_final.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+
+/*playa*/
+.cont-playa{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	/*borrar background: #fff;*/
+	display: none;
+}
+#container-general > div.cont-playa > div.cont-personaje{
+	width: 75%;
+	height: 100%;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+}
+#container-general > div.cont-playa > div.cont-personaje > div:first-child
+{
+	opacity: 0.7;
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/playa/fondo.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+
+#container-general > div.cont-playa > div.cont-personaje > div.cara-inicial{
+	width: 90%;
+	height: 86%;
+	position: absolute;
+	top: 7%;
+	left: 5%;
+	background-image: url(../img/playa/cara_inicial.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 88% auto;
+}
+.cont-playa .cont-ojos
+{
+	background-image: url('../img/playa/ojos_cara.png');
+	width: 100%;
+	height: 65%;
+	display: block;
+	background-position: 0% 70%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+.cont-playa .cont-boca
+{
+	background-image: url('../img/playa/boca_cara.png');
+	width: 100%;
+	height: 20%;
+	background-size: 100%;
+	background-position: 0% center;
+	background-repeat: no-repeat;
+}
+
+.cont-playa .cont-personaje .cara-final
+{
+	display: none;
+	width: 90%;
+	height: 86%;
+	position: absolute;
+	top: 7%;
+	left: 5%;
+	background-image: url(../img/playa/cara_final.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+
+
+/*estilos menu de las expreciones --- ojos y bocas de las actividades*/
+
+/*vereda*/
+#container-general > div.cont-vereda > div.menu-gestos{
+	width: 25%;
+	height: 100%;
+	position: absolute;
+	top: 0%;
+	right: 0%;
+	background-image: url(../img/vereda/menu.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-vereda > div.menu-gestos > div.ojos1{
+	width: 50%;
+	height: 10%;
+	position: absolute;
+	top: 9%;
+	left: 22%;
+	background-image: url(../img/vereda/ojos1.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-vereda > div.menu-gestos > div.ojos2{
+	width: 50%;
+	height: 14%;
+	position: absolute;
+	top: 38%;
+	left: 23%;
+	background-image: url(../img/vereda/ojos2.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-vereda > div.menu-gestos > div.ojos3{
+	width: 50%;
+	height: 12%;
+	position: absolute;
+	top: 67%;
+	left: 27%;
+	background-image: url(../img/vereda/ojos3.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-vereda > div.menu-gestos > div.boca1{
+	width: 50%;
+	height: 13%;
+	position: absolute;
+	top: 22%;
+	left: 25%;
+	background-image: url(../img/vereda/boca1.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-vereda > div.menu-gestos > div.boca2{
+	width: 50%;
+	height: 10%;
+	position: absolute;
+	top: 54%;
+	left: 26%;
+	background-image: url(../img/vereda/boca2.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-vereda > div.menu-gestos > div.boca3{
+	width: 50%;
+	height: 10%;
+	position: absolute;
+	top: 81%;
+	left: 29%;
+	background-image: url(../img/vereda/boca3.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+
+/*palanrasalaire*/
+#container-general > div.cont-palabras-al-aire > div.menu-gestos{
+	width: 25%;
+	height: 100%;
+	position: absolute;
+	top: 0%;
+	right: 0%;
+	background-image: url(../img/palabrasalaire/menu.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-palabras-al-aire > div.menu-gestos > div.ojos1{
+	width: 52%;
+	height: 11%;
+	position: absolute;
+	top: 9%;
+	left: 22%;
+	background-image: url(../img/palabrasalaire/ojos1.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-palabras-al-aire > div.menu-gestos > div.ojos2{
+	width: 50%;
+	height: 14%;
+	position: absolute;
+	top: 35%;
+	left: 23%;
+	background-image: url(../img/palabrasalaire/ojos2.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-palabras-al-aire > div.menu-gestos > div.ojos3{
+	width: 50%;
+	height: 15%;
+	position: absolute;
+	top: 64%;
+	left: 26%;
+	background-image: url(../img/palabrasalaire/ojos3.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-palabras-al-aire > div.menu-gestos > div.boca1{
+	width: 52%;
+	height: 10%;
+	position: absolute;
+	top: 22%;
+	left: 22%;
+	background-image: url(../img/palabrasalaire/boca1.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-palabras-al-aire > div.menu-gestos > div.boca2{
+	width: 50%;
+	height: 10%;
+	position: absolute;
+	top: 50%;
+	left: 24%;
+	background-image: url(../img/palabrasalaire/boca2.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-palabras-al-aire > div.menu-gestos > div.boca3{
+	width: 50%;
+	height: 12%;
+	position: absolute;
+	top: 79%;
+	left: 27%;
+	background-image: url(../img/palabrasalaire/boca3.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+
+/*casa-del-arbol*/
+#container-general > div.cont-casa-del-arbol > div.menu-gestos{
+	width: 25%;
+	height: 100%;
+	position: absolute;
+	top: 0%;
+	right: 0%;
+	background-image: url(../img/casadelarbol/menu.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-casa-del-arbol > div.menu-gestos > div.ojos1{
+	width: 52%;
+	height: 9%;
+	position: absolute;
+	top: 8%;
+	left: 22%;
+	background-image: url(../img/casadelarbol/ojos1.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-casa-del-arbol > div.menu-gestos > div.ojos2{
+	width: 50%;
+	height: 8%;
+	position: absolute;
+	top: 36%;
+	left: 23%;
+	background-image: url(../img/casadelarbol/ojos2.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-casa-del-arbol > div.menu-gestos > div.ojos3{
+	width: 50%;
+	height: 14%;
+	position: absolute;
+	top: 63%;
+	left: 26%;
+	background-image: url(../img/casadelarbol/ojos3.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-casa-del-arbol > div.menu-gestos > div.boca1{
+	width: 52%;
+	height: 13%;
+	position: absolute;
+	top: 18%;
+	left: 22%;
+	background-image: url(../img/casadelarbol/boca1.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-casa-del-arbol > div.menu-gestos > div.boca2{
+	width: 50%;
+	height: 14%;
+	position: absolute;
+	top: 45%;
+	left: 24%;
+	background-image: url(../img/casadelarbol/boca2.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-casa-del-arbol > div.menu-gestos > div.boca3{
+	width: 50%;
+	height: 14%;
+	position: absolute;
+	top: 78%;
+	left: 27%;
+	background-image: url(../img/casadelarbol/boca3.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+
+/*jardin*/
+#container-general > div.cont-jardin > div.menu-gestos{
+	width: 25%;
+	height: 100%;
+	position: absolute;
+	top: 0%;
+	right: 0%;
+	background-image: url(../img/jardin/menu.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-jardin > div.menu-gestos > div.ojos1{
+	width: 52%;
+	height: 12%;
+	position: absolute;
+	top: 8%;
+	left: 22%;
+	background-image: url(../img/jardin/ojos1.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-jardin > div.menu-gestos > div.ojos2{
+	width: 50%;
+	height: 12%;
+	position: absolute;
+	top: 35%;
+	left: 23%;
+	background-image: url(../img/jardin/ojos2.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-jardin > div.menu-gestos > div.ojos3{
+	width: 50%;
+	height: 14%;
+	position: absolute;
+	top: 63%;
+	left: 26%;
+	background-image: url(../img/jardin/ojos3.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-jardin > div.menu-gestos > div.boca1{
+	width: 52%;
+	height: 10%;
+	position: absolute;
+	top: 21%;
+	left: 22%;
+	background-image: url(../img/jardin/boca1.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-jardin > div.menu-gestos > div.boca2{
+	width: 50%;
+	height: 10%;
+	position: absolute;
+	top: 48%;
+	left: 24%;
+	background-image: url(../img/jardin/boca2.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-jardin > div.menu-gestos > div.boca3{
+	width: 50%;
+	height: 11%;
+	position: absolute;
+	top: 78%;
+	left: 27%;
+	background-image: url(../img/jardin/boca3.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+
+/*parque*/
+#container-general > div.cont-parque > div.menu-gestos{
+	width: 25%;
+	height: 100%;
+	position: absolute;
+	top: 0%;
+	right: 0%;
+	background-image: url(../img/parque/menu.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-parque > div.menu-gestos > div.ojos1{
+	width: 52%;
+	height: 8%;
+	position: absolute;
+	top: 8%;
+	left: 22%;
+	background-image: url(../img/parque/ojos1.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-parque > div.menu-gestos > div.ojos2{
+	width: 50%;
+	height: 10%;
+	position: absolute;
+	top: 35%;
+	left: 23%;
+	background-image: url(../img/parque/ojos2.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-parque > div.menu-gestos > div.ojos3{
+	width: 50%;
+	height: 11%;
+	position: absolute;
+	top: 63%;
+	left: 26%;
+	background-image: url(../img/parque/ojos3.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-parque > div.menu-gestos > div.boca1{
+	width: 52%;
+	height: 16%;
+	position: absolute;
+	top: 17%;
+	left: 22%;
+	background-image: url(../img/parque/boca1.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-parque > div.menu-gestos > div.boca2{
+	width: 50%;
+	height: 14%;
+	position: absolute;
+	top: 46%;
+	left: 24%;
+	background-image: url(../img/parque/boca2.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-parque > div.menu-gestos > div.boca3{
+	width: 50%;
+	height: 15%;
+	position: absolute;
+	top: 76%;
+	left: 26%;
+	background-image: url(../img/parque/boca3.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+
+/*playa*/
+#container-general > div.cont-playa > div.menu-gestos{
+	width: 25%;
+	height: 100%;
+	position: absolute;
+	top: 0%;
+	right: 0%;
+	background-image: url(../img/playa/menu.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-playa > div.menu-gestos > div.ojos1{
+	width: 48%;
+	height: 10%;
+	position: absolute;
+	top: 8%;
+	left: 23%;
+	background-image: url(../img/playa/ojos1.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-playa > div.menu-gestos > div.ojos2{
+	width: 48%;
+	height: 12%;
+	position: absolute;
+	top: 35%;
+	left: 24%;
+	background-image: url(../img/playa/ojos2.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-playa > div.menu-gestos > div.ojos3{
+	width: 50%;
+	height: 9%;
+	position: absolute;
+	top: 64%;
+	left: 26%;
+	background-image: url(../img/playa/ojos3.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-playa > div.menu-gestos > div.boca1{
+	width: 52%;
+	height: 11%;
+	position: absolute;
+	top: 19%;
+	left: 21%;
+	background-image: url(../img/playa/boca1.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-playa > div.menu-gestos > div.boca2{
+	width: 50%;
+	height: 8%;
+	position: absolute;
+	top: 49%;
+	left: 24%;
+	background-image: url(../img/playa/boca2.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-playa > div.menu-gestos > div.boca3{
+	width: 50%;
+	height: 12%;
+	position: absolute;
+	top: 75%;
+	left: 26%;
+	background-image: url(../img/playa/boca3.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+
+
+
+}
+
+
+
+@media all and (orientation: portrait) {
+#wrapper{
+	position:fixed;
+	width:100%;
+	height:100%;
+
+	background-image: url(../img/fondo_escenarios.jpg);
+	background-repeat: no-repeat;
+	background-position: 0% 0%;
+	background-size: cover;
+
+}
+#container-general{
+	width: 980px;
+	height: 1176px;
+	position: absolute;
+}
+
+/*estilos del intro de la aplicacion*/
+.video{
+	width: 180%;
+	height: 100%;
+	position: absolute;
+	top: 0%;
+	left: -40%;
+	display: none;
+}
+
+.jugar{
+	width: 25%;
+	height: 16%;
+	position: absolute;
+	bottom: 2%;
+	left: 13%;
+	background-image: url(../img/jugar.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+	cursor: pointer;
+}
+
+.titulo{
+	width: 42%;
+	height: 24%;
+	position: absolute;
+	top: 4%;
+	left: 29%;
+	background-image: url(../img/titulo.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+	display: none;
+}
+
+.instrucciones{
+	right: 13%;
+	width: 25%;
+	height: 16%;
+	position: absolute;
+	bottom: 2%;
+	background-image: url(../img/instrucciones.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+	cursor: pointer;
+	transform-style: preserve-3d;
+}
+
+/*Estilos del menu del escenario*/
+.cont-actividades{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0%;
+	right: 0%;
+	/*
+	borrar
+	background-image: url(../img/fondo_escenarios.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+	*/
+	display: none;
+}
+
+.cont-menu{
+	width: 80%;
+	height: 78%;
+	position: relative;
+	margin: 10% 10%;
+}
+
+.menu{
+	width: 30%;
+	height: 30%;
+	position: relative;
+	float: left;
+	margin: 7.6% 1.6%;
+	cursor: pointer;
+}
+
+.vereda{
+	background-image: url(../img/vereda.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+
+.palabras-al-aire{
+	background-image: url(../img/palabras_al_aire.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+
+.casa-del-arbol{
+	background-image: url(../img/casa_del_arbol.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+
+.jardin{
+	background-image: url(../img/jardin.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+
+.parque{
+	background-image: url(../img/parque.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+
+.playa{
+	background-image: url(../img/playa.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+
+/*estilos de las actividades */
+
+/*vereda*/
+.cont-vereda{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	/*borrar background: #fff;*/
+	display: none;
+}
+#container-general > div.cont-vereda > div.cont-personaje{
+	width: 100%;
+	height: 68%;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+}
+#container-general > div.cont-vereda > div.cont-personaje > div:first-child
+{
+	opacity: 0.7;
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/vereda/fondo.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+
+#container-general > div.cont-vereda > div.cont-personaje > div.cara-inicial{
+	width: 75%;
+	height: 86%;
+	position: absolute;
+	top: 7%;
+	left: 13%;
+	background-image: url(../img/vereda/cara_inicial.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 99% auto;
+}
+.cont-vereda .cont-ojos
+{
+	background-image: url('../img/vereda/ojos_cara.png');
+	background-position: 0% 70%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 70%;
+}
+.cont-vereda .cont-boca
+{
+	background-image: url('../img/vereda/boca_cara.png');
+	background-position: 0% center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 20%;
+}
+
+.cont-vereda .cont-personaje .cara-final
+{
+	display: none;
+	width: 75%;
+	height: 86%;
+	position: absolute;
+	top: 7%;
+	left: 13%;
+	background-image: url(../img/vereda/cara_final.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+
+/*palabras al aire*/
+.cont-palabras-al-aire{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	/*borrar background: #fff;*/
+	display: none;
+}
+#container-general > div.cont-palabras-al-aire > div.cont-personaje{
+	width: 100%;
+	height: 68%;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+}
+#container-general > div.cont-palabras-al-aire > div.cont-personaje > div:first-child
+{
+	opacity: 0.7;
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/palabrasalaire/fondo.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+
+#container-general > div.cont-palabras-al-aire > div.cont-personaje > div.cara-inicial{
+	width: 76%;
+	height: 86%;
+	position: absolute;
+	top: 7%;
+	left: 14%;
+	background-image: url(../img/palabrasalaire/cara_inicial.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 87% auto;
+}
+
+.cont-palabras-al-aire .cont-ojos
+{
+	background-image: url('../img/palabrasalaire/ojos_cara.png');
+	background-position: 0% 70%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 67%;
+}
+.cont-palabras-al-aire .cont-boca
+{
+	background-image: url('../img/palabrasalaire/boca_cara.png');
+	background-position: 0% center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 22%;
+}
+
+
+.cont-palabras-al-aire .cont-personaje .cara-final
+{
+	display: none;
+	width: 76%;
+	height: 86%;
+	position: absolute;
+	top: 7%;
+	left: 14%;
+	background-image: url(../img/palabrasalaire/cara_final.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+
+/*casa-del-arbol*/
+.cont-casa-del-arbol{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	/*borrar background: #fff;*/
+	display: none;
+}
+#container-general > div.cont-casa-del-arbol > div.cont-personaje{
+	width: 100%;
+	height: 68%;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+}
+#container-general > div.cont-casa-del-arbol > div.cont-personaje > div:first-child
+{
+	opacity: 0.7;
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/casadelarbol/fondo.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+
+#container-general > div.cont-casa-del-arbol > div.cont-personaje > div.cara-inicial{
+	width: 77%;
+	height: 86%;
+	position: absolute;
+	top: 8%;
+	left: 13%;
+	background-image: url(../img/casadelarbol/cara_inicial.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 77% auto;
+}
+.cont-casa-del-arbol .cont-ojos
+{
+	background-image: url('../img/casadelarbol/ojos_cara.png');
+	width: 100%;
+	height: 70%;
+	display: block;
+	background-position: 50% 70%;
+	background-size: 80%;
+	background-repeat: no-repeat;
+}
+.cont-casa-del-arbol .cont-boca
+{
+	background-image: url('../img/casadelarbol/boca_cara.png');
+	width: 100%;
+	height: 29%;
+	display: block;
+	background-size: 80%;
+	background-position: 51% 492%;
+	background-repeat: no-repeat;
+}
+
+.cont-casa-del-arbol .cont-personaje .cara-final
+{
+	display: none;
+	width: 77%;
+	height: 86%;
+	position: absolute;
+	top: 8%;
+	left: 13%;
+	background-image: url(../img/casadelarbol/cara_final.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+
+/*jardin*/
+.cont-jardin{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	/*borrar background: #fff;*/
+	display: none;
+}
+#container-general > div.cont-jardin > div.cont-personaje{
+	width: 100%;
+	height: 68%;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+}
+#container-general > div.cont-jardin > div.cont-personaje > div:first-child
+{
+	opacity: 0.7;
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/jardin/fondo.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+
+#container-general > div.cont-jardin > div.cont-personaje > div.cara-inicial{
+	width: 80%;
+	height: 86%;
+	position: absolute;
+	top: 7%;
+	left: 10%;
+	background-image: url(../img/jardin/cara_inicial.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 97% auto;
+}
+.cont-jardin .cont-ojos
+{
+	background-image: url('../img/jardin/ojos_cara.png');
+	width: 100%;
+	height: 70%;
+	display: block;
+	background-position: 0% 70%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+.cont-jardin .cont-boca
+{
+	background-image: url('../img/jardin/boca_cara.png');
+	width: 100%;
+	height: 20%;
+	background-size: 100%;
+	background-position: 0% center;
+	background-repeat: no-repeat;
+}
+
+.cont-jardin .cont-personaje .cara-final
+{
+	display: none;
+	width: 80%;
+	height: 86%;
+	position: absolute;
+	top: 7%;
+	left: 10%;
+	background-image: url(../img/jardin/cara_final.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+
+/*parque*/
+.cont-parque{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	/*borrar background: #fff;*/
+	display: none;
+}
+#container-general > div.cont-parque > div.cont-personaje{
+	width: 100%;
+	height: 68%;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+}
+#container-general > div.cont-parque > div.cont-personaje > div:first-child
+{
+	opacity: 0.7;
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/parque/fondo.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+
+#container-general > div.cont-parque > div.cont-personaje > div.cara-inicial{
+	width: 90%;
+	height: 86%;
+	position: absolute;
+	top: 7%;
+	left: 5%;
+	background-image: url(../img/parque/cara_inicial.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 96% auto;
+}
+.cont-parque .cont-ojos
+{
+	background-image: url('../img/parque/ojos_cara.png');
+	width: 100%;
+	height: 58%;
+	display: block;
+	background-position: 0% 70%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+.cont-parque .cont-boca
+{
+	background-image: url('../img/parque/boca_cara.png');
+	width: 100%;
+	height: 25%;
+	background-size: 100%;
+	background-position: 0% center;
+	background-repeat: no-repeat;
+}
+
+.cont-parque .cont-personaje .cara-final
+{
+	display: none;
+	width: 90%;
+	height: 86%;
+	position: absolute;
+	top: 7%;
+	left: 5%;
+	background-image: url(../img/parque/cara_final.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+
+/*playa*/
+.cont-playa{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	/*borrar background: #fff;*/
+	display: none;
+}
+#container-general > div.cont-playa > div.cont-personaje{
+	width: 100%;
+	height: 68%;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+}
+#container-general > div.cont-playa > div.cont-personaje > div:first-child
+{
+	opacity: 0.7;
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/playa/fondo.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+
+#container-general > div.cont-playa > div.cont-personaje > div.cara-inicial{
+	width: 90%;
+	height: 86%;
+	position: absolute;
+	top: 7%;
+	left: 5%;
+	background-image: url(../img/playa/cara_inicial.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 88% auto;
+}
+.cont-playa .cont-ojos
+{
+	background-image: url('../img/playa/ojos_cara.png');
+	width: 100%;
+	height: 65%;
+	display: block;
+	background-position: 0% 70%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+.cont-playa .cont-boca
+{
+	background-image: url('../img/playa/boca_cara.png');
+	width: 100%;
+	height: 25%;
+	background-size: 100%;
+	background-position: 0% center;
+	background-repeat: no-repeat;
+}
+
+.cont-playa .cont-personaje .cara-final
+{
+	display: none;
+	width: 90%;
+	height: 86%;
+	position: absolute;
+	top: 7%;
+	left: 5%;
+	background-image: url(../img/playa/cara_final.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+
+
+/*estilos menu de las expreciones --- ojos y bocas de las actividades*/
+
+/*vereda*/
+#container-general > div.cont-vereda > div.menu-gestos{
+	width: 100%;
+	height: 32%;
+	position: absolute;
+	bottom: 0%;
+	right: 0%;
+	background-image: url(../img/vereda/menu2.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-vereda > div.menu-gestos > div.ojos1{
+	width: 12%;
+	height: 20%;
+	position: absolute;
+	top: 22%;
+	left: 14%;
+	background-image: url(../img/vereda/ojos1.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-vereda > div.menu-gestos > div.ojos2{
+	width: 12%;
+	height: 26%;
+	position: absolute;
+	top: 20%;
+	left: 43%;
+	background-image: url(../img/vereda/ojos2.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-vereda > div.menu-gestos > div.ojos3{
+	width: 14%;
+	height: 24%;
+	position: absolute;
+	top: 21%;
+	left: 70%;
+	background-image: url(../img/vereda/ojos3.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-vereda > div.menu-gestos > div.boca1{
+	width: 14%;
+	height: 30%;
+	position: absolute;
+	top: 46%;
+	left: 14%;
+	background-image: url(../img/vereda/boca1.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-vereda > div.menu-gestos > div.boca2{
+	width: 16%;
+	height: 22%;
+	position: absolute;
+	top: 52%;
+	left: 41%;
+	background-image: url(../img/vereda/boca2.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-vereda > div.menu-gestos > div.boca3{
+	width: 16%;
+	height: 26%;
+	position: absolute;
+	top: 50%;
+	left: 69%;
+	background-image: url(../img/vereda/boca3.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+
+/*palanrasalaire*/
+#container-general > div.cont-palabras-al-aire > div.menu-gestos{
+	width: 100%;
+	height: 32%;
+	position: absolute;
+	bottom: 0%;
+	right: 0%;
+	background-image: url(../img/palabrasalaire/menu2.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-palabras-al-aire > div.menu-gestos > div.ojos1{
+	width: 15%;
+	height: 22%;
+	position: absolute;
+	top: 26%;
+	left: 13%;
+	background-image: url(../img/palabrasalaire/ojos1.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-palabras-al-aire > div.menu-gestos > div.ojos2{
+	width: 15%;
+	height: 28%;
+	position: absolute;
+	top: 23%;
+	left: 42%;
+	background-image: url(../img/palabrasalaire/ojos2.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-palabras-al-aire > div.menu-gestos > div.ojos3{
+	width: 12%;
+	height: 28%;
+	position: absolute;
+	top: 20%;
+	left: 72%;
+	background-image: url(../img/palabrasalaire/ojos3.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-palabras-al-aire > div.menu-gestos > div.boca1{
+	width: 16%;
+	height: 22%;
+	position: absolute;
+	top: 53%;
+	left: 12%;
+	background-image: url(../img/palabrasalaire/boca1.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-palabras-al-aire > div.menu-gestos > div.boca2{
+	width: 18%;
+	height: 20%;
+	position: absolute;
+	top: 56%;
+	left: 41%;
+	background-image: url(../img/palabrasalaire/boca2.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-palabras-al-aire > div.menu-gestos > div.boca3{
+	width: 14%;
+	height: 24%;
+	position: absolute;
+	top: 50%;
+	left: 71%;
+	background-image: url(../img/palabrasalaire/boca3.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+
+/*casa-del-arbol*/
+#container-general > div.cont-casa-del-arbol > div.menu-gestos{
+	width: 100%;
+	height: 32%;
+	position: absolute;
+	bottom: 0%;
+	right: 0%;
+	background-image: url(../img/casadelarbol/menu2.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-casa-del-arbol > div.menu-gestos > div.ojos1{
+	width: 15%;
+	height: 26%;
+	position: absolute;
+	top: 20%;
+	left: 12%;
+	background-image: url(../img/casadelarbol/ojos1.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-casa-del-arbol > div.menu-gestos > div.ojos2{
+	width: 18%;
+	height: 16%;
+	position: absolute;
+	top: 24%;
+	left: 39%;
+	background-image: url(../img/casadelarbol/ojos2.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-casa-del-arbol > div.menu-gestos > div.ojos3{
+	width: 12%;
+	height: 26%;
+	position: absolute;
+	top: 20%;
+	left: 72%;
+	background-image: url(../img/casadelarbol/ojos3.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-casa-del-arbol > div.menu-gestos > div.boca1{
+	width: 15%;
+	height: 29%;
+	position: absolute;
+	top: 50%;
+	left: 12%;
+	background-image: url(../img/casadelarbol/boca1.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-casa-del-arbol > div.menu-gestos > div.boca2{
+	width: 15%;
+	height: 34%;
+	position: absolute;
+	top: 42%;
+	left: 40%;
+	background-image: url(../img/casadelarbol/boca2.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-casa-del-arbol > div.menu-gestos > div.boca3{
+	width: 12%;
+	height: 26%;
+	position: absolute;
+	top: 49%;
+	left: 72%;
+	background-image: url(../img/casadelarbol/boca3.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+
+/*jardin*/
+#container-general > div.cont-jardin > div.menu-gestos{
+	width: 100%;
+	height: 32%;
+	position: absolute;
+	bottom: 0%;
+	right: 0%;
+	background-image: url(../img/jardin/menu2.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-jardin > div.menu-gestos > div.ojos1{
+	width: 13%;
+	height: 22%;
+	position: absolute;
+	top: 24%;
+	left: 13%;
+	background-image: url(../img/jardin/ojos1.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-jardin > div.menu-gestos > div.ojos2{
+	width: 14%;
+	height: 26%;
+	position: absolute;
+	top: 23%;
+	left: 44%;
+	background-image: url(../img/jardin/ojos2.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-jardin > div.menu-gestos > div.ojos3{
+	width: 12%;
+	height: 26%;
+	position: absolute;
+	top: 22%;
+	left: 73%;
+	background-image: url(../img/jardin/ojos3.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-jardin > div.menu-gestos > div.boca1{
+	width: 15%;
+	height: 22%;
+	position: absolute;
+	top: 52%;
+	left: 12%;
+	background-image: url(../img/jardin/boca1.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-jardin > div.menu-gestos > div.boca2{
+	width: 16%;
+	height: 22%;
+	position: absolute;
+	top: 51%;
+	left: 43%;
+	background-image: url(../img/jardin/boca2.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-jardin > div.menu-gestos > div.boca3{
+	width: 14%;
+	height: 24%;
+	position: absolute;
+	top: 50%;
+	left: 72%;
+	background-image: url(../img/jardin/boca3.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+
+/*parque*/
+#container-general > div.cont-parque > div.menu-gestos{
+	width: 100%;
+	height: 32%;
+	position: absolute;
+	bottom: 0%;
+	right: 0%;
+	background-image: url(../img/parque/menu2.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-parque > div.menu-gestos > div.ojos1{
+	width: 16%;
+	height: 17%;
+	position: absolute;
+	top: 22%;
+	left: 13%;
+	background-image: url(../img/parque/ojos1.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-parque > div.menu-gestos > div.ojos2{
+	width: 14%;
+	height: 20%;
+	position: absolute;
+	top: 21%;
+	left: 43%;
+	background-image: url(../img/parque/ojos2.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-parque > div.menu-gestos > div.ojos3{
+	width: 12%;
+	height: 21%;
+	position: absolute;
+	top: 21%;
+	left: 73%;
+	background-image: url(../img/parque/ojos3.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-parque > div.menu-gestos > div.boca1{
+	width: 14%;
+	height: 36%;
+	position: absolute;
+	top: 42%;
+	left: 14%;
+	background-image: url(../img/parque/boca1.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-parque > div.menu-gestos > div.boca2{
+	width: 14%;
+	height: 30%;
+	position: absolute;
+	top: 46%;
+	left: 43%;
+	background-image: url(../img/parque/boca2.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-parque > div.menu-gestos > div.boca3{
+	width: 14%;
+	height: 32%;
+	position: absolute;
+	top: 44%;
+	left: 72%;
+	background-image: url(../img/parque/boca3.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+
+/*playa*/
+#container-general > div.cont-playa > div.menu-gestos{
+	width: 100%;
+	height: 32%;
+	position: absolute;
+	bottom: 0%;
+	right: 0%;
+	background-image: url(../img/playa/menu2.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-playa > div.menu-gestos > div.ojos1{
+	width: 12%;
+	height: 20%;
+	position: absolute;
+	top: 24%;
+	left: 14%;
+	background-image: url(../img/playa/ojos1.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-playa > div.menu-gestos > div.ojos2{
+	width: 12%;
+	height: 25%;
+	position: absolute;
+	top: 23%;
+	left: 44%;
+	background-image: url(../img/playa/ojos2.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-playa > div.menu-gestos > div.ojos3{
+	width: 14%;
+	height: 19%;
+	position: absolute;
+	top: 21%;
+	left: 71%;
+	background-image: url(../img/playa/ojos3.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-playa > div.menu-gestos > div.boca1{
+	width: 20%;
+	height: 34%;
+	position: absolute;
+	top: 45%;
+	left: 10%;
+	background-image: url(../img/playa/boca1.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-playa > div.menu-gestos > div.boca2{
+	width: 18%;
+	height: 22%;
+	position: absolute;
+	top: 52%;
+	left: 41%;
+	background-image: url(../img/playa/boca2.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+#container-general > div.cont-playa > div.menu-gestos > div.boca3{
+	width: 16%;
+	height: 34%;
+	position: absolute;
+	top: 41%;
+	left: 70%;
+	background-image: url(../img/playa/boca3.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+}
+
+@font-face{
+	font-family: "Happy Sans";
+	src: url('fuentes/Happy-Sans.eot');
+	src: url('fuentes/Happy-Sans.eot?#iefix') format('embedded-opentype'),
+	url('fuentes/Happy-Sans.svg#Happy Sans') format('svg'),
+	url('fuentes/Happy-Sans.woff') format('woff'),
+	url('fuentes/Happy-Sans.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.btnSaltarVideo
+{
+	display: none;
+	float: left;
+	clear: both;
+	position: absolute;
+	z-index: 9999;
+	color: #fff;
+	cursor: pointer;
+	left: 2%;
+	bottom: 2%;
+	font-size: 25px;
+	text-decoration: none;
+	padding: 6px;
+	background: rgba(162, 17, 255, 0.8);
+	font-family: "Happy Sans";
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+.btnSaltarVideo:hover
+{
+	background: rgb(248, 168, 2);
+}
+
+.cont-personaje
+{
+	background-color: #FFF;
+}
+
+video.repVideo
+{
+	display: none;
+}
+
+video.reproduciendo
+{
+	display: block;
+	width: 100%;
+	height: auto;
+	position: absolute;
+}
+
+#capaOscuraVideoSalida
+{
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;}
+
+#capaOscuraVideoSalida div
+{
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	opacity: 0.9;
+	position: absolute;
+}
+
+video#videoSalida
+{
+	width: 100%;
+	height: auto;
+	position: absolute;
+}
+
+
+div.dropBoca, div.dropOjos
+{
+	position: absolute;
+}
+
+
+.dropBoca.listo div.movido, .dropOjos.listo div.movido
+{
+	position: absolute;
+	background-size: contain;
+	-webkit-transform: scale(2);
+	-ms-transform: scale(2);
+	transform: scale(2);
+}
+
+
+.dropBoca.drop-vereda.listo div.boca1.movido
+{
+	top: 0%;
+	left: 18%;
+}
+.dropBoca.drop-vereda.listo div.boca2.movido
+{
+	top: 0%;
+	left: 0%;
+}
+.dropBoca.drop-vereda.listo div.boca3.movido
+{
+	top: -30%;
+	left: -1%;
+}
+
+
+
+.dropOjos.drop-vereda.listo div.ojos1.movido
+{
+	background-image: url("../img/vereda/ojos1_.png") !important;
+	background-size: 45%;
+}
+
+
+.dropOjos.drop-vereda.listo div.ojos2.movido
+{
+	background-image: url("../img/vereda/ojos2_.png") !important;
+	background-size: 50%;
+	top: -35px;
+}
+
+.dropOjos.drop-vereda.listo div.ojos3.movido
+{
+	background-image: url("../img/vereda/ojos3_.png") !important;
+	background-size: 50%;
+
+	top: -19%;
+}
+
+
+
+.dropBoca.drop-palabras-al-aire.listo div.boca1.movido
+{
+	top: 10%;
+	left: -1%;
+}
+.dropBoca.drop-palabras-al-aire.listo div.boca2.movido
+{
+	top: 20%;
+	left: -1%;
+}
+.dropBoca.drop-palabras-al-aire.listo div.boca3.movido
+{
+	top: -10%;
+	left: -1%;
+}
+
+.dropOjos.drop-palabras-al-aire.listo div.ojos1.movido
+{
+	background-image: url("../img/palabrasalaire/ojos1_.png") !important;
+	background-size: 60%;
+	top: -20%;
+}
+.dropOjos.drop-palabras-al-aire.listo div.ojos2.movido
+{
+	background-image: url("../img/palabrasalaire/ojos2_.png") !important;
+	background-size: 60%;
+	top: -20%;
+}
+.dropOjos.drop-palabras-al-aire.listo div.ojos3.movido
+{
+	background-image: url("../img/palabrasalaire/ojos3_.png") !important;
+	background-size: 60%;
+	top: -20%;
+}
+
+
+.dropBoca.drop-casa-del-arbol.listo div.ojos1.movido,
+.dropBoca.drop-casa-del-arbol.listo div.ojos2.movido
+{
+	-webkit-transform: scale(1.5);
+	-ms-transform: scale(1.5);
+	transform: scale(1.5);
+}
+
+.dropBoca.drop-casa-del-arbol.listo div.ojos2.movido
+{
+	top: -40%;
+}
+
+
+.dropBoca.drop-casa-del-arbol.listo div.boca1.movido,
+.dropBoca.drop-casa-del-arbol.listo div.boca2.movido,
+.dropBoca.drop-casa-del-arbol.listo div.boca3.movido
+{
+	-webkit-transform: scale(4);
+	-ms-transform: scale(4);
+	transform: scale(4);
+}
+.dropBoca.drop-casa-del-arbol.listo div.boca1.movido
+{
+	top: 0%;
+	left: 0%;
+}
+.dropBoca.drop-casa-del-arbol.listo div.boca2.movido
+{
+	top: 15%;
+	left: 0%;
+}
+.dropBoca.drop-casa-del-arbol.listo div.boca3.movido
+{
+	top: 0%;
+	left: 0%;
+}
+
+.dropBoca.drop-jardin.listo div.boca1.movido,
+.dropBoca.drop-jardin.listo div.boca2.movido,
+.dropBoca.drop-jardin.listo div.boca3.movido
+{
+	-webkit-transform: scale(3);
+	-ms-transform: scale(3);
+	transform: scale(3);
+}
+.dropBoca.drop-jardin.listo div.boca1.movido
+{
+	top: 40%;
+	left: 0%;
+}
+.dropBoca.drop-jardin.listo div.boca2.movido
+{
+	top: 0%;
+	left: 0%;
+}
+.dropBoca.drop-jardin.listo div.boca3.movido
+{
+	top: 0%;
+	left: 0%;
+}
+
+.dropOjos.drop-jardin.listo div.ojos1.movido
+{
+	background-image: url("../img/jardin/ojos1_.png") !important;
+	background-size: 60%;
+	top: -20%;
+}
+.dropOjos.drop-jardin.listo div.ojos2.movido
+{
+	background-image: url("../img/jardin/ojos2_.png") !important;
+	background-size: 60%;
+	top: -20%;
+}
+.dropOjos.drop-jardin.listo div.ojos3.movido
+{
+	background-image: url("../img/jardin/ojos3_.png") !important;
+	background-size: 60%;
+	top: -20%;
+}
+
+.dropBoca.drop-parque.listo div.boca1.movido,
+.dropBoca.drop-parque.listo div.boca2.movido,
+.dropBoca.drop-parque.listo div.boca3.movido
+{
+	-webkit-transform: scale(3);
+	-ms-transform: scale(3);
+	transform: scale(3);
+}
+.dropBoca.drop-parque.listo div.boca1.movido
+{
+	top: 80%;
+	left: 0;
+}
+.dropBoca.drop-parque.listo div.boca2.movido
+{
+	top: 70%;
+	left: 0;
+}
+.dropBoca.drop-parque.listo div.boca3.movido
+{
+	top: 80%;
+	left: 0;
+}
+.dropOjos.drop-parque.listo div.ojos1.movido
+{
+	background-image: url("../img/parque/ojos1_.png") !important;
+	background-size: 52%;
+}
+.dropOjos.drop-parque.listo div.ojos2.movido
+{
+	background-image: url("../img/parque/ojos2_.png") !important;
+	background-size: 50%;
+}
+.dropOjos.drop-parque.listo div.ojos3.movido
+{
+	background-image: url("../img/parque/ojos3_.png") !important;
+	background-size: 55%;
+}
+
+.dropOjos.drop-parque.listo div.ojos3.movido
+{
+	background-image: url("../img/parque/ojos3_.png") !important;
+	background-size: 60%;
+	top: -20%;
+}
+
+.dropBoca.drop-playa.listo div.boca1.movido,
+.dropBoca.drop-playa.listo div.boca2.movido,
+.dropBoca.drop-playa.listo div.boca3.movido
+{
+
+}
+.dropBoca.drop-playa.listo div.boca1.movido
+{
+	top: 0%;
+	left: 0%;
+}
+.dropBoca.drop-playa.listo div.boca2.movido
+{
+	top: 0%;
+	left: 0%;
+}
+.dropBoca.drop-playa.listo div.boca3.movido
+{
+	top: -23%;
+	left: 0%;
+}
+.dropOjos.drop-playa.listo div.ojos1.movido
+{
+	background-image: url("../img/playa/ojos1_.png") !important;
+	background-size: 55%;
+}
+.dropOjos.drop-playa.listo div.ojos2.movido
+{
+	background-image: url("../img/playa/ojos2_.png") !important;
+	background-size: 55%;
+}
+.dropOjos.drop-playa.listo div.ojos3.movido
+{
+	background-image: url("../img/playa/ojos3_.png") !important;
+	background-size: 51%;
+}
+
+
+@media all and (orientation: landscape){
+
+	.botonFin
+	{
+		display: none;
+		width: 9%;
+		height: 16%;
+		position: absolute;
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: 100% auto;
+		cursor: pointer;
+	}
+	#btnOtraVez
+	{
+		bottom: 2%;
+		left: 4%;
+		background-image: url(../img/boton_repetir.png);
+	}
+	#btnCambiarEscenario
+	{
+		bottom: 2%;
+		right: 29%;
+		background-image: url(../img/boton_cambiar.png);
+	}
+
+	#container-general
+	{
+		background-image: url(../img/img_intro.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+	div.dropBoca.drop-vereda
+	{
+		width: 15%;
+		height: 8%;
+		top: 78.5%;
+		left: 41.5%;
+	}
+	div.dropOjos.drop-vereda
+	{
+		width: 48%;
+		height: 12%;
+		top: 53.5%;
+		left: 25%;
+	}
+	div.dropBoca.drop-palabras-al-aire
+	{
+		width: 16%;
+		height: 8%;
+		top: 77%;
+		left: 41%;
+	}
+	div.dropOjos.drop-palabras-al-aire
+	{
+		width: 45.5%;
+		height: 20%;
+		top: 43%;
+		left: 26%;
+	}
+	div.dropBoca.drop-casa-del-arbol
+	{
+		width: 7%;
+		height: 18%;
+		top: 71.5%;
+		left: 46.5%;
+	}
+	div.dropOjos.drop-casa-del-arbol
+	{
+		width: 33%;
+		height: 15%;
+		top: 40.5%;
+		left: 33%;
+	}
+	div.dropBoca.drop-jardin
+	{
+		width: 10%;
+		height: 5%;
+		top: 78%;
+		left: 46%;
+	}
+	div.dropOjos.drop-jardin
+	{
+		width: 38%;
+		height: 16%;
+		top: 49%;
+		left: 31%;
+	}
+	div.dropBoca.drop-parque
+	{
+		width: 16.5%;
+		height: 9%;
+		top: 62.5%;
+		left: 43.5%;
+	}
+	div.dropOjos.drop-parque
+	{
+		width: 49%;
+		height: 17%;
+		top: 31.5%;
+		left: 25.5%;
+	}
+	div.dropBoca.drop-playa
+	{
+		width: 15.5%;
+		height: 10%;
+		top: 67%;
+		left: 44.5%;
+	}
+	div.dropOjos.drop-playa
+	{
+		width: 32%;
+		height: 15%;
+		top: 40.5%;
+		left: 35.5%;
+	}
+}
+@media all and (orientation: portrait){
+	.botonFin
+	{
+		display: none;
+		width: 12%;
+		height: 16%;
+		position: absolute;
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: 100% auto;
+		cursor: pointer;
+	}
+	#btnOtraVez
+	{
+		bottom: 35%;
+		left: 4%;
+		background-image: url(../img/boton_repetir.png);
+	}
+	#btnCambiarEscenario
+	{
+		bottom: 35%;
+		right: 4%;
+		background-image: url(../img/boton_cambiar.png);
+	}
+
+	#container-general
+	{
+		background-image: url(../img/img_intro.png);
+		background-repeat: no-repeat;
+		background-position: 50% 0%;
+	}
+
+	div.dropBoca.drop-vereda
+	{
+		width: 13%;
+		height: 7%;
+		top: 74.5%;
+		left: 43%;
+	}
+	div.dropOjos.drop-vereda
+	{
+		width: 40%;
+		height: 10.5%;
+		top: 53%;
+		left: 29.5%;
+	}
+	div.dropBoca.drop-palabras-al-aire
+	{
+		width: 13%;
+		height: 6.5%;
+		top: 73.5%;
+		left: 44.5%;
+	}
+	div.dropOjos.drop-palabras-al-aire
+	{
+		width: 38.5%;
+		height: 17%;
+		top: 44.5%;
+		left: 31.5%;
+	}
+	div.dropBoca.drop-casa-del-arbol
+	{
+		width: 6.5%;
+		height: 15%;
+		top: 70%;
+		left: 48%;
+	}
+	div.dropOjos.drop-casa-del-arbol
+	{
+		width: 27.5%;
+		height: 12.5%;
+		top: 43%;
+		left: 37%;
+	}
+	div.dropBoca.drop-jardin
+	{
+		width: 9%;
+		height: 4.5%;
+		top: 75.5%;
+		left: 46%;
+	}
+	div.dropOjos.drop-jardin
+	{
+		width: 33%;
+		height: 14%;
+		top: 49.5%;
+		left: 33%;
+	}
+	div.dropBoca.drop-parque
+	{
+		width: 16.5%;
+		height: 9%;
+		top: 63%;
+		left: 43.5%;
+	}
+	div.dropOjos.drop-parque
+	{
+		width: 48.5%;
+		height: 17.5%;
+		top: 31%;
+		left: 26%;
+	}
+	div.dropBoca.drop-playa
+	{
+		width: 15%;
+		height: 10%;
+		top: 67.5%;
+		left: 45%;
+	}
+	div.dropOjos.drop-playa
+	{
+		width: 32%;
+		height: 15%;
+		top: 40.5%;
+		left: 35.5%;
+	}
+
+}

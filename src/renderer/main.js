@@ -8,6 +8,12 @@ import store from './store'
 import VueLodash from 'vue-lodash'
 Vue.use(VueLodash)
 
+import Vuetify from 'vuetify'
+Vue.use(Vuetify)
+import 'vuetify/dist/vuetify.min.css' // Ensure you are using css-loader
+import 'material-design-icons-iconfont/dist/material-design-icons.css' // Ensure you are using css-loader
+
+
 if (!process.env.IS_WEB) Vue.use(require('vue-electron'))
 Vue.http = Vue.prototype.$http = axios
 Vue.config.productionTip = false

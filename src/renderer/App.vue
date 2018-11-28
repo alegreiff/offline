@@ -1,166 +1,117 @@
 <template>
-  <div id="app" class="mainmaguare">
-    <div id="menu" >
-      <nav>
-        <ul class="nav">
-        <li><router-link to="/">Inicio</router-link></li>
-        <li><a href="#">Maguaré</a>
-        <ul>
-          <li><router-link :to="{name: 'coleccion', params: { id: 'all'}}">Canciones y cuentos</router-link>
-          <ul>
-            <li><router-link :to="{name: 'coleccion', params: { id: 'audiosSincoleccion'}}">Sin coleccion</router-link></li>
-            <li><router-link :to="{name: 'coleccion', params: { id: 'audiosCuentoencanto'}}">Con mi cuento encanto</router-link></li>
-            <li><router-link :to="{name: 'coleccion', params: { id: 'audiosCuentosaloido'}}">Cuentos al oido</router-link></li>
-            <li><router-link :to="{name: 'coleccion', params: { id: 'audiosCeiba'}}">Maguaré en la Ceiba</router-link></li>
-          </ul>
-          </li>
-          <li><router-link :to="{name: 'vid', params: { id: 'all'}}">Videos</router-link>
-            <ul>
-              <li><router-link :to="{name: 'vid', params: { id: 'videoskaraokes'}}">Karaokes</router-link></li>
-              <li><router-link :to="{name: 'vid', params: { id: 'videoscuentosnarrados'}}">Cuentos narrados</router-link></li>
-              <li><router-link :to="{name: 'vid', params: { id: 'videossimples'}}">Videos</router-link></li>
-            </ul>
-          </li>
-          <li><a href="#">Libros</a> </li>
-          <li><a href="#">Descargas</a> </li>
-        </ul>
-        </li>
-        <li><a href="#">MaguaRED</a> </li>
-        </ul>
-      </nav>
-    </div>
-    <div class="contenido">
-      <router-view></router-view>
-    </div>
-    <div class="footermag">
-      Maguaré & MaguaRED 2018
-    </div>
+<v-app id="sandbox" :dark="dark">
+  <v-navigation-drawer mobile-break-point="6000" v-model="primaryDrawer.model" absolute overflow app>
+    <v-list one-line dense>
+      <v-list-tile :to="{path: '/'}">
+        <v-list-tile-action>
+          <v-icon>more_horiz</v-icon>
+        </v-list-tile-action>
+        <v-list-tile-content>
+          <v-list-tile-title>Inicio</v-list-tile-title>
+        </v-list-tile-content>
+      </v-list-tile>
 
-  </div>
+      <v-list-tile :to="{path: '/interactivos'}" >
+            <v-list-tile-action><v-icon>more_horiz</v-icon></v-list-tile-action>
+            <v-list-tile-content><v-list-tile-title>Ensayos</v-list-tile-title></v-list-tile-content>
+        </v-list-tile>
+
+
+      <v-subheader inset>Maguaré</v-subheader>
+      <v-divider></v-divider>
+      <v-list-tile :to="{name: 'coleccion', params: { id: 'audiosSincoleccion'}}">
+        <v-list-tile-action>
+          <v-icon>audiotrack</v-icon>
+        </v-list-tile-action>
+        <v-list-tile-content>
+          <v-list-tile-title>Sin colección</v-list-tile-title>
+        </v-list-tile-content>
+      </v-list-tile>
+      <v-list-tile :to="{name: 'coleccion', params: { id: 'audiosCuentoencanto'}}">
+        <v-list-tile-action>
+          <v-icon>audiotrack</v-icon>
+        </v-list-tile-action>
+        <v-list-tile-content>
+          <v-list-tile-title>Con mi cuento encanto</v-list-tile-title>
+        </v-list-tile-content>
+      </v-list-tile>
+      <v-list-tile :to="{name: 'coleccion', params: { id: 'audiosCuentosaloido'}}">
+        <v-list-tile-action>
+          <v-icon>audiotrack</v-icon>
+        </v-list-tile-action>
+        <v-list-tile-content>
+          <v-list-tile-title>Cuentos al oído</v-list-tile-title>
+        </v-list-tile-content>
+      </v-list-tile>
+      <v-list-tile :to="{name: 'coleccion', params: { id: 'audiosCeiba'}}">
+        <v-list-tile-action>
+          <v-icon>audiotrack</v-icon>
+        </v-list-tile-action>
+        <v-list-tile-content>
+          <v-list-tile-title>Maguaré en La Ceiba</v-list-tile-title>
+        </v-list-tile-content>
+      </v-list-tile>
+      <v-list-tile :to="{name: 'vid', params: { id: 'videoslistos'}}">
+        <v-list-tile-action>
+          <v-icon>music_video</v-icon>
+        </v-list-tile-action>
+        <v-list-tile-content>
+          <v-list-tile-title>Videos OK</v-list-tile-title>
+        </v-list-tile-content>
+      </v-list-tile>
+      <v-divider></v-divider>
+      <v-subheader inset>MaguaRED</v-subheader>
+
+    </v-list>
+  </v-navigation-drawer>
+  <v-toolbar :clipped-left="primaryDrawer.clipped" app absolute>
+    <v-toolbar-side-icon v-if="primaryDrawer.type !== 'permanent'" @click.stop="primaryDrawer.model = !primaryDrawer.model"></v-toolbar-side-icon>
+    <v-toolbar-title>Maguaré - MaguaRED</v-toolbar-title>
+  </v-toolbar>
+  <v-content>
+    <v-container fluid>
+      <router-view></router-view>
+    </v-container>
+  </v-content>
+  <v-footer :inset="footer.inset" app height="100" class="px-2 ma-0">
+    <v-flex xs2> <img class="imlogo" id="logo" src="~@/assets/logosfooter/gobiernodecolombia.png"> </v-flex>
+    <v-flex xs2> <img class="imlogo" id="logo" src="~@/assets/logosfooter/unimedios.png"> </v-flex>
+    <v-flex xs1> <img class="imlogo" id="logo" src="~@/assets/logosfooter/cero.png"> </v-flex>
+    <v-flex xs1> <a href="static/cs.pdf" target="_blank">
+      <img class="imlogo" id="logo" src="~@/assets/logosfooter/leer.png">
+    </a> </v-flex>
+    <v-flex xs2> <a href="static/web/bailaconelarmadj/index.html" target="_blank">
+      <img class="imlogo" id="logo" src="~@/assets/logosfooter/maguare.png">
+    </a> </v-flex>
+    <v-flex xs2> <a href="https://maguared.gov.co" target="_blank">
+        <img class="imlogo" id="logo" src="~@/assets/logosfooter/maguared.png">
+      </a> </v-flex>
+    <v-flex xs2> <img class="imlogo" id="logo" src="~@/assets/logosfooter/premio.png"> </v-flex>
+
+  </v-footer>
+</v-app>
 </template>
 
 <script>
-  export default {
-    name: 'greg'
-  }
+export default {
+  data: () => ({
+    dark: false,
+    drawers: ['Default (no property)', 'Permanent', 'Temporary'],
+    primaryDrawer: {
+      model: null,
+      type: 'default (no property)',
+      clipped: false,
+      floating: false,
+      mini: false
+    },
+    footer: {
+      inset: true
+    }
+  })
+}
 </script>
-
-<style>
-  /* CSS */
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-
-  *, html{
-    box-sizing: border-box;
-  }
-  body{
-    margin: 0;
-    padding: 0;
-  }
-
-
-
-/*ABRE*/
-li.iq{
-  text-align: left;
-}
-nav {
-	margin: 0;
-	text-align: left;
-  z-index: 100;
-}
-ul {
-  text-align: left;
-  display: inline;
-  margin: 0;
-  padding:0;
-
-}
-nav ul ul { display: none; margin:0; }
-
-nav ul li:hover > ul { display: block; }
-
-nav ul {
-	background:#990;
-	box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.15);
-	list-style: none;
-	position: relative;
-	display: inline-table;
-}
-
-nav ul:after {
-
-	clear: both;
-	display: block;
-}
-
-nav ul li { float: left; }
-
-nav ul li:hover { background: #4b545f; }
-
-nav ul li:hover a { color: #fff; }
-
-nav ul li a {
-	color: #fff;
-	font-weight:600;
-	display: block;
-	padding: 15px 35px;
-	text-decoration: none;
-	text-transform: uppercase;
-}
-
-nav ul ul {
-	background: #5f6975;
-	border-radius: 0px;
-	padding: 0;
-	position: absolute;
-	top: 100%;
-}
-
-nav ul ul li {
-	  border-bottom: 1px solid #575F6A;
-    border-top: 1px solid #6B727C;
-    float: none;
-    min-width: 170px;
-    position: relative;
-}
-
-nav ul ul li a {
-	padding: 12px 35px;
-	color: #fff;
-	text-align:left;
-}
-
-nav ul ul li a:hover { background: #4b545f; }
-
-nav ul ul ul {
-	position: absolute;
-	left: 100%;
-	top:0;
-}
-
-/*CIERRE*/
-
-.mainmaguare{
-  background: white;
-  display: grid;
-  grid-template-rows: 100px 1fr 50px;
-  height: 100vh;
-  border: 5px white solid;
-
-}
-
-.menu{
-  background: white;
-  position: fixed;
-}
-.contenido{
-  background: white;
-}
-.interna{
-  background: white;
+<style >
+img.imlogo {
+  max-width: 100%;
 }
 </style>

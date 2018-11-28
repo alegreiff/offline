@@ -1,0 +1,1092 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Descubre el personaje</title>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+			document.getElementById('cargando').style.display = "block";
+		});
+
+		$(window).load(function(){
+			document.getElementById('cargando').style.display = "none";
+		});
+		function comienzo()
+		{
+			$('#saimiriBaila').hide();
+			$('#aleatorio').hide();//btn aleatorio oculto
+			var divs = $("div.escoger").get().sort(function(){
+				return Math.round(Math.random())-0.5; //random so we get the right +/- combo
+			}).slice(0,4)
+			$(divs).appendTo(divs[0].parentNode).show();
+
+			//div que contienen piezas del rompecabezas aleatorias
+
+			var totales = 0;
+			var numPersonajes = 7;
+			var aleatorio = Math.round((Math.random()*(numPersonajes-1)));
+
+			$('#peque').attr('src','img/imgs_p/' + aleatorio + 'pq.jpg');
+			document.getElementById('escoger1').style.background = "url(img/personajes/" + aleatorio + "/1romp.png)";
+			document.getElementById('escoger1').style.backgroundSize = "100%";
+			document.getElementById('escoger1').style.backgroundRepeat = "no-repeat";
+			document.getElementById('escoger2').style.background = "url(img/personajes/" + aleatorio + "/2romp.png)";
+			document.getElementById('escoger2').style.backgroundSize = "100%";
+			document.getElementById('escoger2').style.backgroundRepeat = "no-repeat";
+			document.getElementById('escoger3').style.background = "url(img/personajes/" + aleatorio + "/3romp.png)";
+			document.getElementById('escoger3').style.backgroundSize = "100%";
+			document.getElementById('escoger3').style.backgroundRepeat = "no-repeat";
+			document.getElementById('escoger4').style.background = "url(img/personajes/" + aleatorio + "/4romp.png)";
+			document.getElementById('escoger4').style.backgroundSize = "100%";
+			document.getElementById('escoger4').style.backgroundRepeat = "no-repeat";
+
+			//personajes aleatorios
+
+			//empieza funciones drag n' drop
+
+			$("#escoger1").draggable({
+				revert: function(is_valid_drop){
+					console.log("is_valid_drop = " + is_valid_drop);
+					// when you're done, you need to remove the "dragging" class
+					// and yes, I'm sure this can be refactored better, but I'm
+					// out of time for today! :)
+					if(!is_valid_drop){
+						$('audio')[9].play();
+						return true;
+					}
+				}
+			});
+
+			$("#fichasInd1").droppable({
+				accept:"#escoger1",
+				/*activeClass: outUno,*/
+				hoverClass: 'hovered',
+				drop: function(event, ui) {
+					totales++;
+					final();
+					document.getElementById('escoger1').style.zIndex = "-10";
+					document.getElementById('escoger1').style.opacity = "0";
+					document.getElementById('fichasInd1').style.background = "url(img/personajes/" + aleatorio + "/1armd.png)";
+					document.getElementById('fichasInd1').style.backgroundSize = "90%";
+					document.getElementById('fichasInd1').style.backgroundRepeat = "no-repeat";
+					document.getElementById('fichasInd1').style.zIndex = "100";
+					$(this).ui.draggable.addClass( 'correct' );
+				}
+			});
+
+			$("#escoger2").draggable({
+				revert: function(is_valid_drop){
+					console.log("is_valid_drop = " + is_valid_drop);
+					// when you're done, you need to remove the "dragging" class
+					// and yes, I'm sure this can be refactored better, but I'm
+					// out of time for today! :)
+					if(!is_valid_drop){
+						$('audio')[9].play();
+						return true;
+					}
+				}
+			});
+
+			$("#fichasInd2").droppable({
+				accept:"#escoger2",
+				/*activeClass: outDos,*/
+				hoverClass: 'hovered',
+				drop: function(event, ui) {
+					totales++;
+					final();
+					document.getElementById('escoger2').style.zIndex = "-10";
+					document.getElementById('escoger2').style.opacity = "0";
+					document.getElementById('fichasInd2').style.background = "url(img/personajes/" + aleatorio + "/2armd.png)";
+					document.getElementById('fichasInd2').style.backgroundSize = "90%";
+					document.getElementById('fichasInd2').style.backgroundRepeat = "no-repeat";
+					document.getElementById('fichasInd2').style.zIndex = "100";
+					$(this).ui.draggable.addClass( 'correct' );
+				}
+			});
+
+			$("#escoger3").draggable({
+				revert: function(is_valid_drop){
+					console.log("is_valid_drop = " + is_valid_drop);
+					// when you're done, you need to remove the "dragging" class
+					// and yes, I'm sure this can be refactored better, but I'm
+					// out of time for today! :)
+					if(!is_valid_drop){
+						$('audio')[9].play();
+						return true;
+					}
+				}
+			});
+
+			$("#fichasInd3").droppable({
+				accept:"#escoger3",
+				/*activeClass: outTres,*/
+				hoverClass: 'hovered',
+				drop: function(event, ui) {
+					totales++;
+					final();
+					document.getElementById('escoger3').style.zIndex = "-10";
+					document.getElementById('escoger3').style.opacity = "0";
+					document.getElementById('fichasInd3').style.background = "url(img/personajes/" + aleatorio + "/3armd.png)";
+					document.getElementById('fichasInd3').style.backgroundSize = "90%";
+					document.getElementById('fichasInd3').style.backgroundRepeat = "no-repeat";
+					document.getElementById('fichasInd3').style.zIndex = "100";
+					$(this).ui.draggable.addClass( 'correct' );
+				}
+			});
+
+			$("#escoger4").draggable({
+				revert: function(is_valid_drop){
+					console.log("is_valid_drop = " + is_valid_drop);
+					// when you're done, you need to remove the "dragging" class
+					// and yes, I'm sure this can be refactored better, but I'm
+					// out of time for today! :)
+					if(!is_valid_drop){
+						$('audio')[9].play();
+						return true;
+					}
+				}
+			});
+
+			$("#fichasInd4").droppable({
+				accept:"#escoger4",
+				/*activeClass: outCuatro,*/
+				hoverClass: 'hovered',
+				drop: function(event, ui) {
+					totales++;
+					final();
+					document.getElementById('escoger4').style.zIndex = "-10";
+					document.getElementById('escoger4').style.opacity = "0";
+					document.getElementById('fichasInd4').style.background = "url(img/personajes/" + aleatorio + "/4armd.png)";
+					document.getElementById('fichasInd4').style.backgroundSize = "90%";
+					document.getElementById('fichasInd4').style.backgroundRepeat = "no-repeat";
+					document.getElementById('fichasInd4').style.zIndex = "100";
+					$(this).ui.draggable.addClass( 'correct' );
+				}
+			});
+
+			//condicional para evaluar si se termino el drag n' drop
+			function final()
+			{
+				if(totales == 4)
+				{
+					document.getElementById('aleatorio').style.opacity = "1";
+					$('#aleatorio').show();//btn aleatorio visible
+					$('#saimiriBaila').show();
+					document.getElementById('saimiriBaila').style.opacity = "1";
+					$('#contDrag div').css.opacity = "0";
+					$('audio')[8].play(); //audio aplausos
+					$('audio')[aleatorio].play();//audio personaje aleatorio
+					$('#silueta1').attr('src','img/siluetas/silueta1_o.png');
+					$('#silueta2').attr('src','img/siluetas/silueta2_o.png');
+					$('#silueta3').attr('src','img/siluetas/silueta3_o.png');
+					$('#silueta4').attr('src','img/siluetas/silueta4_o.png');
+				}
+			}
+			//termina funciones drag n' drop
+		}
+		</script>
+		<style type="text/css">
+			/*@media all and (orientation: portrait) {*/
+			@media all and (orientation: portrait) {
+				body
+				{
+					margin:0;
+				}
+
+				#content
+				{
+					display:block;
+					float:left;
+					width: 100%;
+					height: 100%;
+					position: fixed;
+					left: 0px;
+					top: 0px;
+					z-index: -10; /* Ensure div tag stays behind content; -999 might work, too. */
+					background-image:url(img/bg.jpg);
+					background-size:cover;
+					background-position:50% 100%;
+				}
+
+				#aleatorio
+				{
+					display: block;
+					float: right;
+					clear: none;
+					width: 15%;
+					height: auto;
+					cursor: pointer;
+					position: absolute;
+					z-index: 100;
+					opacity: 0;
+					top: 26%;
+					left: 47%;
+				}
+
+				#cargando
+				{
+					position: relative;
+					margin: 24% 42%;
+					width:100%;
+					height:100%;
+					background-image: url(img/load.gif);
+					background-repeat: no-repeat;
+					background-size: 15%;
+					display:none;
+					z-index:1000;
+				}
+
+
+
+				#contIzq
+				{
+					width: 100%;
+					height: 33%;
+					/* clear: both; */
+					display: block;
+					float: left;
+					position: relative;
+					padding-left: 1%;
+					padding-top: 0;
+					box-sizing: border-box;
+					-moz-box-sizing: border-box;
+					-webkit-box-sizing: border-box;
+					margin: 2% auto;
+					background: url(img/fondofichas.png);
+					background-size: inherit;
+				}
+
+				#contDer
+				{
+					width: 60%;
+					height: 65%;
+					display: block;
+					position: relative;
+					padding: 1%;
+					box-sizing: border-box;
+					-moz-box-sizing: border-box;
+					-webkit-box-sizing: border-box;
+					margin: 0% auto;
+					float: right;
+				}
+
+				#contAyuda
+				{
+					width: 25%;
+					height: 40%;
+					display: block;
+					position: relative;
+					float: left;
+					margin: 14% 2% 6% 8%;
+				}
+
+				#ayuda
+				{
+					width:100%;
+					height:auto;
+					z-index:10;
+				}
+
+				#ayuda img:first-child
+				{
+					width: 90%;
+					height: auto;
+					position: relative;
+					top: 0;
+					left: 0;
+					margin: 5% 5%;
+				}
+
+				#ayudaPersonaje
+				{
+					width:100%;
+					height:100%;
+					position: absolute;
+					top: 0;
+					left: 0;
+					display: block;
+				}
+
+				#ayudaPersonaje img:first-child
+				{
+					width:78%;
+					height:auto;
+					position: relative;
+					top: 0;
+					left: 0;
+					padding:20% 6%;
+					z-index:-1;
+				}
+
+
+				#escoger1, #escoger2, #escoger3, #escoger4
+				{
+					cursor: pointer;
+					width: 18%;
+					height: 90%;
+					margin: 0 3%;
+					position: relative;
+					float: left;
+					z-index: 10;
+					background-repeat: no-repeat;
+					background-size: 100%;
+					font-size: 0;
+				}
+
+				.escoger
+				{
+					position:inherit;
+					float:left;
+				}
+
+				/*#escoger1{ background-image:url(img/personajes/0/1romp.png);}
+				#escoger2{ background-image:url(img/personajes/0/2romp.png);}
+				#escoger3{ background-image:url(img/personajes/0/3romp.png);}
+				#escoger4{ background-image:url(img/personajes/0/4romp.png);}*/
+
+				#escoger_aone, #escoger_atwo, #escoger_athree, #escoger_afour
+				{
+					width:50%;
+					height:50%;
+					float:left;
+					background-repeat:no-repeat;
+					background-size:100%;
+					font-size: 0;
+				}
+
+				/*#escoger_aone { background-image:url(img/silueta1.png);}
+				#escoger_atwo { background-image:url(img/silueta2.png);}
+				#escoger_athree { background-image:url(img/silueta3.png);}
+				#escoger_afour { background-image:url(img/silueta4.png);}*/
+
+				#escoger_aone.hovered
+				{
+					background-image:url(img/silueta1_s.png);
+				}
+
+				#escoger_atwo.hovered
+				{
+					background-image:url(img/silueta2_s.png);
+				}
+
+				#escoger_athree.hovered
+				{
+					background-image:url(img/silueta3_s.png);
+				}
+
+				#escoger_afour.hovered
+				{
+					background-image:url(img/silueta4_s.png);
+				}
+
+				#contPunt
+				{
+					position:relative;
+					width:100%;
+					heigth:auto;
+				}
+
+				#contMarco
+				{
+					position:relative;
+					width:100%;
+					height:auto;
+					margin:-13% 0;
+					z-index:1;
+				}
+
+				#contPunt img:first-child, #contMarco img:first-child
+				{
+					width: 90%;
+					height: auto;
+					position: relative;
+					top: 0;
+					left: 0;
+				}
+
+				#contFichas
+				{
+					position: relative;
+					width: 100%;
+					height: auto;
+				}
+
+				#contFichas img:first-child
+				{
+					position:relative;
+					width:90%;
+					height:auto;
+					top:0;
+					left:0;
+				}
+
+				#contDrop
+				{
+					position:absolute;
+					width:80%;
+					height:90%;
+					top:6%;
+					left:4%;
+					z-index:-1;
+					/*background-image:url(img/siluetas.png);*/
+					background-size:100%;
+					background-color:#fff4a9;
+				}
+
+				#contDrag
+				{
+					position: absolute;
+					width: 100%;
+					height: 24%;
+					top: 6%;
+					left: 0%;
+				}
+
+				@-webkit-keyframes slide {
+
+					0%
+					{
+						-webkit-transform:none;
+						-moz-transform:none;
+						-o-transform:none;
+						transform:none;
+					}
+					50%
+					{ /*margin-top:10px;*/ -webkit-transform:translate(0,10px);
+						-moz-transform:translate(0,10px);
+						-o-transform:translate(0,10px);
+						transform:translate(0,10px);}
+					100%
+					{ /*margin-top:0px;*/ -webkit-transform:none;
+						-moz-transform:none;
+						-o-transform:none;
+						transform:none;
+					}
+				}
+
+				@-moz-keyframes slide {
+
+					0%
+					{
+						-webkit-transform:none;
+						-moz-transform:none;
+						-o-transform:none;
+						transform:none;
+					}
+					50%
+					{
+						/*margin-top:10px;*/ -webkit-transform:translate(0,10px);
+						-moz-transform:translate(0,10px);
+						-o-transform:translate(0,10px);
+						transform:translate(0,10px);
+					}
+					100%
+					{
+						/*margin-top:0px;*/ -webkit-transform:none;
+						-moz-transform:none;
+						-o-transform:none;
+						transform:none;
+					}
+				}
+
+				#contDrag div
+				{
+					-webkit-animation: slide 2s linear infinite;
+					-moz-animation: slide 2s linear infinite;
+				}
+
+				#fichasInd1, #fichasInd2, #fichasInd3, #fichasInd4
+				{
+					position:absolute;
+					height:auto;
+				}
+
+				#fichasInd1
+				{
+					width:66%;}
+				#fichasInd2
+				{
+					width:61%;
+					margin:0 45%;
+				}
+				#fichasInd3
+				{
+					width:60%;
+					margin:41% 0;
+				}
+				#fichasInd4
+				{
+					width:68%;
+					margin:46% 39%;
+				}
+
+				#fichasInd1.hovered
+				{
+					background-image:url(img/siluetas/silueta1_s.png);
+					background-size:90%;
+					background-repeat:no-repeat;
+				}
+
+				#fichasInd2.hovered
+				{
+					background-image:url(img/siluetas/silueta2_s.png);
+					background-size:90%;
+					background-repeat:no-repeat;
+				}
+
+				#fichasInd3.hovered
+				{
+					background-image:url(img/siluetas/silueta3_s.png);
+					background-size:90%;
+					background-repeat:no-repeat;
+				}
+
+				#fichasInd4.hovered
+				{
+					background-image:url(img/siluetas/silueta4_s.png);
+					background-size:90%;
+					background-repeat:no-repeat;
+				}
+
+				#saimiriBaila
+				{
+					position: absolute;
+					width: 28%;
+					height: 67%;
+					top: 14%;
+					left: 26%;
+					background-image: url(img/saimiri_baile.gif);
+					background-size: 100%;
+					background-repeat: no-repeat;
+					opacity: 0;
+				}
+			}
+
+			@media all and (orientation: landscape) {
+				body
+				{
+					margin:0;
+				}
+
+				#content
+				{
+					display:block;
+					float:left;
+					width: 100%;
+					height: 100%;
+					position: fixed;
+					left: 0px;
+					top: 0px;
+					z-index: -10; /* Ensure div tag stays behind content; -999 might work, too. */
+					background-image:url(img/bg.jpg);
+					background-size:cover;
+					background-position:50% 100%;
+				}
+
+				#aleatorio
+				{
+					display: block;
+					float: right;
+					clear: none;
+					width: 32%;
+					height: auto;
+					cursor: pointer;
+					position: absolute;
+					z-index: 100;
+					opacity: 0;
+					top: 51%;
+					left: 47%;
+				}
+
+				#cargando
+				{
+					position: relative;
+					margin: 24% 42%;
+					width:100%;
+					height:100%;
+					background-image: url(img/load.gif);
+					background-repeat: no-repeat;
+					background-size: 15%;
+					display:none;
+					z-index:1000;
+				}
+
+				#little_head
+				{
+					position: relative;
+					width: 100%;
+					float: left;
+					clear: both;
+					display: block;
+					/*	top:0;*/
+				}
+
+				#titulo
+				{
+					margin: 0 auto;
+					position: relative;
+					background-repeat: no-repeat;
+					background-position:center;
+					width:35%;
+					/*	top:15%;*/
+				}
+
+				#contIzq
+				{
+					width: 35%;
+					height: 100%;
+					clear: both;
+					display: block;
+					float: left;
+					position: absolute;
+					padding-left: 1%;
+					padding-top: 0;
+					box-sizing: border-box;
+					-moz-box-sizing: border-box;
+					-webkit-box-sizing: border-box;
+					margin: 0% auto;
+					background: url(img/fondofichas2.png);
+					background-size: inherit;
+				}
+
+				#contDer
+				{
+					width: 36%;
+					height: 55%;
+					position: absolute;
+					box-sizing: border-box;
+					-moz-box-sizing: border-box;
+					-webkit-box-sizing: border-box;
+					top: 2%;
+					right: 0%;
+				}
+
+
+				#contAyuda
+				{
+					width: 16%;
+					height: 30%;
+					display: block;
+					position: absolute;
+					float: left;
+					top: 20%;
+					left: 40%;
+				}
+
+				#ayuda
+				{
+					width:100%;
+					height:auto;
+					z-index:10;
+				}
+
+				#ayuda img:first-child
+				{
+					width: 90%;
+					height: auto;
+					position: relative;
+					top: 0;
+					left: 0;
+					margin: 5% 5%;
+				}
+
+				#ayudaPersonaje
+				{
+					width:100%;
+					height:100%;
+					position: absolute;
+					top: 0;
+					left: 0;
+					display: block;
+				}
+
+				#ayudaPersonaje img:first-child
+				{
+					width:78%;
+					height:auto;
+					position: relative;
+					top: 0;
+					left: 0;
+					padding:20% 6%;
+					z-index:-1;
+				}
+
+
+				#escoger1, #escoger2, #escoger3, #escoger4
+				{
+					cursor: pointer;
+					width: 33%;
+					height: 48%;
+					margin: 5% 4%;
+					position: relative;
+					float: left;
+					z-index: 10;
+					background-repeat: no-repeat;
+					background-size: 100%;
+					font-size: 0;
+				}
+
+				.escoger
+				{
+					position:inherit;
+					float:left;
+				}
+
+				/*#escoger1{ background-image:url(img/personajes/0/1romp.png);}
+				#escoger2{ background-image:url(img/personajes/0/2romp.png);}
+				#escoger3{ background-image:url(img/personajes/0/3romp.png);}
+				#escoger4{ background-image:url(img/personajes/0/4romp.png);}*/
+
+				#escoger_aone, #escoger_atwo, #escoger_athree, #escoger_afour
+				{
+					width:50%;
+					height:50%;
+					float:left;
+					background-repeat:no-repeat;
+					background-size:100%;
+					font-size: 0;
+				}
+
+				/*#escoger_aone { background-image:url(img/silueta1.png);}
+				#escoger_atwo { background-image:url(img/silueta2.png);}
+				#escoger_athree { background-image:url(img/silueta3.png);}
+				#escoger_afour { background-image:url(img/silueta4.png);}*/
+
+				#escoger_aone.hovered
+				{
+					background-image:url(img/silueta1_s.png);
+				}
+
+				#escoger_atwo.hovered
+				{
+					background-image:url(img/silueta2_s.png);
+				}
+
+				#escoger_athree.hovered
+				{
+					background-image:url(img/silueta3_s.png);
+				}
+
+				#escoger_afour.hovered
+				{
+					background-image:url(img/silueta4_s.png);
+				}
+
+
+				#contPunt
+				{
+					position:relative;
+					width:100%;
+					heigth:auto;
+				}
+
+				#contMarco
+				{
+					position:relative;
+					width:100%;
+					height:auto;
+					margin:-13% 0;
+					z-index:1;
+				}
+
+				#contPunt img:first-child, #contMarco img:first-child
+				{
+					width: 90%;
+					height: auto;
+					position: relative;
+					top: 0;
+					left: 0;
+				}
+
+				#contFichas
+				{
+					position: relative;
+					width: 100%;
+					height: auto;
+				}
+
+				#contFichas img:first-child
+				{
+					position:relative;
+					width:90%;
+					height:auto;
+					top:0;
+					left:0;
+				}
+
+				#contDrop
+				{
+					position:absolute;
+					width:80%;
+					height:90%;
+					top:6%;
+					left:4%;
+					z-index:-1;
+					/*background-image:url(img/siluetas.png);*/
+					background-size:100%;
+					background-color:#fff4a9;
+				}
+
+				#contDrag
+				{
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					top: 5%;
+					left: 0%;
+				}
+
+				@-webkit-keyframes slide {
+					0%
+					{
+						-webkit-transform:none;
+						-moz-transform:none;
+						-o-transform:none;
+						transform:none;
+					}
+					50%
+					{
+						 /*margin-top:10px;*/ -webkit-transform:translate(0,10px);
+						-moz-transform:translate(0,10px);
+						-o-transform:translate(0,10px);
+						transform:translate(0,10px);
+					}
+					100%
+					{
+						 /*margin-top:0px;*/ -webkit-transform:none;
+						-moz-transform:none;
+						-o-transform:none;
+						transform:none;
+					}
+				}
+
+				@-moz-keyframes slide {
+					0%
+					{
+						-webkit-transform:none;
+						-moz-transform:none;
+						-o-transform:none;
+						transform:none;
+					}
+					50%
+					{
+						/*margin-top:10px;*/ -webkit-transform:translate(0,10px);
+						-moz-transform:translate(0,10px);
+						-o-transform:translate(0,10px);
+						transform:translate(0,10px);
+					}
+					100%
+					{
+						/*margin-top:0px;*/ -webkit-transform:none;
+						-moz-transform:none;
+						-o-transform:none;
+						transform:none;
+					}
+				}
+
+				#contDrag div
+				{
+					-webkit-animation: slide 2s linear infinite;
+					-moz-animation: slide 2s linear infinite;
+				}
+
+				#fichasInd1, #fichasInd2, #fichasInd3, #fichasInd4
+				{
+					position:absolute;
+					height:auto;
+				}
+
+				#fichasInd1
+				{
+					width:66%;
+				}
+
+				#fichasInd2
+				{
+					width:61%;
+					margin:0 45%;
+				}
+
+				#fichasInd3
+				{
+					width:60%;
+					margin:41% 0;
+				}
+
+				#fichasInd4
+				{
+					width:68%;
+					margin:46% 39%;
+				}
+
+
+				#fichasInd1.hovered
+				{
+					background-image:url(img/siluetas/silueta1_s.png);
+					background-size:90%;
+					background-repeat:no-repeat;
+				}
+
+				#fichasInd2.hovered
+				{
+					background-image:url(img/siluetas/silueta2_s.png);
+					background-size:90%;
+					background-repeat:no-repeat;
+				}
+
+				#fichasInd3.hovered
+				{
+					background-image:url(img/siluetas/silueta3_s.png);
+					background-size:90%;
+					background-repeat:no-repeat;
+				}
+
+				#fichasInd4.hovered
+				{
+					background-image:url(img/siluetas/silueta4_s.png);
+					background-size:90%;
+					background-repeat:no-repeat;
+				}
+
+				#saimiriBaila
+				{
+					position: absolute;
+					width: 76%;
+					height: 48%;
+					top: 35%;
+					left: -6%;
+					background-image: url(img/saimiri_baile.gif);
+					background-size: 100%;
+					background-repeat: no-repeat;
+					opacity: 0;
+				}
+			}
+		</style>
+	</head>
+	<body onLoad="comienzo()">
+		<div style="background: white; height: 30px;">
+			<a style="color: blue; padding: 0.5em 1em" href="#" onclick="function hi(){window.close();};hi()">Cerrar esta ventana</a>
+		</div>		
+		<div id="content">
+			<div id="cargando"></div>
+			<div id="contDer">
+				<div id="contPunt">
+					<img src="img/puntilla.png"/>
+				</div>
+				<div id="contMarco">
+					<img src="img/marco.png"/>
+					<div id="contDrop">
+						<div id="fichasInd1">
+							<img id="silueta1" src="img/siluetas/silueta1.png"/>
+						</div>
+						<div id="fichasInd2">
+							<img id="silueta2" src="img/siluetas/silueta2.png"/>
+						</div>
+						<div id="fichasInd3">
+							<img id="silueta3" src="img/siluetas/silueta3.png"/>
+						</div>
+						<div id="fichasInd4">
+							<img id="silueta4" src="img/siluetas/silueta4.png"/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="contAyuda">
+				<div id="ayuda">
+					<img src="img/marco_p.png"/>
+					<div id="ayudaPersonaje">
+						<img id ="peque" src=""/>
+					</div>
+				</div>
+			</div>
+			<div id="contIzq">
+				<img id="aleatorio" class="sonido_otravez" src="img/aleatorio.png" onclick="window.location.reload()"/>
+				<div id="saimiriBaila"></div>
+				<div id="contFichas">
+					<img src="img/inv.png"/>
+					<div id="contDrag">
+						<div id="escoger1" class="escoger"></div>
+						<div id="escoger2" class="escoger"></div>
+						<div id="escoger3" class="escoger"></div>
+						<div id="escoger4" class="escoger"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Inicia audios-->
+		<!-- 0 Rana -->
+		<audio id="rana" preload="auto">
+			<source class="voz" src="audiosgen/personajes/rana.ogg">
+			<source class="voz" src="audiosgen/personajes/rana.mp3">
+			<source class="voz" src="audiosgen/personajes/rana.wav">
+		</audio>
+		<!-- 1 Loro -->
+		<audio id="loro" preload="auto">
+			<source class="voz" src="audiosgen/personajes/loro.ogg">
+			<source class="voz" src="audiosgen/personajes/loro.mp3">
+			<source class="voz" src="audiosgen/personajes/loro.wav">
+		</audio>
+		<!-- 2 Tortuga -->
+		<audio id="tortuga" preload="auto">
+			<source class="voz" src="audiosgen/personajes/tortuga.ogg">
+			<source class="voz" src="audiosgen/personajes/tortuga.mp3">
+			<source class="voz" src="audiosgen/personajes/tortuga.wav">
+		</audio>
+		<!-- 3 Olinguito -->
+		<audio id="tortuga" preload="auto">
+			<source class="voz" src="audiosgen/personajes/olinguito.ogg">
+			<source class="voz" src="audiosgen/personajes/olinguito.mp3">
+			<source class="voz" src="audiosgen/personajes/olinguito.wav">
+		</audio>
+		<!-- 4 Armadillo -->
+		<audio id="armadillo" preload="auto">
+			<source class="voz" src="audiosgen/personajes/armadillo.ogg">
+			<source class="voz" src="audiosgen/personajes/armadillo.mp3">
+			<source class="voz" src="audiosgen/personajes/armadillo.wav">
+		</audio>
+		<!-- 5 Camaleona -->
+		<audio id="camaleona" preload="auto">
+			<source class="voz" src="audiosgen/personajes/camaleona.ogg">
+			<source class="voz" src="audiosgen/personajes/camaleona.mp3">
+			<source class="voz" src="audiosgen/personajes/camaleona.wav">
+		</audio>
+		<!-- 6 Saimiri -->
+		<audio id="intro" preload="auto">
+			<source class="voz" src="audiosgen/personajes/saimiri.ogg">
+			<source class="voz" src="audiosgen/personajes/saimiri.ogg">
+			<source class="voz" src="audiosgen/personajes/saimiri.ogg">
+		</audio>
+		<!-- 7 Intro -->
+		<audio id="intro" preload="auto" autoplay>
+			<source class="voz" src="audiosgen/intro.ogg">
+			<source class="voz" src="audiosgen/intro.wav">
+			<source class="voz" src="audiosgen/intro.mp3">
+		</audio>
+		<!-- 8 Aplauso -->
+		<audio id="aplauso" preload="auto">
+			<source class="voz" src="audiosgen/aplauso.ogg">
+			<source class="voz" src="audiosgen/aplauso.wav">
+			<source class="voz" src="audiosgen/aplauso.mp3">
+		</audio>
+		<!-- 9 Nono -->
+		<audio id="no" preload="auto">
+			<source class="voz" src="audiosgen/nono.ogg">
+			<source class="voz" src="audiosgen/nono.wav">
+			<source class="voz" src="audiosgen/nono.mp3">
+		</audio>
+		<audio id="otravez" preload="auto">
+			<source class="otravez" src="audiosgen/otravez.ogg">
+			<source class="otravez" src="audiosgen/otravez.wav">
+			<source class="otravez" src="audiosgen/otravez.mp3">
+		</audio>
+		<script>
+			var audio = $("#otravez")[0];
+			$(".sonido_otravez").mouseenter(function(){
+				audio.play();
+			});
+		</script>
+	</body>
+</html>

@@ -6,6 +6,7 @@
     </div>
     <main>
       <a href="static/maguare.png" download>Descargad Logo</a>
+      <v-chip close>Example Chip</v-chip>
     </main>
   </div>
 </template>
@@ -24,7 +25,7 @@
   }
 </script>
 
-<style>
+<style scoped>
 .logosm{
   display: grid;
   padding: 1em;
