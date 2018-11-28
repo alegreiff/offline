@@ -21,7 +21,8 @@ function createWindow () {
     height: 750,
     useContentSize: true,
     width: 1000,
-    backgroundColor: '#312450'
+    backgroundColor: '#312450',
+    title: 'Maguaré - MaguaRED :::'
 
   })
 

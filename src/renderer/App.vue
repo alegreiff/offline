@@ -4,21 +4,21 @@
     <v-list one-line dense>
       <v-list-tile :to="{path: '/'}">
         <v-list-tile-action>
-          <v-icon>more_horiz</v-icon>
+          <v-icon>home</v-icon>
         </v-list-tile-action>
         <v-list-tile-content>
           <v-list-tile-title>Inicio</v-list-tile-title>
         </v-list-tile-content>
       </v-list-tile>
 
-      <v-list-tile :to="{path: '/interactivos'}" >
+      <!--<v-list-tile :to="{path: '/interactivos'}" >
             <v-list-tile-action><v-icon>more_horiz</v-icon></v-list-tile-action>
             <v-list-tile-content><v-list-tile-title>Ensayos</v-list-tile-title></v-list-tile-content>
-        </v-list-tile>
-
-
-      <v-subheader inset>Maguaré</v-subheader>
+        </v-list-tile>-->
+        <v-divider></v-divider>
+      <v-subheader inset><strong>Maguaré</strong></v-subheader>
       <v-divider></v-divider>
+      <v-subheader inset>Audios</v-subheader>
       <v-list-tile :to="{name: 'coleccion', params: { id: 'audiosSincoleccion'}}">
         <v-list-tile-action>
           <v-icon>audiotrack</v-icon>
@@ -51,6 +51,7 @@
           <v-list-tile-title>Maguaré en La Ceiba</v-list-tile-title>
         </v-list-tile-content>
       </v-list-tile>
+      <v-subheader inset>Videos</v-subheader>
       <v-list-tile :to="{name: 'vid', params: { id: 'videoslistos'}}">
         <v-list-tile-action>
           <v-icon>music_video</v-icon>
@@ -59,6 +60,11 @@
           <v-list-tile-title>Videos OK</v-list-tile-title>
         </v-list-tile-content>
       </v-list-tile>
+      <v-subheader inset>Interactivos</v-subheader>
+      <v-list-tile :to="{path: '/interactivos'}" >
+          <v-list-tile-action><v-icon>extension</v-icon></v-list-tile-action>
+          <v-list-tile-content><v-list-tile-title>Interactivos</v-list-tile-title></v-list-tile-content>
+        </v-list-tile>
       <v-divider></v-divider>
       <v-subheader inset>MaguaRED</v-subheader>
 
