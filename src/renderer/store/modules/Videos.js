@@ -2,105 +2,105 @@ const state = {
   videos: [
     { id: 70,
       autor: 'María del Sol Peralta / Video: The Bucket.',
-      coleccion: 'KARAOKE',
+      coleccion: 'Karaokes Maguaré',
       titulo: 'El piojo',
       describe: 'El piojo chef ama cocinar, aunque utiliza ingredientes que se encuentra en las cabezas. Un divertido y colorido video animado que ilustra la variedad de platos "muy especiales" que prepara este chef para ti. ¿Cuál es la receta que más te gusta?',
       url: '70-elpiojo.mp4'
     },
     { id: 118,
       autor: 'Ministerio de Cultura - Observatorio del Caribe Colombiano',
-      coleccion: 'KARAOKE',
+      coleccion: 'Sweet songs fi piknini. Canciones dulces para niños.',
       titulo: 'Miss Lucy - karaoke',
       describe: 'Esta ronda nos cuenta una historia de amor que inicia en una ventana en el Archipiélago de San Andrés y Providencia y cruza el océano. La música isleña se nutre de la historia de los ingleses que colonizaron el Caribe y los africanos que llegaron allí a trabajar. ¡Vamos a cantar al ritmo de las olas del mar!',
       url: '118-misslucy.mp4'
     },
     { id: 125,
       autor: 'Fundalectura, Ministerio de Cultura',
-      coleccion: 'KARAOKE',
+      coleccion: 'Fiesta de la lectura',
       titulo: 'El abuelo tigre - karaoke',
       describe: 'Los uitotos son indígenas colombianos que viven en el Amazonas. En este karaoke puedes escuchar y cantar esta melodía en su lengua nativa que recuerda el día en que el tigre y la lluvia hicieron una apuesta para ver quién era el más poderoso. ¿Sabes algunas palabras en otras lenguas que no sea el español?',
       url: '125-abuelotigre.mp4'
     },
     { id: 132,
       autor: 'Audio de Jorge Luis Valencia Chica - Canturriando Ministerio de Cultura Centro Ático',
-      coleccion: 'KARAOKE',
+      coleccion: 'Karaokes Maguaré',
       titulo: 'Poema a la lluvia - karaoke',
       describe: 'Cuando llueve suceden muchas cosas, por ejemplo, las nubes grises y gordas vuelan por ahí junto con las hojas que bailan y giran con el viento. Y tu ¿qué haces cuando te mojas con la lluvia?',
       url: 'URL'
     },
     { id: 134,
       autor: 'Audio de María Teresa Martínez Azcárate - Ministerio de Cultura - Centro Ático',
-      coleccion: 'KARAOKE',
+      coleccion: 'Karaokes Maguaré',
       titulo: 'Casi volando sube - karaoke',
       describe: 'Los ascensores suben y bajan muy rápido para mover a las personas en edificios de muchos pisos ¿Qué sientes cuando subes muy alto y cuando bajas hasta el piso como lo hace un ascensor?',
       url: '134-casivolando.mp4'
     },
     { id: 137,
       autor: 'Ministerio de cultura',
-      coleccion: 'KARAOKE',
+      coleccion: 'Karaokes Maguaré',
       titulo: 'Bacetemëng Oyejuayëng (Niños Felices) - Karaoke',
       describe: 'Escucha una lengua diferente, la lengua del grupo indígena Kamëntšá o Kamsá que viven en el Valle del Sibundoy en el Putumayo. Ellos tienen mucho por enseñarte con sus tradiciones. ¿Has escuchado otras canciones en lenguas nativas?',
       url: '137-ninosfelices.mp4'
     },
     { id: 138,
       autor: 'Ministerio de Cultura - Observatorio del Caribe Colombiano',
-      coleccion: 'KARAOKE',
+      coleccion: 'Sweet songs fi piknini. Canciones dulces para niños.',
       titulo: 'Clap han - karaoke',
       describe: '¡Escucha esta canción del Archipiélago de San Andrés y Providencia que te hará bailar!',
       url: '138-claphan.mp4'
     },
     { id: 176,
       autor: 'Ministerio de Cultura - Observatorio del Caribe Colombiano',
-      coleccion: 'KARAOKE',
+      coleccion: 'Sweet songs fi piknini. Canciones dulces para niños.',
       titulo: 'Out and through the window - Karaoke',
       describe: 'Esta ronda nos cuenta una historia de amor que inicia en una ventana en el Archipiélago de San Andrés y Providencia y cruza el océano. La música isleña se nutre de la historia de los ingleses que colonizaron el Caribe y los africanos que llegaron allí a trabajar. ¡Vamos a cantar al ritmo de las olas del mar!',
       url: '176-out.mp4'
     },
     { id: 282,
       autor: 'Ministerio de Cultura',
-      coleccion: 'VIDEO',
+      coleccion: 'Fiesta de la lectura',
       titulo: 'Tiki, tiki, tai - video',
       describe: 'El pueblo Rrom o gitano tiene sus propias canciones en su idioma. El video de esta canción cuenta la historia de una pequeña niña que quiere jugar con su mariposa y la podrás escuchar en su lengua original y también en español. ¿Cuáles son las mariposas que más te gustan?',
       url: '282-tiki.mp4'
     },
     { id: 283,
       autor: 'Ministerio de Cultura, Centro Ático',
-      coleccion: 'VIDEO',
+      coleccion: 'Fiesta de la lectura',
       titulo: 'Tortuguita, vení bailá - video',
       describe: 'Si tienes ganas de bailar este video es para tí. ¡Imagina una tortuguita que no le gusta hacer nada más que bailar! ¿Cuál es el ritmo que más te gusta bailar y cómo lo bailas?',
       url: 'URL'
     },
     { id: 284,
       autor: 'Ministerio de cultura',
-      coleccion: 'VIDEO',
+      coleccion: 'Fiesta de la lectura',
       titulo: 'Si no te dormís',
       describe: 'La hora de dormir es muy importante, cierra tus ojos rápidamente o un lobito vendrá, ¡pero no te asustes que sólo te acompañará! ¿Qué te gusta que te canten cuando te vas a dormir?',
       url: '284-dormis.mp4'
     },
     { id: 285,
       autor: 'Ministerio de cultura',
-      coleccion: 'VIDEO',
+      coleccion: 'Fiesta de la lectura',
       titulo: 'Se fue el sol',
       describe: 'Cuando se esconde el sol es hora de descansar para madrugar e ir a la escuela ¡o jugar en casa! El pueblo indígena Kamentsá te invita a ver este video en el que con su propio idioma (y también en español) te cuentan qué hacen cuando se va el sol. ¿Tu que haces cuando se esconde el sol?',
       url: '285-sefueelsol.mp4'
     },
     { id: 286,
       autor: 'Varios',
-      coleccion: 'VIDEO',
+      coleccion: 'Fiesta de la lectura',
       titulo: 'Putunkaa Serruma',
       describe: 'Los indígenas Wayú viven en la Guajira y tienen su propio idioma, el wayuunaiki. Este video te invita a escuchar una canción (también en español) con la que las mamás arrullan a sus hijos pequeños y los alientan a dormir mientras les llevan los alimentos. ¿A ti qué te gusta que te canten para dormir?',
       url: 'URL'
     },
     { id: 287,
       autor: 'Audio de Tortuguita, Vení bailá Ministerio de Cultura e ICBF  Centro Ático',
-      coleccion: 'KARAOKE',
+      coleccion: 'Fiesta de la lectura',
       titulo: 'Tindero - Karaoke',
       describe: 'En los campos de San Jacinto, en el departamento de Bolívar, desde hace varias generaciones se canta y se baila esta canción. Tambores, gaitas y voces se confunden para crear un juego cantado.',
       url: 'URL'
     },
     { id: 288,
       autor: 'Audio de Tortuguita, Vení bailá Ministerio de Cultura e ICBF  Centro Ático',
-      coleccion: 'KARAOKE',
+      coleccion: 'Fiesta de la lectura',
       titulo: 'Palmita con manteca - Karaoke',
       describe: 'Conoce a un pequeño niño y su familia en la costa colombiana. El papá de este bebé morenito que vive en San Basilio de Palenque ya no le dio más chancleta de la que pega, sino que se la entregó en la mano y el bebé corrió hacia su mamá, riendo.',
       url: 'URL'
@@ -170,63 +170,63 @@ const state = {
     },
     { id: 463,
       autor: 'Ministerio de Cultura',
-      coleccion: 'VIDEO',
+      coleccion: '',
       titulo: 'La pijamada de Saimiri',
       describe: 'Un día Saimiri invitó a sus amigos a la casa del árbol para hacer una pijamada, pero cada uno quería jugar una cosa diferente. ¿Será que lograron ponerse de acuerdo?',
       url: 'URL'
     },
     { id: 632,
       autor: 'Ricardo Prado, Neyber Lenis',
-      coleccion: 'KARAOKE',
+      coleccion: 'Karaokes de Maguaré en La Ceiba',
       titulo: 'La fiesta de Arma DJ - Karaoke',
       describe: 'Arma DJ es un armadillo que desde temprano toca su música para que todos se pongan a cantar y a bailar. Es el mejor DJ de La Ceiba y todos aman asistir a sus fiestas. ¿Y a ti, te gustó esta canción?.',
       url: 'URL'
     },
     { id: 633,
       autor: 'Ricardo Prado, Neyber Lenis',
-      coleccion: 'KARAOKE',
+      coleccion: 'Karaokes de Maguaré en La Ceiba',
       titulo: 'Ñame, ñame, ummm - Karaoke',
       describe: '¿Cuáles son tus platos favoritos?, ¿prefieres tamales o un buen sancocho?. Con Bertilda y Edilberto sabrás cómo se preparan deliciosos platos colombianos.',
       url: 'URL'
     },
     { id: 634,
       autor: 'Ricardo Prado, Neyber Lenis',
-      coleccion: 'KARAOKE',
+      coleccion: 'Karaokes de Maguaré en La Ceiba',
       titulo: 'Los menjurjes de Gildardo - Karaoke',
       describe: 'Gildardo es un olinguito que vende desde bolitas de vidrio hasta remedios para el dolor de barriga. ¡Te retamos para que cantes esta canción sin soltar una carcajada!.',
       url: 'URL'
     },
     { id: 635,
       autor: 'Ricardo Prado, Neyber Lenis',
-      coleccion: 'KARAOKE',
+      coleccion: 'Karaokes de Maguaré en La Ceiba',
       titulo: '27 guagüitas - Karaoke',
       describe: 'Un papá y una mamá siempre están pendientes de sus hijitos, de darles de comer, de bañarlos y acostarlos a dormir… ¿pero como hacen los papás de 27 cuyecitos?.',
       url: 'URL'
     },
     { id: 636,
       autor: 'Ricardo Prado, Neyber Lenis',
-      coleccion: 'KARAOKE',
+      coleccion: 'Karaokes de Maguaré en La Ceiba',
       titulo: 'El convite en la ceiba - Karaoke',
       describe: 'Saimiri el monito ardilla de La Ceiba nos presenta a todos y cada uno de los vecinos de la comunidad, con la ayuda del abuelo Emiliano los invita a… a… a... ¿a qué es que los invita?.',
       url: 'URL'
     },
     { id: 637,
       autor: 'Ricardo Prado, Neyber Lenis',
-      coleccion: 'KARAOKE',
+      coleccion: 'Karaokes de Maguaré en La Ceiba',
       titulo: 'Pite que repite - Karaoke',
       describe: 'Maya la guacamaya todo lo quiere contar, no se puede quedar calladita porque todo lo que pasa en La Ceiba para ella es una gran noticia. ¿Te atreves a cantar como lo hace Maya?.',
       url: 'URL'
     },
     { id: 638,
       autor: 'Ricardo Prado, Neyber Lenis',
-      coleccion: 'KARAOKE',
+      coleccion: 'Karaokes de Maguaré en La Ceiba',
       titulo: 'Me encanta ser actriz - Karaoke',
       describe: 'Rani es una rana que viene del Chocó y es una gran diva, ella es la reina del drama en La Ceiba. En esta canción Rani nos muestra como transmitir las emociones más intensas.',
       url: 'URL'
     },
     { id: 639,
       autor: 'Ricardo Prado, Neyber Lenis',
-      coleccion: 'KARAOKE',
+      coleccion: 'Karaokes de Maguaré en La Ceiba',
       titulo: 'La canción sin canción - Karaoke',
       describe: 'Eliana no puede oir, Adriana no puede ver y a Juliana le falta un diente. Sin embargo las tres juntas son las más poderosas. ¡Con ustedes, las terrillizas!.',
       url: 'URL'
@@ -249,8 +249,38 @@ const actions = {
     commit('INCREMENT_MAIN_COUNTER')
   }
 }
+/*
 
+Karaokes Maguaré
+Sweet songs fi piknini. Canciones dulces para niños.
+Fiesta de la lectura
+Cuentos narrados
+Karaokes de Maguaré en La Ceiba
+vidKaraokes, vidSweet, vidFiesta, vidCeiba, vidAllKar, todos
+
+*/
 const getters = {
+    vidCuentos: state => {
+      return state.videos.filter(video => video.coleccion == 'Cuentos narrados')
+    },
+    vidKaraokes: state => {
+      return state.videos.filter(video => video.coleccion == 'Karaokes Maguaré')
+    },
+    vidSweet: state => {
+      return state.videos.filter(video => video.coleccion == 'Sweet songs fi piknini. Canciones dulces para niños.')
+    },
+    vidFiesta: state => {
+      return state.videos.filter(video => video.coleccion == 'Fiesta de la lectura')
+    },
+    vidCeiba: state => {
+      return state.videos.filter(video => video.coleccion == 'Karaokes de Maguaré en La Ceiba')
+    },
+    vidAllKar: state => {
+      return state.videos.filter(video => video.coleccion.startsWith('Kara'))
+    },
+
+
+
     videoskaraokes: state => {
       return state.videos.filter(video => video.coleccion == 'KARAOKE')
     },

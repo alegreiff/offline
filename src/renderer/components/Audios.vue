@@ -5,6 +5,7 @@
           <v-card>
             <v-card-text class="">
               <span>Seleccione un audio</span>
+              <p>{{ coleccion.length }}</p>
             </v-card-text>
 
               <v-select class="px-4 ma-0"

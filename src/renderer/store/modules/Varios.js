@@ -1,12 +1,61 @@
 const state = {
-  coloreables: [
-    { id: 154,
+  descargablesmaguare: [
+    { id: 9100,
       autor: 'Ministerio de Cultura',
-      titulo: 'Baila con el Arma-DJ',
-      describe: 'Si te gusta mover tu cuerpo este juego es especial para tí. Elige uno de los personajes del universo de Maguaré: Saimiri, el mono, la rana, el oso perezoso, el olinguito o la camaleona, mientras el ArmaDJ mezcla con sus sintetizadores y los hace bailar a ellos y a ti. ¿Cuál es la música que más te gusta bailar?',
-      url: 'bailaconelarmadj/index.html'
-    }
+      titulo: 'Coloreable 001',
+      describe: 'Describe coloreable 001',
+      url: 'coloreables/coloreable-1.pdf'
+    },
+    { id: 9101,
+      autor: 'Ministerio de Cultura',
+      titulo: 'Coloreable 002',
+      describe: 'Describe coloreable 002',
+      url: 'coloreables/coloreable-2.pdf'
+    },
   ],
+    librosmaguare: [
+      {
+        id: 618,
+        autor: 'Maritza Sanchez, Carlos Millán, Lizardo Carvajal, Oscar García, Amalia Satizábal',
+        titulo: 'El frenético baile de Chip',
+        describe: 'Chip la perezosa se levantó muy dispuesta para dar su clase de aeróbicos y para hacer deporte se mantiene muy bien hidratada. Pero Chip ha tomado más agua de la cuenta… ¡Un baño, por favor!',
+        url: 'librosmaguare/maguare-frenetico-baile-chip.pdf'
+      },
+      {
+        id: 619,
+        autor: 'Maritza Sanchez, Carlos Millán, Lizardo Carvajal, Oscar García, Amalia Satizábal',
+        titulo: 'El libro perdido de Gigi',
+        describe: 'Saimiri es un gran lector y quiere terminar de leer una historia, pero no aparece el segundo libro que cuenta el final. Con la ayuda de Gigi la tortuga emprenden la aventura de encontrar el libro perdido.',
+        url: 'librosmaguare/maguare-libro-perdido-gigi.pdf'
+      },
+      {
+        id: 620,
+        autor: 'Maritza Sanchez, Carlos Millán, Lizardo Carvajal, Oscar García, Amalia Satizábal',
+        titulo: 'El viaje de la familia Cuy',
+        describe: '¿Cómo hacen Linio y Tulita los dos papás cuyes para salir de paseo con sus hijos?. No debe ser nada fácil… porque son ¡27 cuyecitos!',
+        url: 'librosmaguare/maguare-viaje-familia-cuy.pdf'
+      },
+      {
+        id: 621,
+        autor: 'Maritza Sanchez, Carlos Millán, Lizardo Carvajal, Oscar García, Amalia Satizábal',
+        titulo: 'El cumpleaños de Rosalinda',
+        describe: 'Rosalinda la camaleona cambia de color según como se sienta y hoy está azul porque parece que todos olvidaron su cumpleaños. En todo el día no ha recibido ni un abrazo ni un te quiero. ¿Cómo hacer para que se ponga feliz, color arcoiris?',
+        url: 'librosmaguare/maguare-rosalinda.pdf'
+      },
+      {
+        id: 622,
+        autor: 'Maritza Sanchez, Carlos Millán, Lizardo Carvajal, Oscar García, Amalia Satizábal',
+        titulo: 'La memoria del abuelo',
+        describe: 'El abuelo Emiliano lo olvida todo, todo, todo… bueno no se le olvidan las cosas que averguenzan a Rani y a Gildardo. ¡Abuelo Emiliano ejercita tu memoria con un sudoku!',
+        url: 'librosmaguare/maguare-memoria-abuelo.pdf'
+      },{
+        id: 623,
+        autor: 'Maritza Sanchez, Carlos Millán, Lizardo Carvajal, Oscar García, Amalia Satizábal',
+        titulo: 'Una sopa para la fiesta',
+        describe: '¡Las trillizas Adriana, Juliana y Eliana son terribles!. No se quedan quietas nunca y sus travesuras desesperan a más de uno en la Ceiba. Sin embargo parecen tener un don especial para transformar cualquier situación por crítica que parezca. ¿Qué hicieron ahora estas Terrillizas?.',
+        url: 'librosmaguare/maguare-sopa-fiesta.pdf'
+      }
+    ],
     sugerencias: [
       {
         id: 9001,

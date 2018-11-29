@@ -5,6 +5,9 @@ import Audios from '@/components/Audios'
 import Videos from '@/components/Videos'
 import Interactivos from '@/components/Interactivos'
 import Sugerencias from '@/components/Sugerencias'
+import LibrosMaguare from '@/components/LibrosMaguare'
+import DescargablesMaguare from '@/components/DescargablesMaguare'
+
 
 
 
@@ -20,6 +23,8 @@ export default new Router({
     { path: '/biko', component: Biko },
     { path: '/interactivos', component: Interactivos },
     { path: '/sugerencias', component: Sugerencias },
+    { path: '/librosmaguare', component: LibrosMaguare },
+    { path: '/descargablesmaguare', component: DescargablesMaguare },
 
     { path: '/videos/:id', component: Videos, name: 'vid' },
     { path: '/audios/:id', component: Audios, name: 'coleccion' },

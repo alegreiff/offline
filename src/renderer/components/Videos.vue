@@ -5,6 +5,7 @@
           <v-card>
             <v-card-text class="">
               <span>Seleccione un video</span>
+              <p>{{ coleccion.length }}</p>
             </v-card-text>
 
               <v-select class="px-4 ma-0"
@@ -118,7 +119,9 @@ export default {
     },
   computed: {
     ...mapState('Videos', ['videos']),
-    ...mapGetters('Videos', ['videoskaraokes', 'videossimples', 'videosall', 'videoscuentosnarrados', 'videoslistos']),
+    //...mapGetters('Videos', ['videoskaraokes', 'videossimples', 'videosall', 'videoscuentosnarrados', 'videoslistos']),
+    ...mapGetters('Videos', ['vidKaraokes', 'vidSweet', 'vidFiesta', 'vidCeiba', 'vidAllKar', 'vidCuentos']),
+
   },
   methods: {
     coleccionactiva(id){
@@ -126,14 +129,18 @@ export default {
         this.quesuena= '';
         this.$refs.playame1.pause()
       }
-      if(id =='videoskaraokes'){
-        this.coleccion = this.videoskaraokes
-      }else if (id =='videossimples') {
-        this.coleccion = this.videossimples
-      }else if (id =='videoscuentosnarrados') {
-        this.coleccion = this.videoscuentosnarrados
-      }else if (id =='videoslistos') {
-        this.coleccion = this.videoslistos
+      if(id =='vidKaraokes'){
+        this.coleccion = this.vidKaraokes
+      }else if (id =='vidSweet') {
+        this.coleccion = this.vidSweet
+      }else if (id =='vidCuentos') {
+        this.coleccion = this.vidCuentos
+      }else if (id =='vidFiesta') {
+        this.coleccion = this.vidFiesta
+      }else if (id =='vidCeiba') {
+        this.coleccion = this.vidCeiba
+      }else if (id =='vidAllKar') {
+        this.coleccion = this.vidAllKar
       }else{
         this.coleccion = this.videos
       }
