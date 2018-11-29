@@ -119,7 +119,7 @@ export default {
     },
   computed: {
     ...mapState('Audios', ['main', 'nombre', 'canciones']),
-    ...mapGetters('Audios', ['audiosCeiba', 'audiosCuentosaloido', 'audiosCuentoencanto', 'audiosSincoleccion']),
+    ...mapGetters('Audios', ['audiosCeiba', 'audiosCuentosaloido', 'audiosCuentoencanto', 'audiosSweetsongs', 'audiosSincoleccion']),
   },
   methods: {
     coleccionactiva(id){
@@ -133,6 +133,8 @@ export default {
         this.coleccion = this.audiosCuentosaloido
       }else if (id =='audiosCuentoencanto') {
         this.coleccion = this.audiosCuentoencanto
+      }else if (id =='audiosSweetsongs') {
+        this.coleccion = this.audiosSweetsongs
       }else if (id =='audiosSincoleccion') {
         this.coleccion = this.audiosSincoleccion
       }else{

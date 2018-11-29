@@ -19,12 +19,12 @@
       <v-subheader inset><strong>Maguaré</strong></v-subheader>
       <v-divider></v-divider>
       <v-subheader inset>Audios</v-subheader>
-      <v-list-tile :to="{name: 'coleccion', params: { id: 'audiosSincoleccion'}}">
+      <v-list-tile :to="{name: 'coleccion', params: { id: 'audiosSweetsongs'}}">
         <v-list-tile-action>
           <v-icon>audiotrack</v-icon>
         </v-list-tile-action>
         <v-list-tile-content>
-          <v-list-tile-title>Sin colección</v-list-tile-title>
+          <v-list-tile-title>Sweet songs fi piknini. Canciones dulces para niños.</v-list-tile-title>
         </v-list-tile-content>
       </v-list-tile>
       <v-list-tile :to="{name: 'coleccion', params: { id: 'audiosCuentoencanto'}}">
@@ -67,6 +67,10 @@
         </v-list-tile>
       <v-divider></v-divider>
       <v-subheader inset>MaguaRED</v-subheader>
+      <v-list-tile :to="{path: '/sugerencias'}" >
+          <v-list-tile-action><v-icon>arrow_downward</v-icon></v-list-tile-action>
+          <v-list-tile-content><v-list-tile-title>Sugerencias</v-list-tile-title></v-list-tile-content>
+        </v-list-tile>
 
     </v-list>
   </v-navigation-drawer>
