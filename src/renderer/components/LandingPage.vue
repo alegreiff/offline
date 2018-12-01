@@ -2,26 +2,51 @@
   <div id="wrapper">
     <div class="logosm">
       <img id="logo" src="static/maguare.png" alt="electron-vue" class="logosmag">
-      <img id="logo" src="static/maguared.png" alt="electron-vue" class="logosmag">
+      <img id="logo" src="static/maguared.png" alt="electron-vue" class="logosmag" v-on:click="emitMethod">
     </div>
+    <button v-on:click="emitMethod">
+      Enlarge text
+    </button>
+
   </div>
 </template>
 
 <script>
   import SystemInformation from './LandingPage/SystemInformation'
-
+  import EventBus from './eventos';
   export default {
+    data: function () {
+      return {
+        drawer: null
+      }
+    },
+    watch: {
+
+      drawer: function(value){
+        console.log("dhsaj dkhsadjhsajd k");
+        this.$parent.palabra = 'aaa';
+
+        //this.$refs.playame.play();
+      }
+    },
     name: 'landing-page',
     components: { SystemInformation },
     methods: {
       open (link) {
         this.$electron.shell.openExternal(link)
-      }
+      },
+      emitMethod () {
+
+       EventBus.$emit('EVENT_NAME', 'Hooola');
+    }
     }
   }
 </script>
 
 <style scoped>
+.wrapper{
+  background-color: orange !important;
+}
 .logosm{
   display: grid;
   padding: 1em;

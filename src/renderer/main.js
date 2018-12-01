@@ -9,7 +9,18 @@ import VueLodash from 'vue-lodash'
 Vue.use(VueLodash)
 
 import Vuetify from 'vuetify'
-Vue.use(Vuetify)
+//Vue.use(Vuetify)
+Vue.use(Vuetify, {
+  theme: {
+    magcafe:      '#772705',
+    magrojo:      '#e0541e',
+    magnaranja:   '#f19741',
+    maglima:      '#c6c74f',
+    magverde:     '#8bceaf',
+    magazul:      '#1db5cc',
+    magmorado:    '#785395'
+  }
+})
 import 'vuetify/dist/vuetify.min.css' // Ensure you are using css-loader
 import 'material-design-icons-iconfont/dist/material-design-icons.css' // Ensure you are using css-loader
 

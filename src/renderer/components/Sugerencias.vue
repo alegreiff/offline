@@ -22,7 +22,7 @@
 
             <v-card-actions >
 
-                <v-btn style="100%" small class="white--text" color="blue" block :href="'static/'+app.url" target="_self">
+                <v-btn style="100%" small class="white--text" color="maglima" block :href="'static/'+app.url" target="_self">
                   Descargar el PDF
                 </v-btn>
 

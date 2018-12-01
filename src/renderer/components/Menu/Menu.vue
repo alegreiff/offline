@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-list dense one-line>
-      <v-list-tile :to="{path: '/'}">
+      <v-list-tile :to="{path: '/'}" >
         <v-list-tile-action>
           <v-icon>home</v-icon>
         </v-list-tile-action>
@@ -22,7 +22,7 @@
           </v-list-tile-content>
         </v-list-tile>
 
-        <v-list-tile :to="{name: 'vid', params: { id: ''}}" exact>
+        <v-list-tile :to="{name: 'vid', params: { id: 'all'}}" exact>
         <v-list-tile-content>
             <v-list-tile-title>Todos los videos</v-list-tile-title>
           </v-list-tile-content>
@@ -69,7 +69,7 @@
         <v-list-tile-title>Audios</v-list-tile-title>
       </v-list-tile-content>
     </v-list-tile>
-    <v-list-tile :to="{name: 'coleccion', params: { id: ''}}" exact>
+    <v-list-tile :to="{name: 'coleccion', params: { id: 'all'}}" exact>
     <v-list-tile-content>
         <v-list-tile-title>Todos los audios</v-list-tile-title>
       </v-list-tile-content>
@@ -124,6 +124,9 @@
         <v-list-tile-action><v-icon>picture_as_pdf</v-icon></v-list-tile-action>
         <v-list-tile-content><v-list-tile-title>Sugerencias</v-list-tile-title></v-list-tile-content>
 </v-list-tile>
+
+<p>Políticas</p>
+<p>About us</p>
 
 </v-list>
 

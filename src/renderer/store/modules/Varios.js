@@ -174,9 +174,29 @@ const state = {
         describe: 'descripción breve del contenido. En una frase',
         url: 'sugerencias/sugerencias-de-uso-9023-cancionesmaguare.pdf'
       },
-    ]
+    ],
+    menuvisible: 'arroz'
 }
+const mutations = {
+  MUESTRAMENU (state) {
+    state.menuvisible++
+  },
+  oculta (state) {
+    state.menuvisible--
+  }
+}
+const actions = {
+  muestramenu ({ commit }) {
+    // do something async
+    commit('MUESTRAMENU')
+    //alert("sdbjka hdjkashdkjahdkaj")
+
+  }
+}
+
 export default {
   namespaced: true,
+  mutations,
+  actions,
   state
 }
