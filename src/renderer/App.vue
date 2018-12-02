@@ -4,9 +4,11 @@
   <v-navigation-drawer mobile-break-point="1800" v-model="primaryDrawer.model" absolute overflow app>
     <Menu/>
   </v-navigation-drawer>
-  <v-toolbar :clipped-left="primaryDrawer.clipped" app absolute>
+  <!--<v-toolbar :clipped-left="primaryDrawer.clipped" app absolute>-->
+  <v-toolbar :clipped-left="primaryDrawer.clipped" app>
+
     <v-toolbar-side-icon v-if="primaryDrawer.type !== 'permanent'" @click.stop="primaryDrawer.model = !primaryDrawer.model"></v-toolbar-side-icon>
-    <v-toolbar-title>Maguaré - MaguaRED {{ k }}
+    <v-toolbar-title>Maguaré - MaguaRED - {{ tituloapp }}
 
     </v-toolbar-title>
   </v-toolbar>
@@ -35,7 +37,8 @@ import EventBus from './components/eventos';
 export default {
   data: function () {
     return {
-      k: 'aaa',
+      tituloapp: '',
+      //k: 'aaa',
       dark: false,
       drawers: ['Default (no property)', 'Permanent', 'Temporary'],
       primaryDrawer: {
@@ -56,7 +59,6 @@ export default {
     cambio(payLoad) {
       let self=this;
       Vue.nextTick(function () {
-      self.k = "Default Title" + payLoad;
       self.primaryDrawer.model = !self.primaryDrawer.model
 
       });
@@ -66,6 +68,11 @@ export default {
     let self=this;
     EventBus.$on('EVENT_NAME', function (payLoad) {
       self.cambio(payLoad);
+      //cambio()
+
+    });
+    EventBus.$on('TITULO', function (payLoad) {
+      self.tituloapp= payLoad;
       //cambio()
 
     });

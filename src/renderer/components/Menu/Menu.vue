@@ -97,13 +97,44 @@
     </v-list-tile>
     </v-list-group>
 
+    <!-- MAGUARÉ GRUPO LIBROS -->
+        <v-list-group no-action>
+        <v-list-tile slot="activator">
+          <v-list-tile-action>
+            <v-icon>picture_as_pdf</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <v-list-tile-title>Libros</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+        <v-list-tile :to="{name: 'lib', params: { id: 'all'}}" >
+
+            <v-list-tile-content><v-list-tile-title>Todos los libros</v-list-tile-title></v-list-tile-content>
+        </v-list-tile>
+        <v-list-tile :to="{name: 'lib', params: { id: 'librosFiesta'}}" >
+
+            <v-list-tile-content><v-list-tile-title>Fiesta de la lectura</v-list-tile-title></v-list-tile-content>
+        </v-list-tile>
+        <v-list-tile :to="{name: 'lib', params: { id: 'librosLEMC'}}" >
+
+            <v-list-tile-content><v-list-tile-title>Leer es mi cuento</v-list-tile-title></v-list-tile-content>
+        </v-list-tile>
+        <v-list-tile :to="{name: 'lib', params: { id: 'librosCeiba'}}" >
+
+            <v-list-tile-content><v-list-tile-title>Maguaré en La Ceiba</v-list-tile-title></v-list-tile-content>
+        </v-list-tile>
+
+
+
+
+        </v-list-group>
+
+
+
 <!-- MAGUARED-->
 
-<!-- MAGUARÉ LIBROS -->
-<v-list-tile :to="{path: '/librosmaguare'}" >
-    <v-list-tile-action><v-icon>picture_as_pdf</v-icon></v-list-tile-action>
-    <v-list-tile-content><v-list-tile-title>Cuentos de Maguaré en La Ceiba</v-list-tile-title></v-list-tile-content>
-</v-list-tile>
+
+
 <!-- MAGUARÉ INTERACTIVOS-->
 <v-list-tile :to="{path: '/interactivos'}" >
     <v-list-tile-action><v-icon>extension</v-icon></v-list-tile-action>
@@ -127,6 +158,11 @@
 
 <p>Políticas</p>
 <p>About us</p>
+<v-list-tile :to="{path: '/provixional'}" >
+      <v-list-tile-action><v-icon>picture_as_pdf</v-icon></v-list-tile-action>
+      <v-list-tile-content><v-list-tile-title>Sugerencias</v-list-tile-title></v-list-tile-content>
+</v-list-tile>
+
 
 </v-list>
 

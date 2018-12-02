@@ -1,7 +1,7 @@
 <template>
 <div class="">
   <v-layout row wrap>
-        <v-flex xs3 v-for="(app, index) in interactivos" class="pa-1">
+        <v-flex xs3 v-for="(app, index) in interactivos" :key="index" class="pa-1">
 
           <v-card>
                   <v-img :src="'static/miniaturas/'+app.id+'.jpg'" :alt="app.titulo" ></v-img>
@@ -31,6 +31,7 @@
 
 <script>
 import { mapState } from 'vuex'
+import EventBus from './eventos';
 /*import _ from 'lodash';*/
 
 export default {
@@ -44,10 +45,12 @@ export default {
   created() {
     //this.interactivos = this.apps;
     this.interactivos = _.sortBy(this.apps, ['titulo']);
+    EventBus.$emit('TITULO', 'Interactivos');
     },
     watch: {
 
     },
+
   computed: {
     ...mapState('Interactivos', ['apps']),
     /*...mapGetters('Videos', ['videoskaraokes', 'videossimples', 'videosall', 'videoscuentosnarrados', 'videoslistos']),*/

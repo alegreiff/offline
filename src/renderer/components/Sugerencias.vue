@@ -10,7 +10,7 @@
               </v-card-title>
         </v-card>
     </v-flex>
-  <v-flex xs3 v-for="(app, index) in sugerenciaspdf" class="pa-1">
+  <v-flex xs3 v-for="(app, index) in sugerenciaspdf" :key="index" class="pa-1">
     <v-card>
             <v-img :src="'static/miniaturas/'+app.id+'.jpg'" :alt="app.titulo" ></v-img>
             <v-card-title primary-title style="height:auto">
@@ -41,6 +41,7 @@
 
 <script>
 import { mapState } from 'vuex'
+import EventBus from './eventos';
 /*import _ from 'lodash';*/
 
 export default {
@@ -53,6 +54,7 @@ export default {
   },
   created() {
     //this.interactivos = this.apps;
+    EventBus.$emit('TITULO', 'Sugerencias');
     this.sugerenciaspdf = _.sortBy(this.sugerencias, ['titulo']);
     },
     watch: {

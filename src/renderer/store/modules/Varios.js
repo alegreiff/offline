@@ -13,7 +13,7 @@ const state = {
       url: 'coloreables/coloreable-2.pdf'
     },
   ],
-    librosmaguare: [
+    /*librosmaguare: [
       {
         id: 618,
         autor: 'Maritza Sanchez, Carlos Millán, Lizardo Carvajal, Oscar García, Amalia Satizábal',
@@ -55,148 +55,371 @@ const state = {
         describe: '¡Las trillizas Adriana, Juliana y Eliana son terribles!. No se quedan quietas nunca y sus travesuras desesperan a más de uno en la Ceiba. Sin embargo parecen tener un don especial para transformar cualquier situación por crítica que parezca. ¿Qué hicieron ahora estas Terrillizas?.',
         url: 'librosmaguare/maguare-sopa-fiesta.pdf'
       }
+    ],*/
+    libros: [
+      {
+        id: 513,
+        autor: 'Susana Aristizabal - Ilustraciones: Nel',
+        titulo: 'Un castillo de libros',
+        coleccion: '',
+        describe: 'Este relato infantil es publicación de la Fundación Taller de Letras Jordi Sierra Fabra para De Cero a Siempre e invita a despertar los sentidos a través de hermosas ilustraciones llenas de color en un lugar donde los secretos nunca acaban.',
+        url: 'librosmaguare/513-castillo.pdf'
+      },{
+        id: 490,
+        autor: 'ICBF Instituto Colombiano de Bienestar Familiar - Ministerio de Cultura - Fundalectura',
+        titulo: 'Patas de armadillo, dientes de ratón',
+        coleccion: 'Fiesta de la lectura',
+        describe: 'Las canciones, juegos y relatos que los campesinos colombianos comparten con los niños en este volumen son un reconocimiento de las tradiciones y los modos de comprender y vivir la vida en diferentes contextos rurales del país.',
+        url: 'librosmaguare/490-patasdearmadillo.pdf'
+      },{
+        id: 491,
+        autor: 'ICBF Instituto Colombiano de Bienestar Familiar - Ministerio de Cultura - Fundalectura',
+        titulo: 'Tortuguita, vení bailá - libro',
+        coleccion: 'Fiesta de la lectura',
+        describe: 'Este libro te invita a disfrutar la voz y la música de los pueblos nativos de Colombia. En ¡Tortuguita, vení bailá!, se recogen las palabras y las melodías con las que en Colombia se le da la bienvenida a los hijos en cinco pueblos indígenas.',
+        url: 'librosmaguare/491-tortuguita.pdf'
+      },{
+        id: 493,
+        autor: 'ICBF Instituto Colombiano de Bienestar Familiar - Ministerio de Cultura - Fundalectura',
+        titulo: 'Putunkaa serruma duérmete, pajarito',
+        coleccion: 'Fiesta de la lectura',
+        describe: 'En esta edición bilingüe, el ICBF y Fundalectura recopilan algunos arrullos y cuentos en español, piapoco, arhuaco, kamëntsá, uitoto y wayúu, lenguas que guardan la memoria.',
+        url: 'librosmaguare/493-putunkaa.pdf'
+      },{
+        id: 495,
+        autor: 'ICBF Instituto Colombiano de Bienestar Familiar - Ministerio de Cultura - Fundalectura',
+        titulo: 'Una morena en la ronda',
+        coleccion: 'Fiesta de la lectura',
+        describe: 'En esta edición multilingüe se recopilan algunos arrullos, juegos y relatos con los que papás, mamás y abuelos afrocolombianos reciben a sus bebés y les acompañan durante la infancia. ',
+        url: 'librosmaguare/495-unamorenaenlaronda.pdf'
+      },{
+        id: 500,
+        autor: 'AUTOR',
+        titulo: 'Los arrullos de Jáamo',
+        coleccion: 'Fiesta de la lectura',
+        describe: 'Este libro reúne los arrullos, relatos y juegos que acogen a los bebés y los niños en las familias de las comunidades nasa, inga, sikuani, cãacwa y totoró, cinco de los ciento dos pueblos indígenas colombianos. ',
+        url: 'librosmaguare/URLPDF'
+      },{
+        id: 511,
+        autor: 'AUTOR',
+        titulo: 'Tiki, tiki, tai - libro',
+        coleccion: 'Fiesta de la lectura',
+        describe: 'En esta edición bilingüe se recopilan algunos arrullos, secretos y relatos en español y en el idioma del pueblo Rrom, una lengua que recuerda cada camino por el que este pueblo ha trasegado en su ir y venir por el mundo, amantes ante todo de la libertad y la vida.',
+        url: 'librosmaguare/URLPDF'
+      },{
+        id: 499,
+        autor: 'AUTOR',
+        titulo: 'Con pombo y platillos',
+        coleccion: 'Leer es mi cuento',
+        describe: 'Recuerda los cuentos de infancia y lee con tus niños: Mirringa Mirronga, El renacuajo paseador, Juan Chunguero, Pastorcita, Juan Matachín, Tía Pasitrote y muchos más.',
+        url: 'librosmaguare/URLPDF'
+      },{
+        id: 501,
+        autor: 'AUTOR',
+        titulo: 'Romeo y Julieta',
+        coleccion: 'Leer es mi cuento',
+        describe: 'Obra maestra de William Shakespeare, genio de la lengua inglesa, es la historia de amor más hermosa y trágica que jamás se haya escrito. Esta versión de los hermanos Lamb ha sido especialmente escrita para los jóvenes. ',
+        url: 'librosmaguare/URLPDF'
+      },{
+        id: 502,
+        autor: 'AUTOR',
+        titulo: 'Cuentos de Las mil y una noches',
+        coleccion: 'Leer es mi cuento',
+        describe: 'Los relatos que cada noche cuenta Sherezada al sultán constituyen uno de los libros que más ha entretenido a niños y adultos durante siglos.  Aquí encontrarás tres de estos relatos llenos de aventuras, sueños e historias de amor.',
+        url: 'librosmaguare/URLPDF'
+      },{
+        id: 505,
+        autor: 'AUTOR',
+        titulo: 'De viva voz',
+        coleccion: 'Leer es mi cuento',
+        describe: 'Los cuentos, poemas y fábulas que presentamos en este libro tienen como propósito hacer que los lectores, niños y grandes, adquieran el gusto por las palabras. ',
+        url: 'librosmaguare/URLPDF'
+      },{
+        id: 507,
+        autor: 'AUTOR',
+        titulo: 'Puro cuento',
+        coleccion: 'Leer es mi cuento',
+        describe: 'Este título te invita a disfrutar con tus niños de las historias tradicionales que los familias europeas se contaban durante los fríos y largos inviernos.',
+        url: 'librosmaguare/URLPDF'
+      },{
+        id: 515,
+        autor: 'AUTOR',
+        titulo: 'Canta palabras',
+        coleccion: 'Leer es mi cuento',
+        describe: 'Canta y juega con tus niños las canciones, rondas, poemas, trabalenguas, dichos, retahílas y repeticiones. Encontrarás relatos e historias de reconocidos autores latinoamericanos.',
+        url: 'librosmaguare/URLPDF'
+      },{
+        id: 538,
+        autor: 'AUTOR',
+        titulo: 'Barbas, pelos y cenizas',
+        coleccion: 'Leer es mi cuento',
+        describe: 'Disfruta con tus niños historias de fantasía como Barba azul de Charles Perrault y Los tres pelos de oro del diablo y La Cenicienta de Los Hermanos Grimm.',
+        url: 'librosmaguare/URLPDF'
+      },{
+        id: 539,
+        autor: 'AUTOR',
+        titulo: 'De animales y de niños',
+        coleccion: 'Leer es mi cuento',
+        describe: 'Caballos, monos, niños, ratones, familias, cucarachitas, matas de mora, vaqueros, selvas, loras, gatos y hasta dulces de icaco viven en estas páginas. ¡Vamos a leer!.',
+        url: 'librosmaguare/URLPDF'
+      },{
+        id: 540,
+        autor: 'AUTOR',
+        titulo: 'Ábrete grano pequeño',
+        coleccion: 'Leer es mi cuento',
+        describe: 'Este libro es una recopilación de las mejores adivinanzas escritas por el poeta caucano Horacio Benavides, muchas de sus adivinanzas están relacionadas con mitologías o con historias antiguas.',
+        url: 'librosmaguare/URLPDF'
+      },{
+        id: 541,
+        autor: 'AUTOR',
+        titulo: 'El patito feo',
+        coleccion: 'Leer es mi cuento',
+        describe: 'Este cuento clásico de Hans Christian Andersen, ha sido leído desde hace muchos años con emoción por lectores de todas las edades y recuerda la necesidad de aceptar a quienes piensan diferente y pertenecen a otra raza, cultura o religión.',
+        url: 'librosmaguare/URLPDF'
+      },{
+        id: 542,
+        autor: 'AUTOR',
+        titulo: 'Meñique',
+        coleccion: 'Leer es mi cuento',
+        describe: 'Esta bella historia narra cómo los hermanos Pedro, Pablo y Juancito (al que conocían como Meñique porque era tan pequeño que se podía esconder en la bota de su padre) decidieron ir a probar suerte en un reino muy particular.',
+        url: 'librosmaguare/URLPDF'
+      },{
+        id: 543,
+        autor: 'AUTOR',
+        titulo: 'Fábulas',
+        coleccion: 'Leer es mi cuento',
+        describe: 'Encuentra 30 fábulas de Félix María Samaniego como La cigarra y la hormiga, El león y el ratón, El ciervo en la fuente y muchas otras. Se trata de pequeños cuentos en los que hablan y actúan los animales, y que llevan a conclusiones morales.',
+        url: 'librosmaguare/URLPDF'
+      },{
+        id: 544,
+        autor: 'AUTOR',
+        titulo: 'La bella y la bestia',
+        coleccion: 'Leer es mi cuento',
+        describe: 'Esta bella historia recuerda la tolerancia y la aceptación y habla sobre cómo la belleza de una persona no esta en su físico sino en su forma de ser, porque lo más importante es la belleza del corazón.',
+        url: 'librosmaguare/URLPDF'
+      },{
+        id: 611,
+        autor: 'AUTOR',
+        titulo: 'Por qué el elefante tiene la trompa así',
+        coleccion: 'Leer es mi cuento',
+        describe: 'Con estos dos cuentos los niños gozarán y se divertirán viendo cómo y por qué las cosas son como son. ¿No será, acaso, que el elefante tiene trompa y el leopardo manchas porque les pasó lo que él cuenta que les pasó?.',
+        url: 'librosmaguare/URLPDF'
+      },{
+        id: 612,
+        autor: 'AUTOR',
+        titulo: 'Canciones, rondas, nanas, retahílas y adivinanzas',
+        coleccion: 'Leer es mi cuento',
+        describe: 'Juguemos con las palabras, canta con ellas, traba la lengua y destrábala otra vez, vamos: "Pedro Pérez Pereira, pobre pintor portugués, pinta paisajes por poco precio, para poder pasar por París". ¿Pudiste decirlo? ¡Ahora dilo aún más rápido!.',
+        url: 'librosmaguare/URLPDF'
+      },{
+        id: 618,
+        autor: 'Maritza Sanchez, Carlos Millán, Lizardo Carvajal, Oscar García, Amalia Satizábal',
+        titulo: 'El frenético baile de Chip',
+        coleccion: 'Maguaré en La Ceiba',
+        describe: 'Chip la perezosa se levantó muy dispuesta para dar su clase de aeróbicos y para hacer deporte se mantiene muy bien hidratada. Pero Chip ha tomado más agua de la cuenta… ¡Un baño, por favor!',
+        url: 'librosmaguare/maguare-frenetico-baile-chip.pdf'
+      },
+      {
+        id: 619,
+        autor: 'Maritza Sanchez, Carlos Millán, Lizardo Carvajal, Oscar García, Amalia Satizábal',
+        titulo: 'El libro perdido de Gigi',
+        coleccion: 'Maguaré en La Ceiba',
+        describe: 'Saimiri es un gran lector y quiere terminar de leer una historia, pero no aparece el segundo libro que cuenta el final. Con la ayuda de Gigi la tortuga emprenden la aventura de encontrar el libro perdido.',
+        url: 'librosmaguare/maguare-libro-perdido-gigi.pdf'
+      },
+      {
+        id: 620,
+        autor: 'Maritza Sanchez, Carlos Millán, Lizardo Carvajal, Oscar García, Amalia Satizábal',
+        titulo: 'El viaje de la familia Cuy',
+        coleccion: 'Maguaré en La Ceiba',
+        describe: '¿Cómo hacen Linio y Tulita los dos papás cuyes para salir de paseo con sus hijos?. No debe ser nada fácil… porque son ¡27 cuyecitos!',
+        url: 'librosmaguare/maguare-viaje-familia-cuy.pdf'
+      },
+      {
+        id: 621,
+        autor: 'Maritza Sanchez, Carlos Millán, Lizardo Carvajal, Oscar García, Amalia Satizábal',
+        titulo: 'El cumpleaños de Rosalinda',
+        coleccion: 'Maguaré en La Ceiba',
+        describe: 'Rosalinda la camaleona cambia de color según como se sienta y hoy está azul porque parece que todos olvidaron su cumpleaños. En todo el día no ha recibido ni un abrazo ni un te quiero. ¿Cómo hacer para que se ponga feliz, color arcoiris?',
+        url: 'librosmaguare/maguare-rosalinda.pdf'
+      },
+      {
+        id: 622,
+        autor: 'Maritza Sanchez, Carlos Millán, Lizardo Carvajal, Oscar García, Amalia Satizábal',
+        titulo: 'La memoria del abuelo',
+        coleccion: 'Maguaré en La Ceiba',
+        describe: 'El abuelo Emiliano lo olvida todo, todo, todo… bueno no se le olvidan las cosas que averguenzan a Rani y a Gildardo. ¡Abuelo Emiliano ejercita tu memoria con un sudoku!',
+        url: 'librosmaguare/maguare-memoria-abuelo.pdf'
+      },{
+        id: 623,
+        autor: 'Maritza Sanchez, Carlos Millán, Lizardo Carvajal, Oscar García, Amalia Satizábal',
+        titulo: 'Una sopa para la fiesta',
+        coleccion: 'Maguaré en La Ceiba',
+        describe: '¡Las trillizas Adriana, Juliana y Eliana son terribles!. No se quedan quietas nunca y sus travesuras desesperan a más de uno en la Ceiba. Sin embargo parecen tener un don especial para transformar cualquier situación por crítica que parezca. ¿Qué hicieron ahora estas Terrillizas?.',
+        url: 'librosmaguare/maguare-sopa-fiesta.pdf'
+      }
+
     ],
+    /* Serie 9000*/
     sugerencias: [
       {
         id: 9001,
         titulo: 'Bosqueconcierto',
+        autor: 'AUTOR',
         describe: 'descripción breve del contenido. En una frase',
         url: 'sugerencias/sugerencias-de-uso-9001-bosqueconcierto.pdf'
       },
       {
         id: 9002,
         titulo: 'Tu Rockcito',
+        autor: 'AUTOR',
         describe: 'descripción breve del contenido. En una frase',
         url: 'sugerencias/sugerencias-de-uso-9002-turockcito.pdf'
       },{
         id: 9003,
         titulo: 'Jacana Jacana',
+        autor: 'AUTOR',
         describe: 'descripción breve del contenido. En una frase',
         url: 'sugerencias/sugerencias-de-uso-9003-jacana.pdf'
       },{
         id: 9004,
         titulo: 'Cantos de agua',
+        autor: 'AUTOR',
         describe: 'descripción breve del contenido. En una frase',
         url: 'sugerencias/sugerencias-de-uso-9004-cantosdeagua.pdf'
       },{
         id: 9005,
         titulo: 'Tamborecos',
+        autor: 'AUTOR',
         describe: 'descripción breve del contenido. En una frase',
         url: 'sugerencias/sugerencias-de-uso-9005-tamborecos.pdf'
       },{
         id: 9006,
         titulo: 'Pipo',
+        autor: 'AUTOR',
         describe: 'descripción breve del contenido. En una frase',
         url: 'sugerencias/sugerencias-de-uso-9006-pipo.pdf'
       },{
         id: 9007,
         titulo: 'Ana Pirata',
+        autor: 'AUTOR',
         describe: 'descripción breve del contenido. En una frase',
         url: 'sugerencias/sugerencias-de-uso-9007-anapirata.pdf'
       },{
         id: 9008,
         titulo: 'Camusi Camusi',
+        autor: 'AUTOR',
         describe: 'descripción breve del contenido. En una frase',
         url: 'sugerencias/sugerencias-de-uso-9008-camusi.pdf'
       },{
         id: 9009,
         titulo: 'Adivinanzas',
+        autor: 'AUTOR',
         describe: 'descripción breve del contenido. En una frase',
         url: 'sugerencias/sugerencias-de-uso-9009-adivinanzas.pdf'
       },{
         id: 9010,
         titulo: 'Arrullos',
+        autor: 'AUTOR',
         describe: 'descripción breve del contenido. En una frase',
         url: 'sugerencias/sugerencias-de-uso-9010-arrullos.pdf'
       },{
         id: 9011,
         titulo: 'Crea con colores',
+        autor: 'AUTOR',
         describe: 'descripción breve del contenido. En una frase',
         url: 'sugerencias/sugerencias-de-uso-9011-creaconcolores.pdf'
       },{
         id: 9012,
         titulo: 'Cuentos al oído',
+        autor: 'AUTOR',
         describe: 'descripción breve del contenido. En una frase',
         url: 'sugerencias/sugerencias-de-uso-9012-cuentosaloido.pdf'
       },{
         id: 9013,
         titulo: 'Cuentos interactivos',
+        autor: 'AUTOR',
         describe: 'descripción breve del contenido. En una frase',
         url: 'sugerencias/sugerencias-de-uso-9013-cuentosinteractivos.pdf'
       },{
         id: 9014,
         titulo: 'Cuentos narrados',
+        autor: 'AUTOR',
         describe: 'descripción breve del contenido. En una frase',
         url: 'sugerencias/sugerencias-de-uso-9014-cuentosnarrados.pdf'
       },{
         id: 9015,
         titulo: 'Historias contadas',
+        autor: 'AUTOR',
         describe: 'descripción breve del contenido. En una frase',
         url: 'sugerencias/sugerencias-de-uso-9015-historias.pdf'
       },{
         id: 9016,
         titulo: 'SAI sabiduría ancestral',
+        autor: 'AUTOR',
         describe: 'descripción breve del contenido. En una frase',
         url: 'sugerencias/sugerencias-de-uso-9016-sai.pdf'
       },{
         id: 9017,
         titulo: 'Sana que sana',
+        autor: 'AUTOR',
         describe: 'descripción breve del contenido. En una frase',
         url: 'sugerencias/sugerencias-de-uso-9017-sanaquesana.pdf'
       },{
         id: 9018,
         titulo: 'Buen comienzo',
+        autor: 'AUTOR',
         describe: 'descripción breve del contenido. En una frase',
         url: 'sugerencias/sugerencias-de-uso-9018-buencomienzo.pdf'
       },{
         id: 9019,
         titulo: 'Karaokes',
+        autor: 'AUTOR',
         describe: 'descripción breve del contenido. En una frase',
         url: 'sugerencias/sugerencias-de-uso-9019-karaokes.pdf'
       },{
         id: 9020,
         titulo: 'Trabalenguas',
+        autor: 'AUTOR',
         describe: 'descripción breve del contenido. En una frase',
         url: 'sugerencias/sugerencias-de-uso-9020-trabalenguas.pdf'
       },{
         id: 9021,
         titulo: 'Chigüiro',
+        autor: 'AUTOR',
         describe: 'descripción breve del contenido. En una frase',
         url: 'sugerencias/sugerencias-de-uso-9021-chiguiro.pdf'
       },{
         id: 9022,
         titulo: 'Cuentos de Maguaré',
+        autor: 'AUTOR',
         describe: 'descripción breve del contenido. En una frase',
         url: 'sugerencias/sugerencias-de-uso-9022-cuentosmaguare.pdf'
       },{
         id: 9023,
         titulo: 'Canciones de Maguaré',
+        autor: 'AUTOR',
         describe: 'descripción breve del contenido. En una frase',
         url: 'sugerencias/sugerencias-de-uso-9023-cancionesmaguare.pdf'
       },
     ],
     menuvisible: 'arroz'
 }
-const mutations = {
-  MUESTRAMENU (state) {
-    state.menuvisible++
-  },
-  oculta (state) {
-    state.menuvisible--
-  }
-}
-const actions = {
-  muestramenu ({ commit }) {
-    // do something async
-    commit('MUESTRAMENU')
-    //alert("sdbjka hdjkashdkjahdkaj")
 
-  }
+const getters = {
+    librosCeiba: state => {
+      return state.libros.filter(libro => libro.coleccion == 'Maguaré en La Ceiba')
+    },
+    librosFiesta: state => {
+      return state.libros.filter(libro => libro.coleccion == 'Fiesta de la lectura')
+    },
+    librosLEMC: state => {
+      return state.libros.filter(libro => libro.coleccion == 'Leer es mi cuento')
+    },
 }
 
 export default {
   namespaced: true,
-  mutations,
-  actions,
+  getters,
   state
 }

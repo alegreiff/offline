@@ -2,7 +2,7 @@ const state = {
   videos: [
     { id: 70,
       autor: 'María del Sol Peralta / Video: The Bucket.',
-      coleccion: 'Karaokes Maguaré',
+      coleccion: 'Karaokes',
       titulo: 'El piojo',
       describe: 'El piojo chef ama cocinar, aunque utiliza ingredientes que se encuentra en las cabezas. Un divertido y colorido video animado que ilustra la variedad de platos "muy especiales" que prepara este chef para ti. ¿Cuál es la receta que más te gusta?',
       url: '70-elpiojo.mp4'
@@ -23,21 +23,21 @@ const state = {
     },
     { id: 132,
       autor: 'Audio de Jorge Luis Valencia Chica - Canturriando Ministerio de Cultura Centro Ático',
-      coleccion: 'Karaokes Maguaré',
+      coleccion: 'Karaokes',
       titulo: 'Poema a la lluvia - Karaoke',
       describe: 'Cuando llueve suceden muchas cosas, por ejemplo, las nubes grises y gordas vuelan por ahí junto con las hojas que bailan y giran con el viento. Y tu ¿qué haces cuando te mojas con la lluvia?',
       url: '132-poemalluvia.mp4'
     },
     { id: 134,
       autor: 'Audio de María Teresa Martínez Azcárate - Ministerio de Cultura - Centro Ático',
-      coleccion: 'Karaokes Maguaré',
+      coleccion: 'Karaokes',
       titulo: 'Casi volando sube - Karaoke',
       describe: 'Los ascensores suben y bajan muy rápido para mover a las personas en edificios de muchos pisos ¿Qué sientes cuando subes muy alto y cuando bajas hasta el piso como lo hace un ascensor?',
       url: '134-casivolando.mp4'
     },
     { id: 137,
       autor: 'Ministerio de cultura',
-      coleccion: 'Karaokes Maguaré',
+      coleccion: 'Karaokes',
       titulo: 'Bacetemëng Oyejuayëng (Niños Felices) - Karaoke',
       describe: 'Escucha una lengua diferente, la lengua del grupo indígena Kamëntšá o Kamsá que viven en el Valle del Sibundoy en el Putumayo. Ellos tienen mucho por enseñarte con sus tradiciones. ¿Has escuchado otras canciones en lenguas nativas?',
       url: '137-ninosfelices.mp4'
@@ -230,6 +230,103 @@ const state = {
       titulo: 'La canción sin canción - Karaoke',
       describe: 'Eliana no puede oir, Adriana no puede ver y a Juliana le falta un diente. Sin embargo las tres juntas son las más poderosas. ¡Con ustedes, las terrillizas!.',
       url: 'URL'
+    },
+    { id: 0,
+      autor: 'AUTHOR',
+      coleccion: 'Karaokes',
+      titulo: 'Las olas del mar - karaoke',
+      describe: 'DESCRIBBE',
+      url: 'URL'
+    },{ id: 0,
+      autor: 'AUTHOR',
+      coleccion: 'Karaokes',
+      titulo: 'Cartas del río - Karaoke',
+      describe: 'DESCRIBBE',
+      url: 'URL'
+    },{ id: 0,
+      autor: 'AUTHOR',
+      coleccion: 'Karaokes',
+      titulo: 'El delfín rosado - karaoke',
+      describe: 'DESCRIBBE',
+      url: 'URL'
+    },{ id: 0,
+      autor: 'AUTHOR',
+      coleccion: 'Karaokes',
+      titulo: 'Caminando va - karaoke',
+      describe: 'DESCRIBBE',
+      url: 'URL'
+    },{ id: 0,
+      autor: 'AUTHOR',
+      coleccion: 'Karaokes',
+      titulo: 'Los ratones- karaoke',
+      describe: 'DESCRIBBE',
+      url: 'URL'
+    },{ id: 0,
+      autor: 'AUTHOR',
+      coleccion: 'Karaokes',
+      titulo: 'Zumba que zumba - karaoke',
+      describe: 'DESCRIBBE',
+      url: 'URL'
+    },{ id: 0,
+      autor: 'AUTHOR',
+      coleccion: 'Karaokes',
+      titulo: 'La casa de Valentín - Karaoke',
+      describe: 'DESCRIBBE',
+      url: 'URL'
+    },{ id: 0,
+      autor: 'AUTHOR',
+      coleccion: 'Karaokes',
+      titulo: 'La araña - karaoke',
+      describe: 'DESCRIBBE',
+      url: 'URL'
+    },{ id: 0,
+      autor: 'AUTHOR',
+      coleccion: 'Karaokes',
+      titulo: 'Niña bonita - karaoke',
+      describe: 'DESCRIBBE',
+      url: 'URL'
+    },{ id: 0,
+      autor: 'AUTHOR',
+      coleccion: 'Karaokes',
+      titulo: 'Mi pequeño morral - video',
+      describe: 'DESCRIBBE',
+      url: 'URL'
+    },{ id: 0,
+      autor: 'AUTHOR',
+      coleccion: 'Karaokes',
+      titulo: 'A los monos les duele la barriga - karaoke',
+      describe: 'DESCRIBBE',
+      url: 'URL'
+    },{ id: 0,
+      autor: 'AUTHOR',
+      coleccion: 'Karaokes',
+      titulo: 'Saludo bonito',
+      describe: 'DESCRIBBE',
+      url: 'URL'
+    },{ id: 0,
+      autor: 'AUTHOR',
+      coleccion: 'Zumba que zumba',
+      titulo: 'El bebé león - video',
+      describe: 'DESCRIBBE',
+      url: 'URL'
+    },{ id: 0,
+      autor: 'AUTHOR',
+      coleccion: 'Zumba que zumba',
+      titulo: 'Cuento Zumba que Zumba',
+      describe: 'DESCRIBBE',
+      url: 'URL'
+    },{ id: 0,
+      autor: 'AUTHOR',
+      coleccion: 'Zumba que zumba',
+      titulo: 'Tuc Nopa Pip',
+      describe: 'DESCRIBBE',
+      url: 'URL'
+    },{ id: 0,
+      autor: 'AUTHOR',
+      coleccion: 'Zumba que zumba',
+      titulo: 'Tiburón azul',
+      describe: 'DESCRIBBE',
+      url: 'URL'
     }
   ]
 }
@@ -264,7 +361,7 @@ const getters = {
       return state.videos.filter(video => video.coleccion == 'Cuentos narrados')
     },
     vidKaraokes: state => {
-      return state.videos.filter(video => video.coleccion == 'Karaokes Maguaré')
+      return state.videos.filter(video => video.coleccion == 'Karaokes')
     },
     vidSweet: state => {
       return state.videos.filter(video => video.coleccion == 'Sweet songs fi piknini. Canciones dulces para niños.')

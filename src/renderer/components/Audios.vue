@@ -85,6 +85,7 @@ import SystemInformation from './LandingPage/SystemInformation'
 import { mapState, mapGetters } from 'vuex'
 import path from 'path'
 import _ from 'lodash';
+import EventBus from './eventos';
 
 export default {
   //components: { SystemInformation },
@@ -99,6 +100,7 @@ export default {
   created() {
 
     this.coleccionactiva(this.$route.params.id);
+
 
     //this.selected= 'inicio'
     },
@@ -130,16 +132,21 @@ export default {
       }
       if(id =='audiosCeiba'){
         this.coleccion = this.audiosCeiba
+        EventBus.$emit('TITULO', 'Audios - Canciones de Maguaré en La Ceiba');
       }else if (id =='audiosCuentosaloido') {
         this.coleccion = this.audiosCuentosaloido
+        EventBus.$emit('TITULO', 'Audios - Cuentos al oído');
       }else if (id =='audiosCuentoencanto') {
         this.coleccion = this.audiosCuentoencanto
+        EventBus.$emit('TITULO', 'Audios - Con mi cuento encanto');
       }else if (id =='audiosSweetsongs') {
         this.coleccion = this.audiosSweetsongs
+        EventBus.$emit('TITULO', 'Audios - Canciones dulces para niños');
       }else if (id =='audiosSincoleccion') {
         this.coleccion = this.audiosSincoleccion
       }else{
         this.coleccion = this.canciones
+        EventBus.$emit('TITULO', 'Audios - Lista completa');
       }
       this.coleccion = _.sortBy(this.coleccion, ['titulo']);
       this.selected = this.coleccion[0].id;

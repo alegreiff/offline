@@ -86,6 +86,7 @@
 <script>
 import { mapState, mapGetters } from 'vuex'
 import _ from 'lodash';
+import EventBus from './eventos';
 
 export default {
   //components: { SystemInformation },
@@ -102,6 +103,7 @@ export default {
     //this.id = this.$route.params.id;
     //alert(this.$route.params.id)
     this.coleccionactiva(this.$route.params.id);
+    EventBus.$emit('TITULO', 'Videos');
     //this.selected= 'inicio'
     },
     watch: {

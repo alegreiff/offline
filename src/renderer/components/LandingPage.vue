@@ -7,6 +7,12 @@
     <button v-on:click="emitMethod">
       Enlarge text
     </button>
+    <button v-on:click="open('static/librosmaguare/maguare-sopa-fiesta.pdf')">
+      pdf
+    </button>
+    <button v-on:click="open('http://eltiempo.com')">
+      el tiempo
+    </button>
 
   </div>
 </template>
@@ -19,6 +25,9 @@
       return {
         drawer: null
       }
+    },
+    created () {
+      EventBus.$emit('TITULO', 'Inicio');
     },
     watch: {
 
@@ -33,6 +42,7 @@
     components: { SystemInformation },
     methods: {
       open (link) {
+        console.log(link)
         this.$electron.shell.openExternal(link)
       },
       emitMethod () {
