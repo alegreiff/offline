@@ -13,13 +13,14 @@
   <v-flex xs3 v-for="(libro, index) in coleccion" :key="index" class="pa-1">
     <v-card>
             <!--<v-img :src="'static/miniaturas/'+libro.id+'.jpg'" :alt="libro.titulo" ></v-img>-->
-            i m a g e n 
+            i m a g e n
 
             <v-card-title primary-title style="height:auto">
               <div>
                 <h3 class="mb-0">{{ libro.titulo }}</h3>
                 <span>{{ libro.autor }}</span>
                 <div style="height: 160px">{{ libro.describe }}</div>
+
               </div>
             </v-card-title>
 
@@ -44,7 +45,11 @@
 
 <script>
 import { mapState, mapGetters } from 'vuex'
-import EventBus from './eventos';
+import EventBus from './eventos'
+const electron = require('electron');
+const BrowserWindow = electron.remote.BrowserWindow;
+import path from 'path'
+
 /*import _ from 'lodash';*/
 
 
@@ -61,6 +66,23 @@ export default {
       alert("TDN")
   },*/
   created() {
+    let win = new BrowserWindow({
+        webPreferences: {
+          plugins: true,
+          webSecurity: false
+        },
+        height: 500,
+
+        width: 500,
+        backgroundColor: '#312450',
+      })
+
+      //var filex = path.join(__static, 'cs.pdf')
+      var filex = '/dist/electron/static/cs.pdf'
+      console.log(filex)
+
+      win.loadURL(filex)
+
 
     this.coleccionactiva(this.$route.params.id);
     },

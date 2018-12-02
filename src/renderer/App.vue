@@ -1,7 +1,7 @@
 <template>
 <!--<v-app id="sandbox" style="background: crimson;">-->
 <v-app id="sandbox">
-  <v-navigation-drawer mobile-break-point="1800" v-model="primaryDrawer.model" absolute overflow app>
+  <v-navigation-drawer mobile-break-point="1800" v-model="primaryDrawer.model"  overflow app>
     <Menu/>
   </v-navigation-drawer>
   <!--<v-toolbar :clipped-left="primaryDrawer.clipped" app absolute>-->

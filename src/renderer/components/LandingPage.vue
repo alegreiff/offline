@@ -7,10 +7,13 @@
     <button v-on:click="emitMethod">
       Enlarge text
     </button>
-    <button v-on:click="open('static/librosmaguare/maguare-sopa-fiesta.pdf')">
-      pdf
+    <button v-on:click="open('/librosmaguare/maguare-sopa-fiesta.pdf')">
+      abre archivo pdf
     </button>
-    <button v-on:click="open('http://eltiempo.com')">
+    <button v-on:click="open('/librosmaguare/maguare-sopa-fiesta.pdf')">
+      abre pdf con slash
+    </button>
+    <button v-on:click="webexterna('http://eltiempo.com')">
       el tiempo
     </button>
 
@@ -20,6 +23,9 @@
 <script>
   import SystemInformation from './LandingPage/SystemInformation'
   import EventBus from './eventos';
+  const electron = require('electron');
+  import path from 'path'
+
   export default {
     data: function () {
       return {
@@ -43,7 +49,24 @@
     methods: {
       open (link) {
         console.log(link)
+        /*this.$electron.shell.openExternal(link)*/
+        this.$electron.shell.openItem(path.join(__static, link))
+        //this.$electron.shell.showItemInFolder(link)
+
+      },
+      abrePDF (link) {
+        console.log(link)
+
+        this.$electron.shell.openItem(link)
+
+
+      },
+      webexterna (link) {
+        console.log(link)
         this.$electron.shell.openExternal(link)
+        //this.$electron.shell.openItem(path.join(__static, link))
+        //this.$electron.shell.showItemInFolder(link)
+
       },
       emitMethod () {
 

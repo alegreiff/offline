@@ -25,6 +25,7 @@ function createWindow () {
     title: 'Maguaré - MaguaRED :::'
 
   })
+  mainWindow.webContents.openDevTools()
 
   mainWindow.loadURL(winURL)
 
