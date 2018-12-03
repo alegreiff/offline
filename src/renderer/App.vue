@@ -80,6 +80,11 @@ export default {
 }
 </script>
 <style >
+/*
+*, html
+   { font: caption; }
+*/
+
 #sandbox{
   background-image: url("~@/assets/playa.jpg");
   background-repeat: no-repeat;

@@ -22,10 +22,11 @@ function createWindow () {
     useContentSize: true,
     width: 1000,
     backgroundColor: '#312450',
-    title: 'Maguaré - MaguaRED :::'
+    //title: 'Maguaré - MaguaRED :::'
 
   })
-  mainWindow.webContents.openDevTools()
+  /*ACTIVA devTools en produccion*/
+  /*mainWindow.webContents.openDevTools()*/
 
   mainWindow.loadURL(winURL)
 

@@ -6,6 +6,9 @@
               <v-card-title primary-title style="height:auto">
                 <div>
                   <div>{{ describeseccion }} {{ coleccion.length }}</div>
+                  <div class="">
+
+                  </div>
                 </div>
               </v-card-title>
         </v-card>
@@ -29,6 +32,10 @@
                 <v-btn style="100%" small class="white--text" color="blue" block :href="'static/'+libro.url" target="_self">
                   Descargar el libro
                 </v-btn>
+                <v-btn style="100%" small class="white--text" color="blue" block @click="muestraPDF('/'+libro.url)" target="_self">
+                  Muestra INLINE
+                </v-btn>
+
 
             </v-card-actions>
       </v-card>
@@ -48,6 +55,8 @@ import { mapState, mapGetters } from 'vuex'
 import EventBus from './eventos'
 const electron = require('electron');
 const BrowserWindow = electron.remote.BrowserWindow;
+const PDFWindow = require('electron-pdf-window')
+
 import path from 'path'
 
 /*import _ from 'lodash';*/
@@ -60,13 +69,35 @@ export default {
       describeseccion: 'Presentación de los seis libros de Maguaré en La Ceiba',
       //librosmaguarepdf: [],
       coleccion: [],
+      ventana: null
+
     }
   },
   /*mounted(){
       alert("TDN")
   },*/
   created() {
-    let win = new BrowserWindow({
+    /*let self=this;
+    self.ventana = new BrowserWindow({
+        webPreferences: {
+          //plugins: true,
+          //webSecurity: false
+        },
+        height: 600,
+        frame: true,
+        transparent: true,
+        width: 800,
+        backgroundColor: '#e0541e',
+        show: false
+      })
+      self.modal = 1;
+      PDFWindow.addSupport(self.ventana)
+      self.ventana.on('closed', function () {
+        alert("se cerró esta joda")
+        self.modal = 0;
+
+      })*/
+    /*let win = new BrowserWindow({
         webPreferences: {
           plugins: true,
           webSecurity: false
@@ -76,13 +107,14 @@ export default {
         width: 500,
         backgroundColor: '#312450',
       })
+      PDFWindow.addSupport(win)
 
-      //var filex = path.join(__static, 'cs.pdf')
-      var filex = '/dist/electron/static/cs.pdf'
+      var filex = path.join(__static, '/cs.pdf')
+
       console.log(filex)
 
-      win.loadURL(filex)
-
+      win.loadURL(filex)*/
+//var filex = 'static/cs.pdf'
 
     this.coleccionactiva(this.$route.params.id);
     },
@@ -90,6 +122,12 @@ export default {
       '$route.params.id': function (id) {
         //alert(id)
         this.coleccionactiva(id)
+        //this.ventana=close();
+        //this.ventana = null;
+        if(this.ventana !==null){
+          this.ventana.close()
+          this.ventana = null
+        }
 
       },
     },
@@ -98,6 +136,49 @@ export default {
     ...mapGetters('Varios', ['librosCeiba', 'librosFiesta', 'librosLEMC']),
   },
   methods: {
+
+    creacontenedorPDF(){
+
+      //this.ventana.destroy()
+      //let win = new BrowserWindow({width: 1000, height: 1000})
+
+      this.ventana = new BrowserWindow({
+        //parent: win,
+          webPreferences: {
+            //plugins: true,
+            //webSecurity: false
+          },
+          height: 600,
+          //title: "My App",
+          frame: true,
+          transparent: true,
+          width: 800,
+          backgroundColor: '#e0541e',
+          show: false
+        })
+        this.ventana.on('closed', () => {
+          this.ventana = null
+        })
+        PDFWindow.addSupport(this.ventana)
+    },
+    muestraPDF(link){
+      //console.log(this.ventana.id + " <=========")
+      if(this.ventana === null){
+        console.log(' es null ahora ')
+        this.creacontenedorPDF()
+      }
+
+
+      console.log(this.ventana)
+        var filex = path.join(__static, link)
+
+        console.log(filex)
+
+        this.ventana.loadURL(filex)
+        this.ventana.show()
+        //alert(this.ventana.id)
+
+    },
     coleccionactiva(id){
 
       if(id =='librosCeiba'){
