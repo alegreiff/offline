@@ -303,25 +303,25 @@ const state = {
       titulo: 'Saludo bonito',
       describe: 'DESCRIBBE',
       url: 'URL'
-    },{ id: 0,
+    },{ id: 777,
       autor: 'AUTHOR',
       coleccion: 'Zumba que zumba',
       titulo: 'El bebé león - video',
       describe: 'DESCRIBBE',
       url: 'URL'
-    },{ id: 0,
+    },{ id: 778,
       autor: 'AUTHOR',
       coleccion: 'Zumba que zumba',
       titulo: 'Cuento Zumba que Zumba',
       describe: 'DESCRIBBE',
       url: 'URL'
-    },{ id: 0,
+    },{ id: 779,
       autor: 'AUTHOR',
       coleccion: 'Zumba que zumba',
       titulo: 'Tuc Nopa Pip',
       describe: 'DESCRIBBE',
       url: 'URL'
-    },{ id: 0,
+    },{ id: 780,
       autor: 'AUTHOR',
       coleccion: 'Zumba que zumba',
       titulo: 'Tiburón azul',
@@ -372,6 +372,10 @@ const getters = {
     vidCeiba: state => {
       return state.videos.filter(video => video.coleccion == 'Karaokes de Maguaré en La Ceiba')
     },
+    vidZumba: state => {
+      return state.videos.filter(video => video.coleccion == 'Zumba que zumba')
+    },
+
     vidAllKar: state => {
       return state.videos.filter(video => video.coleccion.startsWith('Kara'))
     },

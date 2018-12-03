@@ -1496,6 +1496,10 @@ const getters = {
     audiosSweetsongs: state => {
       return state.canciones.filter(cancion => cancion.coleccion == 'Sweet songs fi piknini. Canciones dulces para niños.')
     },
+    audiosFiesta: state => {
+      return state.canciones.filter(cancion => cancion.coleccion == 'Fiesta de la lectura')
+    },
+
 
     audiosSincoleccion: state => {
       return state.canciones.filter(cancion => cancion.coleccion == '')

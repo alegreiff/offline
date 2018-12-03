@@ -1,7 +1,16 @@
 <template>
 <div class="">
   <v-layout row wrap>
-        <v-flex xs3 v-for="(app, index) in interactivos" :key="index" class="pa-1">
+    <v-flex xs12 class="text-xs-center">
+      <v-card>
+              <v-card-title primary-title style="height:auto">
+                <div>
+                  <div>{{ datosgenerales[0].descripcion }}</div>
+                </div>
+              </v-card-title>
+        </v-card>
+    </v-flex>
+        <v-flex xs3 v-for="(app, index) in coleccion" :key="index" class="pa-1">
 
           <v-card>
                   <v-img :src="'static/miniaturas/'+app.id+'.jpg'" :alt="app.titulo" ></v-img>
@@ -30,7 +39,7 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
+import { mapState, mapGetters } from 'vuex'
 import EventBus from './eventos';
 /*import _ from 'lodash';*/
 
@@ -39,13 +48,15 @@ export default {
   data: function () {
     return {
       tipo: 'Interactivos',
-      interactivos: []
+      interactivos: [],
+      coleccion: [],
+      datosgenerales: []
     }
   },
   created() {
-    //this.interactivos = this.apps;
-    this.interactivos = _.sortBy(this.apps, ['titulo']);
-    EventBus.$emit('TITULO', 'Interactivos');
+    this.coleccionactiva(this.$route.params.id);
+    //this.interactivos = _.sortBy(this.apps, ['titulo']);
+    //EventBus.$emit('TITULO', 'Interactivos');
     },
     watch: {
 
@@ -53,10 +64,48 @@ export default {
 
   computed: {
     ...mapState('Interactivos', ['apps']),
-    /*...mapGetters('Videos', ['videoskaraokes', 'videossimples', 'videosall', 'videoscuentosnarrados', 'videoslistos']),*/
+    ...mapState('Describe', ['describe']),
+    ...mapGetters('Interactivos', ['appsJuegos', 'appsAdivinanzas', 'appsRompecabezas', 'appsTrabalenguas']),
+  },
+  watch: {
+    '$route.params.id': function (id) {
+      //alert(id)
+      this.coleccionactiva(id)
+
+    },
+
   },
   methods: {
+    coleccionactiva(id){
 
+      if(id =='appsJuegos'){
+        this.datosgenerales = this.describe.filter(dato => dato.id == 301)
+        this.coleccion = this.appsJuegos
+
+      }else if (id =='appsAdivinanzas') {
+        this.datosgenerales = this.describe.filter(dato => dato.id == 302)
+        this.coleccion = this.appsAdivinanzas
+
+      }else if (id =='appsRompecabezas') {
+        this.datosgenerales = this.describe.filter(dato => dato.id == 303)
+        this.coleccion = this.appsRompecabezas
+
+      }else if (id =='appsTrabalenguas') {
+        this.datosgenerales = this.describe.filter(dato => dato.id == 304)
+        this.coleccion = this.appsTrabalenguas
+
+      }else{
+        this.datosgenerales = this.describe.filter(dato => dato.id == 300)
+        this.coleccion = this.apps
+
+      }
+      EventBus.$emit('TITULO', this.datosgenerales[0].titulobreve);
+      this.coleccion = _.sortBy(this.coleccion, ['titulo']);
+      //this.selected = this.coleccion[0].id;
+      //this.selected='inicio';
+      //this.cancionactiva = '';
+
+    },
 }
 }
 </script>

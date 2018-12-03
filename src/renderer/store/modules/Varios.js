@@ -2,14 +2,14 @@ const state = {
   descargablesmaguare: [
     { id: 9100,
       autor: 'Ministerio de Cultura',
-      titulo: 'Coloreable 001',
-      describe: 'Describe coloreable 001',
+      titulo: 'Coloreable gigante de La Ceiba',
+      describe: 'Descarga, colorea y diviértete con los personajes de Maguaré en La Ceiba',
       url: 'coloreables/coloreable-1.pdf'
     },
     { id: 9101,
       autor: 'Ministerio de Cultura',
-      titulo: 'Coloreable 002',
-      describe: 'Describe coloreable 002',
+      titulo: 'Colorea los personajes de Maguaré en La Ceiba',
+      describe: 'Descarga, colorea y diviértete con los personajes de Maguaré en La Ceiba',
       url: 'coloreables/coloreable-2.pdf'
     },
   ],

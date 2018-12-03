@@ -122,7 +122,7 @@ export default {
   computed: {
     ...mapState('Videos', ['videos']),
     //...mapGetters('Videos', ['videoskaraokes', 'videossimples', 'videosall', 'videoscuentosnarrados', 'videoslistos']),
-    ...mapGetters('Videos', ['vidKaraokes', 'vidSweet', 'vidFiesta', 'vidCeiba', 'vidAllKar', 'vidCuentos']),
+    ...mapGetters('Videos', ['vidKaraokes', 'vidSweet', 'vidFiesta', 'vidCeiba', 'vidAllKar', 'vidCuentos', 'vidZumba']),
 
   },
   methods: {
@@ -143,6 +143,8 @@ export default {
         this.coleccion = this.vidCeiba
       }else if (id =='vidAllKar') {
         this.coleccion = this.vidAllKar
+      }else if (id =='vidZumba') {
+        this.coleccion = this.vidZumba
       }else{
         this.coleccion = this.videos
       }

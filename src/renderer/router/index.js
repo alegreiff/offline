@@ -22,12 +22,13 @@ export default new Router({
       component: require('@/components/LandingPage').default
     },
     { path: '/biko', component: Biko },
-    { path: '/interactivos', component: Interactivos },
+    //{ path: '/interactivos', component: Interactivos },
     { path: '/sugerencias', component: Sugerencias },
 
     { path: '/descargablesmaguare', component: DescargablesMaguare },
     { path: '/provixional', component: MaguPROV },
 
+    { path: '/interactivos/:id', component: Interactivos, name: 'app' },
     { path: '/videos/:id', component: Videos, name: 'vid' },
     { path: '/audios/:id', component: Audios, name: 'coleccion' },
     { path: '/librosmaguare/:id', component: LibrosMaguare, name: 'lib' },

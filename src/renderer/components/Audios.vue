@@ -1,6 +1,15 @@
 <template>
 <div class="">
   <v-layout row wrap>
+    <v-flex xs12 class="text-xs-center">
+      <v-card>
+              <v-card-title primary-title style="height:auto">
+                <div>
+                  <div>{{ datosgenerales[0].descripcion }}</div>
+                </div>
+              </v-card-title>
+        </v-card>
+    </v-flex>
         <v-flex xs12>
           <v-card>
             <v-card-text class="">
@@ -94,7 +103,8 @@ export default {
       selected: 'inicio',
       coleccion: [],
       quesuena: '',
-      cancionactiva: ''
+      cancionactiva: '',
+      datosgenerales: []
     }
   },
   created() {
@@ -122,7 +132,8 @@ export default {
     },
   computed: {
     ...mapState('Audios', ['main', 'nombre', 'canciones']),
-    ...mapGetters('Audios', ['audiosCeiba', 'audiosCuentosaloido', 'audiosCuentoencanto', 'audiosSweetsongs', 'audiosSincoleccion']),
+    ...mapState('Describe', ['describe']),
+    ...mapGetters('Audios', ['audiosCeiba', 'audiosCuentosaloido', 'audiosCuentoencanto', 'audiosSweetsongs', 'audiosSincoleccion', 'audiosFiesta']),
   },
   methods: {
     coleccionactiva(id){
@@ -131,23 +142,30 @@ export default {
         this.$refs.playame1.pause()
       }
       if(id =='audiosCeiba'){
+        this.datosgenerales = this.describe.filter(dato => dato.id == 1)
         this.coleccion = this.audiosCeiba
-        EventBus.$emit('TITULO', 'Audios - Canciones de Maguaré en La Ceiba');
+
       }else if (id =='audiosCuentosaloido') {
+        this.datosgenerales = this.describe.filter(dato => dato.id == 3)
         this.coleccion = this.audiosCuentosaloido
-        EventBus.$emit('TITULO', 'Audios - Cuentos al oído');
+
       }else if (id =='audiosCuentoencanto') {
+        this.datosgenerales = this.describe.filter(dato => dato.id == 2)
         this.coleccion = this.audiosCuentoencanto
-        EventBus.$emit('TITULO', 'Audios - Con mi cuento encanto');
+
       }else if (id =='audiosSweetsongs') {
+        this.datosgenerales = this.describe.filter(dato => dato.id == 5)
         this.coleccion = this.audiosSweetsongs
-        EventBus.$emit('TITULO', 'Audios - Canciones dulces para niños');
-      }else if (id =='audiosSincoleccion') {
-        this.coleccion = this.audiosSincoleccion
+
+      }else if (id =='audiosFiesta') {
+        this.datosgenerales = this.describe.filter(dato => dato.id == 4)
+        this.coleccion = this.audiosFiesta
       }else{
+        this.datosgenerales = this.describe.filter(dato => dato.id == 0)
         this.coleccion = this.canciones
-        EventBus.$emit('TITULO', 'Audios - Lista completa');
+
       }
+      EventBus.$emit('TITULO', this.datosgenerales[0].titulobreve);
       this.coleccion = _.sortBy(this.coleccion, ['titulo']);
       this.selected = this.coleccion[0].id;
       //this.selected='inicio';
