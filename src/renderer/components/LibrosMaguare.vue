@@ -59,9 +59,6 @@ const PDFWindow = require('electron-pdf-window')
 
 import path from 'path'
 
-/*import _ from 'lodash';*/
-
-
 export default {
   //components: { SystemInformation },
   data: function () {
@@ -73,50 +70,9 @@ export default {
 
     }
   },
-  /*mounted(){
-      alert("TDN")
-  },*/
-  created() {
-    /*let self=this;
-    self.ventana = new BrowserWindow({
-        webPreferences: {
-          //plugins: true,
-          //webSecurity: false
-        },
-        height: 600,
-        frame: true,
-        transparent: true,
-        width: 800,
-        backgroundColor: '#e0541e',
-        show: false
-      })
-      self.modal = 1;
-      PDFWindow.addSupport(self.ventana)
-      self.ventana.on('closed', function () {
-        alert("se cerró esta joda")
-        self.modal = 0;
 
-      })*/
-    /*let win = new BrowserWindow({
-        webPreferences: {
-          plugins: true,
-          webSecurity: false
-        },
-        height: 500,
-
-        width: 500,
-        backgroundColor: '#312450',
-      })
-      PDFWindow.addSupport(win)
-
-      var filex = path.join(__static, '/cs.pdf')
-
-      console.log(filex)
-
-      win.loadURL(filex)*/
-//var filex = 'static/cs.pdf'
-
-    this.coleccionactiva(this.$route.params.id);
+    created() {
+      this.coleccionactiva(this.$route.params.id);
     },
     watch: {
       '$route.params.id': function (id) {
@@ -131,25 +87,17 @@ export default {
 
       },
     },
-  computed: {
-    ...mapState('Varios', ['libros']),
-    ...mapGetters('Varios', ['librosCeiba', 'librosFiesta', 'librosLEMC']),
-  },
+    computed: {
+      ...mapState('Varios', ['libros']),
+      ...mapGetters('Varios', ['librosCeiba', 'librosFiesta', 'librosLEMC']),
+    },
   methods: {
 
     creacontenedorPDF(){
-
-      //this.ventana.destroy()
-      //let win = new BrowserWindow({width: 1000, height: 1000})
-
       this.ventana = new BrowserWindow({
-        //parent: win,
           webPreferences: {
-            //plugins: true,
-            //webSecurity: false
           },
           height: 600,
-          //title: "My App",
           frame: true,
           transparent: true,
           width: 800,
@@ -164,15 +112,13 @@ export default {
     muestraPDF(link){
       //console.log(this.ventana.id + " <=========")
       if(this.ventana === null){
-        console.log(' es null ahora ')
+        //console.log(' es null ahora ')
         this.creacontenedorPDF()
       }
-
-
-      console.log(this.ventana)
+      //console.log(this.ventana)
         var filex = path.join(__static, link)
 
-        console.log(filex)
+        //console.log(filex)
 
         this.ventana.loadURL(filex)
         this.ventana.show()
@@ -195,14 +141,9 @@ export default {
         EventBus.$emit('TITULO', 'Libros');
       }
       this.coleccion = _.sortBy(this.coleccion, ['titulo']);
-
-
     },
-}
+  }
 }
 </script>
-
 <style lang="css" scoped>
-
-
 </style>
