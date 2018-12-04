@@ -13,25 +13,38 @@
   <v-flex xs3 v-for="(app, index) in tutorialespdf" :key="index" class="pa-1">
     <v-card>
             <v-img :src="'static/miniaturas/'+app.id+'.jpg'" :alt="app.titulo" ></v-img>
-            <v-card-title primary-title style="height:auto">
+            <v-card-title primary-title>
               <div>
                 <h3 class="mb-0">{{ app.titulo }}</h3>
+                <!--<span class="authormag">{{ app.autor }}</span>-->
+                <v-tooltip bottom max-width="250">
+                  <span slot="activator">Autor</span>
+                  <span>{{ app.autor }}</span>
+                </v-tooltip>
                 <div>{{ app.describe }}</div>
               </div>
             </v-card-title>
 
-            <v-card-actions >
+            <v-card-actions>
 
-                <v-tooltip top color="magrojo" class="pa-1">
-                  <v-btn dark color="magazul" :href="'static/'+app.url"
-                  :download="app.descarga+'.pdf'"
-                  slot="activator">
-                  <v-icon dark>arrow_drop_down_circle</v-icon>
-                </v-btn><span>Descargar el tutorial</span></v-tooltip>
+                <v-layout>
+                  <v-flex xs6 class="pa-1">
+                    <v-tooltip top color="magrojo">
+                      <v-btn dark block color="magazul" :href="'static/'+app.url"
+                      :download="app.descarga+'.pdf'"
+                      slot="activator">
+                      <v-icon dark>arrow_drop_down_circle</v-icon>
+                    </v-btn><span>Descargar el tutorial</span></v-tooltip>
 
-                <v-tooltip top color="magrojo" class="pa-1"><v-btn dark color="magazul" @click="muestraPDF('/'+app.url)" slot="activator">
-                  <v-icon dark>pageview</v-icon>
-                </v-btn><span>Ver el tutorial</span></v-tooltip>
+
+                  </v-flex>
+                  <v-flex xs6 class="pa-1">
+                    <v-tooltip top color="magrojo">
+                      <v-btn dark block color="magazul" @click="muestraPDF('/'+app.url)" slot="activator">
+                      <v-icon dark>pageview</v-icon>
+                    </v-btn><span>Ver el tutorial</span></v-tooltip>
+                  </v-flex>
+                </v-layout>
             </v-card-actions>
       </v-card>
   </v-flex>

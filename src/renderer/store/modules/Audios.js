@@ -69,7 +69,7 @@ El Rrom viajó por todos los caminos y en todos cayeron una niña aquí, un niñ
       autor: 'Ministerio de Cultura - Observatorio del Caribe Colombiano',
       coleccion: 'Sweet songs fi piknini. Canciones dulces para niños.',
       titulo: 'Miss Lucy',
-      describe: 'Una canción afroamericana del archipiélago de San Andrés y Providencia, que cuenta la historia de un pequeño niño travieso quien al comer jabón provoca que entre varios remedios el deba votar por la cura que mejor le parece. ¿Qué te gusta cuando tomas tu baño en una tina?.',
+      describe: 'Una canción afroamericana del archipiélago de San Andrés y Providencia, que cuenta la historia de un pequeño niño travieso quien al comer jabón provoca que entre varios remedios el deba votar por la cura que mejor le parece. ¿Qué te gusta cuando tomas tu baño en una tina?',
       url: '38-misslucy.mp3',
       letra: `Miss Lucy had a biebi
 His name was Tinitin
@@ -130,7 +130,7 @@ To see your rose again`
       autor: 'Ministerio de Cultura - Observatorio del Caribe Colombiano',
       coleccion: 'Sweet songs fi piknini. Canciones dulces para niños.',
       titulo: 'A poco',
-      describe: '¡Escucha esta canción del Archipiélago de San Andrés y Providencia que te hará bailar!.',
+      describe: '¡Escucha esta canción del Archipiélago de San Andrés y Providencia que te hará bailar!',
       url: '156-apoco.mp3',
       letra: `A poco, a paca, eleke, omoco
 Otoco, ataca, eleke, omoco
@@ -1117,7 +1117,7 @@ A  descansar`
       autor: 'Ricardo Prado',
       coleccion: 'Maguaré en La Ceiba',
       titulo: 'Ñame, ñame, Ummm',
-      describe: '¿Cuáles son tus platos favoritos?, ¿prefieres tamales o un buen sancocho?. Con Bertilda y Edilberto sabrás cómo se preparan deliciosos platos colombianos.',
+      describe: '¿Cuáles son tus platos favoritos?, ¿prefieres tamales o un buen sancocho? Con Bertilda y Edilberto sabrás cómo se preparan deliciosos platos colombianos.',
       url: '625-namename.mp3',
       letra: `Bertilda y Edilberto ya están en la cocina
 Y preparan un tamal para el bazar
@@ -1196,7 +1196,7 @@ Y caimito pa’ calmar el popó, po, po, po (etc)`
       autor: 'Ricardo Prado',
       coleccion: 'Maguaré en La Ceiba',
       titulo: '27 guagüitas',
-      describe: 'Un papá y una mamá siempre están pendientes de sus hijitos, de darles de comer, de bañarlos y acostarlos a dormir... ¿pero como hacen los papás de 27 cuyecitos?',
+      describe: 'Un papá y una mamá siempre están pendientes de sus hijitos, de darles de comer, de bañarlos y acostarlos a dormir… ¿pero como hacen los papás de 27 cuyecitos?',
       url: '27-guaguitas.mp3',
       letra: `Otra vez se desvelaron
 Linio y Tulita se quedaron sin dormir
@@ -1239,7 +1239,7 @@ Para ellos lo mejor es ser mamá y papá`
       autor: 'Ricardo Prado',
       coleccion: 'Maguaré en La Ceiba',
       titulo: 'El convite en la ceiba',
-      describe: 'Saimiri el monito ardilla de La Ceiba nos pr631esenta a todos y cada uno de los vecinos de la comunidad, con la ayuda del abuelo Emiliano los invita a... a... a... ¿a qué es que los invita?.',
+      describe: 'Saimiri el monito ardilla de La Ceiba nos presenta a todos y cada uno de los vecinos de la comunidad, con la ayuda del abuelo Emiliano los invita a… a… a... ¿a qué es que los invita?',
       url: '628-elconvite.mp3',
       letra: `Maguaré está sonando, don Emiliano está llamando
 Y Saimiri ha llegado para presentar a los invitados

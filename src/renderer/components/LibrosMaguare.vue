@@ -16,12 +16,12 @@
   <v-flex xs3 v-for="(libro, index) in coleccion" :key="index" class="pa-1">
     <v-card>
             <v-img :src="'static/miniaturas/'+libro.id+'.jpg'" :alt="libro.titulo" ></v-img>
-            
 
-            <v-card-title primary-title style="height:auto">
+
+            <v-card-title primary-title>
               <div>
                 <h3 class="mb-0">{{ libro.titulo }}</h3>
-                <span>{{ libro.autor }}</span>
+                <span class="authormag">{{ libro.autor }}</span>
                 <div style="height: 160px">{{ libro.describe }}</div>
 
               </div>
@@ -29,7 +29,7 @@
 
             <v-card-actions >
 
-                <v-btn style="100%" small class="white--text" color="blue" block :href="'static/'+libro.url" target="_self">
+                <v-btn small class="white--text" color="blue" block :href="'static/'+libro.url" target="_self">
                   Descargar el libro
                 </v-btn>
                 <v-btn style="100%" small class="white--text" color="blue" block @click="muestraPDF('/'+libro.url)" target="_self">

@@ -23,7 +23,7 @@ const state = {
         publico: 'maguare',
         describe: 'Este relato infantil es publicación de la Fundación Taller de Letras Jordi Sierra Fabra para De Cero a Siempre e invita a despertar los sentidos a través de hermosas ilustraciones llenas de color en un lugar donde los secretos nunca acaban.',
         url: 'librosmaguare/513-castillo.pdf',
-        descarga: 'LEMC-castillolibros'
+        descarga: 'castillolibros'
       },{
         id: 490,
         autor: 'ICBF Instituto Colombiano de Bienestar Familiar - Ministerio de Cultura - Fundalectura',
@@ -32,7 +32,7 @@ const state = {
         publico: 'maguare',
         describe: 'Las canciones, juegos y relatos que los campesinos colombianos comparten con los niños en este volumen son un reconocimiento de las tradiciones y los modos de comprender y vivir la vida en diferentes contextos rurales del país.',
         url: 'librosmaguare/490-patasdearmadillo.pdf',
-        descarga: 'LEMC-armadilloratons'
+        descarga: 'FIESTA-armadilloratones'
       },{
         id: 491,
         autor: 'ICBF Instituto Colombiano de Bienestar Familiar - Ministerio de Cultura - Fundalectura',
@@ -41,7 +41,7 @@ const state = {
         publico: 'maguare',
         describe: 'Este libro te invita a disfrutar la voz y la música de los pueblos nativos de Colombia. En ¡Tortuguita, vení bailá!, se recogen las palabras y las melodías con las que en Colombia se le da la bienvenida a los hijos en cinco pueblos indígenas.',
         url: 'librosmaguare/491-tortuguita.pdf',
-        descarga: 'LEMC-tortuguitavenibaila'
+        descarga: 'FIESTA-tortuguitavenibaila'
       },{
         id: 493,
         autor: 'ICBF Instituto Colombiano de Bienestar Familiar - Ministerio de Cultura - Fundalectura',
@@ -50,7 +50,7 @@ const state = {
         publico: 'maguare',
         describe: 'En esta edición bilingüe, el ICBF y Fundalectura recopilan algunos arrullos y cuentos en español, piapoco, arhuaco, kamëntsá, uitoto y wayúu, lenguas que guardan la memoria.',
         url: 'librosmaguare/493-putunkaa.pdf',
-        descarga: 'LEMC-putunkaaserruma'
+        descarga: 'FIESTA-putunkaaserruma'
       },{
         id: 495,
         autor: 'ICBF Instituto Colombiano de Bienestar Familiar - Ministerio de Cultura - Fundalectura',
@@ -62,37 +62,37 @@ const state = {
         descarga: 'LEMC-morenaronda'
       },{
         id: 500,
-        autor: 'AUTOR',
+        autor: 'ICBF Instituto Colombiano de Bienestar Familiar - Ministerio de Cultura - Fundalectura',
         titulo: 'Los arrullos de Jáamo',
         coleccion: 'Fiesta de la lectura',
         publico: 'maguare',
         describe: 'Este libro reúne los arrullos, relatos y juegos que acogen a los bebés y los niños en las familias de las comunidades nasa, inga, sikuani, cãacwa y totoró, cinco de los ciento dos pueblos indígenas colombianos. ',
-        url: 'librosmaguare/URLPDF',
-        descarga: 'LEMC-arrullosjaamo'
+        url: 'librosmaguare/500-arrullosjaamo.pdf',
+        descarga: 'FIESTA-arrullosjaamo'
       },{
         id: 511,
-        autor: 'AUTOR',
+        autor: 'ICBF Instituto Colombiano de Bienestar Familiar - Ministerio de Cultura - Fundalectura',
         titulo: 'Tiki, tiki, tai - libro',
         coleccion: 'Fiesta de la lectura',
         publico: 'maguare',
         describe: 'En esta edición bilingüe se recopilan algunos arrullos, secretos y relatos en español y en el idioma del pueblo Rrom, una lengua que recuerda cada camino por el que este pueblo ha trasegado en su ir y venir por el mundo, amantes ante todo de la libertad y la vida.',
-        url: 'librosmaguare/URLPDF',
-        descarga: 'LEMC-tikitikitai'
+        url: 'librosmaguare/511-tikitikitai.pdf',
+        descarga: 'FIESTA-tikitikitai'
       },{
         id: 499,
-        autor: 'AUTOR',
+        autor: 'Rafael Pombo',
         titulo: 'Con pombo y platillos',
         coleccion: 'Leer es mi cuento',
         publico: 'maguare',
         describe: 'Recuerda los cuentos de infancia y lee con tus niños: Mirringa Mirronga, El renacuajo paseador, Juan Chunguero, Pastorcita, Juan Matachín, Tía Pasitrote y muchos más.',
-        url: 'librosmaguare/URLPDF',
+        url: 'librosmaguare/499-pomboplatillos.pdf',
         descarga: 'LEMC-pombo-platillos'
       },{
         id: 501,
         autor: 'AUTOR',
         titulo: 'Romeo y Julieta',
         coleccion: 'Leer es mi cuento',
-        publico: 'maguare',
+        publico: 'maguared',
         describe: 'Obra maestra de William Shakespeare, genio de la lengua inglesa, es la historia de amor más hermosa y trágica que jamás se haya escrito. Esta versión de los hermanos Lamb ha sido especialmente escrita para los jóvenes. ',
         url: 'librosmaguare/URLPDF',
         descarga: 'LEMC-romeo-julieta'
@@ -101,108 +101,108 @@ const state = {
         autor: 'AUTOR',
         titulo: 'Cuentos de Las mil y una noches',
         coleccion: 'Leer es mi cuento',
-        publico: 'maguare',
+        publico: 'maguared',
         describe: 'Los relatos que cada noche cuenta Sherezada al sultán constituyen uno de los libros que más ha entretenido a niños y adultos durante siglos.  Aquí encontrarás tres de estos relatos llenos de aventuras, sueños e historias de amor.',
         url: 'librosmaguare/URLPDF',
         descarga: 'LEMC-milyuna-noches'
       },{
         id: 505,
-        autor: 'AUTOR',
+        autor: 'Hermanos Grimm, Charles Perrault, Agustín Jaramillo Londoño, Infante Don Juan Manuel, Félix María Samaniego, Rafael Pombo, Rubén Darío, Víctor Eduardo Caro, Federico García Lorca',
         titulo: 'De viva voz',
         coleccion: 'Leer es mi cuento',
         publico: 'maguare',
         describe: 'Los cuentos, poemas y fábulas que presentamos en este libro tienen como propósito hacer que los lectores, niños y grandes, adquieran el gusto por las palabras. ',
-        url: 'librosmaguare/URLPDF',
+        url: 'librosmaguare/505-vivavoz.pdf',
         descarga: 'LEMC-viva-voz'
       },{
         id: 507,
-        autor: 'AUTOR',
+        autor: 'Hans Christian Andersen,  Alexander Pushkin, Joseph Jacobs, Oscar Wilde, Hermanos Grimm - Ilustración: Rafael Yockteng y Daniel Gómez.',
         titulo: 'Puro cuento',
         coleccion: 'Leer es mi cuento',
         publico: 'maguare',
         describe: 'Este título te invita a disfrutar con tus niños de las historias tradicionales que los familias europeas se contaban durante los fríos y largos inviernos.',
-        url: 'librosmaguare/URLPDF',
+        url: 'librosmaguare/507-purocuento.pdf',
         descarga: 'LEMC-puro-cuento'
       },{
         id: 515,
-        autor: 'AUTOR',
+        autor: 'Autores varios ',
         titulo: 'Canta palabras',
         coleccion: 'Leer es mi cuento',
         publico: 'maguare',
         describe: 'Canta y juega con tus niños las canciones, rondas, poemas, trabalenguas, dichos, retahílas y repeticiones. Encontrarás relatos e historias de reconocidos autores latinoamericanos.',
-        url: 'librosmaguare/URLPDF',
+        url: 'librosmaguare/515-cantapalabras.pdf',
         descarga: 'LEMC-canta-palabras'
       },{
         id: 538,
-        autor: 'AUTOR',
+        autor: 'Charls Perrrault - Hermanos Grimm',
         titulo: 'Barbas, pelos y cenizas',
         coleccion: 'Leer es mi cuento',
         publico: 'maguare',
         describe: 'Disfruta con tus niños historias de fantasía como Barba azul de Charles Perrault y Los tres pelos de oro del diablo y La Cenicienta de Los Hermanos Grimm.',
-        url: 'librosmaguare/URLPDF',
+        url: 'librosmaguare/538-barbas.pdf',
         descarga: 'LEMC-barbas-pelos-cenizas'
       },{
         id: 539,
-        autor: 'AUTOR',
+        autor: 'María Eastman- Rafael Jaramillo - Gabriela Mercedes Arciniegas - Santiago Pérez- Rocío Vélez',
         titulo: 'De animales y de niños',
         coleccion: 'Leer es mi cuento',
         publico: 'maguare',
         describe: 'Caballos, monos, niños, ratones, familias, cucarachitas, matas de mora, vaqueros, selvas, loras, gatos y hasta dulces de icaco viven en estas páginas. ¡Vamos a leer!.',
-        url: 'librosmaguare/URLPDF',
+        url: 'librosmaguare/539-animalesninos.pdf',
         descarga: 'LEMC-animales-ninos'
       },{
         id: 540,
-        autor: 'AUTOR',
+        autor: 'Horacio Benavides',
         titulo: 'Ábrete grano pequeño',
         coleccion: 'Leer es mi cuento',
         publico: 'maguare',
         describe: 'Este libro es una recopilación de las mejores adivinanzas escritas por el poeta caucano Horacio Benavides, muchas de sus adivinanzas están relacionadas con mitologías o con historias antiguas.',
-        url: 'librosmaguare/URLPDF',
+        url: 'librosmaguare/540-grano.pdf',
         descarga: 'LEMC-abrete-grano'
       },{
         id: 541,
-        autor: 'AUTOR',
+        autor: 'Hans Christian Andersen',
         titulo: 'El patito feo',
         coleccion: 'Leer es mi cuento',
         publico: 'maguare',
         describe: 'Este cuento clásico de Hans Christian Andersen, ha sido leído desde hace muchos años con emoción por lectores de todas las edades y recuerda la necesidad de aceptar a quienes piensan diferente y pertenecen a otra raza, cultura o religión.',
-        url: 'librosmaguare/URLPDF',
+        url: 'librosmaguare/541-patitofeo.pdf',
         descarga: 'LEMC-patito-feo'
       },{
         id: 542,
-        autor: 'AUTOR',
+        autor: 'José Martí',
         titulo: 'Meñique',
         coleccion: 'Leer es mi cuento',
         publico: 'maguare',
         describe: 'Esta bella historia narra cómo los hermanos Pedro, Pablo y Juancito (al que conocían como Meñique porque era tan pequeño que se podía esconder en la bota de su padre) decidieron ir a probar suerte en un reino muy particular.',
-        url: 'librosmaguare/URLPDF',
+        url: 'librosmaguare/542-menique.pdf',
         descarga: 'LEMC-menique'
       },{
         id: 543,
-        autor: 'AUTOR',
+        autor: 'F.M Samaniego',
         titulo: 'Fábulas',
         coleccion: 'Leer es mi cuento',
         publico: 'maguare',
         describe: 'Encuentra 30 fábulas de Félix María Samaniego como La cigarra y la hormiga, El león y el ratón, El ciervo en la fuente y muchas otras. Se trata de pequeños cuentos en los que hablan y actúan los animales, y que llevan a conclusiones morales.',
-        url: 'librosmaguare/URLPDF',
+        url: 'librosmaguare/543-fabulas.pdf',
         descarga: 'LEMC-fabulas'
       },{
         id: 544,
-        autor: 'AUTOR',
+        autor: 'Jeanne Marie Le Prince de Beaumont',
         titulo: 'La bella y la bestia',
         coleccion: 'Leer es mi cuento',
         publico: 'maguare',
         describe: 'Esta bella historia recuerda la tolerancia y la aceptación y habla sobre cómo la belleza de una persona no esta en su físico sino en su forma de ser, porque lo más importante es la belleza del corazón.',
-        url: 'librosmaguare/URLPDF',
+        url: 'librosmaguare/544-bellabestia.pdf',
         descarga: 'LEMC-bella-bestia'
       },{
         id: 611,
-        autor: 'AUTOR',
+        autor: 'Rudyard Kipling',
         titulo: 'Por qué el elefante tiene la trompa así',
         coleccion: 'Leer es mi cuento',
         publico: 'maguare',
         describe: 'Con estos dos cuentos los niños gozarán y se divertirán viendo cómo y por qué las cosas son como son. ¿No será, acaso, que el elefante tiene trompa y el leopardo manchas porque les pasó lo que él cuenta que les pasó?.',
-        url: 'librosmaguare/URLPDF',
+        url: 'librosmaguare/611-elefantetrompa.pdf',
         descarga: 'LEMC-elefante-trompa'
       },
       {
@@ -210,18 +210,18 @@ const state = {
         autor: 'Hermanos Grimm',
         titulo: 'Bosque adentro',
         coleccion: 'Leer es mi cuento',
-        publico: 'maguared',
+        publico: 'maguare',
         describe: 'En este libro encontrarán los clásicos de Los Hermanos Grimm: Hansel y Gretel, Caperucita Roja, Blanca Nieves y La bella durmiente.',
-        url: 'leeresmicuento/bosqueadentro.pdf',
+        url: 'librosmaguare/bosqueadentro.pdf',
         descarga: 'LEMC-bosque-adentro'
       },{
         id: 1211,
         autor: 'Alejandro Dumas',
         titulo: 'El rey de los topos y su hija',
         coleccion: 'Leer es mi cuento',
-        publico: 'maguared',
+        publico: 'maguare',
         describe: 'Esta es una historia escrita por Alejandro Dumas que refleja el amor de una madre por su hijo.',
-        url: 'librosmaguare/URLPDF',
+        url: 'librosmaguare/reytopos.pdf',
         descarga: 'LEMC-rey-topos'
       },{
         id: 1220,
@@ -261,7 +261,7 @@ const state = {
         descarga: 'LEMC-donquijote'
       },{
         id: 1226,
-        autor: 'Varios',
+        autor: 'Autores varios',
         titulo: 'Poesía en español',
         coleccion: 'Leer es mi cuento',
         publico: 'maguared',
@@ -306,12 +306,12 @@ const state = {
         descarga: 'LEMC-juan-bolondron'
       },{
         id: 612,
-        autor: 'AUTOR',
+        autor: 'Autores varios',
         titulo: 'Canciones, rondas, nanas, retahílas y adivinanzas',
         coleccion: 'Leer es mi cuento',
         publico: 'maguare',
         describe: 'Juguemos con las palabras, canta con ellas, traba la lengua y destrábala otra vez, vamos: "Pedro Pérez Pereira, pobre pintor portugués, pinta paisajes por poco precio, para poder pasar por París". ¿Pudiste decirlo? ¡Ahora dilo aún más rápido!.',
-        url: 'librosmaguare/URLPDF',
+        url: 'librosmaguare/612-cancionesrondas.pdf',
         descarga: 'LEMC-canciones-rondas'
       },{
         id: 618,

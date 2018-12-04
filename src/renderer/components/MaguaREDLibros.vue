@@ -29,10 +29,10 @@
 
             <v-card-actions >
 
-                <v-btn style="100%" small class="white--text" color="blue" block :href="'static/'+libro.url" target="_self" :download="libro.descarga">
+                <v-btn small class="white--text" color="blue" block :href="'static/'+libro.url" target="_self" :download="libro.descarga">
                   Descargar el libro
                 </v-btn>
-                <v-btn style="100%" small class="white--text" color="blue" block @click="muestraPDF('/'+libro.url)" target="_self">
+                <v-btn small class="white--text" color="blue" block @click="muestraPDF('/'+libro.url)" target="_self">
                   Muestra INLINE
                 </v-btn>
 

@@ -2,7 +2,7 @@ const state = {
   apps: [
     { id: 154,
       autor: 'Ministerio de Cultura',
-      titulo: 'Baila con el Arma-DJ',
+      titulo: 'Baila con el Arma - DJ',
       coleccion: 'Juegos',
       describe: 'Si te gusta mover tu cuerpo este juego es especial para tí. Elige uno de los personajes del universo de Maguaré: Saimiri, el mono, la rana, el oso perezoso, el olinguito o la camaleona, mientras el ArmaDJ mezcla con sus sintetizadores y los hace bailar a ellos y a ti. ¿Cuál es la música que más te gusta bailar?',
       url: 'bailaconelarmadj/index.html'
@@ -39,35 +39,35 @@ const state = {
       autor: 'Maguaré',
       titulo: 'Trabalenguas - La ciudad de Pamplona',
       coleccion: 'Trabalenguas',
-      describe: 'Juguemos con las palabras, repite una y otra vez hasta que se destrabe tu lengua: en la ciudad de Pamplona hay una plaza, en la plaza hay una esquina, en la esquina hay una casa...¿qué sigue?',
+      describe: 'Juguemos con las palabras, repite una y otra vez hasta que se destrabe tu lengua: en la ciudad de Pamplona hay una plaza, en la plaza hay una esquina, en la esquina hay una casa... ¿qué sigue?',
       url: 'trabalenguas/la_ciudad_de_pamplona/index.html'
     },
     { id: 212,
       autor: 'Maguaré',
       titulo: 'Trabalenguas - El perro de Parra',
       coleccion: 'Trabalenguas',
-      describe: 'Juguemos con las palabras, repite una y otra vez hasta que se destrabe tu lengua: Parra tiene un perro, Guerra tenía una parra. el perro de Parra subió a la parra de Guera...¿cómo sigue?',
+      describe: 'Juguemos con las palabras, repite una y otra vez hasta que se destrabe tu lengua: Parra tiene un perro, Guerra tenía una parra. El perro de Parra subió a la parra de Guerra... ¿cómo sigue?',
       url: 'trabalenguas/el_perro_de_parra/index.html'
     },
     { id: 213,
       autor: 'Maguaré',
       titulo: 'Trabalenguas - El rey de Constantinopla',
       coleccion: 'Trabalenguas',
-      describe: 'Juguemos con las palabras, repite una y otra vez hasta que se destrabe tu lengua: El rey de Constantinopla está constantinoplizado. Consta que Constanza no lo pudo desconstantinoplizar...¿qué sigue?',
+      describe: 'Juguemos con las palabras, repite una y otra vez hasta que se destrabe tu lengua: El rey de Constantinopla está constantinoplizado. Consta que Constanza no lo pudo desconstantinoplizar... ¿qué sigue?',
       url: 'trabalenguas/el_rey_de_constantinopla/index.html'
     },
     { id: 214,
       autor: 'Maguaré',
       titulo: 'Trabalenguas - Gallina',
       coleccion: 'Trabalenguas',
-      describe: 'Juguemos con las palabras, repite una y otra vez hasta que se destrabe tu lengua: Tengo una gallina pinta, perlinta, pelizanca, repitiblanca, con sus pollitos pintos...¿cómo sigue?',
+      describe: 'Juguemos con las palabras, repite una y otra vez hasta que se destrabe tu lengua: Tengo una gallina pinta, perlinta, pelizanca, repitiblanca, con sus pollitos pintos... ¿cómo sigue?',
       url: 'trabalenguas/gallina/index.html'
     },
     { id: 215,
       autor: 'Maguaré',
       titulo: 'Trabalenguas - Erre',
       coleccion: 'Trabalenguas',
-      describe: 'Juguemos con las palabras, repite una y otra vez hasta que se destrabe tu lengua: Erre con erre cigarro, erre con erre barril, rápido corren los carros cargados de...¿cómo sigue?',
+      describe: 'Juguemos con las palabras, repite una y otra vez hasta que se destrabe tu lengua: Erre con erre cigarro, erre con erre barril, rápido corren los carros cargados de... ¿cómo sigue?',
       url: 'trabalenguas/erre/index.html'
     },
     { id: 216,
@@ -81,7 +81,7 @@ const state = {
       autor: 'Ministerio de Cultura, Centro Ático',
       titulo: 'Adivinanza 1',
       coleccion: 'Adivinanzas',
-      describe: '"Adivina adivinador, juguemos con palabras y descubre el acertijo: Entre rincones y ramas, mis redes voy construyendo, para que moscas incautas, en ellas vayan cayendo."',
+      describe: 'Adivina adivinador, juguemos con palabras y descubre el acertijo: Entre rincones y ramas, mis redes voy construyendo, para que moscas incautas, en ellas vayan cayendo.',
       url: 'adivinanzas/arania/index.html'
     },
     { id: 218,

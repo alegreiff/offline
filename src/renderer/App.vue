@@ -18,10 +18,10 @@
     </v-container>
   </v-content>
   <v-footer :inset="footer.inset" app height="100" class="px-2 ma-0">
-    <v-flex xs2> <img class="imlogo" id="logo" src="~@/assets/logosfooter/gobiernodecolombia.png"> </v-flex>
+    <v-flex xs4> <img class="imlogo" id="logo" src="~@/assets/logosfooter/logoministerio.png"> </v-flex>
     <v-flex xs2> <img class="imlogo" id="logo" src="~@/assets/logosfooter/unimedios.png"> </v-flex>
-    <v-flex xs1> <img class="imlogo" id="logo" src="~@/assets/logosfooter/cero.png"> </v-flex>
-    <v-flex xs1> <img class="imlogo" id="logo" src="~@/assets/logosfooter/leer.png"> </v-flex>
+    <!--<v-flex xs1> <img class="imlogo" id="logo" src="~@/assets/logosfooter/cero.png"> </v-flex>
+    <v-flex xs1> <img class="imlogo" id="logo" src="~@/assets/logosfooter/leer.png"> </v-flex>-->
     <v-flex xs2> <img class="imlogo" id="logo" src="~@/assets/logosfooter/maguare.png"> </v-flex>
     <v-flex xs2> <img class="imlogo" id="logo" src="~@/assets/logosfooter/maguared.png"> </v-flex>
     <v-flex xs2> <img class="imlogo" id="logo" src="~@/assets/logosfooter/premio.png"> </v-flex>

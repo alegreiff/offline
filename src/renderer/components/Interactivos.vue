@@ -15,23 +15,16 @@
           <v-card>
                   <v-img :src="'static/miniaturas/'+app.id+'.jpg'" :alt="app.titulo" ></v-img>
 
-                  <v-card-title primary-title style="height:200px">
+                  <v-card-title primary-title style="height:auto">
                     <div>
                       <h3 class="mb-0">{{ app.titulo }}</h3>
                       <div>{{ app.describe }}</div>
                     </div>
                   </v-card-title>
-
                   <v-card-actions >
-
-                      <v-btn style="100%" small class="white--text" color="blue" block :href="'static/web/'+app.url" target="maguared">Ver interactivo</v-btn>
-
+                      <v-btn style="100%" small class="white--text" color="magmorado" block :href="'static/web/'+app.url" target="maguared">Ver interactivo</v-btn>
                   </v-card-actions>
             </v-card>
-
-
-
-
         </v-flex>
       </v-layout>
 
@@ -101,16 +94,7 @@ export default {
       }
       EventBus.$emit('TITULO', this.datosgenerales[0].titulobreve);
       this.coleccion = _.sortBy(this.coleccion, ['titulo']);
-      //this.selected = this.coleccion[0].id;
-      //this.selected='inicio';
-      //this.cancionactiva = '';
-
     },
 }
 }
 </script>
-
-<style lang="css" scoped>
-
-
-</style>
