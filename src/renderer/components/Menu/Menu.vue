@@ -213,13 +213,13 @@
 
 <img id="logo" src="static/maguared.png" alt="electron-vue" class="logominim">
 
-<v-list-tile :to="{path: '/sugerencias'}" >
+<v-list-tile :to="{path: '/videosmaguared'}" >
       <v-list-tile-action><v-icon>music_video</v-icon></v-list-tile-action>
       <v-list-tile-content><v-list-tile-title>Videos</v-list-tile-title></v-list-tile-content>
 </v-list-tile>
 <!-- MAGUARÉ GRUPO INTERACTIVOS -->
     <v-list-group no-action>
-    <v-list-tile slot="activator">
+    <v-list-tile slot="activator" ripple>
       <v-list-tile-action>
         <v-icon>picture_as_pdf</v-icon>
       </v-list-tile-action>
@@ -242,7 +242,7 @@
 
 
 
-    <v-list-tile :to="{name: 'app', params: { id: 'appsRompecabezas'}}" ripple>
+    <v-list-tile :to="{name: 'maglib', params: { id: 'librosTodosLeeresmicuento'}}" ripple>
       <v-list-tile-content>
         <v-list-tile-title>Leer es mi cuento</v-list-tile-title>
       </v-list-tile-content>
@@ -277,7 +277,7 @@
 
 
 -->
-<v-list-tile :to="{path: '/sugerencias'}" >
+<v-list-tile :to="{path: '/tutorialesmaguared'}" >
       <v-list-tile-action><v-icon>picture_as_pdf</v-icon></v-list-tile-action>
       <v-list-tile-content><v-list-tile-title>Tutoriales</v-list-tile-title></v-list-tile-content>
 </v-list-tile>

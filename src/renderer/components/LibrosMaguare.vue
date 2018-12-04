@@ -88,8 +88,8 @@ export default {
       },
     },
     computed: {
-      ...mapState('Varios', ['libros']),
-      ...mapGetters('Varios', ['librosCeiba', 'librosFiesta', 'librosLEMC']),
+      //...mapState('Varios', ['libros']),
+      ...mapGetters('Varios', ['librosCeiba', 'librosFiesta', 'librosLEMC', 'librosmaguare']),
     },
   methods: {
 
@@ -137,7 +137,7 @@ export default {
         this.coleccion = this.librosLEMC
         EventBus.$emit('TITULO', 'Libros - Leer es mi cuento');
       }else{
-        this.coleccion = this.libros
+        this.coleccion = this.librosmaguare
         EventBus.$emit('TITULO', 'Libros');
       }
       this.coleccion = _.sortBy(this.coleccion, ['titulo']);
