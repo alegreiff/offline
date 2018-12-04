@@ -15,8 +15,8 @@
     </v-flex>
   <v-flex xs3 v-for="(libro, index) in coleccion" :key="index" class="pa-1">
     <v-card>
-            <!--<v-img :src="'static/miniaturas/'+libro.id+'.jpg'" :alt="libro.titulo" ></v-img>-->
-            i m a g e n
+            <v-img :src="'static/miniaturas/'+libro.id+'.jpg'" :alt="libro.titulo" ></v-img>
+            
 
             <v-card-title primary-title style="height:auto">
               <div>
