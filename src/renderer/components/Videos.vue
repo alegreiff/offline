@@ -6,9 +6,10 @@
 
 
 
-            <img :src="'static/miniaturas/'+video.id+'.jpg'" :alt="video.titulo" class="miniatura" >
-            <p>{{ video.titulo }}</p>
-            
+            <!--<img :src="'static/miniaturas/'+video.id+'.jpg'" :alt="video.titulo" class="miniatura" >-->
+            <h2>{{ video.titulo }}</h2>
+            <p>{{ video.autor }}</p>
+
           </v-flex>
         </v-layout>
         <v-flex xs12>
