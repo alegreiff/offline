@@ -73,6 +73,7 @@ export default {
 
     created() {
       this.coleccionactiva(this.$route.params.id);
+
     },
     watch: {
       '$route.params.id': function (id) {
@@ -94,6 +95,7 @@ export default {
   methods: {
 
     creacontenedorPDF(){
+      alert("mierda no entra")
       this.ventana = new BrowserWindow({
           webPreferences: {
           },
