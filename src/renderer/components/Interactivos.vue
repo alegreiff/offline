@@ -11,19 +11,15 @@
         </v-card>
     </v-flex>
         <v-flex xs3 v-for="(app, index) in coleccion" :key="index" class="pa-1">
-
-          <v-card>
-                  <v-img :src="'static/miniaturas/'+app.id+'.jpg'" :alt="app.titulo" ></v-img>
-
-                  <v-card-title primary-title style="height:auto">
-                    <div>
-                      <h3 class="mb-0">{{ app.titulo }}</h3>
-                      <div>{{ app.describe }}</div>
-                    </div>
-                  </v-card-title>
-                  <v-card-actions >
-                      <v-btn style="100%" small class="white--text" color="magmorado" block :href="'static/web/'+app.url" target="maguared">Ver interactivo</v-btn>
-                  </v-card-actions>
+            <v-card  height="100%" class="flexcard" ripple hover>
+              <div class="grow">
+                <v-img :src="'static/miniaturas/'+app.id+'.jpg'" class=""></v-img>
+                <v-card-title><h2 class="card-titulo">{{ app.titulo }}</h2></v-card-title>
+                <v-card-text class="card-texto">{{ app.describe }}</v-card-text>
+              </div>
+              <v-card-actions class="justify-center accionescard">
+                  <v-btn small class="white--text" color="magmorado" block :href="'static/web/'+app.url" target="maguared">Ver interactivo</v-btn>
+              </v-card-actions>
             </v-card>
         </v-flex>
       </v-layout>
@@ -98,3 +94,6 @@ export default {
 }
 }
 </script>
+<style>
+
+</style>

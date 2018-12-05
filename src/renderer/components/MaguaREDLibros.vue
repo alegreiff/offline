@@ -13,8 +13,8 @@
               </v-card-title>
         </v-card>
     </v-flex>
-  <v-flex xs3 v-for="(libro, index) in coleccion" :key="index" class="pa-1">
-    <v-card>
+  <v-flex xs3 v-for="(app, index) in coleccion" :key="index" class="pa-1">
+    <!--<v-card>
             <v-img :src="'static/miniaturas/'+libro.id+'.jpg'" :alt="libro.titulo" ></v-img>
 
 
@@ -38,11 +38,31 @@
 
 
             </v-card-actions>
+      </v-card>-->
+
+      <v-card  height="100%" class="flexcard" ripple hover>
+        <div class="grow">
+          <v-img :src="'static/miniaturas/'+app.id+'.jpg'" class="card-imagen"></v-img>
+          <v-card-title><h2 class="card-titulo">{{ app.titulo }}</h2></v-card-title>
+          <v-card-text class="card-texto">{{ app.describe }}</v-card-text>
+        </div>
+        <v-card-actions class="justify-center accionescard">
+          <v-tooltip top color="magrojo" class="pa-1">
+            <v-btn fab small dark color="magazul"
+            @click="pdfdescarga('static/'+app.url, app.descarga+'.pdf')"
+            slot="activator">
+            <v-icon medium dark>arrow_drop_down_circle</v-icon>
+          </v-btn><span>Descargar el libro</span></v-tooltip>
+          <v-tooltip top color="magrojo" class="pa-1">
+            <v-btn fab small dark color="magazul" @click="muestraPDF('/'+app.url)" slot="activator">
+            <v-icon medium dark>pageview</v-icon>
+          </v-btn><span>Ver el libro</span></v-tooltip>
+            <v-tooltip top color="magrojo" class="pa-1" max-width="200px">
+              <v-btn fab small dark color="magazul" slot="activator">
+              <v-icon medium dark>info</v-icon>
+            </v-btn><span><b>Autor: </b>{{ app.autor }}</span></v-tooltip>
+        </v-card-actions>
       </v-card>
-
-
-
-
   </v-flex>
 
   </v-layout>
@@ -95,7 +115,7 @@ export default {
   methods: {
 
     creacontenedorPDF(){
-      alert("mierda no entra")
+
       this.ventana = new BrowserWindow({
           webPreferences: {
           },
@@ -144,8 +164,17 @@ export default {
       }
       this.coleccion = _.sortBy(this.coleccion, ['titulo']);
     },
+    pdfdescarga(ruta, nombre){
+      //alert(ruta)
+      //window.location.href= ruta
+      var link = document.createElement("a");
+      link.download = nombre;
+      link.href = ruta;
+      link.click();
+    }
   }
 }
 </script>
-<style lang="css" scoped>
+<style>
+
 </style>

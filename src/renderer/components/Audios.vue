@@ -1,6 +1,16 @@
 <template>
 <div class="">
   <v-layout row wrap>
+    <v-layout row wrap>
+      <v-flex xs3  v-for="(video, index) in coleccion" :key="index">
+
+
+
+        <img :src="'static/miniaturas/'+video.id+'.jpg'" :alt="video.titulo" class="miniatura" >
+        <p>{{ video.titulo }}</p>
+
+      </v-flex>
+    </v-layout>
     <v-flex xs12 class="text-xs-center">
       <v-card>
               <v-card-title primary-title style="height:auto">

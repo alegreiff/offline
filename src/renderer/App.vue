@@ -84,7 +84,21 @@ export default {
 *, html
    { font: caption; }
 */
+:root {
+  --main-bg-color: brown;
+  --magcafe:      #772705;
+  --magrojo:      #e0541e;
+  --magnaranja:   #f19741;
+  --maglima:      #c6c74f;
+  --magverde:     #8bceaf;
+  --magazul:      #1db5cc;
+  --magmorado:    #785395;
+  --maggris:      #137786;
+  --magfondogris: #f2f2f2;
+  --magfondocards: #e9f9fc
 
+
+}
 #sandbox{
   background-image: url("~@/assets/playa.jpg");
   background-repeat: no-repeat;
@@ -92,5 +106,12 @@ export default {
 }
 img.imlogo {
   max-width: 100%;
+}
+
+
+.flexcard {
+  display: flex !important;
+  background-color: var(--magfondocards) !important;
+  flex-direction: column !important;
 }
 </style>

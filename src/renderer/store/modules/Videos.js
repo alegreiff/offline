@@ -208,7 +208,7 @@ const state = {
       coleccion: 'Karaokes de Maguaré en La Ceiba',
       titulo: 'El convite en la ceiba - Karaoke',
       describe: 'Saimiri el monito ardilla de La Ceiba nos presenta a todos y cada uno de los vecinos de la comunidad, con la ayuda del abuelo Emiliano los invita a… a… a... ¿a qué es que los invita?',
-      url: 'URL'
+      url: '636-conviteselva.mp4'
     },
     { id: 637,
       autor: 'Ricardo Prado, Neyber Lenis',
@@ -229,104 +229,104 @@ const state = {
       coleccion: 'Karaokes de Maguaré en La Ceiba',
       titulo: 'La canción sin canción - Karaoke',
       describe: 'Eliana no puede oir, Adriana no puede ver y a Juliana le falta un diente. Sin embargo las tres juntas son las más poderosas. ¡Con ustedes, las terrillizas!',
-      url: 'URL'
+      url: '639-cancionsincancion.mp4'
     },
     { id: 113,
       autor: 'AUTHOR',
       coleccion: 'Karaokes',
       titulo: 'Las olas del mar - karaoke',
       describe: 'Navegar por entre el mar es una experiencia muy divertida. Este karaoke te lleva por el mundo de las olas que suben, bajan y van para todos lados. ¿Has visitado el mar?, ¿qué es lo que más te gusta de las olas?',
-      url: 'URL'
+      url: '113-olasdelmar.mp4'
     },{ id: 114,
       autor: 'AUTHOR',
       coleccion: 'Karaokes',
       titulo: 'Cartas del río - Karaoke',
       describe: 'Las cartas pueden atravesar ciudades y pueblo. De muy lejos llegan cartas y traen noticias muy divertidas de los pueblos de Colombia en este karaoke para cantar y bailar. ¿Qué te gustaría contarle en una carta a un niño de otro pueblo?',
-      url: 'URL'
+      url: '114-cartasdelrio.mp4'
     },{ id: 115,
       autor: 'AUTHOR',
       coleccion: 'Karaokes',
       titulo: 'El delfín rosado - karaoke',
       describe: 'Este karaoke cuenta la historia de un delfín rosado a quien le costaba un poco de trabajo prestar sus juguetes a sus otros amigos del río. Canta y entérate qué le ocurrió a este delfín. ¿Qué te gusta jugar cuando compartes tus juguetes?',
-      url: 'URL'
+      url: '115-delfin.mp4'
     },{ id: 117,
       autor: 'AUTHOR',
       coleccion: 'Karaokes',
       titulo: 'Caminando va - karaoke',
       describe: 'Un caracol camina con su propia casa y descubre un camino lleno de curiosidades hasta el cansancio. Descubre en este karaoke qué es lo que más le gusta hacer al caracol cuando recorre nuevos caminos. ¿Qué te gusta hacer cuando exploras un nuevo lugar?',
-      url: 'URL'
+      url: '117-caminandova.mp4'
     },{ id: 109,
       autor: 'AUTHOR',
       coleccion: 'Karaokes',
       titulo: 'Los ratones- karaoke',
       describe: 'Encontrarás divertidos ratones, sus quesos y gatos que juegan con ellos en este karaoke que te invita a conocer la suerte de algunos ratones. ¿Qué sabes sobre la vida de los ratones?',
-      url: 'URL'
+      url: '109-losratones.mp4'
     },{ id: 120,
       autor: 'AUTHOR',
       coleccion: 'Karaokes',
       titulo: 'Zumba que zumba - karaoke',
       describe: 'Papá se ha comido unas pepitas que no son precisamente para comer, ¿quizás algún animal se entró a su barriga? Descubre que le pasó al papá en este karaoke. ¿Alguna vez has comido algo que te de dolor de barriga?',
-      url: 'URL'
+      url: '120-zumbaquezumba.mp4'
     },{ id: 121,
       autor: 'AUTHOR',
       coleccion: 'Karaokes',
       titulo: 'La casa de Valentín - Karaoke',
       describe: 'Un glotón se comió la casita de Valentín, chiquitín y ahora no tiene donde vivir. Este karaoke te invita a cantar con la historia de esta deliciosa casita que terminó en la panza del glotón. ¿Cómo construirías una casa para Valentín?',
-      url: 'URL'
+      url: '121-valentin.mp4'
     },{ id: 135,
       autor: 'AUTHOR',
       coleccion: 'Karaokes',
       titulo: 'La araña - karaoke',
       describe: 'Las arañas pueden ser un poco traviesas. En este karaoke conoce a una arañita que dedica su día a pasear con su telaraña y en el camino se encuentra con mucha diversión. ¿Cómo te imaginas que sería moverte entre telarañas?',
-      url: 'URL'
+      url: '135-laarana.mp4'
     },{ id: 136,
       autor: 'AUTHOR',
       coleccion: 'Karaokes',
       titulo: 'Niña bonita - karaoke',
       describe: 'Imagina un conejo un poco travieso que cae en una piscina de tinta. ¿Quieres saber qué le pasó? Este karaoke te cuenta que pasó con el conejito. ¿Alguna vez te has untado de tinta?, ¿qué sentiste?',
-      url: 'URL'
+      url: '136-ninabonita.mp4'
     },{ id: 139,
       autor: 'AUTHOR',
       coleccion: 'Karaokes',
       titulo: 'Mi pequeño morral - video',
       describe: 'Una almohada, una carpa, una cobija, un vestido, miles de cosas caben en un pequeño morral cuando se tiene mucha imaginación. En este karaoke puedes conocer cuántas cosas es posible llevar en un morral para recorrer el mundo. ¿Qué te gusta guardar en tu pequeño morral?',
-      url: 'URL'
+      url: '139-morral.mp4'
     },{ id: 140,
       autor: 'AUTHOR',
       coleccion: 'Karaokes',
       titulo: 'A los monos les duele la barriga - karaoke',
       describe: 'Una casa llena de animales: patos, monos y vacas azules que juegan hasta caer la noche. Canta con este karaoke y descubre lo mágico que puede ser jugar con los animales. ¿Cuáles son los animales con los que te gustaría jugar hasta el cansancio?',
-      url: 'URL'
+      url: '140-monosbarriga.mp4'
     },{ id: 281,
       autor: 'AUTHOR',
       coleccion: 'Karaokes',
       titulo: 'Saludo bonito',
       describe: 'A los niños indígenas de Colombia les encanta cantar y en este video comparten una canción en la que un niño saluda a su tío que se encuentra a su paso. Nuestros mayores siempre tienen mucho que enseñarnos, escucha esta canción y pídele a quien te esté acompañando que te cuente lo que significa en español. ¿Qué te gusta que te cuenten tus mayores?',
-      url: 'URL'
+      url: '281-saludobonito.mp4'
     },{ id: 67,
       autor: 'AUTHOR',
       coleccion: 'Zumba que zumba',
       titulo: 'El bebé león - video',
       describe: 'La historia de un bebé león que sueña con ser un oso pesado y peludo en un video animado que combina las voces de los niños con los colores de los animales de la selva. ¿Has pensado qué animal te gustaría ser?',
-      url: 'URL'
+      url: '67-bebeleon.mp4'
     },{ id: 778,
       autor: 'AUTHOR',
       coleccion: 'Zumba que zumba',
       titulo: 'Cuento Zumba que Zumba',
       describe: 'Los niños del Quindío cuentan qué es el café, cómo son las avispas y que hasta las águilas sienten miedo. En esta historia sabremos qué sucede cuando a un papá lo pica una abeja en la lengua.',
-      url: 'URL'
+      url: '778-zumbacuento.mp4'
     },{ id: 779,
       autor: 'AUTHOR',
       coleccion: 'Zumba que zumba',
       titulo: 'Tuc Nopa Pip',
       describe: 'La historia de un cocodrilo que vivía en una casa de palitos en el mar. En la casa del frente vio a diferentes corazones que sonaban distinto y los invitó a su casa a comer galletas. ¿Qué pasaría cuando se reunieron los corazones?',
-      url: 'URL'
+      url: '779-tucnopapip.mp4'
     },{ id: 780,
       autor: 'AUTHOR',
       coleccion: 'Zumba que zumba',
       titulo: 'Tiburón azul',
       describe: 'El tiburón azul tiene una profesora muy particular ¡Se trata de una cocodrila que le enseña a caminar! Mira este divertido cuento y descubre qué le pasó al tiburón cuando aprendía a dar sus pasos.',
-      url: 'URL'
+      url: '780-tiburon.mp4'
     }
   ]
 }

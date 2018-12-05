@@ -334,17 +334,22 @@ magazul:      '#1db5cc',
 magmorado:    '#785395'
 */
 
-:root {
-  --main-bg-color: brown;
-  --magcafe:      #772705;
-  --magrojo:      #e0541e;
-  --magnaranja:   #f19741;
-  --maglima:      #c6c74f;
-  --magverde:     #8bceaf;
-  --magazul:      #1db5cc;
-  --magmorado:    #785395;
-  --maggris:      #137786;
 
+
+.accionescard{
+  background: var(--magfondogris);
+}
+.card-titulo{
+  font-size: 1.0em;
+  text-align: center;
+}
+.card-imagen{
+  max-width: 250px;
+  margin: 0.2em auto;
+  border-radius: 0.3em;
+}
+.card-texto{
+  font-size: 0.9em;
 }
   img.logomini{
     max-height: 60px;
