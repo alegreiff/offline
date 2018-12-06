@@ -1,14 +1,11 @@
 <template>
 <div class="">
   <v-layout row wrap>
-    <v-flex xs12 class="text-xs-center">
+    <v-flex xs12 class="text-xs-center py-2">
       <v-card>
-              <v-card-title primary-title style="height:auto">
+              <v-card-title primary-title style="height:auto" class="magazul white--text">
                 <div>
-                  <div>{{ describeseccion }} {{ coleccion.length }}</div>
-                  <div class="">
-
-                  </div>
+                  <div>{{ datosgenerales[0].descripcion }}</div>
                 </div>
               </v-card-title>
         </v-card>
@@ -89,7 +86,8 @@ export default {
       describeseccion: 'Presentación de los seis libros de Maguaré en La Ceiba',
       //librosmaguarepdf: [],
       coleccion: [],
-      ventana: null
+      ventana: null,
+      datosgenerales: []
 
     }
   },
@@ -114,6 +112,7 @@ export default {
     computed: {
       //...mapState('Varios', ['libros']),
       ...mapGetters('Varios', ['librosCeiba', 'librosFiesta', 'librosLEMC', 'librosmaguare']),
+      ...mapState('Describe', ['describe']),
     },
   methods: {
 
@@ -160,18 +159,23 @@ export default {
     coleccionactiva(id){
 
       if(id =='librosCeiba'){
+        this.datosgenerales = this.describe.filter(dato => dato.id == 201)
         this.coleccion = this.librosCeiba
-        EventBus.$emit('TITULO', 'Libros - Maguaré en La Ceiba');
+
       }else if (id =='librosFiesta') {
+        this.datosgenerales = this.describe.filter(dato => dato.id == 203)
         this.coleccion = this.librosFiesta
-        EventBus.$emit('TITULO', 'Libros - Fiesta de la lectura');
+
       }else if (id =='librosLEMC') {
+        this.datosgenerales = this.describe.filter(dato => dato.id == 202)
         this.coleccion = this.librosLEMC
-        EventBus.$emit('TITULO', 'Libros - Leer es mi cuento');
+
       }else{
+        this.datosgenerales = this.describe.filter(dato => dato.id == 200)
         this.coleccion = this.librosmaguare
-        EventBus.$emit('TITULO', 'Libros');
+
       }
+      EventBus.$emit('TITULO', this.datosgenerales[0].titulobreve);
       this.coleccion = _.sortBy(this.coleccion, ['titulo']);
     },
   }

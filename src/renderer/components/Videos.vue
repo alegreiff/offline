@@ -1,25 +1,20 @@
 <template>
 <div class="">
   <v-layout row wrap>
-        <v-layout row wrap>
-          <v-flex xs3  v-for="(video, index) in coleccion" :key="index">
-
-
-
-            <!--<img :src="'static/miniaturas/'+video.id+'.jpg'" :alt="video.titulo" class="miniatura" >-->
-            <h2>{{ video.titulo }}</h2>
-            <p>{{ video.autor }}</p>
-
-          </v-flex>
-        </v-layout>
+    <v-flex xs12 class="text-xs-center py-2">
+      <v-card>
+              <v-card-title primary-title style="height:auto" class="magnaranja">
+                <div>
+                  <div>{{ datosgenerales[0].descripcion }}</div>
+                </div>
+              </v-card-title>
+        </v-card>
+    </v-flex>
         <v-flex xs12>
           <v-card>
-            <v-card-text class="">
-              <span>Seleccione un video</span>
-              <p>{{ coleccion.length }}</p>
-            </v-card-text>
 
-              <v-select class="px-4 ma-0"
+
+              <span class="pa-1">Seleccione un video</span><v-select class="px-4 ma-0"
 
                 :items="coleccion"
                 v-model="selected"
@@ -62,13 +57,19 @@
           </v-card-text>
         </v-card>
       </v-flex>
-      <v-flex xs4 class="pa-2 grey--text">
+      <v-flex xs4 class="pa-2 text-xs-center">
+        <v-card dark color="white" class="text-xs-center">
+          <img :src="'static/miniaturas/'+cancionactiva.id+'.jpg'"
+          :alt="cancionactiva.titulo"
+          class="miniatura">
+
+          <v-card-text class="px-0 grey--text">
+            <h3 class="describe text-xs-center pa-1">{{ cancionactiva.describe }}</h3>
+
+          </v-card-text>
 
 
-
-            <img :src="'static/miniaturas/'+cancionactiva.id+'.jpg'" :alt="cancionactiva.titulo" class="miniatura" >
-            <h3 class="describe">{{ cancionactiva.describe }}</h3>
-
+        </v-card>
       </v-flex>
       <v-flex xs8 class="pa-2">
           <!--<v-card dark color="white">
@@ -106,7 +107,8 @@ export default {
       selected: 'inicio',
       coleccion: [],
       quesuena: '',
-      cancionactiva: ''
+      cancionactiva: '',
+      datosgenerales: []
     }
   },
   created() {
@@ -132,6 +134,7 @@ export default {
     },
   computed: {
     ...mapState('Videos', ['videos']),
+    ...mapState('Describe', ['describe']),
     //...mapGetters('Videos', ['videoskaraokes', 'videossimples', 'videosall', 'videoscuentosnarrados', 'videoslistos']),
     ...mapGetters('Videos', ['vidKaraokes', 'vidSweet', 'vidFiesta', 'vidCeiba', 'vidAllKar', 'vidCuentos', 'vidZumba']),
 
@@ -143,22 +146,31 @@ export default {
         this.$refs.playame1.pause()
       }
       if(id =='vidKaraokes'){
+        this.datosgenerales = this.describe.filter(dato => dato.id == 102)
         this.coleccion = this.vidKaraokes
       }else if (id =='vidSweet') {
+        this.datosgenerales = this.describe.filter(dato => dato.id == 103)
         this.coleccion = this.vidSweet
       }else if (id =='vidCuentos') {
+        this.datosgenerales = this.describe.filter(dato => dato.id == 105)
         this.coleccion = this.vidCuentos
       }else if (id =='vidFiesta') {
+        this.datosgenerales = this.describe.filter(dato => dato.id == 104)
         this.coleccion = this.vidFiesta
       }else if (id =='vidCeiba') {
+        this.datosgenerales = this.describe.filter(dato => dato.id == 106)
         this.coleccion = this.vidCeiba
       }else if (id =='vidAllKar') {
+        this.datosgenerales = this.describe.filter(dato => dato.id == 107)
         this.coleccion = this.vidAllKar
       }else if (id =='vidZumba') {
+        this.datosgenerales = this.describe.filter(dato => dato.id == 101)
         this.coleccion = this.vidZumba
       }else{
         this.coleccion = this.videos
+        this.datosgenerales = this.describe.filter(dato => dato.id == 100)
       }
+      EventBus.$emit('TITULO', this.datosgenerales[0].titulobreve);
       this.coleccion = _.sortBy(this.coleccion, ['titulo']);
       this.selected = this.coleccion[0].id;
 

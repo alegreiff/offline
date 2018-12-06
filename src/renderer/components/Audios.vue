@@ -1,20 +1,16 @@
 <template>
 <div class="">
   <v-layout row wrap>
-    <v-layout row wrap>
+    <!--<v-layout row wrap>
       <v-flex xs3  v-for="(video, index) in coleccion" :key="index">
-
-
-
-        <!--<img :src="'static/miniaturas/'+video.id+'.jpg'" :alt="video.titulo" class="miniatura" >-->
+        <img :src="'static/miniaturas/'+video.id+'.jpg'" :alt="video.titulo" class="miniatura" >
         <h2>{{ video.titulo }}</h2>
         <p>{{ video.autor }}</p>
-
       </v-flex>
-    </v-layout>
-    <v-flex xs12 class="text-xs-center">
+    </v-layout>-->
+    <v-flex xs12 class="text-xs-center py-2">
       <v-card>
-              <v-card-title primary-title style="height:auto">
+              <v-card-title primary-title style="height:auto" class="maglima">
                 <div>
                   <div>{{ datosgenerales[0].descripcion }}</div>
                 </div>
@@ -23,12 +19,9 @@
     </v-flex>
         <v-flex xs12>
           <v-card>
-            <v-card-text class="">
-              <span>Seleccione un audio</span>
-              <p>{{ coleccion.length }}</p>
-            </v-card-text>
 
-              <v-select class="px-4 ma-0"
+
+              <span class="pa-1">Seleccione un audio</span><v-select class="px-4 ma-0"
 
                 :items="coleccion"
                 v-model="selected"
@@ -41,30 +34,12 @@
 
           </v-card>
         </v-flex>
-
-        <!--
-        <v-flex xs6>
-          <v-card dark color="orange">
-            <v-card-text class="px-0">
-                <p>{{ this.$route.params.id }} --- QUE SUENA:  {{ quesuena }}</p>
-                <pre> SELECTED: {{ selected }}</pre>
-                <pre>{{ this.$refs }}</pre>
-            </v-card-text>
-          </v-card>
-        </v-flex>
-        <v-flex xs6>
-          <v-card dark color="orange">
-            <v-card-text class="px-0">
-              <pre>{{ cancionactiva }}</pre>
-            </v-card-text>
-          </v-card>
-        </v-flex>-->
       </v-layout>
       <v-layout row wrap v-if="cancionactiva">
         <v-flex xs12>
         <v-card dark color="primary">
           <v-card-text class="pa-2">
-            <h2 class="" ref="tituloref">{{ cancionactiva.titulo }}</h2> <h5>{{ cancionactiva.autor }}</h5>
+            <h2 class="" ref="tituloref">{{ cancionactiva.titulo }}</h2> <h4>{{ cancionactiva.autor }}</h4>
           </v-card-text>
         </v-card>
       </v-flex>

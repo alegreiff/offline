@@ -90,6 +90,101 @@ const state = {
       titulobreve: 'Audios - Sweet songs / canciones dulces',
       descripcion: 'Canciones de la rica tradición cultural del Archipiélago de San Andrés, Providencia y Santa Catalina'
     },
+    /* VIDEOS SERIE 100*/
+    {
+      id: 100,
+      clase: 'maguare',
+      seccion: 'Videos',
+      subseccion: 'Todos',
+      titulobreve: 'Videos',
+      descripcion: 'TODOS LOS VIDEOS'
+    },
+    {
+      id: 101,
+      clase: 'maguare',
+      seccion: 'Videos',
+      subseccion: 'Zumba que zumba',
+      titulobreve: 'Videos - Zumba que zumba',
+      descripcion: 'Colección de historias creadas por niños'
+    },
+    {
+      id: 102,
+      clase: 'maguare',
+      seccion: 'Videos',
+      subseccion: 'Karaokes',
+      titulobreve: 'Videos - Karaokes',
+      descripcion: 'Vamos a cantar y a bailar con los karaokes de Maguaré'
+    },
+    {
+      id: 103,
+      clase: 'maguare',
+      seccion: 'Videos',
+      subseccion: 'Canciones dulces',
+      titulobreve: 'Videos - Sweet songs / canciones dulces',
+      descripcion: 'Canciones de la rica tradición cultural del Archipiélago de San Andrés, Providencia y Santa Catalina'
+    },
+    {
+      id: 104,
+      clase: 'maguare',
+      seccion: 'Videos',
+      subseccion: 'Fiesta de la lectura',
+      titulobreve: 'Videos - Fiesta de la lectura',
+      descripcion: 'Canciones, juegos y relatos propios de la rica tradición oral de diversos grupos étnicos colombianos'
+    },
+    {
+      id: 105,
+      clase: 'maguare',
+      seccion: 'Videos',
+      subseccion: 'Cuentos narrados',
+      titulobreve: 'Videos - Cuentos narrados',
+      descripcion: 'Cuentos animados para leer, ver y escuchar'
+    },
+    {
+      id: 106,
+      clase: 'maguare',
+      seccion: 'Videos',
+      subseccion: 'Karaokes de Maguaré en La Ceiba',
+      titulobreve: 'Videos - Karaokes de Maguaré en La Ceiba',
+      descripcion: '8 karaokes para conocer a Saimiri y sus amigos'
+    },
+    {
+      id: 107,
+      clase: 'maguare',
+      seccion: 'Videos',
+      subseccion: 'Todos los karaokes',
+      titulobreve: 'Videos - Todos los karaokes',
+      descripcion: 'Vamos a cantar y a bailar con los karaokes de Maguaré'
+    },
+    /* LIBROS SERIE 200*/
+    {
+      id: 200,
+      clase: 'maguare',
+      seccion: 'Libros',
+      subseccion: 'Todos',
+      titulobreve: 'Libros',
+      descripcion: 'TODOS LOS LIBROS'
+    },{
+      id: 201,
+      clase: 'maguare',
+      seccion: 'Libros',
+      subseccion: 'Todos',
+      titulobreve: 'Libros',
+      descripcion: 'MAGUARE EN LA CEIBA'
+    },{
+      id: 202,
+      clase: 'maguare',
+      seccion: 'Libros',
+      subseccion: 'Todos',
+      titulobreve: 'Libros',
+      descripcion: 'LEER ES MI CUENTO'
+    },{
+      id: 203,
+      clase: 'maguare',
+      seccion: 'Libros',
+      subseccion: 'Todos',
+      titulobreve: 'Libros',
+      descripcion: 'FIESTA DE LA LECTURA'
+    },
   ]
 }
 
