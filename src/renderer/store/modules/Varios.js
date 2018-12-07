@@ -94,8 +94,8 @@ const state = {
         coleccion: 'Leer es mi cuento',
         publico: 'maguared',
         describe: 'Obra maestra de William Shakespeare, genio de la lengua inglesa, es la historia de amor más hermosa y trágica que jamás se haya escrito. Esta versión de los hermanos Lamb ha sido especialmente escrita para los jóvenes. ',
-        url: 'librosmaguare/URLPDF',
-        descarga: 'LEMC-romeo-julieta'
+        url: 'leeresmicuento/501-romeoyjulieta.pdf',
+        descarga: 'LEMC-romeoyjulieta'
       },{
         id: 502,
         autor: 'AUTOR',
@@ -103,8 +103,8 @@ const state = {
         coleccion: 'Leer es mi cuento',
         publico: 'maguared',
         describe: 'Los relatos que cada noche cuenta Sherezada al sultán constituyen uno de los libros que más ha entretenido a niños y adultos durante siglos.  Aquí encontrarás tres de estos relatos llenos de aventuras, sueños e historias de amor.',
-        url: 'librosmaguare/URLPDF',
-        descarga: 'LEMC-milyuna-noches'
+        url: 'leeresmicuento/502-milyunanoches.pdf',
+        descarga: 'LEMC-cuentosdelasmilyunanoches'
       },{
         id: 505,
         autor: 'Hermanos Grimm, Charles Perrault, Agustín Jaramillo Londoño, Infante Don Juan Manuel, Félix María Samaniego, Rafael Pombo, Rubén Darío, Víctor Eduardo Caro, Federico García Lorca',
@@ -230,8 +230,8 @@ const state = {
         coleccion: 'Leer es mi cuento',
         publico: 'maguared',
         describe: 'Este cuento de Tomás Carrasquilla narra la historia de Peralta, un campesino a quien se le aparece Jesús y San Pedro.',
-        url: 'librosmaguare/URLPDF',
-        descarga: 'LEMC-diestra-dios-padre'
+        url: 'leeresmicuento/1220-diestradiospadre.pdf',
+        descarga: 'LEMC-enladiestradediospadre'
       },{
         id: 1221,
         autor: 'N. Hawthorne',
@@ -239,8 +239,8 @@ const state = {
         coleccion: 'Leer es mi cuento',
         publico: 'maguared',
         describe: 'Este libro cuenta la historia de los Pigmeos y el gigante Anteo. Se narran sus aventuras y los momentos en que probaron su valentía.',
-        url: 'librosmaguare/URLPDF',
-        descarga: 'LEMC-pigmeos'
+        url: 'leeresmicuento/1221-lospigmeos.pdf',
+        descarga: 'LEMC-lospigmeos'
       },{
         id: 1222,
         autor: 'Edmundo de Amicis',
@@ -248,8 +248,8 @@ const state = {
         coleccion: 'Leer es mi cuento',
         publico: 'maguared',
         describe: 'Esta historia invita a pensar el significado de la familia y el rol que cumple cada miembro para aportar al bienestar general.',
-        url: 'librosmaguare/URLPDF',
-        descarga: 'LEMC-escribiente-florentino'
+        url: 'leeresmicuento/1222-escribiente.pdf',
+        descarga: 'LEMC-escribienteflorentino'
       },{
         id: 1223,
         autor: 'Miguel de Cervantes',
@@ -257,7 +257,7 @@ const state = {
         coleccion: 'Leer es mi cuento',
         publico: 'maguared',
         describe: 'Aquí encuentra los apítulos 1 y 7 de la obra literaria más famosa que se haya escrito en español.',
-        url: 'librosmaguare/URLPDF',
+        url: 'leeresmicuento/1223-quijote.pdf',
         descarga: 'LEMC-donquijote'
       },{
         id: 1226,
@@ -266,8 +266,8 @@ const state = {
         coleccion: 'Leer es mi cuento',
         publico: 'maguared',
         describe: 'Este libro reúne algunos de los mejores poemas clásicos de la lengua española para disfrutar con los niños.',
-        url: 'librosmaguare/URLPDF',
-        descarga: 'LEMC-poesia-espanol'
+        url: 'leeresmicuento/1226-poesiaenespanol.pdf',
+        descarga: 'LEMC-poesiaespanol'
       },{
         id: 1227,
         autor: 'Robert Louis Stevenson',
@@ -275,8 +275,8 @@ const state = {
         coleccion: 'Leer es mi cuento',
         publico: 'maguared',
         describe: 'Robert Louis Stevenson escribe en esta novela la historia de Keawe, un hombre trabajador que va a perder su alma para siempre.',
-        url: 'librosmaguare/URLPDF',
-        descarga: 'LEMC-diablo-botella'
+        url: 'leeresmicuento/1227-diablobotella.pdf',
+        descarga: 'LEMC-eldiabloenlabotella'
       },{
         id: 1228,
         autor: 'Horacio Quiroga',
@@ -284,8 +284,8 @@ const state = {
         coleccion: 'Leer es mi cuento',
         publico: 'maguared',
         describe: 'Este libro de Horacio Quiroga retrata la fuerza trágica del encuentro entre el hombre y la naturaleza.',
-        url: 'librosmaguare/URLPDF',
-        descarga: 'LEMC-cuentos-selva'
+        url: 'leeresmicuento/1228-cuentosselva.pdf',
+        descarga: 'LEMC-cuentosdelaselva'
       },{
         id: 1229,
         autor: 'Charles Lamb',
@@ -293,8 +293,8 @@ const state = {
         coleccion: 'Leer es mi cuento',
         publico: 'maguared',
         describe: 'Este libro narra las aventuras que pasó Ulises para volver a su casa junto a su familia.',
-        url: 'librosmaguare/URLPDF',
-        descarga: 'LEMC-aventuras-ulises'
+        url: 'leeresmicuento/1229-ulises.pdf',
+        descarga: 'LEMC-aventurasdeulises'
       },{
         id: 1230,
         autor: 'Fernán Caballeros',
@@ -302,8 +302,8 @@ const state = {
         coleccion: 'Leer es mi cuento',
         publico: 'maguared',
         describe: 'Los cuentos ­Don Juan Bolondrón y La suegra del diablo han sido narrados por las familias españolas desde hace cientos de años.',
-        url: 'librosmaguare/URLPDF',
-        descarga: 'LEMC-juan-bolondron'
+        url: 'leeresmicuento/1230-juanbolondron.pdf',
+        descarga: 'LEMC-donjuanbolondron'
       },{
         id: 612,
         autor: 'Autores varios',

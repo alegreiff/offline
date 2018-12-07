@@ -3,12 +3,13 @@
     <v-list dense>
       <v-list-tile :to="{path: '/'}" >
         <v-list-tile-action>
-          <v-icon>home</v-icon>
+          <v-icon medium>home</v-icon>
         </v-list-tile-action>
         <v-list-tile-content>
           <v-list-tile-title>Inicio</v-list-tile-title>
         </v-list-tile-content>
       </v-list-tile>
+<v-divider></v-divider>
     <!-- <v-subheader inset>Maguarés</v-subheader> -->
 
     <img id="logo" src="static/maguare.png" alt="electron-vue" class="logomini">
@@ -17,7 +18,7 @@
       <v-list-group no-action>
       <v-list-tile slot="activator">
         <v-list-tile-action>
-          <v-icon>music_video</v-icon>
+          <v-icon medium color="magnaranja">music_video</v-icon>
         </v-list-tile-action>
         <v-list-tile-content>
           <v-list-tile-title class="menu_videos">VIDEOS</v-list-tile-title>
@@ -78,7 +79,7 @@
   <v-list-group no-action>
   <v-list-tile slot="activator">
     <v-list-tile-action>
-      <v-icon>audiotrack</v-icon>
+      <v-icon medium color="maglima">audiotrack</v-icon>
     </v-list-tile-action>
     <v-list-tile-content>
       <v-list-tile-title class="menu_audios">AUDIOS</v-list-tile-title>
@@ -90,7 +91,11 @@
       <v-list-tile-title>Maguaré en La Ceiba</v-list-tile-title>
     </v-list-tile-content>
   </v-list-tile>
-
+  <v-list-tile :to="{name: 'coleccion', params: { id: 'audiosKamentsa'}}">
+    <v-list-tile-content>
+      <v-list-tile-title>Canciones Kamëntsá</v-list-tile-title>
+    </v-list-tile-content>
+  </v-list-tile>
   <v-list-tile :to="{name: 'coleccion', params: { id: 'audiosSweetsongs'}}">
     <v-list-tile-content>
       <v-list-tile-title>Sweet songs fi piknini </v-list-tile-title>
@@ -127,7 +132,7 @@
       <v-list-group no-action>
       <v-list-tile slot="activator">
         <v-list-tile-action>
-          <v-icon>picture_as_pdf</v-icon>
+          <v-icon medium color="magazul">picture_as_pdf</v-icon>
         </v-list-tile-action>
         <v-list-tile-content>
           <v-list-tile-title class="menu_libros">LIBROS</v-list-tile-title>
@@ -163,7 +168,7 @@
     <v-list-group no-action>
     <v-list-tile slot="activator">
       <v-list-tile-action>
-        <v-icon>extension</v-icon>
+        <v-icon medium color="magmorado">extension</v-icon>
       </v-list-tile-action>
       <v-list-tile-content>
         <v-list-tile-title class="menu_interactivos">INTERACTIVOS</v-list-tile-title>
@@ -206,24 +211,24 @@
 
 <!-- MAGUARÉ DESCARGABLES -->
 <v-list-tile :to="{path: '/descargablesmaguare'}" >
-  <v-list-tile-action><v-icon>picture_as_pdf</v-icon></v-list-tile-action>
+  <v-list-tile-action><v-icon medium color="light-blue darken-3">picture_as_pdf</v-icon></v-list-tile-action>
   <v-list-tile-content><v-list-tile-title>Descargables</v-list-tile-title></v-list-tile-content>
 </v-list-tile>
 
 <!-- MAGUARED-->
 <!-- <v-subheader inset>MaguaRED</v-subheader> -->
-
+<v-divider></v-divider>
 <img id="logo" src="static/maguared.png" alt="electron-vue" class="logominim">
 
 <v-list-tile :to="{path: '/videosmaguared'}" >
-      <v-list-tile-action><v-icon>music_video</v-icon></v-list-tile-action>
+      <v-list-tile-action><v-icon medium color="magnaranja">music_video</v-icon></v-list-tile-action>
       <v-list-tile-content><v-list-tile-title>Videos</v-list-tile-title></v-list-tile-content>
 </v-list-tile>
 <!-- MAGUARÉ GRUPO INTERACTIVOS -->
     <v-list-group no-action>
     <v-list-tile slot="activator" ripple>
       <v-list-tile-action>
-        <v-icon>picture_as_pdf</v-icon>
+        <v-icon medium color="magazul">picture_as_pdf</v-icon>
       </v-list-tile-action>
       <v-list-tile-content>
         <v-list-tile-title class="menu_libros">LIBROS</v-list-tile-title>
@@ -259,60 +264,55 @@
     </v-list-tile>
     </v-list-group>
 <v-list-tile :to="{path: '/sugerencias'}" >
-      <v-list-tile-action><v-icon>picture_as_pdf</v-icon></v-list-tile-action>
+      <v-list-tile-action><v-icon medium color="light-blue darken-3">picture_as_pdf</v-icon></v-list-tile-action>
       <v-list-tile-content><v-list-tile-title>Sugerencias de uso</v-list-tile-title></v-list-tile-content>
 </v-list-tile>
 <!--
 
 <v-list-tile :to="{path: '/sugerencias'}" >
-      <v-list-tile-action><v-icon>picture_as_pdf</v-icon></v-list-tile-action>
+      <v-list-tile-action><v-icon medium>picture_as_pdf</v-icon></v-list-tile-action>
       <v-list-tile-content><v-list-tile-title>Cuerpo Sonoro</v-list-tile-title></v-list-tile-content>
 </v-list-tile>
 <v-list-tile :to="{path: '/sugerencias'}" >
-      <v-list-tile-action><v-icon>picture_as_pdf</v-icon></v-list-tile-action>
+      <v-list-tile-action><v-icon medium>picture_as_pdf</v-icon></v-list-tile-action>
       <v-list-tile-content><v-list-tile-title>Cuentos derechos</v-list-tile-title></v-list-tile-content>
 </v-list-tile>
 <v-list-tile :to="{path: '/sugerencias'}" >
-      <v-list-tile-action><v-icon>picture_as_pdf</v-icon></v-list-tile-action>
+      <v-list-tile-action><v-icon medium>picture_as_pdf</v-icon></v-list-tile-action>
       <v-list-tile-content><v-list-tile-title>Leer es mi cuento</v-list-tile-title></v-list-tile-content>
 </v-list-tile>
 
 
 -->
 <v-list-tile :to="{path: '/tutorialesmaguared'}" >
-      <v-list-tile-action><v-icon>picture_as_pdf</v-icon></v-list-tile-action>
+      <v-list-tile-action><v-icon medium color="light-blue darken-3">picture_as_pdf</v-icon></v-list-tile-action>
       <v-list-tile-content><v-list-tile-title>Tutoriales</v-list-tile-title></v-list-tile-content>
 </v-list-tile>
 
+<v-divider></v-divider>
 
-
-
-
-
-
-<hr>
-<hr>
-<v-list-tile :to="{path: '/sugerencias'}" >
-      <v-list-tile-action><v-icon>picture_as_pdf</v-icon></v-list-tile-action>
+<v-list-tile :to="{path: '/provixional'}" >
+      <v-list-tile-action><v-icon medium color="magrojo">file_copy</v-icon></v-list-tile-action>
       <v-list-tile-content><v-list-tile-title>Políticas de uso</v-list-tile-title></v-list-tile-content>
 </v-list-tile>
-<v-list-tile :to="{path: '/sugerencias'}" >
-      <v-list-tile-action><v-icon>picture_as_pdf</v-icon></v-list-tile-action>
+<v-divider></v-divider>
+<v-list-tile :to="{path: '/acercade'}" >
+      <v-list-tile-action><v-icon medium color="magrojo">supervised_user_circle</v-icon></v-list-tile-action>
       <v-list-tile-content><v-list-tile-title>Acerca de</v-list-tile-title></v-list-tile-content>
 </v-list-tile>
-
+<v-divider></v-divider>
 
 
 <!--
   <v-list-tile :to="{path: '/sugerencias'}" >
-        <v-list-tile-action><v-icon>picture_as_pdf</v-icon></v-list-tile-action>
+        <v-list-tile-action><v-icon medium>picture_as_pdf</v-icon></v-list-tile-action>
         <v-list-tile-content><v-list-tile-title>Sugerencias</v-list-tile-title></v-list-tile-content>
 </v-list-tile>
 
 <p>Políticas</p>
 <p>About us</p>
 <v-list-tile :to="{path: '/provixional'}" >
-      <v-list-tile-action><v-icon>picture_as_pdf</v-icon></v-list-tile-action>
+      <v-list-tile-action><v-icon medium>picture_as_pdf</v-icon></v-list-tile-action>
       <v-list-tile-content><v-list-tile-title>Sugerencias</v-list-tile-title></v-list-tile-content>
 </v-list-tile>-->
 
@@ -353,12 +353,12 @@ magmorado:    '#785395'
 }
   img.logomini{
     max-height: 60px;
-    margin: 0 auto;
+    margin: 0.5em auto;
     display: block;
   }
   img.logominim{
     max-height: 40px;
-    margin: 0 auto;
+    margin: 0.5em auto;
     display: block;
   }
   .menu_interactivos{

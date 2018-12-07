@@ -3,7 +3,7 @@ const state = {
   nombre: 'Jaime de Greiff',
   canciones: [
     { id: 22,
-      autor: 'Audio de Tortuguita, vení bailá - Ministerio de Cultura e ICBF',
+      autor: 'Ministerio de Cultura - ICBF - Audio de Tortuguita, vení bailá',
       coleccion: 'Fiesta de la lectura',
       titulo: 'Breda Nancy, Breda Taiga an de buta fi food',
       describe: 'El hermano araña y el hermano Tigre estaban trabajando juntos y decidieron llevar una lata de mantequilla para el almuerzo. Pero cuando fueron a comer ¡ya no había mantequilla! ¿Quién se la comió? Este relato de la comunidad raizal del Archipiélago de San Andrés, Providencia y Santa Catalina, está en lengua creole.',
@@ -47,7 +47,7 @@ Breda Taiga weh so fool, ih se: 
 —Ent dah mosa me. `
     },
     { id: 27,
-      autor: 'Audio de Tortuguita, vení bailá - Ministerio de Cultura e ICBF',
+      autor: 'Ministerio de Cultura - ICBF - Audio de Tortuguita, vení bailá',
       coleccion: 'Fiesta de la lectura',
       titulo: 'Sar le Rrom ripisardepe pe sa e lumia - Cómo se dispersaron los Rrom por el mundo',
       describe: 'El pueblo Rrom tiene más de mil años de antigüedad. Está disperso por todo el planeta y tiene una gran importancia cultural por su prolífica producción musical y dancística. Es un pueblo que ha sobrevivido al racismo y a la segregación a lo largo de su historia.',
@@ -66,10 +66,10 @@ A medida que la familia crecía, el caballo tenía que esforzarse más y más y 
 El Rrom viajó por todos los caminos y en todos cayeron una niña aquí, un niño allá y otro más lejos. Así fue como los Rrom nos dispersamos por el mundo. `
     },
     { id: 38,
-      autor: 'Ministerio de Cultura - Observatorio del Caribe Colombiano',
+      autor: 'Ministerio de Cultura - Maguaré - Observatorio del Caribe Colombiano',
       coleccion: 'Sweet songs fi piknini. Canciones dulces para niños.',
       titulo: 'Miss Lucy',
-      describe: 'Una canción afroamericana del archipiélago de San Andrés y Providencia, que cuenta la historia de un pequeño niño travieso quien al comer jabón provoca que entre varios remedios el deba votar por la cura que mejor le parece. ¿Qué te gusta cuando tomas tu baño en una tina?',
+      describe: 'Una canción afroamericana del archipiélago de San Andrés y Providencia, que cuenta la historia de un pequeño niño travieso quien al comer jabón provoca que entre varios remedios él deba votar por la cura que mejor le parece. ¿A qué te gusta jugar cuando tomas tu baño en una tina?',
       url: '38-misslucy.mp3',
       letra: `Miss Lucy had a biebi
 His name was Tinitin
@@ -96,10 +96,10 @@ Yes, Miss Lucy pay the lady
 With the alliguieta purs`
     },
     { id: 133,
-      autor: 'Ministerio de Cultura - Observatorio del Caribe Colombiano',
+      autor: 'Ministerio de Cultura - Maguaré - Observatorio del Caribe Colombiano',
       coleccion: 'Sweet songs fi piknini. Canciones dulces para niños.',
       titulo: 'Out and through the window',
-      describe: 'El creole es la lengua que hablan los habitantes nativos del Archipiélago de San Andrés y Providencia. Este karaoke te enseña una canción adaptada a esta lengua para la hora de ir a dormir. ¿Qué te gusta que te canten cuando te vas a dormir?',
+      describe: 'Esta ronda nos cuenta una historia de amor que inicia en una ventana en el Archipiélago de San Andrés y Providencia y cruza el océano. La música isleña se nutre de la historia de los ingleses que colonizaron el Caribe y los africanos que llegaron allí a trabajar. ¡Vamos a cantar al ritmo de las olas del mar!',
       url: '133-outanthrough.mp3',
       letra: `Out and through the window
 Out and through the window
@@ -127,7 +127,7 @@ Then you well and take your partner
 To see your rose again`
     },
     { id: 156,
-      autor: 'Ministerio de Cultura - Observatorio del Caribe Colombiano',
+      autor: 'Ministerio de Cultura - Maguaré - Observatorio del Caribe Colombiano',
       coleccion: 'Sweet songs fi piknini. Canciones dulces para niños.',
       titulo: 'A poco',
       describe: '¡Escucha esta canción del Archipiélago de San Andrés y Providencia que te hará bailar!',
@@ -145,7 +145,7 @@ A paca, ameke, ameke
 Atoco, a paca, eteke, omoco`
     },
     { id: 194,
-      autor: 'Ministerio de Cultura - Observatorio del Caribe Colombiano',
+      autor: 'Ministerio de Cultura - Maguaré - Observatorio del Caribe Colombiano',
       coleccion: 'Sweet songs fi piknini. Canciones dulces para niños.',
       titulo: 'Drop a letter',
       describe: '¡Disfruta con tus amigos esta ronda típica del Archipiélago de San Andrés y Providencia en nuestro caribe colombiano!',
@@ -156,7 +156,7 @@ Bye bye Zapati
 All over`
     },
     { id: 199,
-      autor: 'Ministerio de Cultura - Observatorio del Caribe Colombiano',
+      autor: 'Ministerio de Cultura - Maguaré - Observatorio del Caribe Colombiano',
       coleccion: 'Sweet songs fi piknini. Canciones dulces para niños.',
       titulo: 'Mayaya O',
       describe: '¡Disfruta con tus amigos y cuidadores esta ronda típica del Archipiélago de San Andrés y Providencia en el caribe colombiano a ritmo de los tambores!',
@@ -171,7 +171,7 @@ Mayaya lost him key
 Mayaya O`
     },
     { id: 204,
-      autor: 'Ministerio de Cultura - Observatorio del Caribe Colombiano',
+      autor: 'Ministerio de Cultura - Maguaré - Observatorio del Caribe Colombiano',
       coleccion: 'Sweet songs fi piknini. Canciones dulces para niños.',
       titulo: 'Brown girl',
       describe: 'Esta ronda es muy popular en el Archipiélago de San Andrés, Providencia y Santa Catalina. Se trata de una canción que los ingleses trajeron al caribe en tiempos de la colonización y se ha mantenido vigente en la población raizal. ¡Bailemos con esta versión creole!',
@@ -206,7 +206,7 @@ Tralalalala
 She look like a sugar inna ploom `
     },
     { id: 205,
-      autor: 'Ministerio de Cultura',
+      autor: 'Ministerio de Cultura - Maguaré - Observatorio del Caribe Colombiano',
       coleccion: 'Sweet songs fi piknini. Canciones dulces para niños.',
       titulo: 'London bridge',
       describe: 'Esta es una divertida ronda tradicional británica que se canta y juega en el Archipiélago de San Andrés y Providencia. ¡Vamos a bailar con tus amigos!',
@@ -242,7 +242,7 @@ Call for the ax to ax off the head
 Oh Merily`
     },
     { id: 256,
-      autor: 'Ministerio de Cultura',
+      autor: 'Ministerio de Cultura - ICBF - Audio de Tortuguita, vení bailá',
       coleccion: 'Fiesta de la lectura',
       titulo: 'Madudu - Mariposa azul',
       describe: 'Una bella mariposa azul tiene hambre y va por la montaña danzando para buscar su alimento. Esta bella canción del pueblo piapoco que se asienta en los departamentos del Vichada y Guainía, enamora con su poesía.',
@@ -278,7 +278,7 @@ Call for the ax to ax off the head
 Oh Merily`
     },
     { id: 259,
-      autor: 'Audio de Tortuguita, vení bailá - Ministerio de Cultura e ICBF',
+      autor: 'Ministerio de Cultura - ICBF - Audio de Tortuguita, vení bailá',
       coleccion: 'Fiesta de la lectura',
       titulo: 'Al otro lado del río toparon... un repentismo',
       describe: 'Esta canción surgió de un juego de los niños campesinos de Coyaima, Tolima, en el que promueven el “repentismo”: el improvisar una respuesta divertida, rimando el nombre de uno de los participantes con lo que se les ocurra.',
@@ -314,7 +314,7 @@ Oleloleilelolalolelolaila 
 lelolelolelolaila ¡ay! el retrato de Camilo. `
     },
     { id: 272,
-      autor: 'Ministerio de Cultura - Observatorio del Caribe Colombiano',
+      autor: 'Ministerio de Cultura - Maguaré - Observatorio del Caribe Colombiano',
       coleccion: 'Sweet songs fi piknini. Canciones dulces para niños.',
       titulo: 'Clap han - audio',
       describe: 'Esta es una canción tradicional inglesa que los habitantes raizales del Archipiélago de San Andrés y Providencia han cantado por generaciones... pero en creole, su lengua materna. Es una suave canción para la hora de irse a dormir mientras el Mar Caribe nos mece con sus olas.',
@@ -341,7 +341,7 @@ Pujum, pujum
 Yes, cho'weh the biebi`
     },
     { id: 291,
-      autor: 'Audio de Tortuguita, vení bailá - Ministerio de Cultura e ICBF291',
+      autor: 'Ministerio de Cultura - ICBF - Audio de Tortuguita, vení bailá',
       coleccion: 'Fiesta de la lectura',
       titulo: 'Hermano Araña, hermano Tigre y el almuerzo de Mantequilla',
       describe: 'El hermano Araña y el hermano Tigre estaban trabajando juntos y decidieron llevar una lata de mantequilla para el almuerzo. Pero cuando fueron a comer ¡ya no había mantequilla! ¿Quién se la comió? Este relato de la comunidad raizal del Archipiélago de San Andrés, Providencia y Santa Catalina, está en español.',
@@ -369,7 +369,7 @@ Pero el hermano Tigre había trabajado mucho y estaba muy cansado, así que tan 
 Luego lo despertó: -¡Vea de dónde está saliendo la mantequilla! –le dijo, y como el hermano Tigre era tan ingenuo solamente le respondió: -Entonces estás en lo cierto, debí ser yo. Sí, yo me comí la mantequilla. `
     },
     { id: 292,
-      autor: 'Audio de Tortuguita, vení bailá - Ministerio de Cultura e ICBF',
+      autor: 'Ministerio de Cultura - ICBF - Audio de Tortuguita, vení bailá',
       coleccion: 'Fiesta de la lectura',
       titulo: 'Brother Nancy, Brother Tiger and the butter lunch',
       describe: 'El hermano Araña y el hermano Tigre estaban trabajando juntos y decidieron llevar una lata de mantequilla para el almuerzo. Pero cuando fueron a comer ¡ya no había mantequilla! ¿Quién se la comió? Este relato de la comunidad raizal del Archipiélago de San Andrés, Providencia y Santa Catalina, está en inglés.',
@@ -403,7 +403,7 @@ Now Brother Tiger was so tired from all his work that he immediately dropped off
 Then, Brother Nancy woke up Brother Tiger and said, —Look, here is the one who ate the butter! It’s melting out of you all over! Tiger was so fooled that he said, —Yes, you’re right; it had to be me. I ate the butter. `
     },
     { id: 294,
-      autor: 'Audio de Tortuguita, vení bailá - Ministerio de Cultura e ICBF',
+      autor: 'Ministerio de Cultura - ICBF - Audio de Tortuguita, vení bailá',
       coleccion: 'Fiesta de la lectura',
       titulo: 'Bay Kumun mikeywin - Vamos a dormir, te digo',
       describe: 'El pueblo Arhuaco habita en la Sierra Nevada de Santa Marta, La Guajira, Cesar y El Magdalena. Es un pueblo profundamente espiritual y en este arrullo podemos sentir cómo la madre acuna al pequeño con la luna y el sol.',
@@ -446,7 +446,7 @@ duérmete, te digo. 
 ya, ya... `
     },
     { id: 298,
-      autor: 'Audio de Tortuguita, vení bailá Ministerio de Cultura e ICBF',
+      autor: 'Ministerio de Cultura - ICBF - Audio de Tortuguita, vení bailá',
       coleccion: 'Fiesta de la lectura',
       titulo: 'Dormite, mi niño',
       describe: 'Dormite, mi niño..., cantan dulcemente las mamás del Eje Cafetero. Ellas quieren que el pequeñito se duerma pronto porque tienen muchas cosas para hacer: cocinar la sopita, lavar pañales y coser.',
@@ -504,7 +504,7 @@ ponerme a coser. `
       letra: ``
     },
     { id: 435,
-      autor: 'Ministerio de Cultura - Con mi cuento encanto4',
+      autor: 'Ministerio de Cultura - Con mi cuento encanto',
       coleccion: 'Con mi cuento encanto',
       titulo: 'Un país llamado Bogotá - cuento',
       describe: 'Escucha esta historia narrada por un niño que cuenta cómo Bogotá dejó de ser triste con su basura y se convirtió en la mejor ciudad para hacer fiestas.',
@@ -512,7 +512,7 @@ ponerme a coser. `
       letra: ``
     },
     { id: 436,
-      autor: 'Ministerio de Cultura - Con mi cuento encanto436',
+      autor: 'Ministerio de Cultura - Con mi cuento encanto',
       coleccion: 'Con mi cuento encanto',
       titulo: 'Michel y las mariamulatas - cuento',
       describe: 'Cuando compartes te sientes mucho mejor. Eso le pasó a Michel quien quería compartir unas frutas con unas mariamulatas que lo iban a visitar. Escucha esta historia y una bella canción que te invita a compartir.',
@@ -536,7 +536,7 @@ ponerme a coser. `
       letra: ``
     },
     { id: 474,
-      autor: 'Rafael Pombo',
+      autor: 'Ministerio de Cultura - Rafael Pombo',
       coleccion: 'Cuentos al oído',
       titulo: 'Juan Matachín - audio',
       describe: 'Juan Matachín viste su traje de general y tiene todas las herramientas para defenderse de quien lo insulte. Descubre cómo los enfrentará. ¿Te animarías a crear tu propio traje de general?',
@@ -562,7 +562,7 @@ con lengua y clarín
 a Juan Matachín!”. `
     },
     { id: 475,
-      autor: 'Rafael Pombo',
+      autor: 'Ministerio de Cultura - Rafael Pombo',
       coleccion: 'Cuentos al oído',
       titulo: 'Mirringa Mirronga - audio',
       describe: 'Mirringa Mirronga, la gata candonga está organizando una fiesta en su mansión, y quiere invitar a los felinos más elegantes de toda la región. Descubre quién asiste a la felina fiesta. ¿Qué es lo que más te gusta de las fiestas?',
@@ -599,7 +599,7 @@ que agradezco mucho y están muy baratos”.
 
 “¡Cuidado, patitas, si el suelo me embarran!
 ¡Que quiten el polvo, que frieguen, que barran!
-¡las flores, la mesa, la sopa!… ¡Tilín!
+¡las flores, la mesa, la sopa!... ¡Tilín!
 Ya llega la gente. ¡Jesús, qué trajín!”
 
 Llegaron en coche ya entrada la noche
@@ -648,7 +648,7 @@ dándoles chorizo de tío Pegadizo
 para que hagan cenas con tortas ajenas.`
     },
     { id: 476,
-      autor: 'Rafael Pombo',
+      autor: 'Ministerio de Cultura - Rafael Pombo',
       coleccion: 'Cuentos al oído',
       titulo: 'Juaco el ballenero - audio',
       describe: 'El capitán de Juaco quería cazar una enorme ballena, pero ella dio un sacudón y mandó al barco y al capitán hasta la luna. Juaco no lo ha podido visitar porque no sabe el camino y tampoco tiene dinero para llegar. ¿Te imaginas cómo sería tener una amiga ballena?',
@@ -699,10 +699,10 @@ mándame una limosnita
 que Dios te la pagará. `
     },
     { id: 477,
-      autor: 'Ministerio de Cultura',
+      autor: 'Ministerio de Cultura - Rafael Pombo',
       coleccion: 'Cuentos al oído',
       titulo: 'La marrana peripuesta - audio',
-      describe: 'Un mono adornó con flores a una marrana y ella, al verse tan hermosa, se empezó a contonear en medio de todos los animales. ¿Qué le pasaría a la marrana adornada? ¿Cómo adornarías tu a tu animal favorito?',
+      describe: 'Un mono adornó con flores a una marrana y ella, al verse tan hermosa, se empezó a contonear en medio de todos los animales. ¿Qué le pasaría a la marrana adornada?, ¿cómo adornarías tú a tu animal favorito?',
       url: '477-marrana.mp3',
       letra: `Viénele a un mono la chusca idea
 de ornar con flores a una marrana,
@@ -715,7 +715,7 @@ y a cuantos mira grúñeles: “¡Ea!
  pero adornada: ¡mil veces más!”`
     },
     { id: 478,
-      autor: 'Rafael Pombo',
+      autor: 'Ministerio de Cultura - Rafael Pombo',
       coleccion: 'Cuentos al oído',
       titulo: 'Las siete vidas del gato - audio',
       describe: 'El gato Mambrú conversa con el lebrel Perdonavidas pues el lebrel desea saber el gran secreto para tener siete vidas. Descubre el secreto del gato Mambrú. ¿Qué crees que hace un gato en cada una de sus vidas?',
@@ -733,10 +733,10 @@ en frecuentar como yo
 el aseo y el cepillo.`
     },
     { id: 479,
-      autor: 'Rafael Pombo',
+      autor: 'Ministerio de Cultura - Rafael Pombo',
       coleccion: 'Cuentos al oído',
       titulo: 'El niño y la mariposa - audio',
-      describe: 'Un niño le pide a la mariposa que le regale sus alas. Descubre lo que hará el niño para hacerla feliz. ¿Sobre qué hablarías tu con una mariposa?',
+      describe: 'Un niño le pide a la mariposa que le regale sus alas. Descubre lo que hará el niño para hacerla feliz. ¿Sobre qué hablarías tú con una mariposa?',
       url: '479-ninomariposa.mp3',
       letra: `El niño - Mariposa,
 vagarosa
@@ -794,7 +794,7 @@ y de gozo temblorosa,
 expiró la mariposa.`
     },
     { id: 480,
-      autor: 'Rafael Jaramillo Arango',
+      autor: 'Ministerio de Cultura - Rafael Jaramillo Arango',
       coleccion: 'Cuentos al oído',
       titulo: 'Memorias de un niño embustero - audio',
       describe: 'Un niño de una gran familia cuenta la historia de su familia en una gran casa y de lo que ocurre en la escuela y con los habitantes del pueblo en que vive. ¿Qué haces cuando estás con tu familia?',
@@ -802,7 +802,7 @@ expiró la mariposa.`
       letra: ``
     },
     { id: 482,
-      autor: 'Hans Christian Andersen',
+      autor: 'Ministerio de Cultura - Hans Christian Andersen',
       coleccion: 'Cuentos al oído',
       titulo: 'La princesa y la alverja - audio',
       describe: 'Esta es la historia de un príncipe que desea encontrar una princesa de verdad. En una noche de tormenta, una joven princesa llama a las puertas de la ciudad y la anciana reina descubrirá si en realidad se trata de una princesa auténtica. ¿Qué te gustaría hacer si fueras el rey o la reina de un castillo?',
@@ -810,23 +810,23 @@ expiró la mariposa.`
       letra: ``
     },
     { id: 483,
-      autor: 'María Eastman',
+      autor: 'Ministerio de Cultura - María Eastman',
       coleccion: 'Cuentos al oído',
       titulo: 'Los caballos que no querían amo - audio',
-      describe: 'Tres caballos decidieron no tener amo e irse lejos del pueblo donde no los maltraten. Descubre la historia de Melado, Amigo, e Infortunado. ¿Te gusta salir a pasear a caballo? ¿Qué sientes?',
+      describe: 'Tres caballos decidieron no tener amo e irse lejos del pueblo donde no los maltraten. Descubre la historia de Melado, Amigo, e Infortunado. ¿Te gusta salir a pasear a caballo?',
       url: '483-loscaballos.mp3',
       letra: ``
     },
     { id: 484,
-      autor: 'Hermanos Grimm',
+      autor: 'Ministerio de Cultura - Hermanos Grimm',
       coleccion: 'Cuentos al oído',
       titulo: 'La bella durmiente - audio',
-      describe: 'Una hermosa niña nació en el reino, pero un hada con sed de venganza por no ser invitada a la fiesta por su nacimiento botó sobre ella un hechizo para que a sus 15 años cayera en un sueño profundo. Escucha esta historia y mira lo que le pasará a esta bella princesa.',
+      describe: 'Una hermosa niña nació en el reino, pero un hada con sed de venganza por no ser invitada a la fiesta por su nacimiento, creó un hechizo para que cuando la niña cumpliera 15 años cayera en un sueño profundo. Escucha esta historia y mira lo que le pasará a esta bella princesa.',
       url: '484-labelladurmiente.mp3',
       letra: ``
     },
     { id: 485,
-      autor: 'Rafael Pombo',
+      autor: 'Ministerio de Cultura - Rafael Pombo',
       coleccion: 'Cuentos al oído',
       titulo: 'El renacuajo paseador - audio',
       describe: 'Un renacuajo salió de paseo un tanto travieso y muy elegante y por el camino se encontró con varios animales, pero las cosas no salen como esperaba. Escucha esta historia y descubre qué fue lo que le paso a este elegante renacuajo.',
@@ -899,7 +899,7 @@ los Gatos comieron y el Pato cenó,
 ¡y mamá Ranita solita quedó!`
     },
     { id: 488,
-      autor: 'Rafael Pombo',
+      autor: 'Ministerio de Cultura - Rafael Pombo',
       coleccion: 'Cuentos al oído',
       titulo: 'El gato bandido - audio',
       describe: 'Michín es un gato muy bandido que sale por el monte listo para robar a quien se le atraviese, ¡pero al parecer no es un ladrón muy hábil! Descubre cuáles son los planes de este travieso gato.',
@@ -999,10 +999,10 @@ que nunca más seré malo,
 ¡pero dame qué comer!”`
     },
     { id: 489,
-      autor: 'Rafael Pombo',
+      autor: 'Ministerio de Cultura - Rafael Pombo',
       coleccion: 'Cuentos al oído',
       titulo: 'La pobre viejecita - audio',
-      describe: 'Esta es la historia de una pobre viejecita que de pobre no tenía nada. Descubre todo lo que guardaba esta dama en su casa',
+      describe: 'Esta es la historia de una pobre viejecita que de pobre no tenía nada. Descubre todo lo que guardaba esta dama en su casa.',
       url: '489-lapobreviejecita.mp3',
       letra: `Érase una viejecita
 sin nadita que comer
@@ -1045,10 +1045,10 @@ otra vieja de antiparras,
 papalina y peluquín. `
     },
     { id: 624,
-      autor: 'Ricardo Prado',
+      autor: 'Ministerio de Cultura - Maguaré - Ricardo Prado',
       coleccion: 'Maguaré en La Ceiba',
-      titulo: 'La fiesta de Arma DJ',
-      describe: 'Arma DJ es un armadillo que desde temprano toca su música para que todos se pongan a cantar y a bailar. Es el mejor DJ de la Ceiba y todos aman asistir a sus fiestas. ¿Y a ti, te gustó esta canción?',
+      titulo: 'La fiesta de Arma - DJ',
+      describe: 'Arma - DJ es un armadillo que desde temprano toca su música para que todos se pongan a cantar y a bailar. Es el mejor dj de La Ceiba y todos aman asistir a sus fiestas. ¿Y a ti, te gustó esta canción?',
       url: '624-armadj.mp3',
       letra: `A Arma – DJ  le gusta que bailen con él,
 Y cuando toca en su consola
@@ -1070,7 +1070,7 @@ Produce tanto asombro
 Que todos mueven los hombros
 
 Los hombros
-1, 2, 1, 2… y de cola
+1, 2, 1, 2... y de cola
 1, 2, 3, 4
 1, 2, 3
 
@@ -1088,7 +1088,7 @@ Mueven la cabeza
 1, 2, 1 y los hombros
 1, 2, 1 y la cola
 1, 2, 1 ¡y con todo!
-1, 2, 3, 4…
+1, 2, 3, 4...
 1, 2
 
 Arma – DJ
@@ -1114,7 +1114,7 @@ Y ya se quieren sentar en cualquier lugar
 A  descansar`
     },
     { id: 625,
-      autor: 'Ricardo Prado',
+      autor: 'Ministerio de Cultura - Maguaré - Ricardo Prado',
       coleccion: 'Maguaré en La Ceiba',
       titulo: 'Ñame, ñame, Ummm',
       describe: '¿Cuáles son tus platos favoritos?, ¿prefieres tamales o un buen sancocho? Con Bertilda y Edilberto sabrás cómo se preparan deliciosos platos colombianos.',
@@ -1132,7 +1132,7 @@ Ralla, ralla (Ch-ch)
 Amasa la masa (Un, dos, tres)
 Corta, corta (Tac-tac)
 Pica, pica (Tiqui-tic-tic)
-Sirve en el plato y a comer (Ñame - ñame… ¡Ummm!)
+Sirve en el plato y a comer (Ñame - ñame... ¡Ummm!)
 
 Bertilda y Edilberto ya están en la cocina
 Y preparan un sancocho para el bazar
@@ -1140,7 +1140,7 @@ Y preparan un sancocho para el bazar
 Le pusieron cerdo y carne de res
 Plátano, arracacha y mazorcas amarillas
 Yuca, papa y ñame y también ahuyama
-Todo a fuego lento en una olla y a esperar…
+Todo a fuego lento en una olla y a esperar...
 
 Bertilda y Edilberto ya están en la cocina
 Y preparan bandeja paisa para el bazar
@@ -1153,7 +1153,7 @@ Un huevito frito y chorizo con limón
 ¿Y de postre?`
     },
     { id: 626,
-      autor: 'Ricardo Prado',
+      autor: 'Ministerio de Cultura - Maguaré - Ricardo Prado',
       coleccion: 'Maguaré en La Ceiba',
       titulo: 'Los menjurjes de Gildardo',
       describe: 'Gildardo es un olinguito que vende desde bolitas de vidrio hasta remedios para el dolor de barriga. ¡Te retamos para que cantes esta canción sin soltar una carcajada!',
@@ -1193,10 +1193,11 @@ Canutillo pa’ que haga pipí
 Y caimito pa’ calmar el popó, po, po, po (etc)`
     },
     { id: 627,
-      autor: 'Ricardo Prado',
+      autor: 'Ministerio de Cultura - Maguaré - Ricardo Prado',
       coleccion: 'Maguaré en La Ceiba',
       titulo: '27 guagüitas',
-      describe: 'Un papá y una mamá siempre están pendientes de sus hijitos, de darles de comer, de bañarlos y acostarlos a dormir… ¿pero como hacen los papás de 27 cuyecitos?',
+      describe:
+      'Un papá y una mamá siempre están pendientes de sus hijitos, de darles de comer, de bañarlos y acostarlos a dormir... ¿pero cómo hacen los papás de 27 cuyecitos?',
       url: '27-guaguitas.mp3',
       letra: `Otra vez se desvelaron
 Linio y Tulita se quedaron sin dormir
@@ -1236,10 +1237,10 @@ Porque en la mañana otra vez hay que empezar
 Para ellos lo mejor es ser mamá y papá`
     },
     { id: 628,
-      autor: 'Ricardo Prado',
+      autor: 'Ministerio de Cultura - Maguaré - Ricardo Prado',
       coleccion: 'Maguaré en La Ceiba',
       titulo: 'El convite en la ceiba',
-      describe: 'Saimiri el monito ardilla de La Ceiba nos presenta a todos y cada uno de los vecinos de la comunidad, con la ayuda del abuelo Emiliano los invita a… a… a... ¿a qué es que los invita?',
+      describe: 'Saimiri el monito ardilla de La Ceiba nos presenta a todos y cada uno de los vecinos de la comunidad, con la ayuda del abuelo Emiliano los invita a... a... a... ¿a qué es que los invita?',
       url: '628-elconvite.mp3',
       letra: `Maguaré está sonando, don Emiliano está llamando
 Y Saimiri ha llegado para presentar a los invitados
@@ -1267,7 +1268,7 @@ EDILBERTO:  Piqué perejil, cebolla y tomate
 BERTILDA: Yo los patacones los tengo fritando
 		Espero sea corto lo que hay para hablar
 SAIMIRI:  ¿Y qué estaban preparando?
-EDILBERTO:  Patacones con hogao… Ojalá no se nos quemen
+EDILBERTO:  Patacones con hogao... Ojalá no se nos quemen
 
 SAIMIRI:  Llegaron Arma - DJ y las Terrillizas
 ARMA DJ:  Toda la música puede sonar, joropos, bambucos, andinas y rap
@@ -1278,7 +1279,7 @@ ARMA DJ:  Toda la música puede sonar, joropos, bambucos, andinas y rap
 		Pero sonó el maguaré
 		Y aunque estaba estudiando, un momento paré
 
-SAIMIRI:  Ahí viene Chip… y Rosalinda que viene sudando
+SAIMIRI:  Ahí viene Chip... y Rosalinda que viene sudando
 CHIP: Vamos, todos juntos, 1, 2, 3, 4
 1, 2, 3, 4  a los tobillos
 ROSALINDA:  ¡Ay no! Qué cansancio. Yo se que es muy bueno hacer ejercicio pero no puedo tanto, prefiero tocar mi violín.
@@ -1302,17 +1303,17 @@ GILDARDO: Yo me vine con la carreta por si alguien quiere comprar paletas
 
 Shhhhhh silencio, silencio que ya va a empezar a hablar el abuelo
 
-EMILIANO: Gracias por acudir a este llamado…
+EMILIANO: Gracias por acudir a este llamado...
 		Los he citado por algo muy importante
 Algo fundamental
 		Algo que en La Ceiba nadie puede dejar pasar
-		Los he citado para… para… Se me olvidó
+		Los he citado para... para... Se me olvidó
 
 Maguaré está sonando, don Emiliano está llamando
 Todos querían saber qué pasó pero al abuelo se le olvidó`
     },
     { id: 629,
-      autor:  'Ricardo Prado',
+      autor:  'Ministerio de Cultura - Maguaré - Ricardo Prado',
       coleccion: 'Maguaré en La Ceiba',
       titulo: 'Pite que repite',
       describe: 'Maya la guacamaya todo lo quiere contar, no se puede quedar calladita porque todo lo que pasa en La Ceiba para ella es una gran noticia. ¿Te atreves a cantar como lo hace Maya?',
@@ -1356,7 +1357,7 @@ Maya, Maya, Guacamaya
 Todas sus noticias son historias de verdad`
     },
     { id: 630,
-      autor: 'Ricardo Prado',
+      autor: 'Ministerio de Cultura - Maguaré - Ricardo Prado',
       coleccion: 'Maguaré en La Ceiba',
       titulo: 'Me encanta ser actriz',
       describe: 'Rani es una rana que viene del Chocó y es una gran diva, ella es la reina del drama en La Ceiba. En esta canción Rani nos muestra como transmitir las emociones más intensas.',
@@ -1364,7 +1365,7 @@ Todas sus noticias son historias de verdad`
       letra: `Soy Rani y me encanta ser actriz
 Invento personajes por montón
 Cuando hago un personaje muy feliz
-Primero me concentro… y hago así
+Primero me concentro... y hago así
 
 Me siento feliz, abro los ojos
 Hago sonrisas, y bailo así
@@ -1385,15 +1386,15 @@ Ji, ji, ji, ji, ji, ji, ji
 Soy Rani y me encanta ser actriz
 Invento personajes por montón
 Cuando hago un personaje muy llorón
-Primero me concentro… y hago así
+Primero me concentro... y hago así
 
 Me pongo consentida, arrugo la frente,
 Bajo los hombros y camino así
 Digo no con la cabeza, me sobo los ojos,
 Me pongo muy triste y lloro así
 
-¡Ahhhh!…
-¡Ahhhh!…
+¡Ahhhh!...
+¡Ahhhh!...
 
 ¡Mamáaaaaa!
 ¡Mamáaaaaa!
@@ -1404,7 +1405,7 @@ Me pongo muy triste y lloro así
 Soy Rani y me encanta ser actriz
 Invento personajes por montón
 Para poder actuar la pataleta
-Primero me concentro… y hago así
+Primero me concentro... y hago así
 
 Me pongo furiosa, alzo los hombros
 Meto la barriga y camino así
@@ -1421,7 +1422,7 @@ Tomo mucho aire y grito así
 ¡No quiero tomar sopa!`
     },
     { id: 631,
-      autor: 'Ricardo Prado',
+      autor: 'Ministerio de Cultura - Maguaré - Ricardo Prado',
       coleccion: 'Maguaré en La Ceiba',
       titulo: 'La canción sin canción',
       describe: 'Eliana no puede oir, Adriana no puede ver y a Juliana le falta un diente. Sin embargo las tres juntas son las más poderosas. ¡Con ustedes, las terrillizas!',
@@ -1463,7 +1464,436 @@ Las tres - en equipo - somos - invencibles
 ...- ...- somos - invencibles
 ...- ...- ...- invencibles
 ...- ...- ...- ...`
-    }
+},
+{ id: 2,
+  autor: 'Yeny Tandioy Chindoy - Música: José Wilson Chindoy Jacanamejoy - Traducción: Doriz Marina Jacanamijoy Mavisoy',
+  coleccion: 'Canciones Kamëntsá',
+  titulo: 'Ats̈be cuerpok - Con mi cuerpo puedo hacer mis movimientos',
+  describe: 'Al ritmo de las guitarras eléctricas muy rockeras cantemos con los niños del pueblo indígena Kamëntšá o Kamsá que vive en el Valle del Sibundoy en el Putumayo. Con esta canción podemos aprender cómo se dicen las partes del cuerpo en otra lengua.',
+  url: '2-atsbecuerpok.mp3',
+  letra: `Ats̈be cuerpoc bëtsca soy  (uta soy)
+Chanjobenay jamam mënts̈a (Uta soy)
+Mor mochjaboncjua bësts̈as (uta soy)
+
+Cats̈bioic uanecuayoic
+Fshantsoy stëtsoy (uta soy)
+
+Mor nÿets uta buacuats̈ (uta soy)
+Tsbananoy, natsanoic
+stëtsoic, fshantsoy  (uta soy)
+
+Cucuats̈ec mochjenotënts̈achebobjoy (uta soye)
+Mëntjajac y shecuats̈ec chanjobenay jontsëncjam (uta soye)
+
+Ats̈be cuerpoc, lemp sëndoben jaman (uta soy)
+Chiyec  tsatsbobonshanán (uta soy)
+Y cada te tsobëbian
+
+
+Con mi cuerpo puedo (2)
+Hacer muchos movimientos así (2)
+Ahora vamos a mover la cabeza (2)
+
+A la derecha a la izquierda
+Hacia abajo, hacia atrás (2)
+
+Ahora con las dos manos (2)
+Hacia arriba, al frente,
+Hacia atrás, hacia abajo (2)
+
+Ahora vamos a aplaudir con las manos (2)
+Con mis piernas y pies puedo saltar
+
+Con mis movimientos del cuerpo  puedo hacer de todo
+Por eso debemos apreciar nuestro cuerpo (2)
+Y bañarnos todos los días`
+},
+{ id: 3,
+  autor: 'Yeny Tandioy Chindoy - Música: José Wilson Chindoy Jacanamejoy - Traducción: Doriz Marina Jacanamijoy Mavisoy',
+  coleccion: 'Canciones Kamëntsá',
+  titulo: 'Vocalëng - Las vocales',
+  describe: 'Escucha una lengua diferente, la lengua del grupo indígena Kamëntšá o Kamsá que vive en el Valle del Sibundoy en el Putumayo. En esta canción podemos aprender las vocales mientras jugamos con las palabras.',
+  url: '3-vocaleng-lasvocales.mp3',
+  letra: `Tonjaboquën  ...A
+Jobuamiñam sana (uta soy)
+Baco tojanayán
+mamabioy juamban ( uta soy)
+
+Tonjaboquën... E
+Jabuacham batá
+Bacó tojanayán
+Jenatsëtsayam (uta soy)
+
+Tonjaboquën...  I
+Jontsencjam chashjoy (uta soy)
+Bacó  tojanayán
+Oyejuaya tsemnan (uta soy)
+
+Tonjaboquën.... O
+Jojatam bomó ( uta soy)
+Bacó tojanayan
+Jubtsesam tamoc (uta soye)
+
+Tonjaboquën.... U
+Jasam uamesnen
+Bacó tojanayan
+Tsa tamnan entsemn (uta soy)
+
+
+Salió la... A
+A comprar alimentos
+El tío dijo
+Para llevar donde mi mamá
+
+Salió la.... E
+Para acompañar la tía
+El tío dijo
+Qué bueno que la visiten
+
+Salió la... I
+Para saltar en el patio
+El tío dice hay que sonreír
+
+Salió  la... O
+A cosechar papa
+El tío dice
+Para comer con sal
+
+Salió la.... U
+Para comer mote
+El tío dice que
+Rico que está el mote`
+},
+{ id: 41,
+  autor: 'Yeny Tandioy Chindoy - Música: José Wilson Chindoy Jacanamejoy - Traducción: Doriz Marina Jacanamijoy Mavisoy',
+  coleccion: 'Canciones Kamëntsá',
+  titulo: 'Uaman Luare - Territorio sagrado',
+  describe: 'El pueblo indígena Kamëntšá o Kamsá que vive en el Valle del Sibundoy en el Putumayo, canta a su tierra, al territorio sagrado que habitan. Cantar y bailar durante el carnaval es una hermosa manera de celebrar el estar vivos y permanecer juntos.',
+  url: '41-uamanluare.mp3',
+  letra: `Muents̈e  endmën  botaman  luar
+Tabanoc  uaman  posad (uta soy)
+
+Muents̈e sendëtsomñe ats̈be
+fshantsiñ sendoyen (uta soy)
+Botaman luar bëngbe uaman tabanoc
+
+Nÿetsca pamillang mochjobuertan
+Y botaman mochjaversia (uta soy)
+
+Cabëngbe soy jisejandmanam
+Ainanocan jisebobonshanan (uta soy)
+
+Quem benachiñ mochjaversiang
+Inÿetsca pamillang mandadbioy ( uta soy)
+
+Bëngbe clestrinÿ joboyejuam
+Y oyejuayëng ts̈aba soyëng (uta soy)
+
+Nÿe uatescam mochjopronta
+Vidasna jaclestrinÿam
+
+
+Aquí existe un territorio sagrado
+En nuestro pueblo existe nuestro cabildo (2)
+
+Vivo aquí
+En mi propia tierra (2)
+Es hermoso nuestro territorio
+
+Todos bailemos
+Y cantemos bonito (2)
+
+Para recuperar lo nuestro
+Desde nuestro corazón (2)
+
+Cantemos en estos caminos
+Vamos todos a acompañar a nuestro gobernador (2)
+
+Con nuestro carnaval
+Felices y sonrientes (2)
+
+Y si tenemos vida
+El año que viene nos volvemos a encontrar`
+},
+{ id: 60,
+  autor: 'Yeny Tandioy Chindoy - Música: José Wilson Chindoy Jacanamejoy - Traducción: Doriz Marina Jacanamijoy Mavisoy',
+  coleccion: 'Canciones Kamëntsá',
+  titulo: 'Bacetemëng oyejuayëng - Niños felices cómo amanecieron el día de hoy',
+  describe: 'Los niños del pueblo indígena Kamëntšá o Kamsá que viven en el Valle del Sibundoy en el Putumayo, están muy felices porque están recuperando su lengua materna a través de la música y las canciones. ¡Vamos todos a cantar en una lengua diferente!',
+  url: '60-bacetemeng.mp3',
+  letra: `Ts̈abá basetemënga... ts̈abá
+Ts̈abá tcmojabobinÿ...ts̈abá
+Corent oyejuayënga
+Camënts̈á mochjoibuambay
+Ts̈abá, ts̈abá,  ts̈abá
+
+Ts̈a oprecid entsemna...aiñ
+Juatsjinÿam cabëngbe soy....aiñ
+Ts̈a botaman entsemn
+Camënts̈á joibuambayam
+Ts̈abá, ts̈abá, ts̈abá
+
+
+Cómo están niños... bien
+Cómo amanecieron... bien
+Contentos y felices
+Hablemos Camënts̈á
+Bien, bien, bien
+
+Qué necesario es hablar el idioma... Si
+Aprender lo nuestro... Si
+Qué bonito es hablar el idioma Camënts̈á
+Bien, bien, bien`
+},
+{ id: 175,
+  autor: 'Yeny Tandioy Chindoy - Música: José Wilson Chindoy Jacanamejoy - Traducción: Doriz Marina Jacanamijoy Mavisoy',
+  coleccion: 'Canciones Kamëntsá',
+  titulo: 'Motsomana - Duérmete',
+  describe: 'Duérmete, sueña bonito... así cantan las mamás del pueblo indígena Kamëntšá o Kamsá que viven en el Valle del Sibundoy en el Putumayo. ¡A la hora de dormir qué lindo es un arrullo!',
+  url: '175-motsomana.mp3',
+  letra: `Mor motsomana
+Motjena taitá
+Motjena mamá
+Botaman cochjotjena
+Mor motsomana
+Ats̈  chanjuabua
+
+Ya echantaboy
+Acbe taitá
+Mor motsomana (canta soy)
+
+Mor motsomana
+Ats̈ chanjuabua (uta soy)
+
+Ya  echantaboy
+Acbe taitá
+Mor  motsomana (canta soy)
+Botaman cochjotjena
+
+
+Ahora duérmete
+Sueñe a tu papá
+Sueñe a tu mamá
+Sueñe bonito (2)
+
+Ahora duérmete
+Yo voy a cocinar (2)
+
+Ya llegará su papá
+Ahora duérmete (4)
+Sueñe bonito`
+},
+{ id: 182,
+  autor: 'Yeny Tandioy Chindoy - Música: José Wilson Chindoy Jacanamejoy - Traducción: Doriz Marina Jacanamijoy Mavisoy',
+  coleccion: 'Canciones Kamëntsá',
+  titulo: 'Kabëngbiam - Para nosotros',
+  describe: 'Escucha una lengua diferente, la lengua del grupo indígena Kamëntšá o Kamsá que vive en el Valle del Sibundoy en el Putumayo. Ellos tienen mucho por enseñarte con sus tradiciones. ¿Has escuchado otras canciones en lengua nativa?',
+  url: '182-kabengbiam.mp3',
+  letra: `Sëntsebos jauyanam
+Ts̈a oyejuaya sëntsemn (uta soy)
+
+Bëngbe taitá be bendicionac
+Pamillangbe licinciac (uta soy)
+Nÿetscangbiam chanjubtsoboyejuay
+
+Nÿetscang mochtonts̈a
+Camënts̈á jtoibuambayam
+Chëca añemo mochantsatsbomna
+Canÿe tsaquëngca (uta soy)
+
+
+Quiero decirte
+Que soy feliz (2)
+Ahora voy a cantar
+Para rescatar lo  nuestro (2)
+
+Con el permiso de nuestro padre creador
+Con el permiso de todos ustedes (2)
+Voy a bailar para todos
+
+Todos vamos
+A comenzar hablar el Camënts̈á
+Así tendremos ánimos
+Como una sola familia (2)182`
+},
+{ id: 186,
+  autor: 'Yeny Tandioy Chindoy - Música: José Wilson Chindoy Jacanamejoy - Traducción: Doriz Marina Jacanamijoy Mavisoy',
+  coleccion: 'Canciones Kamëntsá',
+  titulo: 'Ngomënchetema - Mi pequeño',
+  describe: 'Los niños son muy felices cuando cantan, bailan y los arrullan. Al jugar juntos no hay por qué llorar. Esta canción en lengua Kamëntšá o Kamsá es muy festiva. ¡Vamos a cantar!',
+  url: '186-ngomenchetema.mp3',
+  letra: `Matab ngomënchetem
+Matab matab (uta soy)
+Oyejuaica cojtsemn mënte
+Ndoñ matosache (uta soy)
+
+Mab  jatraviciam
+Mab mochjenparla
+
+Ndoñ matosache
+Ainanocan cbontsebobonshan (uta soy)
+
+Mab jatravisiam
+Mab mochjenparla
+Ndoñ matosache
+Ainanocan cbomtsebobonshan (unga soy)
+
+
+Venga mi pequeño
+Venga venga (2)
+Hoy te encuentras feliz
+No llorarás (2)
+
+Venga juguemos
+Venga hablemos
+
+No llorarás
+Te quiero desde mi corazón (2)
+
+Venga mi pequeño
+Voy a arrullarte (2)
+Hoy te encuentras feliz
+Mi pequeño no llorarás (2)
+
+Venga juguemos
+Venga hablemos
+No llorarás
+Te quiero desde mi corazón (2)
+
+Venga juguemos
+Venga hablemos
+No llorarás
+Te quiero desde mi corazón (3)`
+},
+{ id: 264,
+  autor: 'Yeny Tandioy Chindoy - Música: José Wilson Chindoy Jacanamejoy - Traducción: Doriz Marina Jacanamijoy Mavisoy',
+  coleccion: 'Canciones Kamëntsá',
+  titulo: 'Botaman jentchuayam - Saludo bonito o cortesía de un saludo',
+  describe: 'Escucha una lengua diferente, la lengua del grupo indígena Kamëntšá o Kamsá que viven en el Valle del Sibundoy en el Putumayo. Ellos tienen mucho por enseñarte con sus tradiciones. En esta canción te hablan sobre cómo saludar, entre los Kamëntšá se acostumbra llamar tío a todos los adultos de la comunidad. ¿Cómo saludas tú a las otras personas?',
+  url: '264-botaman.mp3',
+  letra: `Bastí bakó, bastí bakó
+Bastí bakó, bastí bakó
+
+Tšabá tkmojabobinÿ, ayiñ o ndoñ,
+Tšabá tkmojabobinÿ, ayiñ o ndoñ,
+
+Tšabá aslëpay, nÿe guantanaka
+Tšabá aslëpay, nÿe guantanaka
+
+Ascokayë, ndomoy kojtsá
+Ascokayë, ndomoy kojtsá
+
+Atšbë Tabanók, tamó jobuamiñam
+Atšbë Tabanók, tamó jobuamiñam
+
+Aslëpay bakó, mo base ratëskam
+Aslëpay bakó, mo base ratëskam
+Mo base ratëskam, Mo base ratëskam
+
+
+Buenos días tío, buenos días tío
+Buenos días tío, buenos días tío
+
+¿Cómo amaneció?, ¿bien?
+¿Cómo amaneció?, ¿bien?
+
+Estoy pasándola muy bien
+Estoy pasándola muy bien
+
+¡Qué bueno!, ¿para dónde va?
+¡Qué bueno!, ¿para dónde va?
+
+Voy al pueblo Sibundoy a comprar sal
+Voy al pueblo Sibundoy a comprar sal
+
+Muchas gracias tío, hasta pronto
+Muchas gracias tío, hasta pronto
+Hasta pronto, hasta pronto
+`
+},
+{ id: 613,
+  autor: 'Yeny Tandioy Chindoy - Música: José Wilson Chindoy Jacanamejoy - Traducción: Doriz Marina Jacanamijoy Mavisoy',
+  coleccion: 'Canciones Kamëntsá',
+  titulo: 'Shinÿetema - Solecito',
+  describe: 'Esta ronda del pueblo indígena Kamëntšá o Kamsá que vive en el Valle del Sibundoy en el Putumayo le canta al sol, solecito, para que venga a calentarnos.',
+  url: '613-shinyetema.mp3',
+  letra: `Shinÿetema, shinÿetema
+S̈matsbonÿa, s̈matsbonÿa
+Ats̈be shinÿetema, ats̈be shinÿetema
+S̈matsbonÿa, s̈matsbonÿa
+
+Cada te chanjotsbana
+Oyejuaica pamillangaftac
+Er mënte echanjabocna
+Shinÿetema s̈matjëmbambay
+
+Shinÿetema, shinÿetema
+S̈matsbonÿa, s̈matsbonÿa
+Ats̈be shinÿetema, ats̈be shinÿetema
+S̈matsbonÿa, s̈matsbonÿa
+
+
+Solecito, solecito
+Caliéntame, caliéntame
+Mi solecito, mi solecito
+Caliéntame, caliéntame
+
+Todos los días me levanto
+Con una sonrisa para mi familia
+Por qué hoy sale
+El solecito para acompañarme
+
+Solecito, solecito
+Caliéntame, caliéntame
+Mi solecito, mi solecito
+Caliéntame, caliéntame`
+},
+{ id: 616,
+  autor: 'Yeny Tandioy Chindoy - Música: José Wilson Chindoy Jacanamejoy - Traducción: Doriz Marina Jacanamijoy Mavisoy',
+  coleccion: 'Canciones Kamëntsá',
+  titulo: 'Katšbet ora - En luna llena',
+  describe: 'Bañarse en un río siempre es delicioso, porque uno se llena de ánimo y energía. ¿Cómo será bañarse a la luz de la luna llena? Esta canción la cantan los niños del pueblo indígena Kamëntšá o Kamsá que vive en el Valle del Sibundoy en el Putumayo.',
+  url: '616-katsbet-ora.mp3',
+  letra: `Cats̈bet  juashcon
+Nÿets ibet mobinÿna (2)
+Cats̈bet juashcon  (2)
+
+Chanja cuacjnayoiy
+Choc chanjobebia (uta)
+Cats̈bet or tojabinÿna
+Añem jacam chantsobebia (uta soy)
+
+Tants̈añe  buacuatem
+Tsamias, shecuatema (2)
+Lemp chantsobebia
+Ts̈abá tsebionam (uta soy)
+
+Bests̈atem, jubiatem
+Botaman chantsobebia (uta soye)
+Cats̈bet ora tojabinÿ
+Añemo jacam chantsobebia (uta soye)
+
+
+Luna llena
+Ilumina  toda la noche (2)
+Ilumina toda la noche
+Luna llena (2)
+
+Voy a ir al río cabuyayaco
+Allá me bañaré (2)
+Cuando amanece el día de luna llena
+Para tener buenas energías me bañaré este día (2)
+
+Mis hombros, mis brazos
+Mis rodillas, pies (2)
+Todo me bañaré
+Para tener buenas energías (2)
+
+Mi cabecita, mi carita
+Me bañaré bien bonito (2)
+Cuando amanece el día de luna llena
+Para tener buenos ánimos y buenas energías (2) `
+}/**/
   ]
 }
 
@@ -1496,6 +1926,10 @@ const getters = {
     audiosSweetsongs: state => {
       return state.canciones.filter(cancion => cancion.coleccion == 'Sweet songs fi piknini. Canciones dulces para niños.')
     },
+    audiosKamentsa: state => {
+      return state.canciones.filter(cancion => cancion.coleccion == 'Canciones Kamëntsá')
+    },
+
     audiosFiesta: state => {
       return state.canciones.filter(cancion => cancion.coleccion == 'Fiesta de la lectura')
     },

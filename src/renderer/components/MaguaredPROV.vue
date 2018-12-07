@@ -1,5 +1,5 @@
 <template>
-<div class="">
+<div class="pa-1 blanco">
   <v-layout row wrap>
     <v-flex xs12 class="text-xs-center">
       <v-card>
@@ -10,8 +10,8 @@
               </v-card-title>
         </v-card>
     </v-flex>
-  <v-flex xs12 v-for="(video, index) in otrosdocumentospdf" :key="index" class="pa-1">
-    {{ video.id }}*** {{ video.coleccion }}*** {{ video.autor }}*** {{ video.titulo}}*** {{ video.describe}}
+  <v-flex xs12 v-for="(video, index) in videosmag" :key="index" class="pa-1">
+    {{ video.id }}***{{ video.titulo }}***{{ video.autor }}
 </v-flex>
 
   </v-layout>
@@ -36,7 +36,7 @@ export default {
   },
   created() {
     this.sugerenciaspdf = _.sortBy(this.sugerencias, ['titulo']);
-    this.videosmag = _.sortBy(this.videos, ['titulo']);
+    this.videosmag = _.sortBy(this.videos, ['id']);
     this.tutorialesmag = _.sortBy(this.tutoriales, ['titulo']);
     this.otrosdocumentospdf = _.sortBy(this.otrosdocumentos, ['titulo']);
     EventBus.$emit('TITULO', 'ProviXXXional');
@@ -46,7 +46,8 @@ export default {
     },
   computed: {
     ...mapState('Varios', ['sugerencias']),
-    ...mapState('Maguared', ['videos', 'tutoriales', 'otrosdocumentos']),
+    ...mapState('Maguared', ['tutoriales', 'otrosdocumentos']),
+    ...mapState('Videos', ['videos']),
   },
   methods: {
 
@@ -55,6 +56,8 @@ export default {
 </script>
 
 <style lang="css" scoped>
-
+.blanco{
+  background-color: white;
+}
 
 </style>

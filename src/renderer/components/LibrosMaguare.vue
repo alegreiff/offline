@@ -1,5 +1,5 @@
 <template>
-<div class="">
+<div class="pa-4">
   <v-layout row wrap>
     <v-flex xs12 class="text-xs-center py-2">
       <v-card>
@@ -14,7 +14,7 @@
     <v-card  height="100%" class="flexcard" ripple hover>
       <div class="grow">
         <v-img :src="'static/miniaturas/'+app.id+'.jpg'" class="card-imagen"></v-img>
-        <v-card-title><h2 class="card-titulo">{{ app.titulo }}</h2></v-card-title>
+        <v-card-title><h2 class="card-titulo">{{ app.id }} ---  {{ app.titulo }}</h2></v-card-title>
         <v-card-text class="card-texto">{{ app.describe }}</v-card-text>
       </div>
       <v-card-actions class="justify-center accionescard">

@@ -1,5 +1,14 @@
 const state = {
   describe: [
+    /* Descargables Serie 400 */
+    {
+      id: 400,
+      clase: 'maguare',
+      seccion: 'Descargables',
+      subseccion: 'Descargables',
+      titulobreve: 'Descargables',
+      descripcion: 'Rompecabezas, trabalenguas, adivinanzas y mucho más para jugar'
+    },
     /* INTERACTIVOS SERIE 300*/
     {
       id: 300,
@@ -89,6 +98,14 @@ const state = {
       subseccion: 'Canciones dulces',
       titulobreve: 'Audios - Sweet songs / canciones dulces',
       descripcion: 'Canciones de la rica tradición cultural del Archipiélago de San Andrés, Providencia y Santa Catalina'
+    },
+    {
+      id: 6,
+      clase: 'maguare',
+      seccion: 'Audios',
+      subseccion: 'Canciones Kamëntsá',
+      titulobreve: 'Audios - Canciones Kamëntsá',
+      descripcion: 'Música para recuperar la lengua del pueblo Kamëntsá'
     },
     /* VIDEOS SERIE 100*/
     {

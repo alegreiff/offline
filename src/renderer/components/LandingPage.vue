@@ -4,7 +4,7 @@
       <img id="logo" src="static/maguare.png" alt="electron-vue" class="logosmag">
       <img id="logo" src="static/maguared.png" alt="electron-vue" class="logosmag" v-on:click="emitMethod">
     </div>
-    <h1>Versión 0.0578 "cristikatonibetosa"</h1>
+    <h1>Versión 0.062 "laculturaesdetodos"</h1>
     <button v-on:click="emitMethod">
       Enlarge text
     </button>

@@ -1,5 +1,5 @@
 <template>
-<div class="">
+<div class="pa-4">
   <v-layout row wrap>
     <!--<v-layout row wrap>
       <v-flex xs3  v-for="(video, index) in coleccion" :key="index">
@@ -119,7 +119,7 @@ export default {
   computed: {
     ...mapState('Audios', ['main', 'nombre', 'canciones']),
     ...mapState('Describe', ['describe']),
-    ...mapGetters('Audios', ['audiosCeiba', 'audiosCuentosaloido', 'audiosCuentoencanto', 'audiosSweetsongs', 'audiosSincoleccion', 'audiosFiesta']),
+    ...mapGetters('Audios', ['audiosCeiba', 'audiosCuentosaloido', 'audiosCuentoencanto', 'audiosSweetsongs', 'audiosSincoleccion', 'audiosFiesta', 'audiosKamentsa']),
   },
   methods: {
     coleccionactiva(id){
@@ -142,6 +142,9 @@ export default {
       }else if (id =='audiosSweetsongs') {
         this.datosgenerales = this.describe.filter(dato => dato.id == 5)
         this.coleccion = this.audiosSweetsongs
+      }else if (id =='audiosKamentsa') {
+        this.datosgenerales = this.describe.filter(dato => dato.id == 6)
+        this.coleccion = this.audiosKamentsa
 
       }else if (id =='audiosFiesta') {
         this.datosgenerales = this.describe.filter(dato => dato.id == 4)

@@ -11,6 +11,8 @@ import MaguPROV from '@/components/MaguaredPROV'
 import MaguaREDVideos from '@/components/MaguaREDVideos'
 import MaguaREDTutoriales from '@/components/MaguaREDTutoriales'
 import MaguaREDLibros from '@/components/MaguaREDLibros'
+import AboutUs from '@/components/AboutUs'
+
 
 
 
@@ -24,6 +26,7 @@ export default new Router({
       component: require('@/components/LandingPage').default
     },
     { path: '/biko', component: Biko },
+    { path: '/acercade', component: AboutUs },
     //{ path: '/interactivos', component: Interactivos },
     { path: '/sugerencias', component: Sugerencias },
     { path: '/videosmaguared', component: MaguaREDVideos },

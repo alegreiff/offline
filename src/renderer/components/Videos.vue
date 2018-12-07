@@ -1,5 +1,5 @@
 <template>
-<div class="">
+<div class="pa-4 seccionvideos">
   <v-layout row wrap>
     <v-flex xs12 class="text-xs-center py-2">
       <v-card>
@@ -226,5 +226,13 @@ p.describe{
 
 }
 
+.seccionvideos{
+  background-image: url("~@/assets/ceiba.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
 
 </style>

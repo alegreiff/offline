@@ -1,11 +1,11 @@
 <template>
-<div class="">
+<div class="pa-4">
   <v-layout row wrap>
     <v-flex xs12 class="text-xs-center">
       <v-card>
               <v-card-title primary-title style="height:auto">
                 <div>
-                  <div>{{ describeseccion }}</div>
+                  <div>{{ datosgenerales[0].descripcion }}</div>
                 </div>
               </v-card-title>
         </v-card>
@@ -50,19 +50,23 @@ export default {
   data: function () {
     return {
       describeseccion: 'Descripción de los dos coloreableses',
-      descargablesmaguarepdf: []
+      descargablesmaguarepdf: [],
+      datosgenerales: []
     }
   },
   created() {
     //this.interactivos = this.apps;
+    this.datosgenerales = this.describe.filter(dato => dato.id == 400)
+    EventBus.$emit('TITULO', this.datosgenerales[0].titulobreve);
     this.descargablesmaguarepdf = _.sortBy(this.descargablesmaguare, ['titulo']);
-    EventBus.$emit('TITULO', 'Descargables');
+    //EventBus.$emit('TITULO', 'Descargables');
     },
     watch: {
 
     },
   computed: {
     ...mapState('Varios', ['descargablesmaguare']),
+    ...mapState('Describe', ['describe']),
     /*...mapGetters('Videos', ['videoskaraokes', 'videossimples', 'videosall', 'videoscuentosnarrados', 'videoslistos']),*/
   },
   methods: {

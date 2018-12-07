@@ -13,7 +13,7 @@
     </v-toolbar-title>
   </v-toolbar>
   <v-content>
-    <v-container fluid>
+    <v-container fluid ma-0 pa-0>
       <router-view></router-view>
     </v-container>
   </v-content>
@@ -99,11 +99,23 @@ export default {
 
 
 }
-#sandbox{
-  background-image: url("~@/assets/playa.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+.container{
+  margin: 0;
+  padding: 0;
 }
+#sandbox{
+  /*background-image: url("~@/assets/playa.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;*/
+  background-image: url("~@/assets/cama.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  
+
+}
+
 img.imlogo {
   max-width: 100%;
 }
