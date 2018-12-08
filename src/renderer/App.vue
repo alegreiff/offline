@@ -96,9 +96,11 @@ export default {
   --maggris:      #137786;
   --magfondogris: #f2f2f2;
   --magfondocards: #e9f9fc
-
-
 }
+*, html{
+  user-select: none; /* Standard */
+}
+
 .container{
   margin: 0;
   padding: 0;
@@ -112,7 +114,7 @@ export default {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  
+
 
 }
 

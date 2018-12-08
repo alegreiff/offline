@@ -244,7 +244,7 @@ const state = {
       },{
         id: 1222,
         autor: 'Edmundo de Amicis',
-        titulo: 'El pequeño escribiento florentino',
+        titulo: 'El pequeño escribiente florentino',
         coleccion: 'Leer es mi cuento',
         publico: 'maguared',
         describe: 'Esta historia invita a pensar el significado de la familia y el rol que cumple cada miembro para aportar al bienestar general.',
