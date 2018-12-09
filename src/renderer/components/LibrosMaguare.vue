@@ -1,6 +1,7 @@
 <template>
 <div class="pa-4 seccionlibros">
   <v-layout row wrap>
+
   <v-flex xs3 v-for="(app, index) in coleccion" :key="index" class="pa-1">
     <v-card  height="100%" class="flexcard" ripple hover>
       <div class="grow">
@@ -8,6 +9,7 @@
         <v-card-title><h2 class="card-titulo">{{ app.id }} ---  {{ app.titulo }}</h2></v-card-title>
         <v-card-text class="card-texto">{{ app.describe }}</v-card-text>
       </div>
+
       <v-card-actions class="justify-center accionescard">
         <v-tooltip top color="magrojo" class="pa-1">
           <v-btn fab small dark color="magazul"
@@ -23,6 +25,18 @@
             <v-btn fab small dark color="magazul" slot="activator">
             <v-icon medium dark>info</v-icon>
           </v-btn><span><b>Autor: </b>{{ app.autor }}</span></v-tooltip>
+      </v-card-actions>
+      <v-card-actions class="maggris justify-center accionescard" v-if="app.urlbn">
+        <v-tooltip top color="magrojo" class="pa-1">
+          <v-btn fab small  color="magazul"
+          @click="pdfdescarga('static/'+app.urlbn, app.descarga+'BN.pdf')"
+          slot="activator">
+          <v-icon medium dark>arrow_drop_down_circle</v-icon>
+        </v-btn><span>Descargar el libro en blanco y negro</span></v-tooltip>
+        <v-tooltip top color="magrojo" class="pa-1">
+          <v-btn fab small  color="magazul" @click="muestraPDF('/'+app.urlbn)" slot="activator">
+          <v-icon medium dark>pageview</v-icon>
+        </v-btn><span>Ver el libro en blanco y negro</span></v-tooltip>
       </v-card-actions>
     </v-card>
 </v-flex>

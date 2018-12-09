@@ -19,6 +19,8 @@ Vue.use(Vuetify, {
     magcafe:      '#772705',
     magrojo:      '#e0541e',
     magverde:     '#8bceaf',
+    maggris:      '#A4A4A4',
+    magfondogris: '#f2f2f2'
 
   }
 })

@@ -321,6 +321,7 @@ const state = {
         publico: 'maguare',
         describe: 'Chip la perezosa se levantó muy dispuesta para dar su clase de aeróbicos y para hacer deporte se mantiene muy bien hidratada. Pero Chip ha tomado más agua de la cuenta… ¡Un baño, por favor!',
         url: 'librosmaguare/maguare-frenetico-baile-chip.pdf',
+        urlbn: 'librosmaguare/maguare-frenetico-baile-chipBN.pdf',
         descarga: 'CEIBA-elbailefreneticodechip'
       },
       {
@@ -331,6 +332,7 @@ const state = {
         publico: 'maguare',
         describe: 'Saimiri es un gran lector y quiere terminar de leer una historia, pero no aparece el segundo libro que cuenta el final. Con la ayuda de Gigi la tortuga emprenden la aventura de encontrar el libro perdido.',
         url: 'librosmaguare/maguare-libro-perdido-gigi.pdf',
+        urlbn: 'librosmaguare/maguare-libro-perdido-gigiBN.pdf',
         descarga: 'CEIBA-ellibroperdidodegigi'
       },
       {
@@ -341,6 +343,7 @@ const state = {
         publico: 'maguare',
         describe: '¿Cómo hacen Linio y Tulita los dos papás cuyes para salir de paseo con sus hijos?. No debe ser nada fácil… porque son ¡27 cuyecitos!',
         url: 'librosmaguare/maguare-viaje-familia-cuy.pdf',
+        urlbn: 'librosmaguare/maguare-viaje-familia-cuyBN.pdf',
         descarga: 'CEIBA-elviajedelafamiliacuy'
       },
       {
@@ -351,6 +354,7 @@ const state = {
         publico: 'maguare',
         describe: 'Rosalinda la camaleona cambia de color según como se sienta y hoy está azul porque parece que todos olvidaron su cumpleaños. En todo el día no ha recibido ni un abrazo ni un te quiero. ¿Cómo hacer para que se ponga feliz, color arcoiris?',
         url: 'librosmaguare/maguare-rosalinda.pdf',
+        urlbn: 'librosmaguare/maguare-rosalindaBN.pdf',
         descarga: 'CEIBA-elcumpleanosderosalinda'
       },
       {
@@ -361,6 +365,7 @@ const state = {
         publico: 'maguare',
         describe: 'El abuelo Emiliano lo olvida todo, todo, todo… bueno no se le olvidan las cosas que averguenzan a Rani y a Gildardo. ¡Abuelo Emiliano ejercita tu memoria con un sudoku!',
         url: 'librosmaguare/maguare-memoria-abuelo.pdf',
+        urlbn: 'librosmaguare/maguare-memoria-abueloBN.pdf',
         descarga: 'CEIBA-lamemoriadelabuelo'
       },{
         id: 623,
@@ -370,6 +375,7 @@ const state = {
         publico: 'maguare',
         describe: '¡Las trillizas Adriana, Juliana y Eliana son terribles!. No se quedan quietas nunca y sus travesuras desesperan a más de uno en la Ceiba. Sin embargo parecen tener un don especial para transformar cualquier situación por crítica que parezca. ¿Qué hicieron ahora estas Terrillizas?.',
         url: 'librosmaguare/maguare-sopa-fiesta.pdf',
+        urlbn: 'librosmaguare/maguare-sopa-fiestaBN.pdf',
         descarga: 'CEIBA-unasopaparalafiesta'
       }
 
