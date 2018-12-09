@@ -1,29 +1,31 @@
 <template>
 <div class="pa-4 secciondescargables">
   <v-layout row wrap>
-  <v-flex xs3 v-for="(app, index) in sugerenciaspdf" :key="index" class="pa-1">
-    <v-card>
-            <v-img :src="'static/miniaturas/'+app.id+'.jpg'" :alt="app.titulo" ></v-img>
-            <v-card-title primary-title style="height:auto">
-              <div>
-                <h3 class="mb-0">{{ app.titulo }}</h3>
-                <div>{{ app.describe }}</div>
-              </div>
-            </v-card-title>
-
-            <v-card-actions >
-
-                <v-btn style="100%" small class="white--text" color="magazul" block :href="'static/'+app.url" target="_self">
-                  Descargar el PDF
-                </v-btn>
-
-            </v-card-actions>
-      </v-card>
-
-
-
-
-  </v-flex>
+    <v-flex xs3 v-for="(app, index) in sugerenciaspdf" :key="index" class="pa-1">
+        <v-card  height="100%" class="flexcard" ripple hover>
+          <div class="grow">
+            <v-img :src="'static/miniaturas/'+app.id+'.jpg'" class="card-imagen"></v-img>
+            <v-card-title><h2 class="card-titulo">{{ index+1 }} :: {{ app.id }} :: {{ app.titulo }}</h2></v-card-title>
+            <v-card-text class="card-texto">{{ app.describe }}</v-card-text>
+          </div>
+          <v-card-actions class="justify-center accionescard">
+            <v-tooltip top color="magrojo" class="pa-1">
+              <v-btn fab small dark color="magazul"
+              @click="pdfdescarga('static/'+app.url, app.descarga+'.pdf')"
+              slot="activator">
+              <v-icon medium dark>arrow_drop_down_circle</v-icon>
+            </v-btn><span>Descargar el libro</span></v-tooltip>
+            <v-tooltip top color="magrojo" class="pa-1">
+              <v-btn fab small dark color="magazul" @click="muestraPDF('/'+app.url)" slot="activator">
+              <v-icon medium dark>pageview</v-icon>
+            </v-btn><span>Ver el libro</span></v-tooltip>
+              <v-tooltip top color="magrojo" class="pa-1" max-width="200px">
+                <v-btn fab small dark color="magazul" slot="activator">
+                <v-icon medium dark>info</v-icon>
+              </v-btn><span><b>Autor: </b>{{ app.autor }}</span></v-tooltip>
+          </v-card-actions>
+        </v-card>
+    </v-flex>
 
   </v-layout>
 
@@ -33,6 +35,13 @@
 <script>
 import { mapState } from 'vuex'
 import EventBus from './eventos';
+const electron = require('electron');
+const BrowserWindow = electron.remote.BrowserWindow;
+const PDFWindow = require('electron-pdf-window')
+
+import path from 'path'
+
+
 /*import _ from 'lodash';*/
 
 export default {
@@ -41,7 +50,8 @@ export default {
     return {
       describeseccion: 'Sugerencias de uso',
       sugerenciaspdf: [],
-      datosgenerales: []
+      datosgenerales: [],
+      ventana: null,
     }
   },
   created() {
@@ -60,7 +70,47 @@ export default {
     /*...mapGetters('Videos', ['videoskaraokes', 'videossimples', 'videosall', 'videoscuentosnarrados', 'videoslistos']),*/
   },
   methods: {
+    muestraPDF(link){
+      //console.log(this.ventana.id + " <=========")
+      if(this.ventana === null){
+        //console.log(' es null ahora ')
+        this.creacontenedorPDF()
+      }
+      //console.log(this.ventana)
+        var filex = path.join(__static, link)
 
+        //console.log(filex)
+
+        this.ventana.loadURL(filex)
+        this.ventana.show()
+        //alert(this.ventana.id)
+
+    },
+    creacontenedorPDF(){
+
+      this.ventana = new BrowserWindow({
+          webPreferences: {
+          },
+          height: 600,
+          frame: true,
+          transparent: true,
+          width: 800,
+          backgroundColor: '#e0541e',
+          show: false
+        })
+        this.ventana.on('closed', () => {
+          this.ventana = null
+        })
+        PDFWindow.addSupport(this.ventana)
+    },
+    pdfdescarga(ruta, nombre){
+      //alert(ruta)
+      //window.location.href= ruta
+      var link = document.createElement("a");
+      link.download = nombre;
+      link.href = ruta;
+      link.click();
+    }
 }
 }
 </script>

@@ -1,23 +1,11 @@
 <template>
 <div class="pa-4 seccionlibros">
   <v-layout row wrap>
-    <v-flex xs12 class="text-xs-center">
-      <v-card>
-              <v-card-title primary-title style="height:auto">
-                <div>
-                  <div>{{ describeseccion }} {{ coleccion.length }}</div>
-                  <div class="">
-
-                  </div>
-                </div>
-              </v-card-title>
-        </v-card>
-    </v-flex>
   <v-flex xs3 v-for="(app, index) in coleccion" :key="index" class="pa-1">
       <v-card  height="100%" class="flexcard" ripple hover>
         <div class="grow">
           <!--<v-img :src="'static/miniaturas/'+app.id+'.jpg'" class="card-imagen"></v-img>-->
-          <v-card-title><h2 class="card-titulo">{{ app.id }} :: {{ app.titulo }}</h2></v-card-title>
+          <v-card-title><h2 class="card-titulo">{{ index+1 }} :: {{ app.id }} :: {{ app.titulo }}</h2></v-card-title>
           <v-card-text class="card-texto">{{ app.describe }}</v-card-text>
         </div>
         <v-card-actions class="justify-center accionescard">
@@ -61,14 +49,15 @@ export default {
       //librosmaguarepdf: [],
       coleccion: [],
       ventana: null,
-      todosloslibros: []
+      //todosloslibros: []
 
     }
   },
 
     created() {
       this.coleccionactiva(this.$route.params.id);
-      this.todosloslibros = this.librosTodosLeeresmicuento.concat(this.librosCuerpoSonoro).concat(this.librosCuentosDerechos);
+      //this.todosloslibros = this.librosTodosLeeresmicuento.concat(this.librosCuerpoSonoro).concat(this.librosCuentosDerechos);
+
 
     },
     watch: {
@@ -127,7 +116,7 @@ export default {
 
     },
     coleccionactiva(id){
-
+      console.log("Kambia la koletsion")
       if(id =='librosTodosLeeresmicuento'){
         this.datosgenerales = this.describe.filter(dato => dato.id == 205)
         this.coleccion = this.librosTodosLeeresmicuento
@@ -142,7 +131,8 @@ export default {
 
       }else{
         this.datosgenerales = this.describe.filter(dato => dato.id == 204)
-        this.coleccion = this.todosloslibros
+        //this.coleccion = this.todosloslibros
+        this.coleccion =this.librosTodosLeeresmicuento.concat(this.librosCuerpoSonoro).concat(this.librosCuentosDerechos);
 
       }
       EventBus.$emit('TITULO', this.datosgenerales[0].titulobreve);
