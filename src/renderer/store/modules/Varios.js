@@ -516,7 +516,8 @@ const state = {
         describe: 'descripción breve del contenido. En una frase',
         url: 'sugerencias/sugerencias-de-uso-9023-cancionesmaguare.pdf'
       },
-    ]
+    ],
+
 }
 
 const getters = {

@@ -1,5 +1,5 @@
 <template>
-<div class="">
+<div class="pa-4 seccionlibros">
   <v-layout row wrap>
     <v-flex xs12 class="text-xs-center">
       <v-card>
@@ -14,35 +14,9 @@
         </v-card>
     </v-flex>
   <v-flex xs3 v-for="(app, index) in coleccion" :key="index" class="pa-1">
-    <!--<v-card>
-            <v-img :src="'static/miniaturas/'+libro.id+'.jpg'" :alt="libro.titulo" ></v-img>
-
-
-            <v-card-title primary-title style="height:auto">
-              <div>
-                <h3 class="mb-0">{{ libro.titulo }}</h3>
-                <span>{{ libro.autor }}</span>
-                <div style="height: 160px">{{ libro.describe }}</div>
-
-              </div>
-            </v-card-title>
-
-            <v-card-actions >
-
-                <v-btn small class="white--text" color="blue" block :href="'static/'+libro.url" target="_self" :download="libro.descarga">
-                  Descargar el libro
-                </v-btn>
-                <v-btn small class="white--text" color="blue" block @click="muestraPDF('/'+libro.url)" target="_self">
-                  Muestra INLINE
-                </v-btn>
-
-
-            </v-card-actions>
-      </v-card>-->
-
       <v-card  height="100%" class="flexcard" ripple hover>
         <div class="grow">
-          <v-img :src="'static/miniaturas/'+app.id+'.jpg'" class="card-imagen"></v-img>
+          <!--<v-img :src="'static/miniaturas/'+app.id+'.jpg'" class="card-imagen"></v-img>-->
           <v-card-title><h2 class="card-titulo">{{ app.id }} :: {{ app.titulo }}</h2></v-card-title>
           <v-card-text class="card-texto">{{ app.describe }}</v-card-text>
         </div>
@@ -86,13 +60,15 @@ export default {
       describeseccion: 'Presentación de los seis libros de Maguaré en La Ceiba',
       //librosmaguarepdf: [],
       coleccion: [],
-      ventana: null
+      ventana: null,
+      todosloslibros: []
 
     }
   },
 
     created() {
       this.coleccionactiva(this.$route.params.id);
+      this.todosloslibros = this.librosTodosLeeresmicuento.concat(this.librosCuerpoSonoro).concat(this.librosCuentosDerechos);
 
     },
     watch: {
@@ -110,7 +86,10 @@ export default {
     },
     computed: {
       //...mapState('Varios', ['libros']),
+      ...mapGetters('Maguared', ['librosCuerpoSonoro', 'librosCuentosDerechos']),
       ...mapGetters('Varios', ['librosTodosLeeresmicuento']),
+      ...mapState('Describe', ['describe']),
+
     },
   methods: {
 
@@ -150,18 +129,24 @@ export default {
     coleccionactiva(id){
 
       if(id =='librosTodosLeeresmicuento'){
+        this.datosgenerales = this.describe.filter(dato => dato.id == 205)
         this.coleccion = this.librosTodosLeeresmicuento
-        EventBus.$emit('TITULO', 'Libros - Maguaré en La Ceiba');
-      }else if (id =='librosFiesta') {
-        this.coleccion = this.librosFiesta
-        EventBus.$emit('TITULO', 'Libros - Fiesta de la lectura');
-      }else if (id =='librosLEMC') {
-        this.coleccion = this.librosLEMC
-        EventBus.$emit('TITULO', 'Libros - Leer es mi cuento');
+
+      }else if (id =='librosCuerpoSonoro') {
+        this.datosgenerales = this.describe.filter(dato => dato.id == 207)
+        this.coleccion = this.librosCuerpoSonoro
+
+      }else if (id =='librosCuentosDerechos') {
+        this.datosgenerales = this.describe.filter(dato => dato.id == 206)
+        this.coleccion = this.librosCuentosDerechos
+
       }else{
-        this.coleccion = this.librosmaguare
-        EventBus.$emit('TITULO', 'Libros');
+        this.datosgenerales = this.describe.filter(dato => dato.id == 204)
+        this.coleccion = this.todosloslibros
+
       }
+      EventBus.$emit('TITULO', this.datosgenerales[0].titulobreve);
+      EventBus.$emit('SECCION', this.datosgenerales[0].descripcion);
       this.coleccion = _.sortBy(this.coleccion, ['titulo']);
     },
     pdfdescarga(ruta, nombre){
@@ -176,5 +161,12 @@ export default {
 }
 </script>
 <style>
-
+.seccionlibros{
+  background-image: url("~@/assets/azul.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  /*height: 100vh;*/
+}
 </style>

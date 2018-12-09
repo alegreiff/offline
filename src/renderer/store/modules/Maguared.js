@@ -151,73 +151,73 @@ const state = {
     {
       id: 1200,
       titulo: 'Cuerpo Sonoro: expresiones artísticas y primera infancia.',
-      autor: 'AUTOR',
-      coleccion: 'coleccion',
-      describe: 'DESCRIBE',
+      autor: 'Ministerio de Cultura',
+      coleccion: 'Cuerpo Sonoro',
+      describe: 'Cuerpo Sonoro: expresiones artísticas y primera infancia recoge las orientaciones pedagógicas que fundamentan Cuerpo Sonoro.',
       url: 'URL'
     },{
       id: 1201,
       titulo: 'Cuentos Derechos: historias para hablar con los niños sobre sus derechos.',
-      autor: 'AUTOR',
-      coleccion: 'coleccion',
-      describe: 'DESCRIBE',
+      autor: 'Ministerio de Cultura',
+      coleccion: 'Cuentos Derechos',
+      describe: 'Cuentos Derechos es un libro digital que reúne las voces y experiencias de niños y adultos sobre los derechos de los niños.',
       url: 'URL'
     },{
       id: 1202,
       titulo: 'Experiencia gráfica de Cuerpo Sonoro: arquitecturas sonoras.',
-      autor: 'AUTOR',
-      coleccion: 'coleccion',
-      describe: 'DESCRIBE',
+      autor: 'Ministerio de Cultura',
+      coleccion: 'Cuerpo Sonoro',
+      describe: 'Esta experiencia de Cuerpo Sonoro permite que los adultos vivan la integralidad a través del cuerpo y las expresiones artísticas.',
       url: 'URL'
     },{
       id: 1203,
       titulo: 'Experiencia gráfica de Cuerpo Sonoro: materia y materiales.',
-      autor: 'AUTOR',
-      coleccion: 'coleccion',
-      describe: 'DESCRIBE',
+      autor: 'Ministerio de Cultura',
+      coleccion: 'Cuerpo Sonoro',
+      describe: 'Esta experiencia de Cuerpo Sonoro promueve la creatividad para que los adultos entiendan y vivan la exploración en primera infancia.',
       url: 'URL'
     },{
       id: 1204,
       titulo: 'Experiencia gráfica de Cuerpo Sonoro: el juego.',
-      autor: 'AUTOR',
-      coleccion: 'coleccion',
-      describe: 'DESCRIBE',
+      autor: 'Ministerio de Cultura',
+      coleccion: 'Cuerpo Sonoro',
+      describe: 'A través de esta experiencia de Cuerpo Sonoro los adultos pueden entender por qué el juego es fundamental para el desarrollo de los niños.',
       url: 'URL'
     },{
       id: 1205,
       titulo: 'Experiencia gráfica de Cuerpo Sonoro: animación de objetos.',
-      autor: 'AUTOR',
-      coleccion: 'coleccion',
-      describe: 'DESCRIBE',
+      autor: 'Ministerio de Cultura',
+      coleccion: 'Cuerpo Sonoro',
+      describe: 'Cuerpo Sonoro propone en esta experiencia un ejercicio para que los adultos exploren el juego simbólico desde la vivencia.',
       url: 'URL'
     },{
       id: 1206,
       titulo: 'Experiencia gráfica de Cuerpo Sonoro: la banda sonora.',
-      autor: 'AUTOR',
-      coleccion: 'coleccion',
-      describe: 'DESCRIBE',
+      autor: 'Ministerio de Cultura',
+      coleccion: 'Cuerpo Sonoro',
+      describe: 'En esta experiencia de Cuerpo Sonoro los adultos pueden reconocer las distintas formas de escucha y, así, vivirlas a través de los niños.',
       url: 'URL'
     },{
       id: 1207,
       titulo: 'Experiencia gráfica de Cuerpo Sonoro: el espacio en la primera infancia. ',
-      autor: 'AUTOR',
-      coleccion: 'coleccion',
-      describe: 'DESCRIBE',
+      autor: 'Ministerio de Cultura',
+      coleccion: 'Cuerpo Sonoro',
+      describe: 'Cuerpo Sonoro creó esta experiencia para que los adultos reinventen el espacio que comparten con los niños.',
       url: 'URL'
     },
   ]
-/*
+}
+const getters = {
+    librosCuerpoSonoro: state => {
+      return state.otrosdocumentos.filter(libro => libro.coleccion == 'Cuerpo Sonoro')
+    },
+    librosCuentosDerechos: state => {
+      return state.otrosdocumentos.filter(libro => libro.coleccion == 'Cuentos Derechos')
+    },
 
-
-
-
-
-
-
-
-*/
 }
 export default {
   namespaced: true,
-  state
+  state,
+  getters
 }

@@ -235,13 +235,13 @@
       </v-list-tile-content>
     </v-list-tile>
 
-    <v-list-tile :to="{name: 'app', params: { id: 'appsAdivinanzas'}}">
+    <v-list-tile :to="{name: 'maglib', params: { id: 'librosCuentosDerechos'}}">
       <v-list-tile-content>
         <v-list-tile-title>Cuentos derechos</v-list-tile-title>
       </v-list-tile-content>
     </v-list-tile>
 
-    <v-list-tile :to="{name: 'app', params: { id: 'appsJuegos'}}">
+    <v-list-tile :to="{name: 'maglib', params: { id: 'librosCuerpoSonoro'}}">
       <v-list-tile-content>
         <v-list-tile-title>Cuerpo sonoro</v-list-tile-title>
       </v-list-tile-content>
@@ -257,7 +257,7 @@
 
 
 
-    <v-list-tile :to="{name: 'app', params: { id: 'all'}}" exact>
+    <v-list-tile :to="{name: 'maglib', params: { id: 'all'}}" exact>
     <v-list-tile-content>
         <v-list-tile-title>Todos los libros</v-list-tile-title>
       </v-list-tile-content>
