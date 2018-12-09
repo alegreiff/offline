@@ -1,26 +1,8 @@
 <template>
-<div class="pa-4">
+<div class="pa-4 seccionaudios">
   <v-layout row wrap>
-    <!--<v-layout row wrap>
-      <v-flex xs3  v-for="(video, index) in coleccion" :key="index">
-        <img :src="'static/miniaturas/'+video.id+'.jpg'" :alt="video.titulo" class="miniatura" >
-        <h2>{{ video.titulo }}</h2>
-        <p>{{ video.autor }}</p>
-      </v-flex>
-    </v-layout>-->
-    <v-flex xs12 class="text-xs-center py-2">
-      <v-card>
-              <v-card-title primary-title style="height:auto" class="maglima">
-                <div>
-                  <div>{{ datosgenerales[0].descripcion }}</div>
-                </div>
-              </v-card-title>
-        </v-card>
-    </v-flex>
-        <v-flex xs12>
+        <v-flex xs12 pa-1>
           <v-card>
-
-
               <span class="pa-1">Seleccione un audio</span><v-select class="px-4 ma-0"
 
                 :items="coleccion"
@@ -36,7 +18,7 @@
         </v-flex>
       </v-layout>
       <v-layout row wrap v-if="cancionactiva">
-        <v-flex xs12>
+        <v-flex xs12 pa-1>
         <v-card dark color="primary">
           <v-card-text class="pa-2">
             <h2 class="" ref="tituloref">{{ cancionactiva.titulo }}</h2> <h4>{{ cancionactiva.autor }}</h4>
@@ -155,6 +137,7 @@ export default {
 
       }
       EventBus.$emit('TITULO', this.datosgenerales[0].titulobreve);
+      EventBus.$emit('SECCION', this.datosgenerales[0].descripcion);
       this.coleccion = _.sortBy(this.coleccion, ['titulo']);
       this.selected = this.coleccion[0].id;
       //this.selected='inicio';
@@ -206,9 +189,12 @@ audio{
 
   }
   img.miniatura{
-    max-width: 100%;
-    border-radius: 0.5em;
 
+    max-width: 100%;
+    border: 2px white solid;
+    border-radius: 0.5em;
+    margin: 0 auto;
+    cursor: pointer;
 
   }
   .imagenesmodelo{
@@ -222,5 +208,12 @@ p.describe{
 
 }
 
-
+.seccionaudios{
+  background-image: url("~@/assets/lima.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  background-attachment: fixed;
+  min-height: calc(100vh - 10px);
+}
 </style>

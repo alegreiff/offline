@@ -1,32 +1,20 @@
 <template>
-<div class="">
+<div class="pa-4 seccionvideos">
   <v-layout row wrap>
-    <v-flex xs12 class="text-xs-center">
-      <v-card>
-              <v-card-title primary-title style="height:auto">
-                <div>
-                  <div>{{ datosgenerales[0].descripcion }}</div>
-                </div>
-              </v-card-title>
-        </v-card>
-    </v-flex>
         <v-flex xs12>
           <v-card>
-            <v-card-text class="">
-              <span>Seleccione un video</span>
-              <p>{{ coleccion.length }}</p>
-            </v-card-text>
+            <span class="pa-1">Seleccione un video</span><v-select class="px-4 ma-0"
 
-              <v-select class="px-4 ma-0"
+              :items="coleccion"
+              v-model="selected"
+              color="primary"
 
-                :items="coleccion"
-                v-model="selected"
-                color="primary"
+              item-text="titulo"
+              item-value="id"
+              background-color=""
 
-                item-text="titulo"
-                item-value="id"
-                >
-              </v-select>
+              >
+            </v-select>
 
           </v-card>
         </v-flex>
@@ -85,11 +73,12 @@ export default {
     }
   },
   created() {
-    EventBus.$emit('TITULO', 'Videos');
     this.coleccion = this.videos
     this.coleccion = _.sortBy(this.coleccion, ['titulo']);
     this.selected = this.coleccion[0].id;
-    this.datosgenerales = this.describe.filter(dato => dato.id == 0)
+    this.datosgenerales = this.describe.filter(dato => dato.id == 700)
+    EventBus.$emit('TITULO', this.datosgenerales[0].titulobreve);
+    EventBus.$emit('SECCION', this.datosgenerales[0].descripcion);
 
     if(this.selected !='inicio'){
       var t = this.coleccion.find(x => x.id === this.selected)
@@ -152,3 +141,13 @@ export default {
 }
 }
 </script>
+<style>
+.seccionvideos{
+  background-image: url("~@/assets/naranja.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: calc(100vh - 10px);
+}
+</style>

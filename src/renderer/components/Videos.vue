@@ -1,17 +1,19 @@
 <template>
 <div class="pa-4 seccionvideos">
-  <v-layout row wrap>
-    <v-flex xs12 class="text-xs-center py-2">
-      <v-card>
-              <v-card-title primary-title style="height:auto" class="magnaranja">
-                <div>
-                  <div>{{ datosgenerales[0].descripcion }}</div>
-                </div>
-              </v-card-title>
-        </v-card>
-    </v-flex>
-        <v-flex xs12>
-          <v-card>
+  <v-layout row wrap >
+<!--
+<v-flex xs12 class="text-xs-center py-2">
+  <v-card>
+          <v-card-title primary-title style="height:auto" class="magnaranja">
+            <div>
+              <div>{{ datosgenerales[0].descripcion }}</div>
+            </div>
+          </v-card-title>
+    </v-card>
+</v-flex>
+-->
+        <v-flex xs12 pa-1>
+          <v-card color="">
 
 
               <span class="pa-1">Seleccione un video</span><v-select class="px-4 ma-0"
@@ -22,35 +24,16 @@
 
                 item-text="titulo"
                 item-value="id"
+                background-color=""
+
                 >
               </v-select>
 
           </v-card>
         </v-flex>
-
-
-        <!--
-        <v-flex xs6>
-          <v-card dark color="orange">
-            <v-card-text class="px-0">
-                <p>{{ this.$route.params.id }} --- QUE SUENA:  {{ quesuena }}</p>
-                <pre> SELECTED: {{ selected }}</pre>
-                <pre>{{ this.$refs }}</pre>
-            </v-card-text>
-          </v-card>
-        </v-flex>
-        <v-flex xs6>
-          <v-card dark color="orange">
-            <v-card-text class="px-0">
-              <pre>{{ cancionactiva }}</pre>
-            </v-card-text>
-          </v-card>
-        </v-flex>
-      -->
-
       </v-layout>
       <v-layout row wrap v-if="cancionactiva">
-        <v-flex xs12>
+        <v-flex xs12 pa-1>
         <v-card dark color="primary">
           <v-card-text class="pa-2">
             <h2 class="" ref="tituloref">{{ cancionactiva.titulo }}</h2> <h5>{{ cancionactiva.autor }}</h5>
@@ -65,29 +48,15 @@
 
           <v-card-text class="px-0 grey--text">
             <h3 class="describe text-xs-center pa-1">{{ cancionactiva.describe }}</h3>
-
           </v-card-text>
-
-
         </v-card>
       </v-flex>
       <v-flex xs8 class="pa-2">
-          <!--<v-card dark color="white">
-            <v-card-text class="px-0 grey--text">
-              <p v-if="cancionactiva.letra" v-html="cancionactiva.letra" class="lyrics"></p>
-            </v-card-text>
-          </v-card>-->
           <v-card>
-
-              <!--<audio controls ref="playame1" class="audiofull" autoplay v-if="quesuena!=''">
-                <source :src="quesuena" type="audio/mpeg">
-                Este producto NO es compatible con su computador
-              </audio>-->
               <video width="100%" height="auto" ref="playame1" controls autoplay v-if="quesuena!=''" controlsList="nodownload nofullscreen">
                   <source :src="quesuena" type="video/mp4">
               Your browser does not support the video tag.
               </video>
-
           </v-card>
         </v-flex>
 
@@ -171,6 +140,7 @@ export default {
         this.datosgenerales = this.describe.filter(dato => dato.id == 100)
       }
       EventBus.$emit('TITULO', this.datosgenerales[0].titulobreve);
+      EventBus.$emit('SECCION', this.datosgenerales[0].descripcion);
       this.coleccion = _.sortBy(this.coleccion, ['titulo']);
       this.selected = this.coleccion[0].id;
 
@@ -190,6 +160,7 @@ export default {
 </script>
 
 <style lang="css" scoped>
+
   .internamusica{
     background-color: white;
     display: grid;
@@ -227,12 +198,11 @@ p.describe{
 }
 
 .seccionvideos{
-  background-image: url("~@/assets/ceiba.jpg");
+  background-image: url("~@/assets/naranja.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  height: 100vh;
+  min-height: calc(100vh - 10px);
 }
-
 </style>

@@ -344,7 +344,7 @@ magmorado:    '#785395'
   text-align: center;
 }
 .card-imagen{
-  max-width: 250px;
+  max-width: 100%;
   margin: 0.2em auto;
   border-radius: 0.3em;
 }

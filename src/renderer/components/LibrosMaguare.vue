@@ -1,15 +1,6 @@
 <template>
-<div class="pa-4">
+<div class="pa-4 seccionlibros">
   <v-layout row wrap>
-    <v-flex xs12 class="text-xs-center py-2">
-      <v-card>
-              <v-card-title primary-title style="height:auto" class="magazul white--text">
-                <div>
-                  <div>{{ datosgenerales[0].descripcion }}</div>
-                </div>
-              </v-card-title>
-        </v-card>
-    </v-flex>
   <v-flex xs3 v-for="(app, index) in coleccion" :key="index" class="pa-1">
     <v-card  height="100%" class="flexcard" ripple hover>
       <div class="grow">
@@ -34,36 +25,7 @@
           </v-btn><span><b>Autor: </b>{{ app.autor }}</span></v-tooltip>
       </v-card-actions>
     </v-card>
-    <!--<v-card>
-            <v-img :src="'static/miniaturas/'+libro.id+'.jpg'" :alt="libro.titulo" ></v-img>
-
-
-            <v-card-title primary-title>
-              <div>
-                <h3 class="mb-0">{{ libro.titulo }}</h3>
-                <span class="authormag">{{ libro.autor }}</span>
-                <div style="height: 160px">{{ libro.describe }}</div>
-
-              </div>
-            </v-card-title>
-
-            <v-card-actions >
-
-                <v-btn small class="white--text" color="blue" block :href="'static/'+libro.url" target="_self">
-                  Descargar el libro
-                </v-btn>
-                <v-btn style="100%" small class="white--text" color="blue" block @click="muestraPDF('/'+libro.url)" target="_self">
-                  Muestra INLINE
-                </v-btn>
-
-
-            </v-card-actions>
-      </v-card>-->
-
-
-
-
-  </v-flex>
+</v-flex>
 
   </v-layout>
 
@@ -176,10 +138,19 @@ export default {
 
       }
       EventBus.$emit('TITULO', this.datosgenerales[0].titulobreve);
+      EventBus.$emit('SECCION', this.datosgenerales[0].descripcion);
       this.coleccion = _.sortBy(this.coleccion, ['titulo']);
     },
   }
 }
 </script>
-<style lang="css">
+<style>
+.seccionlibros{
+  background-image: url("~@/assets/azul.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  /*height: 100vh;*/
+}
 </style>

@@ -1,57 +1,7 @@
 <template>
-<div class="">
+<div class="pa-4 secciondescargables">
   <v-layout row wrap>
-    <v-flex xs12 class="text-xs-center">
-      <v-card>
-              <v-card-title primary-title style="height:auto">
-                <div>
-                  <div>{{ describeseccion }}</div>
-                </div>
-              </v-card-title>
-        </v-card>
-    </v-flex>
   <v-flex xs3 v-for="(app, index) in tutorialespdf" :key="index" class="pa-1">
-<!--<span class="authormag">{{ app.autor }}</span>-->
-    <!--<v-card>
-            <v-img :src="'static/miniaturas/'+app.id+'.jpg'" :alt="app.titulo" ></v-img>
-            <v-card-title primary-title>
-              <div>
-                <h3 class="mb-0">{{ app.titulo }}</h3>
-
-                  <v-tooltip bottom max-width="200px">
-                      <v-icon
-                        slot="activator"
-                        color="primary"
-                        dark
-                      >info</v-icon>
-                      <span>{{ app.autor }}</span>
-                    </v-tooltip>
-
-                <div>{{ app.describe }}</div>
-              </div>
-            </v-card-title>
-
-            <v-card-actions>
-
-                <v-layout>
-                  <v-flex xs6 class="pa-1">
-                    <v-tooltip top color="magrojo">
-                      <v-btn dark block color="magazul" :href="'static/'+app.url"
-                      :download="app.descarga+'.pdf'"
-                      slot="activator">
-                      <v-icon dark>arrow_drop_down_circle</v-icon>
-                    </v-btn><span>Descargar el tutorial</span></v-tooltip>
-                  </v-flex>
-                  <v-flex xs6 class="pa-1">
-                    <v-tooltip top color="magrojo">
-                      <v-btn dark block color="magazul" @click="muestraPDF('/'+app.url)" slot="activator">
-                      <v-icon dark>pageview</v-icon>
-                    </v-btn><span>Ver el tutorial</span></v-tooltip>
-                  </v-flex>
-                </v-layout>
-            </v-card-actions>
-      </v-card>-->
-
       <v-card  height="100%" class="flexcard" ripple hover>
         <div class="grow">
           <v-img :src="'static/miniaturas/'+app.id+'.jpg'" class="card-imagen"></v-img>
@@ -97,12 +47,15 @@ export default {
     return {
       describeseccion: 'Sugerencias de uso',
       tutorialespdf: [],
-      ventana: null
+      ventana: null,
+      datosgenerales: []
     }
   },
   created() {
     //this.interactivos = this.apps;
-    EventBus.$emit('TITULO', 'Sugerencias');
+    this.datosgenerales = this.describe.filter(dato => dato.id == 900)
+    EventBus.$emit('TITULO', this.datosgenerales[0].titulobreve);
+    EventBus.$emit('SECCION', this.datosgenerales[0].descripcion);
     this.tutorialespdf = _.sortBy(this.tutoriales, ['titulo']);
     },
     watch: {
@@ -157,7 +110,14 @@ export default {
 }
 </script>
 
-<style lang="css" scoped>
-
+<style>
+.secciondescargables{
+  background-image: url("~@/assets/azul.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: calc(100vh - 164px);
+}
 
 </style>

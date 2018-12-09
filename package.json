@@ -47,8 +47,7 @@
       "icon": "build/icons/icon.icns"
     },
     "win": {
-      "icon": "build/icons/icon.ico",
-      "target": [ "portable" ]
+      "icon": "build/icons/icon.ico"
     },
     "linux": {
       "icon": "build/icons"

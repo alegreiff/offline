@@ -17,7 +17,7 @@ const state = {
     libros: [
       {
         id: 513,
-        autor: 'Susana Aristizabal - Ilustraciones: Nel',
+        autor: 'Fundación Taller de Letras Jordi Sierra Fabra',
         titulo: 'Un castillo de libros',
         coleccion: '',
         publico: 'maguare',
@@ -315,7 +315,7 @@ const state = {
         descarga: 'LEMC-canciones-rondas'
       },{
         id: 618,
-        autor: 'Maritza Sanchez, Carlos Millán, Lizardo Carvajal, Oscar García, Amalia Satizábal',
+        autor: 'Ministerio de Cultura - Maguaré - Maritza Sánchez, Carlos Millán, Amalia Satizabal, Lizardo Carvajal, Oscar García Oyola',
         titulo: 'El frenético baile de Chip',
         coleccion: 'Maguaré en La Ceiba',
         publico: 'maguare',
@@ -325,7 +325,7 @@ const state = {
       },
       {
         id: 619,
-        autor: 'Maritza Sanchez, Carlos Millán, Lizardo Carvajal, Oscar García, Amalia Satizábal',
+        autor: 'Ministerio de Cultura - Maguaré - Maritza Sánchez, Carlos Millán, Amalia Satizabal, Lizardo Carvajal, Oscar García Oyola',
         titulo: 'El libro perdido de Gigi',
         coleccion: 'Maguaré en La Ceiba',
         publico: 'maguare',
@@ -335,7 +335,7 @@ const state = {
       },
       {
         id: 620,
-        autor: 'Maritza Sanchez, Carlos Millán, Lizardo Carvajal, Oscar García, Amalia Satizábal',
+        autor: 'Ministerio de Cultura - Maguaré - Maritza Sánchez, Carlos Millán, Amalia Satizabal, Lizardo Carvajal, Oscar García Oyola',
         titulo: 'El viaje de la familia Cuy',
         coleccion: 'Maguaré en La Ceiba',
         publico: 'maguare',
@@ -345,7 +345,7 @@ const state = {
       },
       {
         id: 621,
-        autor: 'Maritza Sanchez, Carlos Millán, Lizardo Carvajal, Oscar García, Amalia Satizábal',
+        autor: 'Ministerio de Cultura - Maguaré - Maritza Sánchez, Carlos Millán, Amalia Satizabal, Lizardo Carvajal, Oscar García Oyola',
         titulo: 'El cumpleaños de Rosalinda',
         coleccion: 'Maguaré en La Ceiba',
         publico: 'maguare',
@@ -355,7 +355,7 @@ const state = {
       },
       {
         id: 622,
-        autor: 'Maritza Sanchez, Carlos Millán, Lizardo Carvajal, Oscar García, Amalia Satizábal',
+        autor: 'Ministerio de Cultura - Maguaré - Maritza Sánchez, Carlos Millán, Amalia Satizabal, Lizardo Carvajal, Oscar García Oyola',
         titulo: 'La memoria del abuelo',
         coleccion: 'Maguaré en La Ceiba',
         publico: 'maguare',
@@ -364,7 +364,7 @@ const state = {
         descarga: 'CEIBA-lamemoriadelabuelo'
       },{
         id: 623,
-        autor: 'Maritza Sanchez, Carlos Millán, Lizardo Carvajal, Oscar García, Amalia Satizábal',
+        autor: 'Ministerio de Cultura - Maguaré - Maritza Sánchez, Carlos Millán, Amalia Satizabal, Lizardo Carvajal, Oscar García Oyola',
         titulo: 'Una sopa para la fiesta',
         coleccion: 'Maguaré en La Ceiba',
         publico: 'maguare',

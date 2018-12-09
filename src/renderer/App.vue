@@ -1,14 +1,16 @@
 <template>
 <!--<v-app id="sandbox" style="background: crimson;">-->
 <v-app id="sandbox">
-  <v-navigation-drawer mobile-break-point="1800" v-model="primaryDrawer.model"  overflow app>
+  <v-navigation-drawer mobile-break-point="1800" v-model="primaryDrawer.model"
+  overflow app>
     <Menu/>
   </v-navigation-drawer>
   <!--<v-toolbar :clipped-left="primaryDrawer.clipped" app absolute>-->
-  <v-toolbar :clipped-left="primaryDrawer.clipped" app>
+  <v-toolbar app>
 
     <v-toolbar-side-icon v-if="primaryDrawer.type !== 'permanent'" @click.stop="primaryDrawer.model = !primaryDrawer.model"></v-toolbar-side-icon>
-    <v-toolbar-title>Maguaré - MaguaRED - {{ tituloapp }}
+    <v-toolbar-title>Maguaré - MaguaRED - {{ tituloapp }} <span class="seccion_describe">{{ seccion_describe }}</span>
+
 
     </v-toolbar-title>
   </v-toolbar>
@@ -17,7 +19,7 @@
       <router-view></router-view>
     </v-container>
   </v-content>
-  <v-footer :inset="footer.inset" app height="100" class="px-2 ma-0">
+  <v-footer inset app height="80" class="px-2 ma-0">
     <v-flex xs4> <img class="imlogo" id="logo" src="~@/assets/logosfooter/logoministerio.png"> </v-flex>
     <v-flex xs2> <img class="imlogo" id="logo" src="~@/assets/logosfooter/unimedios.png"> </v-flex>
     <!--<v-flex xs1> <img class="imlogo" id="logo" src="~@/assets/logosfooter/cero.png"> </v-flex>
@@ -38,15 +40,13 @@ export default {
   data: function () {
     return {
       tituloapp: '',
-      //k: 'aaa',
+      seccion_describe: '',
       dark: false,
       drawers: ['Default (no property)', 'Permanent', 'Temporary'],
       primaryDrawer: {
         model: null,
         type: 'default (no property)',
-        clipped: false,
-        floating: false,
-        mini: false
+
       },
       footer: {
         inset: true
@@ -76,6 +76,12 @@ export default {
       //cambio()
 
     });
+    EventBus.$on('SECCION', function (payLoad) {
+      self.seccion_describe= payLoad;
+      //cambio()
+
+    });
+
   }
 }
 </script>
@@ -109,7 +115,7 @@ export default {
   /*background-image: url("~@/assets/playa.jpg");
   background-repeat: no-repeat;
   background-size: cover;*/
-  background-image: url("~@/assets/cama.jpg");
+  background-image: url("~@/assets/gris.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -128,4 +134,24 @@ img.imlogo {
   background-color: var(--magfondocards) !important;
   flex-direction: column !important;
 }
+
+.cred-entidad{
+  font-size: 1.6em;
+  font-weight: bolder;
+  text-align: center;
+}
+.cred-persona{
+  margin: 0;
+  font-weight: 800;
+  text-align: center;
+}
+.cred-cargo{
+  margin: 0 0 1em 0;
+  text-align: center;
+}
+.seccion_describe{
+  display: block;
+  font-size: 0.7em;
+}
+
 </style>

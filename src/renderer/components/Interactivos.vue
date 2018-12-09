@@ -1,15 +1,6 @@
 <template>
-<div class="">
+<div class="pa-4 seccioninteractivos">
   <v-layout row wrap>
-    <v-flex xs12 class="text-xs-center">
-      <v-card>
-              <v-card-title primary-title style="height:auto">
-                <div>
-                  <div>{{ datosgenerales[0].descripcion }}</div>
-                </div>
-              </v-card-title>
-        </v-card>
-    </v-flex>
         <v-flex xs3 v-for="(app, index) in coleccion" :key="index" class="pa-1">
             <v-card  height="100%" class="flexcard" ripple hover>
               <div class="grow">
@@ -89,11 +80,19 @@ export default {
 
       }
       EventBus.$emit('TITULO', this.datosgenerales[0].titulobreve);
+      EventBus.$emit('SECCION', this.datosgenerales[0].descripcion);
       this.coleccion = _.sortBy(this.coleccion, ['titulo']);
     },
 }
 }
 </script>
 <style>
-
+.seccioninteractivos{
+  background-image: url("~@/assets/morado.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: calc(100vh - 10px);
+}
 </style>

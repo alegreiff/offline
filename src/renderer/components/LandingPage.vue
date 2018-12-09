@@ -35,14 +35,12 @@
     },
     created () {
       EventBus.$emit('TITULO', 'Inicio');
+      EventBus.$emit('SECCION', 'Bienvenidos');
     },
     watch: {
 
       drawer: function(value){
-        console.log("dhsaj dkhsadjhsajd k");
-        this.$parent.palabra = 'aaa';
 
-        //this.$refs.playame.play();
       }
     },
     name: 'landing-page',

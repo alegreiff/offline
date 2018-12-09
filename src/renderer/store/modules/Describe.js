@@ -1,5 +1,32 @@
 const state = {
   describe: [
+    /* MAGUARED tutoriales SERIE 800 */
+    {
+      id: 900,
+      clase: 'maguared',
+      seccion: 'Tutoriales',
+      subseccion: 'Tutoriales',
+      titulobreve: 'Tutoriales MaguaRED',
+      descripcion: 'Por medio de estos tutoriales pueden potenciar el desarrollo integral de los niños de forma divertiva.'
+    },
+    /* MAGUARED SUGERENCIAS SERIE 800 */
+    {
+      id: 800,
+      clase: 'maguared',
+      seccion: 'Sugerencias de uso',
+      subseccion: 'Sugerencias de uso',
+      titulobreve: 'Sugerencias de uso MaguaRED',
+      descripcion: 'Propuestas para desarrollar actividades junto a los niños con los contenidos de Maguaré'
+    },
+    /* VIDEOS MAGUARED SERIE 700 */
+    {
+      id: 700,
+      clase: 'maguared',
+      seccion: 'Videos',
+      subseccion: 'Videos',
+      titulobreve: 'Videos MaguaRED',
+      descripcion: 'Varios autores hablan sobre la primera infancia, las expresiones artísticas y la diversidad'
+    },
     /* Descargables Serie 400 */
     {
       id: 400,
@@ -114,7 +141,7 @@ const state = {
       seccion: 'Videos',
       subseccion: 'Todos',
       titulobreve: 'Videos',
-      descripcion: 'TODOS LOS VIDEOS'
+      descripcion: 'Disfruta con todos los videos de Maguaré'
     },
     {
       id: 101,
@@ -179,28 +206,60 @@ const state = {
       seccion: 'Libros',
       subseccion: 'Todos',
       titulobreve: 'Libros',
-      descripcion: 'TODOS LOS LIBROS'
+      descripcion: 'Colección de libros Maguaré.'
     },{
       id: 201,
       clase: 'maguare',
       seccion: 'Libros',
-      subseccion: 'Todos',
-      titulobreve: 'Libros',
-      descripcion: 'MAGUARE EN LA CEIBA'
+      subseccion: 'Cuentos de Maguaré en La Ceiba',
+      titulobreve: 'Libros - Cuentos de Maguaré en La Ceiba',
+      descripcion: 'Cuentos para leer, imprimir y colorear.'
     },{
       id: 202,
       clase: 'maguare',
       seccion: 'Libros',
-      subseccion: 'Todos',
-      titulobreve: 'Libros',
-      descripcion: 'LEER ES MI CUENTO'
+      subseccion: 'Serie Leer es mi cuento',
+      titulobreve: 'Libros - Serie Leer es mi cuento',
+      descripcion: 'Colección de clásicos de la literatura. ¡Vamos a leer!.'
     },{
       id: 203,
       clase: 'maguare',
       seccion: 'Libros',
+      subseccion: 'Fiesta de la lectura',
+      titulobreve: 'Libros - Fiesta de la lectura',
+      descripcion: 'Canciones, juegos y relatos propios de la rica tradición oral de diversos grupos étnicos colombianos.'
+    },
+    ,{
+      id: 204,
+      clase: 'maguared',
+      seccion: 'Libros',
       subseccion: 'Todos',
       titulobreve: 'Libros',
-      descripcion: 'FIESTA DE LA LECTURA'
+      descripcion: 'Publicaciones digitales para investigar, pensar y promover el desarrollo integral en la primera infancia.'
+    },
+    {
+      id: 205,
+      clase: 'maguared',
+      seccion: 'Libros',
+      subseccion: 'Leer es mi cuento',
+      titulobreve: 'Libros - Leer es mi cuento',
+      descripcion: 'Encuentren aquí todos los títulos de la Serie Leer es Mi Cuento.'
+    },
+    {
+      id: 206,
+      clase: 'maguared',
+      seccion: 'Libros',
+      subseccion: 'Cuentos derechos',
+      titulobreve: 'Libros - Cuentos derechos',
+      descripcion: 'Cuentos Derechos es un libro sobre los derechos de los niños.'
+    },
+    {
+      id: 207,
+      clase: 'maguared',
+      seccion: 'Libros',
+      subseccion: 'Cuerpo sonoro',
+      titulobreve: 'Libros - Cuerpo sonoro',
+      descripcion: 'Encuentren aquí experiencias y documentos sobre primera infancia del proyecto Cuerpo Sonoro.'
     },
   ]
 }
