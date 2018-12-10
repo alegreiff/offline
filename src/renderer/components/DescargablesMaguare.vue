@@ -6,7 +6,7 @@
             <v-img :src="'static/miniaturas/'+app.id+'.jpg'" :alt="app.titulo" ></v-img>
             <v-card-title primary-title style="height:auto">
               <div>
-                <h3 class="mb-0">{{ app.titulo }}</h3>
+                <h3 class="mb-0">{{ app.id }} ::  {{ app.titulo }}</h3>
                 <div style="height: 100px">{{ app.describe }}</div>
               </div>
             </v-card-title>

@@ -1,22 +1,32 @@
 <template>
-  <div id="wrapper">
-    <div class="logosm">
+  <div class="pa-4 iniciomg">
+    <v-layout row wrap>
+      <v-flex xs6>
       <img id="logo" src="static/maguare.png" alt="electron-vue" class="logosmag">
-      <img id="logo" src="static/maguared.png" alt="electron-vue" class="logosmag" v-on:click="emitMethod">
-    </div>
-    <h1>Versión 0.062 "laculturaesdetodos"</h1>
-    <button v-on:click="emitMethod">
-      Enlarge text
-    </button>
-    <button v-on:click="open('/librosmaguare/maguare-sopa-fiesta.pdf')">
-      abre archivo pdf
-    </button>
-    <button v-on:click="open('/librosmaguare/maguare-sopa-fiesta.pdf')">
-      abre pdf con slash
-    </button>
-    <button v-on:click="webexterna('http://eltiempo.com')">
-      el tiempo
-    </button>
+    </v-flex>
+    <v-flex xs6>
+<img id="logo" src="static/maguared.png" alt="electron-vue" class="logosmag" >
+    </v-flex>
+    <v-flex xs12 sm8 offset-sm2>
+      <v-btn color="magazul" dark block v-on:click="emitMethod">Descubre los contenidos que hemos preparado</v-btn>
+    </v-flex>
+    <v-flex xs12 sm8 offset-sm2>
+
+      <h4 class="text-xs-center">Texto de presentación del COMO SE LLAME</h4>
+
+      <div class="">
+        <h3>Novedades</h3>
+        <p>Audios infinitos (termina uno y sigue el siguiente dentro de la colección. Se acaba y vuelve a empezar)</p>
+        <p>Videos infinitos (termina uno y sigue el siguiente dentro de la colección. Se acaba y vuelve a empezar)</p>
+        <p>Todos los videos propuestos están cargados</p>
+        <p>Todos los audios propuestos están cargados</p>
+        <p>Todos los interactivos y libros propuestos están cargados</p>
+        <p>Todos los contenidos (salvo audios y videos) tienen un número visible antes del título. Si hay algún cambio o ajuste, citen este número. Para los audios y videos citen el nombre</p>
+        <p>Los enlaces del Footer deben abrir la web respectiva en el navegador por defecto del usuario</p>
+      </div>
+    </v-flex>
+  </v-layout>
+
 
   </div>
 </template>
@@ -24,18 +34,20 @@
 <script>
   import SystemInformation from './LandingPage/SystemInformation'
   import EventBus from './eventos';
+  import { mapState } from 'vuex'
   const electron = require('electron');
   import path from 'path'
 
   export default {
     data: function () {
       return {
-        drawer: null
+        datosgenerales: []
       }
     },
     created () {
-      EventBus.$emit('TITULO', 'Inicio');
-      EventBus.$emit('SECCION', 'Bienvenidos');
+      this.datosgenerales = this.describe.filter(dato => dato.id == 502)
+      EventBus.$emit('TITULO', this.datosgenerales[0].titulobreve);
+      EventBus.$emit('SECCION', this.datosgenerales[0].descripcion);
     },
     watch: {
 
@@ -45,6 +57,10 @@
     },
     name: 'landing-page',
     components: { SystemInformation },
+    computed: {
+
+      ...mapState('Describe', ['describe']),
+    },
     methods: {
       open (link) {
         console.log(link)
@@ -68,25 +84,26 @@
 
       },
       emitMethod () {
+ EventBus.$emit('visiblemenu');
 
-       EventBus.$emit('EVENT_NAME', 'Hooola');
     }
     }
   }
 </script>
 
 <style scoped>
-.wrapper{
-  background-color: orange !important;
-}
-.logosm{
-  display: grid;
-  padding: 1em;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 1em;
-}
+
+
 .logosmag{
-  width: 100%;
-  margin: 0 auto;
+  max-width: 100%;
+
+}
+.iniciomg{
+  background-image: url("~@/assets/gris.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  background-attachment: fixed;
+
 }
 </style>

@@ -20,12 +20,17 @@
     </v-container>
   </v-content>
   <v-footer inset app height="80" class="px-2 ma-0">
-    <v-flex xs4> <img class="imlogo" id="logo" src="~@/assets/logosfooter/logoministerio.png"> </v-flex>
-    <v-flex xs2> <img class="imlogo" id="logo" src="~@/assets/logosfooter/unimedios.png"> </v-flex>
+    <v-flex xs4> <img class="imlogo" id="logo" src="~@/assets/logosfooter/logoministerio.png"
+      v-on:click="webexterna('http://www.mincultura.gov.co')"> </v-flex>
+    <v-flex xs2> <img class="imlogo" id="logo" src="~@/assets/logosfooter/unimedios.png"
+
+      v-on:click="webexterna('http://unimedios.unal.edu.co/index.php?id=268')"> </v-flex>
     <!--<v-flex xs1> <img class="imlogo" id="logo" src="~@/assets/logosfooter/cero.png"> </v-flex>
     <v-flex xs1> <img class="imlogo" id="logo" src="~@/assets/logosfooter/leer.png"> </v-flex>-->
-    <v-flex xs2> <img class="imlogo" id="logo" src="~@/assets/logosfooter/maguare.png"> </v-flex>
-    <v-flex xs2> <img class="imlogo" id="logo" src="~@/assets/logosfooter/maguared.png"> </v-flex>
+    <v-flex xs2> <img class="imlogo" id="logo" src="~@/assets/logosfooter/maguare.png"
+      v-on:click="webexterna('https://maguare.gov.co/')"> </v-flex>
+    <v-flex xs2> <img class="imlogo" id="logo" src="~@/assets/logosfooter/maguared.png"
+      v-on:click="webexterna('https://maguared.gov.co/')"> </v-flex>
     <v-flex xs2> <img class="imlogo" id="logo" src="~@/assets/logosfooter/premio.png"> </v-flex>
 
   </v-footer>
@@ -36,6 +41,7 @@
 import Menu from './components/Menu/Menu'
 import Vue from 'vue';
 import EventBus from './components/eventos';
+const electron = require('electron');
 export default {
   data: function () {
     return {
@@ -56,18 +62,24 @@ export default {
 
   components: { Menu },
   methods: {
-    cambio(payLoad) {
+    cambio() {
       let self=this;
       Vue.nextTick(function () {
       self.primaryDrawer.model = !self.primaryDrawer.model
 
       });
-    }
+    },
+    webexterna (link) {
+      this.$electron.shell.openExternal(link)
+      //this.$electron.shell.openItem(path.join(__static, link))
+      //this.$electron.shell.showItemInFolder(link)
+
+    },
   },
   created () {
     let self=this;
-    EventBus.$on('EVENT_NAME', function (payLoad) {
-      self.cambio(payLoad);
+    EventBus.$on('visiblemenu', function (payLoad) {
+      self.cambio();
       //cambio()
 
     });
@@ -126,6 +138,7 @@ export default {
 
 img.imlogo {
   max-width: 100%;
+  cursor: pointer;
 }
 
 

@@ -1,18 +1,8 @@
 <template>
-<div class="pa-1 blanco">
+<div class="pa-4 politicas">
   <v-layout row wrap>
-    <v-flex xs12 class="text-xs-center">
-      <v-card>
-              <v-card-title primary-title style="height:auto">
-                <div>
-                  <div>{{ describeseccion }}</div>
-                </div>
-              </v-card-title>
-        </v-card>
-    </v-flex>
-  <v-flex xs12 v-for="(video, index) in videosmag" :key="index" class="pa-1">
-    {{ video.id }}***{{ video.titulo }}***{{ video.autor }}
-</v-flex>
+
+
 
   </v-layout>
 
@@ -31,15 +21,19 @@ export default {
       videosmag: [],
       tutorialesmag: [],
       sugerenciaspdf: [],
-      otrosdocumentospdf: []
+      otrosdocumentospdf: [],
+      datosgenerales: []
     }
   },
   created() {
+    this.datosgenerales = this.describe.filter(dato => dato.id == 500)
+    EventBus.$emit('TITULO', this.datosgenerales[0].titulobreve);
+    EventBus.$emit('SECCION', this.datosgenerales[0].descripcion);
     this.sugerenciaspdf = _.sortBy(this.sugerencias, ['titulo']);
     this.videosmag = _.sortBy(this.videos, ['id']);
     this.tutorialesmag = _.sortBy(this.tutoriales, ['titulo']);
     this.otrosdocumentospdf = _.sortBy(this.otrosdocumentos, ['titulo']);
-    EventBus.$emit('TITULO', 'ProviXXXional');
+
     },
     watch: {
 
@@ -48,6 +42,7 @@ export default {
     ...mapState('Varios', ['sugerencias']),
     ...mapState('Maguared', ['tutoriales', 'otrosdocumentos']),
     ...mapState('Videos', ['videos']),
+    ...mapState('Describe', ['describe']),
   },
   methods: {
 
@@ -56,8 +51,13 @@ export default {
 </script>
 
 <style lang="css" scoped>
-.blanco{
-  background-color: white;
+.politicas{
+  background-image: url("~@/assets/rojo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  background-attachment: fixed;
+  min-height: calc(100vh - 10px);
 }
 
 </style>

@@ -1,14 +1,6 @@
 <template>
 <div class="pa-4 seccionaudios">
   <v-layout row wrap>
-    <v-flex xs12>
-      <pre>{{ quesuena }}</pre>
-      <pre>{{ $route.params.id }}</pre>
-      <pre>{{ coleccion.length }}</pre>
-      <pre>{{ $refs.playame1 }}</pre>
-      <pre>{{ currentTime }}</pre>
-      <pre>{{ selectedIndex }}</pre>
-    </v-flex>
         <v-flex xs12 pa-1>
           <v-card>
               <span class="pa-1">Seleccione un audio</span><v-select class="px-4 ma-0"
@@ -49,9 +41,9 @@
       </v-flex>
       <v-flex xs6 class="pa-2">
           <v-card dark color="white" class="my-0 px-2">
-
+            <!-- @timeupdate='onTimeUpdateListener' -->
                 <audio
-                @timeupdate='onTimeUpdateListener'
+
                 @ended='findepista'
                 controls ref="playame1" class="audiofull" autoplay v-if="quesuena!=''" controlsList="nodownload">
                   <source :src="quesuena" type="audio/mpeg">
@@ -128,10 +120,10 @@ export default {
       }
 
     },
-    onTimeUpdateListener: function() {
+    /*onTimeUpdateListener: function() {
       // Update current time
       this.currentTime = this.$refs.playame1.currentTime
-    },
+    },*/
     coleccionactiva(id){
       console.log(id + " ACTIVA")
       /*if(this.$refs.playame1){

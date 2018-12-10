@@ -1,5 +1,30 @@
 const state = {
   describe: [
+    /* VARIOS SERIE 500 */
+    {
+      id: 500,
+      clase: 'maguared',
+      seccion: 'Tutoriales',
+      subseccion: 'Tutoriales',
+      titulobreve: 'Políticas de uso',
+      descripcion: 'TEXTO Políticas de uso'
+    },
+    {
+      id: 501,
+      clase: 'maguared',
+      seccion: 'Tutoriales',
+      subseccion: 'Tutoriales',
+      titulobreve: 'Acerca de',
+      descripcion: 'TEXTO Acerca de'
+    },
+    {
+      id: 502,
+      clase: 'maguared',
+      seccion: 'Tutoriales',
+      subseccion: 'Inicio',
+      titulobreve: 'Inicio',
+      descripcion: 'TEXTO Bienvenidos'
+    },
     /* MAGUARED tutoriales SERIE 800 */
     {
       id: 900,
