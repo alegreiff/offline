@@ -4,7 +4,7 @@ const state = {
       autor: 'Ministerio de Cultura - Maguaré',
       titulo: 'Baila con el Arma - DJ',
       coleccion: 'Juegos',
-      describe: 'Si te gusta mover tu cuerpo este juego es especial para tí. Elige uno de los personajes del universo de Maguaré: Saimiri, el mono, la rana, el oso perezoso, el olinguito o la camaleona, mientras el ArmaDJ mezcla con sus sintetizadores y los hace bailar a ellos y a ti. ¿Cuál es la música que más te gusta bailar?',
+      describe: 'Si te gusta mover tu cuerpo este juego es especial para tí. Elige uno de los personajes del universo de Maguaré: Saimiri, la rana, la osa perezosa, el olinguito o la camaleona, mientras el Arma - DJ mezcla con sus sintetizadores y los hace bailar a ellos y a ti. ¿Cuál es la música que más te gusta bailar?',
       url: 'bailaconelarmadj/index.html'
     },
     { id: 207,

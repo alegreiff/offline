@@ -12,17 +12,16 @@
     </v-flex>
     <v-flex xs12 sm8 offset-sm2>
 
-      <h4 class="text-xs-center">Texto de presentación del COMO SE LLAME</h4>
+      <h4 class="text-xs-center">Bienvenidos a la Estrategia Digital de Cultura y Primera Infancia del Ministerio de Cultura</h4>
 
       <div class="">
-        <h3>Novedades</h3>
-        <p>Audios infinitos (termina uno y sigue el siguiente dentro de la colección. Se acaba y vuelve a empezar)</p>
-        <p>Videos infinitos (termina uno y sigue el siguiente dentro de la colección. Se acaba y vuelve a empezar)</p>
-        <p>Todos los videos propuestos están cargados</p>
-        <p>Todos los audios propuestos están cargados</p>
-        <p>Todos los interactivos y libros propuestos están cargados</p>
-        <p>Todos los contenidos (salvo audios y videos) tienen un número visible antes del título. Si hay algún cambio o ajuste, citen este número. Para los audios y videos citen el nombre</p>
-        <p>Los enlaces del Footer deben abrir la web respectiva en el navegador por defecto del usuario</p>
+        <p>La Estrategia Digital de Cultura y Primera Infancia del Ministerio de Cultura ofrece contenidos especializados y de calidad en el entorno digital dirigidos a niños menores de seis años, sus padres, familias, y maestros y en general para  todos los cuidadores de primera infancia.</p>
+
+        <p>En esta versión digital que no necesita conexión a internet, encontrarán una selección de los mejores contenidos de Maguaré y MaguaRED que promueven los derechos culturales y los lenguajes expresivos de los niños.</p>
+
+        <p>A través del menú de la izquierda (poner el ícono de las barritas para que no haya pierde) tendrán acceso a más de 150 videos, audios, libros y material descargable, completamente gratuito. </p>
+
+        <p>Los invitamos a descubrir más contenidos y recursos en www.maguare.gov.co y www.maguared.gov.co, y únanse a la comunidad a través de las redes sociales FB, TW y YT (poner con los vínculos)</p>
       </div>
     </v-flex>
   </v-layout>

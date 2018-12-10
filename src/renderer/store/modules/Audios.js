@@ -1201,7 +1201,7 @@ Y caimito pa’ calmar el popó, po, po, po (etc)`
       url: '27-guaguitas.mp3',
       letra: `Otra vez se desvelaron
 Linio y Tulita se quedaron sin dormir
-Por qué cuando el bebecito se durmió
+Porque cuando el bebecito se durmió
 El mayor con pesadillas despertó
 
 15 niños van para la escuela
@@ -1360,7 +1360,7 @@ Todas sus noticias son historias de verdad`
       autor: 'Ministerio de Cultura - Maguaré - Ricardo Prado',
       coleccion: 'Maguaré en La Ceiba',
       titulo: 'Me encanta ser actriz',
-      describe: 'Rani es una rana que viene del Chocó y es una gran diva, ella es la reina del drama en La Ceiba. En esta canción Rani nos muestra como transmitir las emociones más intensas.',
+      describe: 'Rani es una rana que viene del Chocó y es una gran diva, ella es la reina del drama en La Ceiba. En esta canción Rani nos muestra cómo transmitir las emociones más intensas.',
       url: '630-meencantaseractriz.mp3',
       letra: `Soy Rani y me encanta ser actriz
 Invento personajes por montón

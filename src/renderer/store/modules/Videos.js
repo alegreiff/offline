@@ -200,14 +200,14 @@ const state = {
       autor: 'Ministerio de Cultura - Maguaré - Ricardo Prado - Neyber Lenis',
       coleccion: 'Karaokes de Maguaré en La Ceiba',
       titulo: '27 guagüitas - Karaoke',
-      describe: 'Un papá y una mamá siempre están pendientes de sus hijitos, de darles de comer, de bañarlos y acostarlos a dormir… ¿pero como hacen los papás de 27 cuyecitos?',
+      describe: 'Un papá y una mamá siempre están pendientes de sus hijitos, de darles de comer, de bañarlos y acostarlos a dormir… ¿pero cómo hacen los papás de 27 cuyecitos?',
       url: '635-guaguitas.mp4'
     },
     { id: 636,
       autor: 'Ministerio de Cultura - Maguaré - Ricardo Prado - Neyber Lenis',
       coleccion: 'Karaokes de Maguaré en La Ceiba',
       titulo: 'El convite en la ceiba - Karaoke',
-      describe: 'Saimiri el monito ardilla de La Ceiba nos presenta a todos y cada uno de los vecinos de la comunidad, con la ayuda del abuelo Emiliano los invita a… a… a... ¿a qué es que los invita?',
+      describe: 'Saimiri el monito ardilla de La Ceiba nos presenta a todos y cada uno de los vecinos de la comunidad, con la ayuda del abuelo Emiliano los invita a... a... a... ¿a qué es que los invita?',
       url: '636-conviteselva.mp4'
     },
     { id: 637,
@@ -221,7 +221,7 @@ const state = {
       autor: 'Ministerio de Cultura - Maguaré - Ricardo Prado - Neyber Lenis',
       coleccion: 'Karaokes de Maguaré en La Ceiba',
       titulo: 'Me encanta ser actriz - Karaoke',
-      describe: 'Rani es una rana que viene del Chocó y es una gran diva, ella es la reina del drama en La Ceiba. En esta canción Rani nos muestra como transmitir las emociones más intensas.',
+      describe: 'Rani es una rana que viene del Chocó y es una gran diva, ella es la reina del drama en La Ceiba. En esta canción Rani nos muestra cómo transmitir las emociones más intensas.',
       url: '638-rani.mp4'
     },
     { id: 639,

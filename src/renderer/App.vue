@@ -111,9 +111,9 @@ export default {
   --magverde:     #8bceaf;
   --magazul:      #1db5cc;
   --magmorado:    #785395;
-  --maggris:      #137786;
   --magfondogris: #f2f2f2;
-  --magfondocards: #e9f9fc
+  --magfondocards: #e9f9fc;
+  --maggris:      #137786
 }
 *, html{
   user-select: none; /* Standard */
