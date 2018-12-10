@@ -1,6 +1,14 @@
 <template>
 <div class="pa-4 seccionaudios">
   <v-layout row wrap>
+    <v-flex xs12>
+      <pre>{{ quesuena }}</pre>
+      <pre>{{ $route.params.id }}</pre>
+      <pre>{{ coleccion.length }}</pre>
+      <pre>{{ $refs.playame1 }}</pre>
+      <pre>{{ currentTime }}</pre>
+      <pre>{{ selectedIndex }}</pre>
+    </v-flex>
         <v-flex xs12 pa-1>
           <v-card>
               <span class="pa-1">Seleccione un audio</span><v-select class="px-4 ma-0"
@@ -42,7 +50,10 @@
       <v-flex xs6 class="pa-2">
           <v-card dark color="white" class="my-0 px-2">
 
-                <audio controls ref="playame1" class="audiofull" autoplay v-if="quesuena!=''" controlsList="nodownload">
+                <audio
+                @timeupdate='onTimeUpdateListener'
+                @ended='findepista'
+                controls ref="playame1" class="audiofull" autoplay v-if="quesuena!=''" controlsList="nodownload">
                   <source :src="quesuena" type="audio/mpeg">
                   Este producto NO es compatible con su computador
                 </audio>
@@ -72,7 +83,9 @@ export default {
       coleccion: [],
       quesuena: '',
       cancionactiva: '',
-      datosgenerales: []
+      datosgenerales: [],
+      currentTime: '00:00', // The initial current time
+      selectedIndex: []
     }
   },
   created() {
@@ -85,13 +98,15 @@ export default {
     watch: {
       '$route.params.id': function (id) {
         //alert(id)
+        console.log("cambiazzo de ruta")
         this.coleccionactiva(id)
 
       },
       selected: function(value){
-
+        //console.log(value + "jeje")
         if(value !='inicio'){
           var t = this.coleccion.find(x => x.id === value)
+          this.selectedIndex = this.coleccion.indexOf(t)
           this.playSound(t)
         }
 
@@ -104,11 +119,25 @@ export default {
     ...mapGetters('Audios', ['audiosCeiba', 'audiosCuentosaloido', 'audiosCuentoencanto', 'audiosSweetsongs', 'audiosSincoleccion', 'audiosFiesta', 'audiosKamentsa']),
   },
   methods: {
+    findepista(){
+      var nuevoelemento = this.selectedIndex+1;
+      if(nuevoelemento >= this.coleccion.length){
+          this.selected = this.coleccion[0].id;
+      }else{
+        this.selected = this.coleccion[nuevoelemento].id;
+      }
+
+    },
+    onTimeUpdateListener: function() {
+      // Update current time
+      this.currentTime = this.$refs.playame1.currentTime
+    },
     coleccionactiva(id){
-      if(this.$refs.playame1){
+      console.log(id + " ACTIVA")
+      /*if(this.$refs.playame1){
         this.quesuena= '';
         this.$refs.playame1.pause()
-      }
+      }*/
       if(id =='audiosCeiba'){
         this.datosgenerales = this.describe.filter(dato => dato.id == 1)
         this.coleccion = this.audiosCeiba
@@ -162,14 +191,12 @@ export default {
       console.log(e)
     },
     playSound (cancion) {
+      console.log(cancion)
       var sonido = 'static/audio/'+cancion.url;
       this.quesuena = sonido;
       this.cancionactiva = cancion;
       if(this.$refs.playame1){
         this.$refs.playame1.load()
-
-        //this.$refs.playame1.play()
-
       }
 
     }

@@ -44,7 +44,9 @@
       </v-flex>
       <v-flex xs8 class="pa-2">
           <v-card>
-              <video width="100%" height="auto" ref="playame1" controls autoplay v-if="quesuena!=''" controlsList="nodownload nofullscreen">
+              <video
+              @ended='findepista'
+              width="100%" height="auto" ref="playame1" controls autoplay v-if="quesuena!=''" controlsList="nodownload nofullscreen">
                   <source :src="quesuena" type="video/mp4">
               Your browser does not support the video tag.
               </video>
@@ -68,7 +70,8 @@ export default {
       selected: 'inicio',
       coleccion: [],
       quesuena: '',
-      datosgenerales: []
+      datosgenerales: [],
+      selectedIndex: []
 
     }
   },
@@ -90,6 +93,7 @@ export default {
       selected: function(value){
         if(value !='inicio'){
           var t = this.coleccion.find(x => x.id === value)
+          this.selectedIndex = this.coleccion.indexOf(t)
           this.playSound(t)
         }
       }
@@ -100,34 +104,15 @@ export default {
 
   },
   methods: {
-    /*
-    coleccionactiva(id){
-      if(this.$refs.playame1){
-        this.quesuena= '';
-        this.$refs.playame1.pause()
-      }
-      if(id =='vidKaraokes'){
-        this.coleccion = this.vidKaraokes
-      }else if (id =='vidSweet') {
-        this.coleccion = this.vidSweet
-      }else if (id =='vidCuentos') {
-        this.coleccion = this.vidCuentos
-      }else if (id =='vidFiesta') {
-        this.coleccion = this.vidFiesta
-      }else if (id =='vidCeiba') {
-        this.coleccion = this.vidCeiba
-      }else if (id =='vidAllKar') {
-        this.coleccion = this.vidAllKar
-      }else if (id =='vidZumba') {
-        this.coleccion = this.vidZumba
+    findepista(){
+      var nuevoelemento = this.selectedIndex+1;
+      if(nuevoelemento >= this.coleccion.length){
+          this.selected = this.coleccion[0].id;
       }else{
-        this.coleccion = this.videos
+        this.selected = this.coleccion[nuevoelemento].id;
       }
-      this.coleccion = _.sortBy(this.coleccion, ['titulo']);
-      this.selected = this.coleccion[0].id;
 
-    },*/
-
+    },
     playSound (cancion) {
       var sonido = 'static/video/'+cancion.url;
       this.quesuena = sonido;

@@ -4,7 +4,7 @@
   <v-flex xs3 v-for="(app, index) in coleccion" :key="index" class="pa-1">
       <v-card  height="100%" class="flexcard" ripple hover>
         <div class="grow">
-          <!--<v-img :src="'static/miniaturas/'+app.id+'.jpg'" class="card-imagen"></v-img>-->
+          <v-img :src="'static/miniaturas/'+app.id+'.jpg'" class="card-imagen"></v-img>
           <v-card-title><h2 class="card-titulo">{{ index+1 }} :: {{ app.id }} :: {{ app.titulo }}</h2></v-card-title>
           <v-card-text class="card-texto">{{ app.describe }}</v-card-text>
         </div>

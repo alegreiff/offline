@@ -2,70 +2,70 @@ const state = {
   /*Videos Serie 1000*/
   videos: [
     { id: 1000,
-      autor: 'AUTOR',
+      autor: 'Ministerio de Cultura - Maguaré - MaguaRED',
       coleccion: 'COLECCION',
       titulo: 'Fabiola Uribe y la arquitectura en la infancia.',
       describe: 'Diana Rubiano es la Coordinadora Pedagógica de aeioTU, una fundación que trabaja en el desarrollo integral de los niños de 0 a 5 años. En este video explica cómo ha cambiado el papel de la escuela en la primera infancia.',
       url: '100-ribe.mp4'
     },
     { id: 1001,
-      autor: 'AUTOR',
+      autor: 'Ministerio de Cultura - Maguaré - MaguaRED',
       coleccion: 'COLECCION',
       titulo: 'Antonia Agreda y el desarrollo integral de los niños indígenas.',
       describe: 'Antonia Agreda es una indígena Inga que lleva décadas trabajando por los derechos de los niños indígenas del país. Ella es una de las impulsoras de la modalidad propia intercultural en primera infancia.',
       url: '1001-agreda.mp4'
     },
     { id: 1002,
-      autor: 'AUTOR',
+      autor: 'Ministerio de Cultura - Maguaré - MaguaRED',
       coleccion: 'COLECCION',
       titulo: 'Carmenza Botero y el sonido en los niños.',
       describe: 'Carmenza Botero es una pedagoga que trabaja con el sonido y la música. Para ella lo más serio que hace un niño en primera infancia es escuchar.',
       url: '1002-botero.mp4'
     },
     { id: 1003,
-      autor: 'AUTOR',
+      autor: 'Ministerio de Cultura - Maguaré - MaguaRED',
       coleccion: 'COLECCION',
       titulo: 'Diana Rubiano y la educación inicial en primera infancia.',
       describe: 'Diana Rubiano es la Coordinadora Pedagógica de aeioTU, una fundación que trabaja en el desarrollo integral de los niños de 0 a 5 años. En este video explica cómo ha cambiado el papel de la escuela en la primera infancia.',
       url: '1003-rubiano.mp4'
     },
     { id: 1004,
-      autor: 'AUTOR',
+      autor: 'Ministerio de Cultura - Maguaré - MaguaRED',
       coleccion: 'COLECCION',
       titulo: 'Juan Carlos Velásquez y los espacios adecuados para los niños.',
       describe: 'Juan Carlos Velásquez es un artista que vincula el arte, el diseño y la pedagogía para crear instalaciones, mobiliarios y ambientes que propician las experiencias significativas en los niños.',
       url: '1004-velasquez.mp4'
     },
     { id: 1005,
-      autor: 'AUTOR',
+      autor: 'Ministerio de Cultura - Maguaré - MaguaRED',
       coleccion: 'COLECCION',
       titulo: 'Irene Vasco y la lectura como un juego.',
       describe: 'Los juegos y la animación son parte esencial del ejercicio lector en la primera infancia. Irene Vasco, promotora de lectura y autora infantil, explica por qué.',
       url: '1005-vasco.mp4'
     },
     { id: 1006,
-      autor: 'AUTOR',
+      autor: 'Ministerio de Cultura - Maguaré - MaguaRED',
       coleccion: 'COLECCION',
       titulo: 'Oscar Brenifier, el filósofo de los niños.',
       describe: 'Oscar Brenifier escribe libros que no son libros porque ninguno tiene respuestas, solo preguntas. Para este argelino la lectura con los niños debe ser un diálogo: más inquietudes, menos conclusiones.',
       url: '1006-breniffier.mp4'
     },
     { id: 1007,
-      autor: 'AUTOR',
+      autor: 'Ministerio de Cultura - Maguaré - MaguaRED',
       coleccion: 'COLECCION',
       titulo: 'Luis Pescetti y la vitalidad en los niños.',
       describe: 'Luis Pescetti es músico y escritor de literatura infantil. En este video habla sobre la lectura y el humor en la infancia: ¡una combinación súper poderosa!',
       url: '1007-pescetti.mp4'
     },
     { id: 1008,
-      autor: 'AUTOR',
+      autor: 'Ministerio de Cultura - Maguaré - MaguaRED',
       coleccion: 'COLECCION',
       titulo: 'Liniers para niños.',
       describe: 'Liniers es dibujante y creador de personajes como Olga, Martincito, Enriqueta, Fellini, y, por supuesto, sus pingüinos. En este video él habla sobre la importancia de la lectura en la primera infancia.',
       url: '1008-liniers.mp4'
     },
     { id: 1009,
-      autor: 'AUTOR',
+      autor: 'Ministerio de Cultura - Maguaré - MaguaRED',
       coleccion: 'COLECCION',
       titulo: '¿Cuándo nos hacemos lectores? La educadora Yolanda Reyes responde.',
       describe: 'La escritora y educadora Yolanda Reyes habla sobre la lectura en la primera infancia: "El deseo de leer de los bebés está amarrado al desciframiento inicial del mundo".',
@@ -154,56 +154,64 @@ const state = {
       autor: 'Ministerio de Cultura',
       coleccion: 'Cuerpo Sonoro',
       describe: 'Cuerpo Sonoro: expresiones artísticas y primera infancia recoge las orientaciones pedagógicas que fundamentan Cuerpo Sonoro.',
-      url: 'URL'
+      url: 'librosmaguare/1200.pdf',
+      descarga: 'Cuerpo-Sonoro-expresiones-primera-infancia'
     },{
       id: 1201,
       titulo: 'Cuentos Derechos: historias para hablar con los niños sobre sus derechos.',
       autor: 'Ministerio de Cultura',
       coleccion: 'Cuentos Derechos',
       describe: 'Cuentos Derechos es un libro digital que reúne las voces y experiencias de niños y adultos sobre los derechos de los niños.',
-      url: 'URL'
+      url: 'librosmaguare/v2-cuentos-derechos.pdf',
+      descarga: 'Cuentos-Derechos'
     },{
       id: 1202,
       titulo: 'Experiencia gráfica de Cuerpo Sonoro: arquitecturas sonoras.',
       autor: 'Ministerio de Cultura',
       coleccion: 'Cuerpo Sonoro',
       describe: 'Esta experiencia de Cuerpo Sonoro permite que los adultos vivan la integralidad a través del cuerpo y las expresiones artísticas.',
-      url: 'URL'
+      url: 'librosmaguare/1202.pdf',
+      descarga: ''
     },{
       id: 1203,
       titulo: 'Experiencia gráfica de Cuerpo Sonoro: materia y materiales.',
       autor: 'Ministerio de Cultura',
       coleccion: 'Cuerpo Sonoro',
       describe: 'Esta experiencia de Cuerpo Sonoro promueve la creatividad para que los adultos entiendan y vivan la exploración en primera infancia.',
-      url: 'URL'
+      url: 'librosmaguare/1203.pdf',
+      descarga: 'Cuerpo-Sonoro-materia-materiales'
     },{
       id: 1204,
       titulo: 'Experiencia gráfica de Cuerpo Sonoro: el juego.',
       autor: 'Ministerio de Cultura',
       coleccion: 'Cuerpo Sonoro',
       describe: 'A través de esta experiencia de Cuerpo Sonoro los adultos pueden entender por qué el juego es fundamental para el desarrollo de los niños.',
-      url: 'URL'
+      url: 'librosmaguare/1204.pdf',
+      descarga: 'Cuerpo-Sonoro-eljuego'
     },{
       id: 1205,
       titulo: 'Experiencia gráfica de Cuerpo Sonoro: animación de objetos.',
       autor: 'Ministerio de Cultura',
       coleccion: 'Cuerpo Sonoro',
       describe: 'Cuerpo Sonoro propone en esta experiencia un ejercicio para que los adultos exploren el juego simbólico desde la vivencia.',
-      url: 'URL'
+      url: 'librosmaguare/1205.pdf',
+      descarga: 'Cuerpo-Sonoro-animacion-objeros'
     },{
       id: 1206,
       titulo: 'Experiencia gráfica de Cuerpo Sonoro: la banda sonora.',
       autor: 'Ministerio de Cultura',
       coleccion: 'Cuerpo Sonoro',
       describe: 'En esta experiencia de Cuerpo Sonoro los adultos pueden reconocer las distintas formas de escucha y, así, vivirlas a través de los niños.',
-      url: 'URL'
+      url: 'librosmaguare/1206.pdf',
+      descarga: 'Cuerpo-Sonoro-banda-sonora'
     },{
       id: 1207,
       titulo: 'Experiencia gráfica de Cuerpo Sonoro: el espacio en la primera infancia. ',
       autor: 'Ministerio de Cultura',
       coleccion: 'Cuerpo Sonoro',
       describe: 'Cuerpo Sonoro creó esta experiencia para que los adultos reinventen el espacio que comparten con los niños.',
-      url: 'URL'
+      url: 'librosmaguare/1207.pdf',
+      descarga: 'Cuerpo-Sonoro-elespacio'
     },
   ]
 }

@@ -387,140 +387,163 @@ const state = {
         titulo: 'Bosqueconcierto',
         autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
         describe: 'Presentamos una serie de actividades para niños que promueven la exploración del entorno, las experiencias artísticas y el juego. ¡Todo a partir del álbum musical Bosqueconcierto!',
-        url: 'sugerencias/sugerencias-de-uso-9001-bosqueconcierto.pdf'
+        url: 'sugerencias/sugerencias-de-uso-9001-bosqueconcierto.pdf',
+        descarga: 'Sugerencia-de-uso-Bosqueconcierto'
       },
       {
         id: 9002,
         titulo: 'Tu Rockcito',
         autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
         describe: 'Presentamos una serie de actividades para niños de primera infancia basadas en la música de Tu Rockcito: ¡puro rock n roll!',
-        url: 'sugerencias/sugerencias-de-uso-9002-turockcito.pdf'
+        url: 'sugerencias/sugerencias-de-uso-9002-turockcito.pdf',
+        descarga: 'Sugerencia-de-uso-turockcito'
       },{
         id: 9003,
         titulo: 'Jacana Jacana',
         autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
         describe: 'Aquí hay actividades para niños de primera infancia que promueven la exploración del entorno y las experiencias artísticas. ¡Todo a partir de canciones y karaokes de Jacana Jacana!',
-        url: 'sugerencias/sugerencias-de-uso-9003-jacana.pdf'
+        url: 'sugerencias/sugerencias-de-uso-9003-jacana.pdf',
+        descarga: 'Sugerencia-de-uso-jacanajacana'
       },{
         id: 9004,
         titulo: 'Cantos de agua',
         autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
         describe: 'Aquí encuentran actividades para niños de primera infancia basadas en la colección Cantos de agua, que promueven la exploración del entorno, las experiencias artísticas y el juego.',
-        url: 'sugerencias/sugerencias-de-uso-9004-cantosdeagua.pdf'
+        url: 'sugerencias/sugerencias-de-uso-9004-cantosdeagua.pdf',
+        descarga: 'Sugerencia-de-uso-cantosdeagua'
       },{
         id: 9005,
         titulo: 'Tamborecos',
         autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
         describe: 'Presentamos una serie de actividades para niños de primera infancia que promueven el juego y el disfrute de las palabras y el lenguaje. ¡Y todo a partir de la colección Tamborecos!',
-        url: 'sugerencias/sugerencias-de-uso-9005-tamborecos.pdf'
+        url: 'sugerencias/sugerencias-de-uso-9005-tamborecos.pdf',
+        descarga: 'Sugerencia-de-uso-tamborecos'
       },{
         id: 9006,
         titulo: 'Pipo',
         autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
         describe: 'Aquí encuentran una serie de actividades para niños de primera infancia que promueven la exploración del entorno, el juego y el disfrute de las palabras y el lenguaje. ¡A jugar con Pipo, mi amigo imaginario!',
-        url: 'sugerencias/sugerencias-de-uso-9006-pipo.pdf'
+        url: 'sugerencias/sugerencias-de-uso-9006-pipo.pdf',
+        descarga: 'Sugerencia-de-uso-pipo'
       },{
         id: 9007,
         titulo: 'Ana Pirata',
         autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
         describe: 'Aquí encuentran una serie de actividades inspiradoras para promover en los niños la exploración del entorno, el juego y la equidad de género a partir de la serie Ana Pirata.',
-        url: 'sugerencias/sugerencias-de-uso-9007-anapirata.pdf'
+        url: 'sugerencias/sugerencias-de-uso-9007-anapirata.pdf',
+        descarga: 'Sugerencia-de-uso-anapirata'
       },{
         id: 9008,
         titulo: 'Camusi Camusi',
         autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
         describe: 'Aquí encuentran una serie de actividades para niños de primera infancia que promueven las experiencias artísticas, el juego y el disfrute de las palabras. ¡Todo a partir de la serie Camusi Camusi!',
-        url: 'sugerencias/sugerencias-de-uso-9008-camusi.pdf'
+        url: 'sugerencias/sugerencias-de-uso-9008-camusi.pdf',
+        descarga: 'Sugerencia-de-uso-camusicamusi'
       },{
         id: 9009,
         titulo: 'Adivinanzas',
         autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
         describe: 'Presentamos una serie de actividades divertidas para niños de primera infancia que promueven las experiencias artísticas y el disfrute de las palabras y el lenguaje con 10 adivinanzas interactivas.',
-        url: 'sugerencias/sugerencias-de-uso-9009-adivinanzas.pdf'
+        url: 'sugerencias/sugerencias-de-uso-9009-adivinanzas.pdf',
+        descarga: 'Sugerencia-de-uso-adivinanzas'
       },{
         id: 9010,
         titulo: 'Arrullos',
         autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
         describe: '¡Sana que sana, colita de rana, si no sana hoy, sanará mañana! Aquí están disponibles las sugerencias de actividades para sanar con la musicalidad de las palabras.',
-        url: 'sugerencias/sugerencias-de-uso-9010-arrullos.pdf'
+        url: 'sugerencias/sugerencias-de-uso-9010-arrullos.pdf',
+        descarga: 'Sugerencia-de-uso-arrullos'
       },{
         id: 9011,
         titulo: 'Crea con colores',
         autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
         describe: 'Aquí encontrarán una serie de actividades para niños de primera infancia que promueven las experiencias artísticas y el juego. ¡Todo a partir del juego Crea con colores!',
-        url: 'sugerencias/sugerencias-de-uso-9011-creaconcolores.pdf'
+        url: 'sugerencias/sugerencias-de-uso-9011-creaconcolores.pdf',
+        descarga: 'Sugerencia-de-uso-creaconcolores'
       },{
         id: 9012,
         titulo: 'Cuentos al oído',
         autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
         describe: 'Aquí están disponibles las actividades para niños de primera infancia basadas en la colección Cuentos al oído; ésta promueven las experiencias artísticas, el juego y el disfrute de las palabras.',
-        url: 'sugerencias/sugerencias-de-uso-9012-cuentosaloido.pdf'
+        url: 'sugerencias/sugerencias-de-uso-9012-cuentosaloido.pdf',
+        descarga: 'Sugerencia-de-uso-cuentosaloido'
       },{
         id: 9013,
         titulo: 'Cuentos interactivos',
         autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
         describe: 'Encuentren aquí una serie de actividades para niños de primera infancia que promueven la exploración del entorno y las experiencias artísticas. ¡Todo gracias a la colección de Cuentos Interactivos!',
-        url: 'sugerencias/sugerencias-de-uso-9013-cuentosinteractivos.pdf'
+        url: 'sugerencias/sugerencias-de-uso-9013-cuentosinteractivos.pdf',
+        descarga: 'Sugerencia-de-uso-cuentosinteractivos'
       },{
         id: 9014,
         titulo: 'Cuentos narrados',
         autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
         describe: 'Aquí encontrarán una serie de actividades para niños de primera infancia que promueven las experiencias artísticas, el juego y las palabras. ¡Todo a partir de la colección de Cuentos narrados!',
-        url: 'sugerencias/sugerencias-de-uso-9014-cuentosnarrados.pdf'
+        url: 'sugerencias/sugerencias-de-uso-9014-cuentosnarrados.pdf',
+        descarga: 'Sugerencia-de-uso-cuentosnarrados'
       },{
         id: 9015,
         titulo: 'Historias contadas',
         autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
         describe: 'A partir de los contenidos de Zumba que Zumba los niños de primera infancia pueden realizar actividades para fortalecer el sentido de exploración, experimentación y conocimiento del mundo.',
-        url: 'sugerencias/sugerencias-de-uso-9015-historias.pdf'
+        url: 'sugerencias/sugerencias-de-uso-9015-historias.pdf',
+        descarga: 'Sugerencia-de-uso-historiascontadas'
       },{
         id: 9016,
         titulo: 'SAI sabiduría ancestral',
         autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
         describe: 'Aquí encuentran divertidas actividades para disfrutar de expresiones culturales de distintas comunidades indígenas de Colombia.',
-        url: 'sugerencias/sugerencias-de-uso-9016-sai.pdf'
+        url: 'sugerencias/sugerencias-de-uso-9016-sai.pdf',
+        descarga: 'Sugerencia-de-uso-sai'
       },{
         id: 9017,
         titulo: 'Sana que sana',
         autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
         describe: '¿Cuál es la mejor canción para dormir a un niño? En estas sugerencias de uso les contamos cuáles son las canciones especiales y qué actividades implementar para dormir al más despierto.',
-        url: 'sugerencias/sugerencias-de-uso-9017-sanaquesana.pdf'
+        url: 'sugerencias/sugerencias-de-uso-9017-sanaquesana.pdf',
+        descarga: 'Sugerencia-de-uso-sanaquesana'
       },{
         id: 9018,
         titulo: 'Buen comienzo',
         autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
         describe: 'Ya están disponibles las actividades de la colección musical Buen Comienzo, que hace parte del programa para primera infancia de la Alcaldía de Medellín.',
-        url: 'sugerencias/sugerencias-de-uso-9018-buencomienzo.pdf'
+        url: 'sugerencias/sugerencias-de-uso-9018-buencomienzo.pdf',
+        descarga: 'Sugerencia-de-uso-buencomienzo'
       },{
         id: 9019,
         titulo: 'Karaokes',
         autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
         describe: 'Aquí encuentran 6 actividades para fomentar los lenguajes expresivos en los niños a través de tardes de karaokes, de creación de garabatos, trazos sonoros y hasta de casitas de chocolate.',
-        url: 'sugerencias/sugerencias-de-uso-9019-karaokes.pdf'
+        url: 'sugerencias/sugerencias-de-uso-9019-karaokes.pdf',
+        descarga: 'Sugerencia-de-uso-karaokes'
       },{
         id: 9020,
         titulo: 'Trabalenguas',
         autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
         describe: 'Aquí encuentran una serie de activdades basadas en trabalenguas para que los niños jueguen, hagan mímicas, se pinten la lengua de colores o usen tarros como si fueran tambores.',
-        url: 'sugerencias/sugerencias-de-uso-9020-trabalenguas.pdf'
+        url: 'sugerencias/sugerencias-de-uso-9020-trabalenguas.pdf',
+        descarga: 'Sugerencia-de-uso-trabalenguas'
       },{
         id: 9021,
         titulo: 'Chigüiro',
         autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
         describe: '¡A jugar dentro y fuera de casa, en las escuelas o en los Centros de Desarrollo con estas divertidas actividades inspiradas en la serie animada Chigüiro!',
-        url: 'sugerencias/sugerencias-de-uso-9021-chiguiro.pdf'
+        url: 'sugerencias/sugerencias-de-uso-9021-chiguiro.pdf',
+        descarga: 'Sugerencia-de-uso-trabalenguas'
       },{
         id: 9022,
         titulo: 'Cuentos de Maguaré',
         autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
         describe: 'A partir de los cuentos de Maguaré en La Ceiba los niños de primera infancia pueden realizar actividades para fortalecer el sentido de exploración, experimentación y conocimiento del mundo.',
-        url: 'sugerencias/sugerencias-de-uso-9022-cuentosmaguare.pdf'
+        url: 'sugerencias/sugerencias-de-uso-9022-cuentosmaguare.pdf',
+        descarga: 'Sugerencia-de-uso-cuentosmaguare'
       },{
         id: 9023,
         titulo: 'Canciones de Maguaré',
         autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
         describe: 'Aquí encuentran 5 actividades para fomentar los lenguajes expresivos en los niños a través de tardes de karaokes, de creación de títeres o de jugar con palabras para hacer retahílas.',
-        url: 'sugerencias/sugerencias-de-uso-9023-cancionesmaguare.pdf'
+        url: 'sugerencias/sugerencias-de-uso-9023-cancionesmaguare.pdf',
+        descarga: 'Sugerencia-de-uso-cancionesmaguare'
       },
     ],
 
