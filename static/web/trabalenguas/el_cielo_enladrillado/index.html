@@ -1,48 +1,48 @@
 <!doctype html>
 <html lang="en">
 <head>
- 
+
 <title>El Cielo Enladrillado</title>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="css/estilos.css">
- 
+
 <script type="text/javascript" src="../js/jquery.min.js"></script>
 <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
-<script src="../js/jquery.ui.touch-punch.min.js"></script> 
+<script src="../js/jquery.ui.touch-punch.min.js"></script>
 <script type="text/javascript">
 
 $(document).ready(function(){
 	document.getElementById('cargando').style.display = "block";
-}) 
+})
 
-$(window).load(function(){ 
+$(window).load(function(){
 	document.getElementById('cargando').style.display = "none";
-}) 
-  
+})
+
 // JavaScript will go here
 
 var correctCards = 0;
 $( init );
- 
+
 function init() {
- 
+
    // Hide the success message
   $('#saimiriBaila').hide();
   $('#reset').hide();
   $('#resetJuego').hide();
- 
+
   // Reset the game
   correctCards = 0;
   $('#cardPile').html( '' );
   $('#cardSlots').html( '' );
   $('#wrapper').hide();
   $('audio')[0].pause();
- 
+
   // Create the pile of shuffled cards
   var numbers = [ 1, 2 ];
   numbers.sort( function() { return Math.random() - .5 } );
- 
+
   for ( var i=0; i<2; i++ ) {
     $('<div>' + '</div>').data( 'number', numbers[i] ).attr( 'id', 'card'+numbers[i] ).appendTo( '#cardPile' ).draggable( {
       containment: '#content',
@@ -51,7 +51,7 @@ function init() {
       revert: true
     } );
   }
- 
+
   // Create the card slots
   var words = [ 'one', 'two' ];
   for ( var i=1; i<=2; i++ ) {
@@ -61,18 +61,18 @@ function init() {
       drop: handleCardDrop
     } );
   }
- 
+
 }
 
 function handleCardDrop( event, ui ) {
   var slotNumber = $(this).data( 'number' );
   var cardNumber = ui.draggable.data( 'number' );
- 
+
   // If the card was dropped to the correct slot,
   // change the card colour, position it directly
   // on top of the slot, and prevent it being dragged
   // again
- 
+
   if ( slotNumber == cardNumber ) {
     ui.draggable.addClass( 'correct' );
     ui.draggable.draggable( 'disable' );
@@ -80,11 +80,11 @@ function handleCardDrop( event, ui ) {
     ui.draggable.position( { of: $(this), my: 'left top', at: 'left top' } );
     ui.draggable.draggable( 'option', 'revert', false );
     correctCards++;
-  } 
-   
+  }
+
   // If all the cards have been placed correctly then display a message
   // and reset the cards for another go
- 
+
   if ( correctCards == 2 ) {
     $('#successMessage').show();
     $('#successMessage').animate( {
@@ -95,7 +95,7 @@ function handleCardDrop( event, ui ) {
       opacity: 1
     } );
   }
-  
+
    if ( correctCards == 2 ) {
 		    //$('#wrapper').show();
 	$('#reset').show();
@@ -105,18 +105,18 @@ function handleCardDrop( event, ui ) {
     $('#wrapper').show();
 	//$('#resetJuego').show();
 	$('audio')[0].play();
-			
+
   }
-  
+
   //RESETEAR MUSICA
   $( "#reset" ).click(function() {
 		$("audio")[0].pause();
 		$("audio")[0].currentTime = 0;
 		$("audio")[0].play();
 	});
- 
+
 }
- 
+
 </script>
 
 </head>
@@ -145,24 +145,24 @@ function handleCardDrop( event, ui ) {
         	<span>BUEN DESENLADRILLADOR SERÁ</span>
         </div>
   </div> -->
-  
-  	<div id="cardSlots"> 
+
+  	<div id="cardSlots">
   	</div>
 </div>
   <div id="cardPile">
   </div>
-</div>  
- 
 </div>
 
-<!--Audio1--> 
+</div>
+
+<!--Audio1-->
         <div id="wrapper">
 			<audio preload="auto" controls style="display:none;">
-				<source src="audio/TRABA_ElCieloEnlad.wav">
+				
 				<source src="audio/TRABA_ElCieloEnlad.ogg">
 				<source src="audio/TRABA_ElCieloEnlad.mp3">
 			</audio>
-        </div> 
- 
+        </div>
+
 </body>
 </html>

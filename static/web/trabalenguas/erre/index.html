@@ -4,21 +4,21 @@
 
   <title>Erre</title>
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css/estilos.css">
 
   <script type="text/javascript" src="../js/jquery.min.js"></script>
   <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
-  <script src="../js/jquery.ui.touch-punch.min.js"></script>  
+  <script src="../js/jquery.ui.touch-punch.min.js"></script>
   <script type="text/javascript">
 
   $(document).ready(function(){
    document.getElementById('cargando').style.display = "block";
- }) 
+ })
 
-  $(window).load(function(){ 
+  $(window).load(function(){
    document.getElementById('cargando').style.display = "none";
- }) 
+ })
 
 // JavaScript will go here
 
@@ -66,7 +66,7 @@ function init() {
       //accept: '#cardPile div',
       accept: '#card1',
       hoverClass: 'hovered',
-      drop: handleCardDrop	
+      drop: handleCardDrop
     } );
 
   $('#targettwo').droppable( {
@@ -101,11 +101,11 @@ function handleCardDrop( event, ui ) {
     ui.draggable.position( { of: $(this), my: 'left top', at: 'left top' } );
     ui.draggable.draggable( 'option', 'revert', false );
     correctCards++;
-  } 
+  }
 
   // If all the cards have been placed correctly then display a message
   // and reset the cards for another go
-  
+
   if ( correctCards == 3 ) {
     $('#reset').show();
     //$('#saimiriBaila').show();
@@ -116,7 +116,7 @@ function handleCardDrop( event, ui ) {
     $('audio')[0].play();
 
   }
-  
+
   //RESETEAR MUSICA
   $( "#reset" ).click(function() {
     $("audio")[0].pause();
@@ -154,14 +154,14 @@ function handleCardDrop( event, ui ) {
     <div id="card3" class="ui-draggable"></div>
   </div>
 </div>
-<!--Audio1--> 
+<!--Audio1-->
 <div id="wrapper">
  <audio preload="auto" controls style="display:none;">
-  <source src="audio/TRABA_Erre.wav">
+  
     <source src="audio/TRABA_Erre.ogg">
       <source src="audio/TRABA_Erre.MP3">
       </audio>
-    </div> 
+    </div>
 
   </body>
   </html>

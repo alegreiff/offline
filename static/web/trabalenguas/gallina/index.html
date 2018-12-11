@@ -4,21 +4,21 @@
 
   <title>Gallina</title>
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css/estilos.css">
 
   <script type="text/javascript" src="../js/jquery.min.js"></script>
   <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
-  <script src="../js/jquery.ui.touch-punch.min.js"></script> 
+  <script src="../js/jquery.ui.touch-punch.min.js"></script>
   <script type="text/javascript">
 
   $(document).ready(function(){
    document.getElementById('cargando').style.display = "block";
- }) 
+ })
 
-  $(window).load(function(){ 
+  $(window).load(function(){
    document.getElementById('cargando').style.display = "none";
- }) 
+ })
 
 // JavaScript will go here
 
@@ -73,7 +73,7 @@ function init() {
       //accept: '#cardPile div',
       accept: '#card1, #card3',
       hoverClass: 'hovered',
-      drop: handleCardDrop	
+      drop: handleCardDrop
     } );
 
   $('#targettwo').droppable( {
@@ -115,7 +115,7 @@ function handleCardDrop( event, ui ) {
     ui.draggable.position( { of: $(this), my: 'left top', at: 'left top' } );
     ui.draggable.draggable( 'option', 'revert', false );
     correctCards++;
-  } 
+  }
 
   // If all the cards have been placed correctly then display a message
   // and reset the cards for another go
@@ -130,7 +130,7 @@ function handleCardDrop( event, ui ) {
       opacity: 1
     } );
   }
-  
+
   if ( correctCards == 4 ) {
    $('#reset').show();
    //$('#saimiriBaila').show();
@@ -151,7 +151,7 @@ function handleCardDrop( event, ui ) {
 
 }
 
-</script>  
+</script>
 </head>
 <body style=" overflow:hidden;">
 
@@ -181,14 +181,14 @@ function handleCardDrop( event, ui ) {
   </div>
 </div>
 
-<!--Audio1--> 
+<!--Audio1-->
 <div id="wrapper">
  <audio preload="auto" controls style="display:none;">
-  <source src="audio/TRABA_Gallina.wav">
+  
     <source src="audio/TRABA_Gallina.ogg">
       <source src="audio/TRABA_Gallina.mp3">
       </audio>
-    </div> 
+    </div>
 
   </body>
   </html>
