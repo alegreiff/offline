@@ -6,20 +6,23 @@
     <Menu/>
   </v-navigation-drawer>
   <!--<v-toolbar :clipped-left="primaryDrawer.clipped" app absolute>-->
-  <v-toolbar app>
+  <v-toolbar app dark color="blue-grey lighten-2">
 
-    <v-toolbar-side-icon v-if="primaryDrawer.type !== 'permanent'" @click.stop="primaryDrawer.model = !primaryDrawer.model"></v-toolbar-side-icon>
-    <v-toolbar-title>Maguaré - MaguaRED - {{ tituloapp }} <span class="seccion_describe">{{ seccion_describe }}</span>
-
+    <v-toolbar-side-icon v-if="primaryDrawer.type !== 'permanent'" @click.stop="primaryDrawer.model = !primaryDrawer.model">
+      <v-icon medium>fas fa-bars</v-icon>
+    </v-toolbar-side-icon>
+    <v-toolbar-title ><strong>Maguaré - MaguaRED - {{ tituloapp }}</strong> <span class="seccion_describe">{{ seccion_describe }}</span>
 
     </v-toolbar-title>
+    <v-spacer></v-spacer>
+          <v-icon large class="bigcola" :color="coloricono">{{ iconobarra }}</v-icon>
   </v-toolbar>
   <v-content>
     <v-container fluid ma-0 pa-0>
       <router-view></router-view>
     </v-container>
   </v-content>
-  <v-footer inset app height="80" class="px-2 ma-0">
+  <v-footer inset app height="80" class="px-2 ma-0" color="blue-grey lighten-5">
     <v-flex xs4> <img class="imlogo" id="logo" src="~@/assets/logosfooter/logoministerio.png"
       v-on:click="webexterna('http://www.mincultura.gov.co')"> </v-flex>
     <v-flex xs2> <img class="imlogo" id="logo" src="~@/assets/logosfooter/unimedios.png"
@@ -45,6 +48,8 @@ const electron = require('electron');
 export default {
   data: function () {
     return {
+      coloricono: 'white',
+      iconobarra: 'fas fa-home',
       tituloapp: '',
       seccion_describe: '',
       dark: false,
@@ -93,6 +98,12 @@ export default {
       //cambio()
 
     });
+    EventBus.$on('ICONOBARRA', function (a, b) {
+      self.iconobarra= a;
+      self.coloricono = b;
+      //cambio()
+
+    });
 
   }
 }
@@ -116,7 +127,8 @@ export default {
   --maggris:      #137786
 }
 *, html{
-  user-select: none; /* Standard */
+/*select or not to select text*/
+  /*user-select: none;*/
 }
 
 .container{
@@ -124,9 +136,6 @@ export default {
   padding: 0;
 }
 #sandbox{
-  /*background-image: url("~@/assets/playa.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;*/
   background-image: url("~@/assets/gris.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -166,5 +175,10 @@ img.imlogo {
   display: block;
   font-size: 0.7em;
 }
+.bigcola{
+  font-size: 3.67em !important;
+  /*background-color: white;
+  padding: 5px;*/
 
+}
 </style>

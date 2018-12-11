@@ -88,8 +88,9 @@ export default {
     //this.id = this.$route.params.id;
     //alert(this.$route.params.id)
     this.coleccionactiva(this.$route.params.id);
-    EventBus.$emit('TITULO', 'Videos');
+    //EventBus.$emit('TITULO', 'Videos');
     //this.selected= 'inicio'
+    EventBus.$emit('ICONOBARRA', 'fas fa-play-circle', 'magnaranja');
     },
     watch: {
       '$route.params.id': function (id) {

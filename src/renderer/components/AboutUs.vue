@@ -119,6 +119,7 @@
       this.datosgenerales = this.describe.filter(dato => dato.id == 501)
       EventBus.$emit('TITULO', this.datosgenerales[0].titulobreve);
       EventBus.$emit('SECCION', this.datosgenerales[0].descripcion);
+      EventBus.$emit('ICONOBARRA', 'fas fa-user-friends', 'magrojo');
     },
 
     name: 'acerca-de',

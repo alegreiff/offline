@@ -70,6 +70,7 @@ export default {
 
     created() {
       this.coleccionactiva(this.$route.params.id);
+      EventBus.$emit('ICONOBARRA', 'fas fa-book-open', 'magazul');
 
     },
     watch: {

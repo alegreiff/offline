@@ -50,6 +50,7 @@ export default {
     this.datosgenerales = this.describe.filter(dato => dato.id == 400)
     EventBus.$emit('TITULO', this.datosgenerales[0].titulobreve);
     EventBus.$emit('SECCION', this.datosgenerales[0].descripcion);
+    EventBus.$emit('ICONOBARRA', 'fas fa-download', 'light-blue darken-3');
     this.descargablesmaguarepdf = _.sortBy(this.descargablesmaguare, ['titulo']);
     //EventBus.$emit('TITULO', 'Descargables');
     },

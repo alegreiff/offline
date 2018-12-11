@@ -82,6 +82,7 @@ export default {
     this.datosgenerales = this.describe.filter(dato => dato.id == 700)
     EventBus.$emit('TITULO', this.datosgenerales[0].titulobreve);
     EventBus.$emit('SECCION', this.datosgenerales[0].descripcion);
+    EventBus.$emit('ICONOBARRA', 'fas fa-play-circle', 'magnaranja');
 
     if(this.selected !='inicio'){
       var t = this.coleccion.find(x => x.id === this.selected)

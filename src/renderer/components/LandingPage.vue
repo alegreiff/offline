@@ -19,9 +19,9 @@
 
         <p>En esta versión digital que no necesita conexión a internet, encontrarán una selección de los mejores contenidos de Maguaré y MaguaRED que promueven los derechos culturales y los lenguajes expresivos de los niños.</p>
 
-        <p>A través del menú de la izquierda <v-icon>menu</v-icon> tendrán acceso a más de 150 videos, audios, libros y material descargable, completamente gratuito. </p>
+        <p>A través del menú de la izquierda <v-icon>fas fa-bars</v-icon> tendrán acceso a más de 200 videos, audios, libros y material descargable, completamente gratuito. </p>
 
-        <p>Los invitamos a descubrir más contenidos y recursos en www.maguare.gov.co y www.maguared.gov.co, y a unirse a la comunidad a través de las redes sociales.</p>
+        <p>Los invitamos a descubrir más contenidos y recursos en <v-btn flat small v-on:click="webexterna('https://www.maguare.gov.co')">www.maguare.gov.co</v-btn> y <v-btn flat small v-on:click="webexterna('https://www.maguared.gov.co')">www.maguared.gov.co,</v-btn>y a unirse a la comunidad a través de las redes sociales.</p>
       </div>
     </v-flex>
     <v-flex xs6 offset-xs3>
@@ -60,6 +60,7 @@
       this.datosgenerales = this.describe.filter(dato => dato.id == 502)
       EventBus.$emit('TITULO', this.datosgenerales[0].titulobreve);
       EventBus.$emit('SECCION', this.datosgenerales[0].descripcion);
+      EventBus.$emit('ICONOBARRA', 'fas fa-home', 'white');
     },
     watch: {
 

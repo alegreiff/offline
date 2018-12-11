@@ -83,6 +83,7 @@ export default {
   created() {
 
     this.coleccionactiva(this.$route.params.id);
+    EventBus.$emit('ICONOBARRA', 'fas fa-music', 'maglima');
 
 
     //this.selected= 'inicio'
@@ -196,7 +197,7 @@ export default {
 }
 </script>
 
-<style lang="css">
+<style>
 audio{
   min-width: 100%;
 }
@@ -208,13 +209,10 @@ audio{
 
   }
   img.miniatura{
-
     max-width: 100%;
-    border: 2px white solid;
-    border-radius: 0.5em;
-    margin: 0 auto;
+    border-radius: 0.5em !important;
+    margin: 1em auto;
     cursor: pointer;
-
   }
   .imagenesmodelo{
     display: grid;

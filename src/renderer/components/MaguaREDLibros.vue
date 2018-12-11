@@ -1,14 +1,18 @@
 <template>
 <div class="pa-4 seccionlibros">
 <v-layout v-if="$route.params.id==='librosTodosLeeresmicuento'">
-  <v-flex xs12>
+  <v-flex xs8>
     <v-btn-toggle v-model="toggle_exclusive" mandatory class="pa-1 white">
       <v-btn class="magazul"  small  v-on:click="edad=0" >Todas las edades</v-btn>&nbsp;
       <v-btn class="magazul"  small  v-on:click="edad=1" > De 0 a 6 años</v-btn>&nbsp;
       <v-btn class="magazul"  small  v-on:click="edad=7" > De 7 a 10 años</v-btn>&nbsp;
       <v-btn class="magazul"  small  v-on:click="edad=10" > De 10 años en adelante</v-btn>&nbsp;
   </v-btn-toggle>
+
  <!-- {{ $route.params.id }} :: {{ coleccion.length }} :: {{ edad }}  -->
+  </v-flex>
+  <v-flex xs4>
+  <h2 class="white--text text-xs-right" style="opacity: 0.3">{{ coleccionleer.length }} libros</h2>
   </v-flex>
 </v-layout>
   <v-layout row wrap>
@@ -71,7 +75,7 @@ export default {
     created() {
       this.coleccionactiva(this.$route.params.id);
       //this.todosloslibros = this.librosTodosLeeresmicuento.concat(this.librosCuerpoSonoro).concat(this.librosCuentosDerechos);
-
+      EventBus.$emit('ICONOBARRA', 'fas fa-book-open', 'magazul');
 
     },
     watch: {

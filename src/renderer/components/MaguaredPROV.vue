@@ -29,6 +29,7 @@ export default {
     this.datosgenerales = this.describe.filter(dato => dato.id == 500)
     EventBus.$emit('TITULO', this.datosgenerales[0].titulobreve);
     EventBus.$emit('SECCION', this.datosgenerales[0].descripcion);
+    EventBus.$emit('ICONOBARRA', 'file_copy', 'magrojo');
     this.sugerenciaspdf = _.sortBy(this.sugerencias, ['titulo']);
     this.videosmag = _.sortBy(this.videos, ['id']);
     this.tutorialesmag = _.sortBy(this.tutoriales, ['titulo']);

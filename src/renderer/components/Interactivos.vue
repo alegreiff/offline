@@ -35,6 +35,7 @@ export default {
   },
   created() {
     this.coleccionactiva(this.$route.params.id);
+    EventBus.$emit('ICONOBARRA', 'extension', 'magmorado');
     //this.interactivos = _.sortBy(this.apps, ['titulo']);
     //EventBus.$emit('TITULO', 'Interactivos');
     },
