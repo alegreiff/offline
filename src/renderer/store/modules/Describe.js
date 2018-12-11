@@ -59,7 +59,7 @@ const state = {
       seccion: 'Descargables',
       subseccion: 'Descargables',
       titulobreve: 'Descargables',
-      descripcion: 'Rompecabezas, trabalenguas, adivinanzas y mucho más para jugar'
+      descripcion: 'Descarga, colorea y diviértete con los personajes de Maguaré en La Ceiba'
     },
     /* INTERACTIVOS SERIE 300*/
     {

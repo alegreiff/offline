@@ -47,7 +47,7 @@
           class="miniatura">
 
           <v-card-text class="px-0 grey--text">
-            <h3 class="describe text-xs-center pa-2">{{ cancionactiva.describe }}</h3>
+            <h3 class="describe text-xs-left pa-2">{{ cancionactiva.describe }}</h3>
           </v-card-text>
         </v-card>
       </v-flex>

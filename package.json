@@ -17,7 +17,6 @@
     "pack:main": "cross-env NODE_ENV=production webpack --progress --colors --config .electron-vue/webpack.main.config.js",
     "pack:renderer": "cross-env NODE_ENV=production webpack --progress --colors --config .electron-vue/webpack.renderer.config.js",
     "postinstall": ""
-
   },
   "build": {
     "productName": "maguare",
@@ -54,6 +53,7 @@
     }
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.6.0",
     "axios": "^0.18.0",
     "electron-pdf-window": "^1.0.12",
     "material-design-icons-iconfont": "^4.0.2",

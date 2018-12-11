@@ -3,7 +3,7 @@
     <v-list dense>
       <v-list-tile :to="{path: '/'}" >
         <v-list-tile-action>
-          <v-icon medium>home</v-icon>
+          <v-icon medium>fas fa-home</v-icon>
         </v-list-tile-action>
         <v-list-tile-content>
           <v-list-tile-title>Inicio</v-list-tile-title>
@@ -18,7 +18,7 @@
       <v-list-group no-action>
       <v-list-tile slot="activator">
         <v-list-tile-action>
-          <v-icon medium color="magnaranja">music_video</v-icon>
+          <v-icon medium color="magnaranja">fas fa-play-circle</v-icon>
         </v-list-tile-action>
         <v-list-tile-content>
           <v-list-tile-title class="menu_videos">VIDEOS</v-list-tile-title>
@@ -79,7 +79,7 @@
   <v-list-group no-action>
   <v-list-tile slot="activator">
     <v-list-tile-action>
-      <v-icon medium color="maglima">audiotrack</v-icon>
+      <v-icon medium color="maglima">fas fa-music</v-icon>
     </v-list-tile-action>
     <v-list-tile-content>
       <v-list-tile-title class="menu_audios">AUDIOS</v-list-tile-title>
@@ -132,7 +132,7 @@
       <v-list-group no-action>
       <v-list-tile slot="activator">
         <v-list-tile-action>
-          <v-icon medium color="magazul">picture_as_pdf</v-icon>
+          <v-icon medium color="magazul">fas fa-book-open</v-icon>
         </v-list-tile-action>
         <v-list-tile-content>
           <v-list-tile-title class="menu_libros">LIBROS</v-list-tile-title>
@@ -211,7 +211,7 @@
 
 <!-- MAGUARÉ DESCARGABLES -->
 <v-list-tile :to="{path: '/descargablesmaguare'}" >
-  <v-list-tile-action><v-icon medium color="light-blue darken-3">picture_as_pdf</v-icon></v-list-tile-action>
+  <v-list-tile-action><v-icon medium color="light-blue darken-3">fas fa-download</v-icon></v-list-tile-action>
   <v-list-tile-content><v-list-tile-title>Descargables</v-list-tile-title></v-list-tile-content>
 </v-list-tile>
 
@@ -221,14 +221,14 @@
 <img id="logo" src="static/maguared.png" alt="electron-vue" class="logominim">
 
 <v-list-tile :to="{path: '/videosmaguared'}" >
-      <v-list-tile-action><v-icon medium color="magnaranja">music_video</v-icon></v-list-tile-action>
+      <v-list-tile-action><v-icon medium color="magnaranja">fas fa-play-circle</v-icon></v-list-tile-action>
       <v-list-tile-content><v-list-tile-title>Videos</v-list-tile-title></v-list-tile-content>
 </v-list-tile>
 <!-- MAGUARÉ GRUPO INTERACTIVOS -->
     <v-list-group no-action>
     <v-list-tile slot="activator" ripple>
       <v-list-tile-action>
-        <v-icon medium color="magazul">picture_as_pdf</v-icon>
+        <v-icon medium color="magazul">fas fa-book-open</v-icon>
       </v-list-tile-action>
       <v-list-tile-content>
         <v-list-tile-title class="menu_libros">LIBROS</v-list-tile-title>
@@ -264,7 +264,7 @@
     </v-list-tile>
     </v-list-group>
 <v-list-tile :to="{path: '/sugerencias'}" >
-      <v-list-tile-action><v-icon medium color="light-blue darken-3">picture_as_pdf</v-icon></v-list-tile-action>
+      <v-list-tile-action><v-icon medium color="light-blue darken-3">fas fa-download</v-icon></v-list-tile-action>
       <v-list-tile-content><v-list-tile-title>Sugerencias de uso</v-list-tile-title></v-list-tile-content>
 </v-list-tile>
 <!--
@@ -285,7 +285,7 @@
 
 -->
 <v-list-tile :to="{path: '/tutorialesmaguared'}" >
-      <v-list-tile-action><v-icon medium color="light-blue darken-3">picture_as_pdf</v-icon></v-list-tile-action>
+      <v-list-tile-action><v-icon medium color="light-blue darken-3">fas fa-download</v-icon></v-list-tile-action>
       <v-list-tile-content><v-list-tile-title>Tutoriales</v-list-tile-title></v-list-tile-content>
 </v-list-tile>
 
@@ -297,7 +297,7 @@
 </v-list-tile>
 <v-divider></v-divider>
 <v-list-tile :to="{path: '/acercade'}" >
-      <v-list-tile-action><v-icon medium color="magrojo">supervised_user_circle</v-icon></v-list-tile-action>
+      <v-list-tile-action><v-icon medium color="magrojo">fas fa-user-friends</v-icon></v-list-tile-action>
       <v-list-tile-content><v-list-tile-title>Acerca de</v-list-tile-title></v-list-tile-content>
 </v-list-tile>
 <v-divider></v-divider>

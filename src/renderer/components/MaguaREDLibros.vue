@@ -1,7 +1,19 @@
 <template>
 <div class="pa-4 seccionlibros">
+<v-layout v-if="$route.params.id==='librosTodosLeeresmicuento'">
+  <v-flex xs12>
+    <v-btn-toggle v-model="toggle_exclusive" mandatory class="pa-1 white">
+      <v-btn class="magazul"  small  v-on:click="edad=0" >Todas las edades</v-btn>&nbsp;
+      <v-btn class="magazul"  small  v-on:click="edad=1" > De 0 a 6 años</v-btn>&nbsp;
+      <v-btn class="magazul"  small  v-on:click="edad=7" > De 7 a 10 años</v-btn>&nbsp;
+      <v-btn class="magazul"  small  v-on:click="edad=10" > De 10 años en adelante</v-btn>&nbsp;
+  </v-btn-toggle>
+ <!-- {{ $route.params.id }} :: {{ coleccion.length }} :: {{ edad }}  -->
+  </v-flex>
+</v-layout>
   <v-layout row wrap>
-  <v-flex xs3 v-for="(app, index) in coleccion" :key="index" class="pa-1">
+
+  <v-flex xs3 v-for="(app, index) in $route.params.id==='librosTodosLeeresmicuento' ? coleccionleer: coleccion" :key="index" class="pa-1">
       <v-card  height="100%" class="flexcard" ripple hover>
         <div class="grow">
           <v-img :src="'static/miniaturas/'+app.id+'.jpg'" class="card-imagen"></v-img>
@@ -49,6 +61,8 @@ export default {
       //librosmaguarepdf: [],
       coleccion: [],
       ventana: null,
+      edad: 0,
+      toggle_exclusive: 0,
       //todosloslibros: []
 
     }
@@ -78,6 +92,14 @@ export default {
       ...mapGetters('Maguared', ['librosCuerpoSonoro', 'librosCuentosDerechos']),
       ...mapGetters('Varios', ['librosTodosLeeresmicuento']),
       ...mapState('Describe', ['describe']),
+      coleccionleer: function(){
+        if(this.edad){
+          return _.filter(this.coleccion, ['edad', this.edad]);
+        }else{
+          return this.coleccion;
+        }
+      }
+
 
     },
   methods: {

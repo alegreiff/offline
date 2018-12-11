@@ -241,7 +241,7 @@ const state = {
       autor: 'Ministerio de Cultura - Maguaré - Zumba que zumba',
       coleccion: 'Karaokes',
       titulo: 'Cartas del río - Karaoke',
-      describe: 'Las cartas pueden atravesar ciudades y pueblo. De muy lejos llegan cartas y traen noticias muy divertidas de los pueblos de Colombia en este karaoke para cantar y bailar. ¿Qué te gustaría contarle en una carta a un niño de otro pueblo?',
+      describe: 'Las cartas pueden atravesar ciudades y pueblos. De muy lejos llegan cartas y traen noticias muy divertidas de los pueblos de Colombia en este karaoke para cantar y bailar. ¿Qué te gustaría contarle en una carta a un niño de otro pueblo?',
       url: '114-cartasdelrio.mp4'
     },{ id: 115,
       autor: 'Ministerio de Cultura - Maguaré - Zumba que zumba',

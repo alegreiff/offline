@@ -1,3 +1,4 @@
+import '@fortawesome/fontawesome-free/css/all.css' // Ensure you are using css-loader
 import Vue from 'vue'
 import axios from 'axios'
 
@@ -23,6 +24,9 @@ Vue.use(Vuetify, {
     magfondogris: '#f2f2f2'
 
   }
+})
+Vue.use(Vuetify, {
+ iconfont: 'fa',
 })
 import 'vuetify/dist/vuetify.min.css' // Ensure you are using css-loader
 import 'material-design-icons-iconfont/dist/material-design-icons.css' // Ensure you are using css-loader

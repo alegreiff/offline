@@ -33,7 +33,7 @@
 <script>
 import { mapState } from 'vuex'
 import EventBus from './eventos';
-EventBus.$emit('TITULO', 'Descargables');
+
 /*import _ from 'lodash';*/
 
 export default {
@@ -49,6 +49,7 @@ export default {
     //this.interactivos = this.apps;
     this.datosgenerales = this.describe.filter(dato => dato.id == 400)
     EventBus.$emit('TITULO', this.datosgenerales[0].titulobreve);
+    EventBus.$emit('SECCION', this.datosgenerales[0].descripcion);
     this.descargablesmaguarepdf = _.sortBy(this.descargablesmaguare, ['titulo']);
     //EventBus.$emit('TITULO', 'Descargables');
     },

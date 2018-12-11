@@ -19,10 +19,23 @@
 
         <p>En esta versión digital que no necesita conexión a internet, encontrarán una selección de los mejores contenidos de Maguaré y MaguaRED que promueven los derechos culturales y los lenguajes expresivos de los niños.</p>
 
-        <p>A través del menú de la izquierda (poner el ícono de las barritas para que no haya pierde) tendrán acceso a más de 150 videos, audios, libros y material descargable, completamente gratuito. </p>
+        <p>A través del menú de la izquierda <v-icon>menu</v-icon> tendrán acceso a más de 150 videos, audios, libros y material descargable, completamente gratuito. </p>
 
-        <p>Los invitamos a descubrir más contenidos y recursos en www.maguare.gov.co y www.maguared.gov.co, y únanse a la comunidad a través de las redes sociales FB, TW y YT (poner con los vínculos)</p>
+        <p>Los invitamos a descubrir más contenidos y recursos en www.maguare.gov.co y www.maguared.gov.co, y a unirse a la comunidad a través de las redes sociales.</p>
       </div>
+    </v-flex>
+    <v-flex xs6 offset-xs3>
+      <v-btn dark small color="#4267b2" v-on:click="webexterna('https://www.facebook.com/maguared/')">Facebook &nbsp;
+        <v-icon dark>fab fa-facebook</v-icon>
+      </v-btn>
+
+      <v-btn dark small color="#38A1F3" v-on:click="webexterna('https://twitter.com/maguared')">Twitter &nbsp;
+        <v-icon dark>fab fa-twitter-square</v-icon>
+      </v-btn>
+
+      <v-btn dark small color="#ED3833" v-on:click="webexterna('https://youtube.com/maguared')">YouTube &nbsp;
+        <v-icon dark>fab fa-youtube-square</v-icon>
+      </v-btn>
     </v-flex>
   </v-layout>
 
