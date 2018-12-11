@@ -473,14 +473,16 @@ const state = {
         describe: 'Presentamos una serie de actividades divertidas para niños de primera infancia que promueven las experiencias artísticas y el disfrute de las palabras y el lenguaje con 10 adivinanzas interactivas.',
         url: 'sugerencias/sugerencias-de-uso-9009-adivinanzas.pdf',
         descarga: 'Sugerencia-de-uso-adivinanzas'
-      },{
+      },
+      /*{
         id: 9010,
         titulo: 'Arrullos',
         autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
         describe: '¡Sana que sana, colita de rana, si no sana hoy, sanará mañana! Aquí están disponibles las sugerencias de actividades para sanar con la musicalidad de las palabras.',
         url: 'sugerencias/sugerencias-de-uso-9010-arrullos.pdf',
         descarga: 'Sugerencia-de-uso-arrullos'
-      },{
+      },*/
+      {
         id: 9011,
         titulo: 'Crea con colores',
         autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
@@ -522,14 +524,18 @@ const state = {
         describe: 'Aquí encuentran divertidas actividades para disfrutar de expresiones culturales de distintas comunidades indígenas de Colombia.',
         url: 'sugerencias/sugerencias-de-uso-9016-sai.pdf',
         descarga: 'Sugerencia-de-uso-sai'
-      },{
+      },
+      /*
+      {
         id: 9017,
         titulo: 'Sana que sana',
         autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
         describe: '¿Cuál es la mejor canción para dormir a un niño? En estas sugerencias de uso les contamos cuáles son las canciones especiales y qué actividades implementar para dormir al más despierto.',
         url: 'sugerencias/sugerencias-de-uso-9017-sanaquesana.pdf',
         descarga: 'Sugerencia-de-uso-sanaquesana'
-      },{
+      },
+      */
+      {
         id: 9018,
         titulo: 'Buen comienzo',
         autor: 'Ministerio de Cultura - MaguaRED - Maguaré',

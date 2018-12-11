@@ -68,7 +68,7 @@
 
       }
     },
-    name: 'landing-page',
+    name: 'inicio-offline',
     components: { SystemInformation },
     computed: {
 
