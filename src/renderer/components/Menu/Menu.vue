@@ -247,6 +247,13 @@
       </v-list-tile-content>
     </v-list-tile>
 
+    <v-list-tile :to="{name: 'maglib', params: { id: 'librosDerechosOrientaciones'}}">
+      <v-list-tile-content>
+        <v-list-tile-title>Derechos culturales</v-list-tile-title>
+        <v-list-tile-sub-title>para la primera infancia</v-list-tile-sub-title>
+      </v-list-tile-content>
+    </v-list-tile>
+
 
 
     <v-list-tile :to="{name: 'maglib', params: { id: 'librosTodosLeeresmicuento'}}" ripple>

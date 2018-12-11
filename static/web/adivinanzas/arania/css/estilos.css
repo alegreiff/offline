@@ -13,7 +13,7 @@ body html{
 	vertical-align: baseline;
 	display:block;
 }
- 
+
 body {
   margin: 0px;
   line-height: 1.8em;
@@ -34,9 +34,9 @@ body {
   background-size:cover;
   background-repeat:no-repeat;
 }
- 
+
 /* Give headings their own font */
- 
+
 h1, h2, h3, h4 {
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
@@ -82,9 +82,9 @@ background-size: 15%;
 display: block;
 z-index:999;
 }
- 
+
 /* Main content area */
- 
+
 #content {
   margin: 0px;
   -moz-user-select: none;
@@ -97,9 +97,9 @@ z-index:999;
   height:100%;
   background-color:transparent;
 }
- 
+
 /* Header/footer boxes */
- 
+
 .wideBox {
   clear: both;
   text-align: center;
@@ -108,17 +108,17 @@ z-index:999;
   background: #ebedf2;
   border: 1px solid #333;
 }
- 
+
 .wideBox h1 {
   font-weight: bold;
   margin: 20px;
   color: #666;
   font-size: 1.5em;
 }
- 
- 
+
+
 /* The initial pile of unsorted cards */
- 
+
 #cardPile {
   margin: 0 auto;
 /*  background: #ffd;*/
@@ -148,9 +148,9 @@ z-index:999;
   background-position: 50% 0;
   background-size: contain;
 }
- 
+
 /* Individual cards and slots */
- 
+
 #cardSlots div, #cardPile div {
   float: left;
   -moz-border-radius: 10px;
@@ -243,34 +243,34 @@ z-index:999;
 #targetthree{
 	display:none;
 }
-/*------------------------------*/ 
+/*------------------------------*/
 #cardSlots div:first-child, #cardPile div:first-child {
   margin-left: 0;
 }
- 
+
 #cardSlots div.hovered {
 	background-color:rgba(102,102,102,0.8);
 	border-radius:13px;
 }
- 
+
 #cardSlots div {
 	border-style:none;
 }
- 
+
 #cardPile div {
 /*  background: #666;*/
   color: #fff;
   font-size: 50px;
   text-shadow: 0 0 3px #000;
 }
- 
+
 #cardPile div.ui-draggable-dragging {
   /*-moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
   -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
   box-shadow: 0 0 .5em rgba(0, 0, 0, .8);*/
 }
- 
- 
+
+
 /* "You did it!" message */
 #successMessage {
   position: absolute;
@@ -322,13 +322,13 @@ z-index:999;
 	float:left;
 	text-align:center;
 	}
-	
+
 #Contenidos1 #titulo span{
 	font-family:'Equestria', Arial, Helvetica, sans-serif;
 	font-size:405%;
 	color:#F7931E;
 	}
-	
+
 /* Columnas*/
 
 .columNormal{
@@ -383,7 +383,7 @@ body html{
 	vertical-align: baseline;
 	display:block;
 }
- 
+
 body {
   margin: 0px;
   line-height: 1.8em;
@@ -404,9 +404,9 @@ body {
   background-size:cover;
   background-repeat:no-repeat;
 }
- 
+
 /* Give headings their own font */
- 
+
 h1, h2, h3, h4 {
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
@@ -453,9 +453,9 @@ z-index:999;
 }
 
 
- 
+
 /* Main content area */
- 
+
 #content {
   margin: 0px;
   -moz-user-select: none;
@@ -468,9 +468,9 @@ z-index:999;
   height:100%;
   background-color:transparent;
 }
- 
+
 /* Header/footer boxes */
- 
+
 .wideBox {
   clear: both;
   text-align: center;
@@ -479,17 +479,17 @@ z-index:999;
   background: #ebedf2;
   border: 1px solid #333;
 }
- 
+
 .wideBox h1 {
   font-weight: bold;
   margin: 20px;
   color: #666;
   font-size: 1.5em;
 }
- 
- 
+
+
 /* The initial pile of unsorted cards */
- 
+
 #cardPile {
   margin: 0 auto;
 /*  background: #ffd;*/
@@ -517,9 +517,9 @@ z-index:999;
   background-position: 50% 0;
   background-size: contain;
 }
- 
+
 /* Individual cards and slots */
- 
+
 #cardPile div {
     margin: 10% 0 1% 18%;
 }
@@ -610,32 +610,32 @@ z-index:999;
 #targetthree{
 	display:none;
 }
-/*------------------------------*/ 
+/*------------------------------*/
 
- 
+
 #cardSlots div.hovered {
 	background-color:rgba(102,102,102,0.8);
 	border-radius:13px;
 }
- 
+
 #cardSlots div {
 	border-style:none;
 }
- 
+
 #cardPile div {
 /*  background: #666;*/
   color: #fff;
   font-size: 50px;
   text-shadow: 0 0 3px #000;
 }
- 
+
 #cardPile div.ui-draggable-dragging {
   /*-moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
   -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
   box-shadow: 0 0 .5em rgba(0, 0, 0, .8);*/
 }
- 
- 
+
+
 /* "You did it!" message */
 #successMessage {
   position: absolute;
@@ -687,13 +687,13 @@ z-index:999;
 	float:left;
 	text-align:center;
 	}
-	
+
 #Contenidos1 #titulo span{
 	font-family:'Equestria', Arial, Helvetica, sans-serif;
 	font-size:405%;
 	color:#F7931E;
 	}
-	
+
 /* Columnas*/
 
 .columNormal{
@@ -736,3 +736,8 @@ z-index:999;
 
 }
 
+body, html, *{
+	
+	max-width: 800px !important;
+	max-height: 600px !important;
+}

@@ -403,7 +403,8 @@ const state = {
         url: 'librosmaguare/maguare-sopa-fiesta.pdf',
         urlbn: 'librosmaguare/maguare-sopa-fiestaBN.pdf',
         descarga: 'CEIBA-unasopaparalafiesta'
-      }
+      },
+
 
     ],
     /* Serie 9000*/

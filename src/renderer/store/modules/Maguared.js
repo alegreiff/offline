@@ -213,6 +213,57 @@ const state = {
       url: 'librosmaguare/1207.pdf',
       descarga: 'Cuerpo-Sonoro-elespacio'
     },
+    /*SERIE 2000 Derechos y Orientaciones Culturales para la Primera Infancia*/
+    {
+      id: 2001,
+      autor: 'Ministerio de Cultura - Instituto Colombiano de Bienestar Familiar',
+      titulo: 'Lectura, libro y bibliotecas',
+      coleccion: 'Derechos y Orientaciones Culturales para la Primera Infancia',
+      publico: 'maguared',
+      describe: 'Este libro recoge orientaciones en torno a la relación de los niños con las bibliotecas y el sentido de la lectura y la literatura en sus desarrollos integrales.',
+      url: 'librosmaguare/2001-lectura-libro-bibliotecas.pdf',
+      descarga: ''
+    },
+    {
+      id: 2002,
+      autor: 'Ministerio de Cultura - Instituto Colombiano de Bienestar Familiar',
+      titulo: 'Lenguajes y ambientes de lectura',
+      coleccion: 'Derechos y Orientaciones Culturales para la Primera Infancia',
+      publico: 'maguared',
+      describe: 'En este libro se reflexiona sobre las condiciones de los ambientes para potenciar el gozo de la lectura, el juego y la exploración.',
+      url: 'librosmaguare/2002-lenguajes-ambientes-lectura.pdf',
+      descarga: ''
+    },
+    {
+      id: 2003,
+      autor: 'Ministerio de Cultura - Instituto Colombiano de Bienestar Familiar',
+      titulo: 'Música, poesía y lenguajes audiovisuales',
+      coleccion: 'Derechos y Orientaciones Culturales para la Primera Infancia',
+      publico: 'maguared',
+      describe: 'En este libro se recogen reflexiones en torno a la música, la poesía y los lenguajes audiovisuales como parte esencial del desarrollo integral de los niños.',
+      url: 'librosmaguare/2003-musica-poesia-lenguajesaudiovisuales.pdf',
+      descarga: ''
+    },
+    {
+      id: 2004,
+      autor: 'Ministerio de Cultura - Instituto Colombiano de Bienestar Familiar',
+      titulo: 'Lenguas nativas y primera infancia',
+      coleccion: 'Derechos y Orientaciones Culturales para la Primera Infancia',
+      publico: 'maguared',
+      describe: 'El libro acerca al lector a la comprensión de la diversidad cultural desde las lenguas maternas de Colombia y su relación con la primera infancia.',
+      url: 'librosmaguare/2004-lenguas-nativas-primera-infancia.pdf',
+      descarga: ''
+    },
+    {
+      id: 2005,
+      autor: 'Ministerio de Cultura - Museo Nacional de Colombia',
+      titulo: 'Historia y primera infancia',
+      coleccion: 'Derechos y Orientaciones Culturales para la Primera Infancia',
+      publico: 'maguared',
+      describe: 'Varios autores reflexionan sobre el concepto histórico de niñez, sobre el ejercicio de ciudadanía de los niños, y sobre los museos y su papel educativo en los niños.',
+      url: 'librosmaguare/2005-historia-primera-infancia.pdf',
+      descarga: ''
+    },
   ]
 }
 const getters = {
@@ -221,6 +272,9 @@ const getters = {
     },
     librosCuentosDerechos: state => {
       return state.otrosdocumentos.filter(libro => libro.coleccion == 'Cuentos Derechos')
+    },
+    librosDerechosOrientaciones: state => {
+      return state.otrosdocumentos.filter(libro => libro.coleccion == 'Derechos y Orientaciones Culturales para la Primera Infancia')
     },
 
 }

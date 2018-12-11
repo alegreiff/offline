@@ -11,12 +11,12 @@
 
  <!-- {{ $route.params.id }} :: {{ coleccion.length }} :: {{ edad }}  -->
   </v-flex>
+
   <v-flex xs4>
   <h2 class="white--text text-xs-right" style="opacity: 0.3">{{ coleccionleer.length }} libros</h2>
   </v-flex>
 </v-layout>
   <v-layout row wrap>
-
   <v-flex xs3 v-for="(app, index) in $route.params.id==='librosTodosLeeresmicuento' ? coleccionleer: coleccion" :key="index" class="pa-1">
       <v-card  height="100%" class="flexcard" ripple hover>
         <div class="grow">
@@ -93,7 +93,7 @@ export default {
     },
     computed: {
       //...mapState('Varios', ['libros']),
-      ...mapGetters('Maguared', ['librosCuerpoSonoro', 'librosCuentosDerechos']),
+      ...mapGetters('Maguared', ['librosCuerpoSonoro', 'librosCuentosDerechos', 'librosDerechosOrientaciones']),
       ...mapGetters('Varios', ['librosTodosLeeresmicuento']),
       ...mapState('Describe', ['describe']),
       coleccionleer: function(){
@@ -155,10 +155,14 @@ export default {
         this.datosgenerales = this.describe.filter(dato => dato.id == 206)
         this.coleccion = this.librosCuentosDerechos
 
+      }else if (id =='librosDerechosOrientaciones') {
+        this.datosgenerales = this.describe.filter(dato => dato.id == 208)
+        this.coleccion = this.librosDerechosOrientaciones
+
       }else{
         this.datosgenerales = this.describe.filter(dato => dato.id == 204)
         //this.coleccion = this.todosloslibros
-        this.coleccion =this.librosTodosLeeresmicuento.concat(this.librosCuerpoSonoro).concat(this.librosCuentosDerechos);
+        this.coleccion =this.librosTodosLeeresmicuento.concat(this.librosCuerpoSonoro).concat(this.librosCuentosDerechos).concat(this.librosDerechosOrientaciones);
 
       }
       EventBus.$emit('TITULO', this.datosgenerales[0].titulobreve);

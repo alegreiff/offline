@@ -9,7 +9,12 @@
                 <v-card-text class="card-texto">{{ app.describe }}</v-card-text>
               </div>
               <v-card-actions class="justify-center accionescard">
-                  <v-btn small class="white--text" color="magmorado" block :href="'static/web/'+app.url" target="maguared">Ver interactivo</v-btn>
+                  <!--<v-btn small class="white--text" color="magmorado" block :href="'static/web/'+app.url" target="maguared">Ver interactivo</v-btn>-->
+                  <v-btn small class="white--text" color="magmorado" block
+                  @click="abreenlace('static/web/'+app.url, 'jaime')"
+
+                  target="maguared">Ver interactivo</v-btn>
+
               </v-card-actions>
             </v-card>
         </v-flex>
@@ -84,6 +89,22 @@ export default {
       EventBus.$emit('SECCION', this.datosgenerales[0].descripcion);
       this.coleccion = _.sortBy(this.coleccion, ['titulo']);
     },
+    abreenlace(ruta, nombre){
+      /*var a = document.createElement('a');
+      a.target="maguared";
+      a.href=ruta;
+      a.click();*/
+      window.open(ruta, 'name','width=800,height=600')
+
+
+
+      //alert(ruta)
+      //window.location.href= ruta
+      /*var link = document.createElement("a");
+      link.download = nombre;
+      link.href = ruta;
+      link.click();*/
+    }
 }
 }
 </script>

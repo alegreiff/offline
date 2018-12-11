@@ -286,6 +286,14 @@ const state = {
       titulobreve: 'Libros - Cuerpo sonoro',
       descripcion: 'Encuentren aquí experiencias y documentos sobre primera infancia del proyecto Cuerpo Sonoro'
     },
+    {
+      id: 208,
+      clase: 'maguared',
+      seccion: 'Libros',
+      subseccion: 'Derechos Culturales para la Primera Infancia',
+      titulobreve: 'Libros - Derechos Culturales para la Primera Infancia',
+      descripcion: 'Encuentren aquí los 5 títulos de la Colección Derechos y Orientaciones culturales para la primera infancia.'
+    },
   ]
 }
 
