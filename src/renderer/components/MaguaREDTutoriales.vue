@@ -7,19 +7,27 @@
           <v-img :src="'static/miniaturas/'+app.id+'.jpg'" class="card-imagen"></v-img>
           <v-card-title><h2 class="card-titulo">{{ app.id }} :: {{ app.titulo }}</h2></v-card-title>
           <v-card-text class="card-texto">{{ app.describe }}</v-card-text>
-          <p v-if="app.video" @click="muestravideo(app)">SISAS</p>
+
         </div>
         <v-card-actions class="justify-center accionescard">
+
+          <v-tooltip top color="magrojo" class="pa-1" v-if="app.video">
+            <v-btn fab small dark color="magnaranja"
+            @click="muestravideo(app)"
+            slot="activator">
+            <v-icon medium dark>fas fa-play-circle</v-icon>
+          </v-btn><span>Ver el video tutorial</span></v-tooltip>
+
           <v-tooltip top color="magrojo" class="pa-1">
             <v-btn fab small dark color="magazul"
             @click="pdfdescarga('static/'+app.url, app.descarga+'.pdf')"
             slot="activator">
-            <v-icon medium dark>arrow_drop_down_circle</v-icon>
-          </v-btn><span>Descargar el tutorial</span></v-tooltip>
+            <v-icon medium dark>fas fa-download</v-icon>
+          </v-btn><span>Descargar el tutorial en PDF</span></v-tooltip>
           <v-tooltip top color="magrojo" class="pa-1">
             <v-btn fab small dark color="magazul" @click="muestraPDF('/'+app.url)" slot="activator">
             <v-icon medium dark>pageview</v-icon>
-          </v-btn><span>Ver el tutorial</span></v-tooltip>
+          </v-btn><span>Ver el tutorial en PDF</span></v-tooltip>
             <v-tooltip top color="magrojo" class="pa-1" max-width="200px">
               <v-btn fab small dark color="magazul" slot="activator">
               <v-icon medium dark>info</v-icon>
@@ -28,26 +36,45 @@
       </v-card>
 
   </v-flex>
-  <v-dialog v-model="dialog"max-width="450">
-    <v-card>
-      <v-card-title><strong>Enlace externo</strong> </v-card-title>
+  <v-dialog v-model="dialog" max-width="85%">
+    <v-card v-if="tutorialactivo">
+      <v-card-title><h2>{{ tutorialactivo.titulo }}</h2> </v-card-title>
 
       <v-card-text>
-        {{ videotutorial }}
-        <video
+        <p>{{ tutorialactivo.describe }}</p>
 
-        width="100%" height="auto" controls autoplay
-        controlsList="nodownload nofullscreen">
-            <source :src="videotutorial" type="video/mp4">
-        Your browser does not support the video tag.
-        </video>
+          <video
+          @ended='dialog=false'
+          class="centrovideo"
+          width="600" height="auto" controls autoplay
+          ref="vidtutto"
+          controlsList="nodownload nofullscreen">
+              <source :src="'static/video/'+tutorialactivo.video" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+
+
       </v-card-text>
+      <v-card-actions class="justify-center accionescard">
+        <v-tooltip top color="magrojo" class="pa-1">
+          <v-btn fab small dark color="magazul"
+          @click="pdfdescarga('static/'+tutorialactivo.url, tutorialactivo.descarga+'.pdf')"
+          slot="activator">
+          <v-icon medium dark>fas fa-download</v-icon>
+        </v-btn><span>Descargar el tutorial en PDF</span></v-tooltip>
+        <v-tooltip top color="magrojo" class="pa-1">
+          <v-btn fab small dark color="magazul" @click="muestraPDF('/'+tutorialactivo.url)" slot="activator">
+          <v-icon medium dark>pageview</v-icon>
+        </v-btn><span>Ver el tutorial en PDF</span></v-tooltip>
+          <v-tooltip top color="magrojo" class="pa-1" max-width="200px">
+            <v-btn fab small dark color="magazul" slot="activator">
+            <v-icon medium dark>info</v-icon>
+          </v-btn><span><b>Autor: </b>{{ tutorialactivo.autor }}</span></v-tooltip>
+          <v-spacer></v-spacer>
 
-      <v-card-actions>
-        <v-spacer></v-spacer>
-        <!--<v-btn color="magazul" small @click="cancelaenlace">Regresar</v-btn>
-        <v-btn color="maglima" small @click="abreenlaceexterno">Visitar</v-btn>-->
+          <v-btn color="magazul" small @click="dialog=false">Cerrar</v-btn>
       </v-card-actions>
+
     </v-card>
   </v-dialog>
   </v-layout>
@@ -72,7 +99,7 @@ export default {
       ventana: null,
       datosgenerales: [],
       dialog: false,
-      videotutorial: ''
+      tutorialactivo: null
     }
   },
   created() {
@@ -84,7 +111,12 @@ export default {
     this.tutorialespdf = _.sortBy(this.tutoriales, ['titulo']);
     },
     watch: {
-
+      dialog (val) {
+            //!val && alert('Dialog is closing')
+            if(this.$refs.vidtutto && !val){
+              this.$refs.vidtutto.pause()
+            }
+          }
     },
   computed: {
     ...mapState('Maguared', ['tutoriales']),
@@ -109,7 +141,14 @@ export default {
     },
     muestravideo(video){
       this.dialog = true
-      this.videotutorial = 'static/video/'+video.video
+      this.tutorialactivo=video
+      //this.$refs.vidtutto.play()
+      //this.videotutorial = 'static/video/'+video.video
+      if(this.$refs.vidtutto){
+        this.$refs.vidtutto.load()
+        //this.$refs.playame1.play()
+
+      }
     },
     muestraPDF(link){
       //console.log(this.ventana.id + " <=========")
@@ -148,5 +187,9 @@ export default {
   background-attachment: fixed;
   min-height: calc(100vh - 164px);
 }
-
+.centrovideo {
+    margin-left: auto;
+    margin-right: auto;
+    display: block
+}
 </style>
