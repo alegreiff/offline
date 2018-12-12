@@ -2,17 +2,16 @@
 <div class="pa-4 seccionaudios">
   <v-layout row wrap>
         <v-flex xs12 pa-1>
-          <v-card>
-              <span class="pa-1">Seleccione un audio</span><v-select class="px-4 ma-0"
-
-                :items="coleccion"
-                v-model="selected"
-                color="primary"
-
-                item-text="titulo"
-                item-value="id"
-                >
-              </v-select>
+          <v-card class="pa-1">
+            <v-select class="px-4 ma-0"
+              :items="coleccion"
+              v-model="selected"
+              color="primary"
+              item-text="titulo"
+              item-value="id"
+              hide-selected
+              label="Seleccione un audio">
+            </v-select>
 
           </v-card>
         </v-flex>

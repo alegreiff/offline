@@ -86,7 +86,7 @@
               <p class="cred-cargo">Selección y curaduría de contenidos - Maguaré</p>
               <p class="cred-persona">Juan Sebastián Salazar</p>
               <p class="cred-cargo">Selección y curaduría de contenidos - MaguaRED</p>
-              <p class="cred-persona">Jaime de Greiff</p>
+              <p class="cred-persona">Jaime de <span @click="sumajaime()" style="cursor: crosshair;">Greiff</span><span style="font-size: 0.4em;color: red"> {{ cuenta }}</span>  </p>
               <p class="cred-cargo">Diseño, desarrollo y programación</p>
               <h3>Revisar, complementar, aumentar</h3>
             </v-tab-item>
@@ -94,7 +94,22 @@
 
         </v-card-text>
         <v-card-actions>
+          <v-dialog v-model="jaime"max-width="1600" persistent>
+            <v-card class="magrojo">
 
+
+              <v-card-text class="white--text text-xs-center" style="font-size: 3em;">
+                <br><br>
+                <img class="imlogo" id="logo" src="~@/assets/futbol.jpg">
+                <br><br>
+              </v-card-text>
+
+              <v-card-actions>
+                <v-spacer></v-spacer>
+
+              </v-card-actions>
+            </v-card>
+          </v-dialog>
         </v-card-actions>
       </v-card>
     </v-flex>
@@ -111,9 +126,20 @@
   export default {
     data: function () {
       return {
+        jaime: false,
+        cuenta: 0,
         drawer: null,
         datosgenerales: []
       }
+    },
+    watch: {
+      cuenta: function (id) {
+        if(id === 21){
+          this.jaime = true;
+        }
+
+
+      },
     },
     created () {
       this.datosgenerales = this.describe.filter(dato => dato.id == 501)
@@ -124,6 +150,9 @@
 
     name: 'acerca-de',
     methods: {
+      sumajaime(){
+        this.cuenta++
+      },
       open (link) {
         console.log(link)
         /*this.$electron.shell.openExternal(link)*/

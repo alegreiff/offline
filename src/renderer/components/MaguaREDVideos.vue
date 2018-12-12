@@ -2,18 +2,15 @@
 <div class="pa-4 seccionvideos">
   <v-layout row wrap>
         <v-flex xs12>
-          <v-card>
-            <span class="pa-1">Seleccione un video</span><v-select class="px-4 ma-0"
-
+          <v-card class="pa-1">
+            <v-select class="px-4 ma-0"
               :items="coleccion"
               v-model="selected"
               color="primary"
-
               item-text="titulo"
               item-value="id"
-              background-color=""
-
-              >
+              hide-selected
+              label="Seleccione un video">
             </v-select>
 
           </v-card>

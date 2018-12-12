@@ -168,4 +168,5 @@ export default {
   background-attachment: fixed;
   /*height: 100vh;*/
 }
+
 </style>

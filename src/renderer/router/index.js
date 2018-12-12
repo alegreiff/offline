@@ -6,7 +6,7 @@ import Interactivos from '@/components/Interactivos'
 import Sugerencias from '@/components/Sugerencias'
 import LibrosMaguare from '@/components/LibrosMaguare'
 import DescargablesMaguare from '@/components/DescargablesMaguare'
-import MaguPROV from '@/components/MaguaredPROV'
+import Politicas from '@/components/Politicas'
 import MaguaREDVideos from '@/components/MaguaREDVideos'
 import MaguaREDTutoriales from '@/components/MaguaREDTutoriales'
 import MaguaREDLibros from '@/components/MaguaREDLibros'
@@ -29,7 +29,7 @@ export default new Router({
     { path: '/videosmaguared', component: MaguaREDVideos },
     { path: '/tutorialesmaguared', component: MaguaREDTutoriales },
     { path: '/descargablesmaguare', component: DescargablesMaguare },
-    { path: '/provixional', component: MaguPROV },
+    { path: '/politicas', component: Politicas },
     { path: '/interactivos/:id', component: Interactivos, name: 'app' },
     { path: '/videos/:id', component: Videos, name: 'vid' },
     { path: '/audios/:id', component: Audios, name: 'coleccion' },

@@ -298,7 +298,7 @@
 
 <v-divider></v-divider>
 
-<v-list-tile :to="{path: '/provixional'}" >
+<v-list-tile :to="{path: '/politicas'}" >
       <v-list-tile-action><v-icon medium color="magrojo">file_copy</v-icon></v-list-tile-action>
       <v-list-tile-content><v-list-tile-title>Políticas de uso</v-list-tile-title></v-list-tile-content>
 </v-list-tile>

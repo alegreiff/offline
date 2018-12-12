@@ -24,7 +24,7 @@
   </v-content>
   <v-footer inset app height="80" class="px-2 ma-0" color="blue-grey lighten-5">
     <v-flex xs4> <img class="imlogo" id="logo" src="~@/assets/logosfooter/logoministerio.png"
-      v-on:click="webexterna('http://www.mincultura.gov.co')"> </v-flex>
+      v-on:click="webexterna('http://www.mincultura.gov.co/Paginas/default.aspx')"> </v-flex>
     <v-flex xs2> <img class="imlogo" id="logo" src="~@/assets/logosfooter/unimedios.png"
 
       v-on:click="webexterna('http://unimedios.unal.edu.co/index.php?id=268')"> </v-flex>
@@ -37,6 +37,21 @@
     <v-flex xs2> <img class="imlogo" id="logo" src="~@/assets/logosfooter/premio.png"> </v-flex>
 
   </v-footer>
+      <v-dialog v-model="dialog"max-width="450">
+        <v-card>
+          <v-card-title><strong>Enlace externo</strong> </v-card-title>
+
+          <v-card-text>
+            ¿Desea abrir su navegador para visitar el sitio web  {{ enlace }}?
+          </v-card-text>
+
+          <v-card-actions>
+            <v-spacer></v-spacer>
+            <v-btn color="magazul" small @click="cancelaenlace">Regresar</v-btn>
+            <v-btn color="maglima" small @click="abreenlaceexterno">Visitar</v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-dialog>
 </v-app>
 </template>
 
@@ -48,6 +63,8 @@ const electron = require('electron');
 export default {
   data: function () {
     return {
+      dialog: false,
+      enlace: '',
       coloricono: 'white',
       iconobarra: 'fas fa-home',
       tituloapp: '',
@@ -75,10 +92,18 @@ export default {
       });
     },
     webexterna (link) {
-      this.$electron.shell.openExternal(link)
-      //this.$electron.shell.openItem(path.join(__static, link))
-      //this.$electron.shell.showItemInFolder(link)
+      this.enlace = link
+      //this.$electron.shell.openExternal(link)
+      this.dialog=true
 
+    },
+    abreenlaceexterno(){
+      this.$electron.shell.openExternal(this.enlace)
+      this.dialog = false
+    },
+    cancelaenlace(){
+      this.enlace = ''
+      this.dialog = false
     },
   },
   created () {
@@ -128,7 +153,7 @@ export default {
 }
 *, html{
 /*select or not to select text*/
-  /*user-select: none;*/
+  user-select: none;
 }
 
 .container{
@@ -181,4 +206,29 @@ img.imlogo {
   padding: 5px;*/
 
 }
+
+
+
+::-webkit-scrollbar
+{
+	width: 18px;
+}
+
+::-webkit-scrollbar-track {
+      background-color: #8fe2ef;
+} /* the new scrollbar will have a flat appearance with the set background color */
+
+::-webkit-scrollbar-thumb {
+      background-color: rgba(0, 0, 0, 0.2);
+} /* this will style the thumb, ignoring the track */
+
+::-webkit-scrollbar-button {
+      background-color: #168a9c;
+} /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+
+::-webkit-scrollbar-corner {
+      background-color: black;
+}
+
+
 </style>

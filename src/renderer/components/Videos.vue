@@ -13,21 +13,16 @@
 </v-flex>
 -->
         <v-flex xs12 pa-1>
-          <v-card color="">
-
-
-              <span class="pa-1">Seleccione un video</span><v-select class="px-4 ma-0"
-
-                :items="coleccion"
-                v-model="selected"
-                color="primary"
-
-                item-text="titulo"
-                item-value="id"
-                background-color=""
-
-                >
-              </v-select>
+          <v-card class="pa-1">
+            <v-select class="px-4 ma-0"
+              :items="coleccion"
+              v-model="selected"
+              color="primary"
+              item-text="titulo"
+              item-value="id"
+              hide-selected
+              label="Seleccione un video">
+            </v-select>
 
           </v-card>
         </v-flex>
