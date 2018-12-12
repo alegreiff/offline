@@ -46,7 +46,7 @@
           <video
           @ended='dialog=false'
           class="centrovideo"
-          width="600" height="auto" controls autoplay
+          width="80%" height="auto" controls autoplay
           ref="vidtutto"
           controlsList="nodownload nofullscreen">
               <source :src="'static/video/'+tutorialactivo.video" type="video/mp4">

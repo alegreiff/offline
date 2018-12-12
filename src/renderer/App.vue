@@ -19,7 +19,9 @@
   </v-toolbar>
   <v-content>
     <v-container fluid ma-0 pa-0>
+
       <router-view></router-view>
+    
     </v-container>
   </v-content>
   <v-footer inset app height="80" class="px-2 ma-0" color="blue-grey lighten-5">
@@ -229,6 +231,5 @@ img.imlogo {
 ::-webkit-scrollbar-corner {
       background-color: black;
 }
-
 
 </style>

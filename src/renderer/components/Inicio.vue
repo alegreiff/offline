@@ -18,7 +18,7 @@
 
         <p>A través del menú de la izquierda <v-icon>fas fa-bars</v-icon> tendrán acceso a más de 200 videos, audios, libros y material descargable, completamente gratuito. </p>
 
-        <p>Los invitamos a descubrir más contenidos y recursos en <v-btn flat small v-on:click="webexterna('https://www.maguare.gov.co')">www.maguare.gov.co</v-btn> y <v-btn flat small v-on:click="webexterna('https://www.maguared.gov.co')">www.maguared.gov.co,</v-btn>y a unirse a la comunidad a través de las redes sociales.</p>
+        <p>Los invitamos a descubrir más contenidos y recursos en <v-btn flat style="text-transform: none; padding: 0; margin: 0" small v-on:click="webexterna('https://www.maguare.gov.co')">www.maguare.gov.co</v-btn> y <v-btn flat style="text-transform: none; padding: 0; margin: 0" small v-on:click="webexterna('https://www.maguared.gov.co')">www.maguared.gov.co</v-btn>, y a unirse a la comunidad a través de las redes sociales.</p>
       </div>
     </v-flex>
     <v-flex xs6 offset-xs3 class="text-xs-center">
