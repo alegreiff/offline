@@ -80,70 +80,80 @@ const state = {
       titulo: '¿Cómo hacer un tamborín de cartón?',
       describe: 'En este paso a paso pueden crear un tamborín de cartón y compartir un rato significativo con los niños.',
       url: 'tutoriales/1100.pdf',
-      descarga: 'tutorial-tamborin-carton'
+      descarga: 'tutorial-tamborin-carton',
+      video: ''
     },
     { id: 1101,
       autor: 'Ministerio de Cultura - Artista: Carlos Velásquez - Fotógrafo: Sebastián Ocampo.',
       titulo: '¿Cómo hacer un títere de sombras?',
       describe: 'En este tutorial los niños, junto a los adultos, pueden crear un títere de sombras para jugar crear y potenciar sus habilidades expresivas.',
       url: 'tutoriales/1101.pdf',
-      descarga: 'tutorial-titere-sombras'
+      descarga: 'tutorial-titere-sombras',
+      video: ''
     },
     { id: 1102,
       autor: 'Ministerio de Cultura - Artista: Carlos Velásquez - Fotógrafo: Sebastián Ocampo.',
       titulo: '¿Cómo hacer una marioneta de hilos?',
       describe: 'Para crear este títere hay que mover los brazos, juntar piezas y… ¡Jugar! Los niños pueden potenciar su expresión plástica y escénica.',
       url: 'tutoriales/1102.pdf',
-      descarga: 'tutorial-marioneta'
+      descarga: 'tutorial-marioneta',
+      video: '1102.mp4'
     },
     { id: 1103,
       autor: 'Ministerio de Cultura - Artista: Carlos Velásquez - Fotógrafo: Sebastián Ocampo.',
       titulo: '¿Cómo hacer un portalápices personalizado?',
       describe: '¿Qué tal si los niños guardan sus colores en un armadillo DJ? Aquí los niños pueden hacer un portalápices bastante musical y lleno de color.',
       url: 'tutoriales/1103.pdf',
-      descarga: 'tutorial-portalapices'
+      descarga: 'tutorial-portalapices',
+      video: '1103.mp4'
     },
     { id: 1104,
       autor: 'Ministerio de Cultura - Artista: Carlos Velásquez - Fotógrafo: Sebastián Ocampo.',
       titulo: '¿Cómo hacer un teatrino?',
       describe: '¡Que los niños muevan los dedos, la imaginación y que los títeres creen aventuras! En este tutorial pueden construir un teatrino de cartón.',
       url: 'tutoriales/1104.pdf',
-      descarga: 'tutorial-teatrino'
+      descarga: 'tutorial-teatrino',
+      video: '1104.mp4'
     },
     { id: 1105,
       autor: 'Ministerio de Cultura - Artista: Carlos Velásquez - Fotógrafo: Sebastián Ocampo.',
       titulo: '¿Cómo hacer un juego de cubos?',
       describe: 'Por medio de este tutorial los niños pueden manipular la materia y entender las estructuras y cómo éstas se relacionan con sus entornos.',
       url: 'tutoriales/1105.pdf',
-      descarga: 'tutorial-juego-cubos'
+      descarga: 'tutorial-juego-cubos',
+      video: '1105.mp4'
     },
     { id: 1106,
       autor: 'Ministerio de Cultura - Artista: Carlos Velásquez - Fotógrafo: Sebastián Ocampo.',
       titulo: '¿Cómo crear un rompecabezas personalizado?',
       describe: 'Escojan cualquier imagen y conviértanla en un rompecabezas. A través de este tutorial ustedes pueden compartir y jugar con los niños.',
       url: 'tutoriales/1106.pdf',
-      descarga: 'tutorial-rompecabezas'
+      descarga: 'tutorial-rompecabezas',
+      video: '1106.mp4'
     },
     { id: 1107,
       autor: 'Ministerio de Cultura - Artista: Carlos Velásquez - Fotógrafo: Sebastián Ocampo.',
       titulo: '¿Cómo hacer un tablero de fieltro?',
       describe: 'Crear personajes, paisajes, objetos o contar historias son algunas de las actividades que se pueden hacer con este tablero interactivo.',
       url: 'tutoriales/1107.pdf',
-      descarga: 'tutorial-tablero-fieltro'
+      descarga: 'tutorial-tablero-fieltro',
+      video: '1107.mp4'
     },
     { id: 1108,
       autor: 'Ministerio de Cultura - Artista: Carlos Velásquez - Fotógrafo: Sebastián Ocampo.',
       titulo: '¿Cómo convertir una cuchara en una actriz?',
       describe: 'A través de un paso a paso sencillo ustedes, junto a los niños, pueden crear un personaje animado a partir de una cuchara de palo.',
       url: 'tutoriales/1108.pdf',
-      descarga: 'tutorial-cuchara-actriz'
+      descarga: 'tutorial-cuchara-actriz',
+      video: '1108.mp4'
     },
     { id: 1109,
       autor: 'Ministerio de Cultura - Artista: Carlos Velásquez - Fotógrafo: Sebastián Ocampo.',
       titulo: '¿Cómo convertir una media en una guacamaya?',
       describe: 'En este sencillo tutorial les mostramos cómo construir junto a los niños a Maya la Guacamaya, uno de los personajes de Maguaré en La Ceiba.',
       url: 'tutoriales/1109.pdf',
-      descarga: 'tutorial-media-guacamaya'
+      descarga: 'tutorial-media-guacamaya',
+      video: '1109.mp4'
     }
   ],
   /*serie 1200*/

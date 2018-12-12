@@ -27,7 +27,7 @@
 
       <v-list-tile :to="{name: 'vid', params: { id: 'vidCeiba'}}">
       <v-list-tile-content>
-          <v-list-tile-title>Maguaré en La Ceiba</v-list-tile-title>
+          <v-list-tile-title>Karaokes Maguaré en La Ceiba</v-list-tile-title>
         </v-list-tile-content>
       </v-list-tile>
 
@@ -207,6 +207,10 @@
     </v-list-tile>
     </v-list-group>
 
+    <v-list-tile :to="{path: '/sugerencias'}" >
+          <v-list-tile-action><v-icon medium color="light-blue darken-3">fas fa-download</v-icon></v-list-tile-action>
+          <v-list-tile-content><v-list-tile-title>Actividades sugeridas</v-list-tile-title></v-list-tile-content>
+    </v-list-tile>
 
 
 <!-- MAGUARÉ DESCARGABLES -->
@@ -214,6 +218,7 @@
   <v-list-tile-action><v-icon medium color="light-blue darken-3">fas fa-download</v-icon></v-list-tile-action>
   <v-list-tile-content><v-list-tile-title>Descargables</v-list-tile-title></v-list-tile-content>
 </v-list-tile>
+
 
 <!-- MAGUARED-->
 <!-- <v-subheader inset>MaguaRED</v-subheader> -->
@@ -270,10 +275,7 @@
       </v-list-tile-content>
     </v-list-tile>
     </v-list-group>
-<v-list-tile :to="{path: '/sugerencias'}" >
-      <v-list-tile-action><v-icon medium color="light-blue darken-3">fas fa-download</v-icon></v-list-tile-action>
-      <v-list-tile-content><v-list-tile-title>Sugerencias de uso</v-list-tile-title></v-list-tile-content>
-</v-list-tile>
+
 <!--
 
 <v-list-tile :to="{path: '/sugerencias'}" >

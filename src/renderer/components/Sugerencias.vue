@@ -13,7 +13,7 @@
               <v-btn fab small dark color="magazul"
               @click="pdfdescarga('static/'+app.url, app.descarga+'.pdf')"
               slot="activator">
-              <v-icon medium dark>arrow_drop_down_circle</v-icon>
+              <v-icon medium dark>fas fa-download</v-icon>
             </v-btn><span>Descargar el libro</span></v-tooltip>
             <v-tooltip top color="magrojo" class="pa-1">
               <v-btn fab small dark color="magazul" @click="muestraPDF('/'+app.url)" slot="activator">

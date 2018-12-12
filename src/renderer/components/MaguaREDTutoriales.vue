@@ -7,6 +7,7 @@
           <v-img :src="'static/miniaturas/'+app.id+'.jpg'" class="card-imagen"></v-img>
           <v-card-title><h2 class="card-titulo">{{ app.id }} :: {{ app.titulo }}</h2></v-card-title>
           <v-card-text class="card-texto">{{ app.describe }}</v-card-text>
+          <p v-if="app.video" @click="muestravideo(app)">SISAS</p>
         </div>
         <v-card-actions class="justify-center accionescard">
           <v-tooltip top color="magrojo" class="pa-1">
@@ -27,7 +28,28 @@
       </v-card>
 
   </v-flex>
+  <v-dialog v-model="dialog"max-width="450">
+    <v-card>
+      <v-card-title><strong>Enlace externo</strong> </v-card-title>
 
+      <v-card-text>
+        {{ videotutorial }}
+        <video
+
+        width="100%" height="auto" controls autoplay
+        controlsList="nodownload nofullscreen">
+            <source :src="videotutorial" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+      </v-card-text>
+
+      <v-card-actions>
+        <v-spacer></v-spacer>
+        <!--<v-btn color="magazul" small @click="cancelaenlace">Regresar</v-btn>
+        <v-btn color="maglima" small @click="abreenlaceexterno">Visitar</v-btn>-->
+      </v-card-actions>
+    </v-card>
+  </v-dialog>
   </v-layout>
 
 </div>
@@ -48,7 +70,9 @@ export default {
       describeseccion: 'Sugerencias de uso',
       tutorialespdf: [],
       ventana: null,
-      datosgenerales: []
+      datosgenerales: [],
+      dialog: false,
+      videotutorial: ''
     }
   },
   created() {
@@ -82,6 +106,10 @@ export default {
           this.ventana = null
         })
         PDFWindow.addSupport(this.ventana)
+    },
+    muestravideo(video){
+      this.dialog = true
+      this.videotutorial = 'static/video/'+video.video
     },
     muestraPDF(link){
       //console.log(this.ventana.id + " <=========")
