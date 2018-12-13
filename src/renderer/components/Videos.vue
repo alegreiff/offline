@@ -13,6 +13,7 @@
 </v-flex>
 -->
         <v-flex xs12 pa-1>
+          
           <v-card class="pa-1">
             <v-select class="px-4 ma-0"
               :items="coleccion"

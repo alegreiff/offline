@@ -15,13 +15,13 @@
 
     </v-toolbar-title>
     <v-spacer></v-spacer>
-          <v-icon large class="bigcola" :color="coloricono">{{ iconobarra }}</v-icon>
+          <v-icon large class="bigcola" :color="coloricono" @click="infoffline=true">{{ iconobarra }}</v-icon>
   </v-toolbar>
   <v-content>
     <v-container fluid ma-0 pa-0>
 
       <router-view></router-view>
-    
+
     </v-container>
   </v-content>
   <v-footer inset app height="80" class="px-2 ma-0" color="blue-grey lighten-5">
@@ -54,10 +54,25 @@
           </v-card-actions>
         </v-card>
       </v-dialog>
+      <v-dialog v-model="infoffline"max-width="450">
+        <v-card>
+          <v-card-title><strong>Enlace externo</strong> </v-card-title>
+
+          <v-card-text>
+            <SystemInformation />
+          </v-card-text>
+
+          <v-card-actions>
+            <v-spacer></v-spacer>
+
+          </v-card-actions>
+        </v-card>
+      </v-dialog>
 </v-app>
 </template>
 
 <script>
+import SystemInformation from './components/LandingPage/SystemInformation'
 import Menu from './components/Menu/Menu'
 import Vue from 'vue';
 import EventBus from './components/eventos';
@@ -65,6 +80,7 @@ const electron = require('electron');
 export default {
   data: function () {
     return {
+      infoffline: false,
       dialog: false,
       enlace: '',
       coloricono: 'white',
@@ -84,7 +100,7 @@ export default {
     }
   },
 
-  components: { Menu },
+  components: { Menu, SystemInformation },
   methods: {
     cambio() {
       let self=this;

@@ -81,7 +81,7 @@ const state = {
       describe: 'En este paso a paso pueden crear un tamborín de cartón y compartir un rato significativo con los niños.',
       url: 'tutoriales/1100.pdf',
       descarga: 'tutorial-tamborin-carton',
-      video: ''
+      video: '1100.mp4'
     },
     { id: 1101,
       autor: 'Ministerio de Cultura - Artista: Carlos Velásquez - Fotógrafo: Sebastián Ocampo.',
@@ -89,7 +89,7 @@ const state = {
       describe: 'En este tutorial los niños, junto a los adultos, pueden crear un títere de sombras para jugar crear y potenciar sus habilidades expresivas.',
       url: 'tutoriales/1101.pdf',
       descarga: 'tutorial-titere-sombras',
-      video: ''
+      video: '1101.mp4'
     },
     { id: 1102,
       autor: 'Ministerio de Cultura - Artista: Carlos Velásquez - Fotógrafo: Sebastián Ocampo.',

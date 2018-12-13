@@ -81,12 +81,14 @@
               Off Line
             </v-tab>
             <v-tab-item>
-              <p class="cred-entidad">Ministerio de Cultura</p>
+
               <p class="cred-persona">Edna Katerine Moreno Velandia</p>
               <p class="cred-cargo">Selección y curaduría de contenidos - Maguaré</p>
-              <p class="cred-persona">Juan Sebastián Salazar</p>
+              <p class="cred-persona">Juan Sebastián Salazar Piedrahita</p>
               <p class="cred-cargo">Selección y curaduría de contenidos - MaguaRED</p>
-              <p class="cred-persona">Jaime de <span @click="sumajaime()" style="cursor: crosshair;">Greiff</span><span style="font-size: 0.4em;color: red"> {{ cuenta }}</span>  </p>
+              <p class="cred-persona">Mario Cubillos Peña</p>
+              <p class="cred-cargo">Producción general</p>
+              <p class="cred-persona">Jaime Augusto de <span @click="sumajaime()" style="cursor: crosshair;">Greiff Cabezas</span><span style="font-size: 0.4em;color: red"> {{ cuenta }}</span>  </p>
               <p class="cred-cargo">Diseño, desarrollo y programación</p>
               <h3>Revisar, complementar, aumentar</h3>
             </v-tab-item>
