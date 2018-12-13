@@ -73,12 +73,13 @@ export default {
     }
   },
   created() {
-    this.coleccion = this.videos
+    this.coleccionactiva(this.$route.params.id);
+    /*this.coleccion = this.videos
     this.coleccion = _.sortBy(this.coleccion, ['titulo']);
     this.selected = this.coleccion[0].id;
-    this.datosgenerales = this.describe.filter(dato => dato.id == 700)
-    EventBus.$emit('TITULO', this.datosgenerales[0].titulobreve);
-    EventBus.$emit('SECCION', this.datosgenerales[0].descripcion);
+    this.datosgenerales = this.describe.filter(dato => dato.id == 700)*/
+    /*EventBus.$emit('TITULO', this.datosgenerales[0].titulobreve);
+    EventBus.$emit('SECCION', this.datosgenerales[0].descripcion);*/
     EventBus.$emit('ICONOBARRA', 'fas fa-play-circle', 'magnaranja');
 
     if(this.selected !='inicio'){
@@ -87,7 +88,10 @@ export default {
     }
     },
     watch: {
+      '$route.params.id': function (id) {
+        this.coleccionactiva(id)
 
+      },
       selected: function(value){
         if(value !='inicio'){
           var t = this.coleccion.find(x => x.id === value)
@@ -99,6 +103,7 @@ export default {
   computed: {
     ...mapState('Maguared', ['videos']),
     ...mapState('Describe', ['describe']),
+    ...mapGetters('Maguared', ['videosQuePiensan', 'videosPrincipios', 'videosCuerposonoro']),
 
   },
   methods: {
@@ -109,6 +114,30 @@ export default {
       }else{
         this.selected = this.coleccion[nuevoelemento].id;
       }
+
+    },
+    coleccionactiva(id){
+      /*if(this.$refs.playame1){
+        this.quesuena= '';
+        this.$refs.playame1.pause()
+      }*/
+      if(id =='videosQuePiensan'){
+        this.datosgenerales = this.describe.filter(dato => dato.id == 700)
+        this.coleccion = this.videosQuePiensan
+      }else if (id =='videosPrincipios') {
+        this.datosgenerales = this.describe.filter(dato => dato.id == 700)
+        this.coleccion = this.videosPrincipios
+      }else if (id =='videosCuerposonoro') {
+        this.datosgenerales = this.describe.filter(dato => dato.id == 700)
+        this.coleccion = this.videosCuerposonoro
+      }else{
+        this.coleccion = this.videos
+        this.datosgenerales = this.describe.filter(dato => dato.id == 700)
+      }
+      EventBus.$emit('TITULO', this.datosgenerales[0].titulobreve);
+      EventBus.$emit('SECCION', this.datosgenerales[0].descripcion);
+      this.coleccion = _.sortBy(this.coleccion, ['titulo']);
+      this.selected = this.coleccion[0].id;
 
     },
     playSound (cancion) {

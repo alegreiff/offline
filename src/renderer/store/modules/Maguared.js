@@ -3,74 +3,194 @@ const state = {
   videos: [
     { id: 1000,
       autor: 'Ministerio de Cultura - Maguaré - MaguaRED',
-      coleccion: 'COLECCION',
+      coleccion: '¿Qué piensan los expertos?',
       titulo: 'Fabiola Uribe y la arquitectura en la infancia.',
       describe: 'Diana Rubiano es la Coordinadora Pedagógica de aeioTU, una fundación que trabaja en el desarrollo integral de los niños de 0 a 5 años. En este video explica cómo ha cambiado el papel de la escuela en la primera infancia.',
       url: '100-ribe.mp4'
     },
     { id: 1001,
       autor: 'Ministerio de Cultura - Maguaré - MaguaRED',
-      coleccion: 'COLECCION',
+      coleccion: '¿Qué piensan los expertos?',
       titulo: 'Antonia Agreda y el desarrollo integral de los niños indígenas.',
       describe: 'Antonia Agreda es una indígena Inga que lleva décadas trabajando por los derechos de los niños indígenas del país. Ella es una de las impulsoras de la modalidad propia intercultural en primera infancia.',
       url: '1001-agreda.mp4'
     },
     { id: 1002,
       autor: 'Ministerio de Cultura - Maguaré - MaguaRED',
-      coleccion: 'COLECCION',
+      coleccion: '¿Qué piensan los expertos?',
       titulo: 'Carmenza Botero y el sonido en los niños.',
       describe: 'Carmenza Botero es una pedagoga que trabaja con el sonido y la música. Para ella lo más serio que hace un niño en primera infancia es escuchar.',
       url: '1002-botero.mp4'
     },
     { id: 1003,
       autor: 'Ministerio de Cultura - Maguaré - MaguaRED',
-      coleccion: 'COLECCION',
+      coleccion: '¿Qué piensan los expertos?',
       titulo: 'Diana Rubiano y la educación inicial en primera infancia.',
       describe: 'Diana Rubiano es la Coordinadora Pedagógica de aeioTU, una fundación que trabaja en el desarrollo integral de los niños de 0 a 5 años. En este video explica cómo ha cambiado el papel de la escuela en la primera infancia.',
       url: '1003-rubiano.mp4'
     },
     { id: 1004,
       autor: 'Ministerio de Cultura - Maguaré - MaguaRED',
-      coleccion: 'COLECCION',
+      coleccion: '¿Qué piensan los expertos?',
       titulo: 'Juan Carlos Velásquez y los espacios adecuados para los niños.',
       describe: 'Juan Carlos Velásquez es un artista que vincula el arte, el diseño y la pedagogía para crear instalaciones, mobiliarios y ambientes que propician las experiencias significativas en los niños.',
       url: '1004-velasquez.mp4'
     },
     { id: 1005,
       autor: 'Ministerio de Cultura - Maguaré - MaguaRED',
-      coleccion: 'COLECCION',
+      coleccion: '¿Qué piensan los expertos?',
       titulo: 'Irene Vasco y la lectura como un juego.',
       describe: 'Los juegos y la animación son parte esencial del ejercicio lector en la primera infancia. Irene Vasco, promotora de lectura y autora infantil, explica por qué.',
       url: '1005-vasco.mp4'
     },
     { id: 1006,
       autor: 'Ministerio de Cultura - Maguaré - MaguaRED',
-      coleccion: 'COLECCION',
+      coleccion: '¿Qué piensan los expertos?',
       titulo: 'Oscar Brenifier, el filósofo de los niños.',
       describe: 'Oscar Brenifier escribe libros que no son libros porque ninguno tiene respuestas, solo preguntas. Para este argelino la lectura con los niños debe ser un diálogo: más inquietudes, menos conclusiones.',
       url: '1006-breniffier.mp4'
     },
     { id: 1007,
       autor: 'Ministerio de Cultura - Maguaré - MaguaRED',
-      coleccion: 'COLECCION',
+      coleccion: '¿Qué piensan los expertos?',
       titulo: 'Luis Pescetti y la vitalidad en los niños.',
       describe: 'Luis Pescetti es músico y escritor de literatura infantil. En este video habla sobre la lectura y el humor en la infancia: ¡una combinación súper poderosa!',
       url: '1007-pescetti.mp4'
     },
     { id: 1008,
       autor: 'Ministerio de Cultura - Maguaré - MaguaRED',
-      coleccion: 'COLECCION',
+      coleccion: '¿Qué piensan los expertos?',
       titulo: 'Liniers para niños.',
       describe: 'Liniers es dibujante y creador de personajes como Olga, Martincito, Enriqueta, Fellini, y, por supuesto, sus pingüinos. En este video él habla sobre la importancia de la lectura en la primera infancia.',
       url: '1008-liniers.mp4'
     },
     { id: 1009,
       autor: 'Ministerio de Cultura - Maguaré - MaguaRED',
-      coleccion: 'COLECCION',
+      coleccion: '¿Qué piensan los expertos?',
       titulo: '¿Cuándo nos hacemos lectores? La educadora Yolanda Reyes responde.',
       describe: 'La escritora y educadora Yolanda Reyes habla sobre la lectura en la primera infancia: "El deseo de leer de los bebés está amarrado al desciframiento inicial del mundo".',
       url: '1009-reyes.mp4'
+    },
+    { id: 1010,
+      autor: 'Ministerio de Cultura - Maguaré - MaguaRED',
+      coleccion: 'Principios',
+      titulo: 'Derechos culturales e identidad',
+      describe: 'Maguaré y MaguaRED promueven y garantizan los derechos culturales de los niños –sus diversidades– a través de contenidos infantiles con referentes culturales propios.',
+      url: '1010-identidad.mp4'
+    },
+    { id: 1011,
+      autor: 'Ministerio de Cultura - Maguaré - MaguaRED',
+      coleccion: 'Principios',
+      titulo: 'Diversidad e inclusión',
+      describe: 'Maguaré y MaguaRED promueven la diversidad y la inclusión a través de contenidos infantiles que dan cuenta de la riqueza cultural del país y de las maneras de ser de los niños y de los contextos en los que están inmersos.',
+      url: '1011-diversidad.mp4'
+    },
+    { id: 1012,
+      autor: 'Ministerio de Cultura - Maguaré - MaguaRED',
+      coleccion: 'Principios',
+      titulo: 'Acceso, acompañamiento y vínculo afectivo',
+      describe: 'Maguaré y MaguaRED aprovechan lo mejor de los recursos digitales para promover los lenguajes expresivos con los niños y así afianzar y potenciar los vínculos afectivos entre ellos y sus cuidadores.',
+      url: '1012-acceso.mp4'
+    },
+    { id: 1013,
+      autor: 'Ministerio de Cultura - Maguaré - MaguaRED',
+      coleccion: 'Principios',
+      titulo: 'Integralidad',
+      describe: 'Maguaré y MaguaRED promueven, a través de sus contenidos, la integralidad en relación con las expresiones artísticas en primera infancia.',
+      url: '1013-integralidad.mp4'
+    },
+    { id: 1014,
+      autor: 'Ministerio de Cultura - Maguaré - MaguaRED',
+      coleccion: 'Principios',
+      titulo: 'Participación e interactividad',
+      describe: 'Maguaré y MaguaRED promueven la participación e interactividad en la primera infancia a partir de sus contenidos digitales y actividades que potencian las expresiones artísticas y la interacción entre adultos y niños.',
+      url: '1014-participacion.mp4'
+    },
+    { id: 1020,
+      autor: 'Ministerio de Cultura - Maguaré - MaguaRED',
+      coleccion: 'Cuerpo Sonoro',
+      titulo: 'Cuerpo Sonoro: expresiones artísticas y primera infancia',
+      describe: 'Cuerpo Sonoro es una propuesta vivencial que transforma las realidades y las percepciones sobre el rol de los agentes formadores en la vida de los niños y niñas de primera infancia.',
+      url: '1020-cs1.mp4'
+    },
+    { id: 1021,
+      autor: 'Ministerio de Cultura - Maguaré - MaguaRED',
+      coleccion: 'Cuerpo Sonoro',
+      titulo: 'El monstruo de colores',
+      describe: 'Las emociones se pueden expresar a través de monstruos de colores! Así lo hicieron los niños de Rionegro, Antioquia, quienes exploraron sus entornos y representaron sus sentimientos a través del cuerpo.',
+      url: '1021-cs2.mp4'
+    },
+    { id: 1022,
+      autor: 'Ministerio de Cultura - Maguaré - MaguaRED',
+      coleccion: 'Cuerpo Sonoro',
+      titulo: 'Laboratorio de sonido',
+      describe: 'Adriana María Duque participó en el diplomado Cuerpo Sonoro y gracias a su experiencia creó el Laboratorio de Sonido en la Sala Arrullos del Municipio de Rionegro, en Antioquia.',
+      url: '1022-cs3.mp4'
+    },
+    { id: 1023,
+      autor: 'Ministerio de Cultura - Maguaré - MaguaRED',
+      coleccion: 'Cuerpo Sonoro',
+      titulo: 'Untar para descubrir el arte',
+      describe: 'La expresión de los niños está representada en la espontaneidad de un saludo, un dibujo con plastilina y escarcha o en un cuerpo lleno de pintura de colores.',
+      url: '1023-cs4.mp4'
+    },
+    { id: 1024,
+      autor: 'Ministerio de Cultura - Maguaré - MaguaRED',
+      coleccion: 'Cuerpo Sonoro',
+      titulo: 'Entre plumas y cantos',
+      describe: 'El cuerpo de los niños canta como los pájaros. Así lo demuestra la pedagoga caleña Marcela Rojas, quien hizo parte del Diplomado de Cuerpo Sonoro.',
+      url: '1024-cs5.mp4'
+    },
+    { id: 1025,
+      autor: 'Ministerio de Cultura - Maguaré - MaguaRED',
+      coleccion: 'Cuerpo Sonoro',
+      titulo: 'Al ritmo de los colores',
+      describe: 'El mundo es un experimento para los niños: allí reconocen, cantan, leen, comen gelatina y ¡mueven el cuerpo! Esta experiencia de Cuerpo Sonoro permite sentir el entorno con todas sus texturas.',
+      url: '1025-cs6.mp4'
+    },
+    { id: 1026,
+      autor: 'Ministerio de Cultura - Maguaré - MaguaRED',
+      coleccion: 'Cuerpo Sonoro',
+      titulo: 'Cantarle y leerle al Pacífico',
+      describe: 'Lo primero que hacen los niños es bailar bunde del Pacífico; después cada uno crea un instrumento musical y ¡se prendió el juego! Esta experiencia de Cuerpo Sonoro está a cargo de Nancy Arias.',
+      url: '1026-cs7.mp4'
+    },
+    { id: 1027,
+      autor: 'Ministerio de Cultura - Maguaré - MaguaRED',
+      coleccion: 'Cuerpo Sonoro',
+      titulo: 'Los movimientos de los niños se escuchan con la mirada',
+      describe: 'En Cuerpo Sonoro los movimientos hablan de la vida misma y sus transformaciones. Los movimientos de los niños y niñas de primera infancia son elocuentes mensajes que podemos escuchar con la mirada.',
+      url: '1027-cs8.mp4'
+    },
+    { id: 1028,
+      autor: 'Ministerio de Cultura - Maguaré - MaguaRED',
+      coleccion: 'Cuerpo Sonoro',
+      titulo: 'Ser un cuerpo sonoro',
+      describe: 'Todos somos cuerpo sonoro, todo el tiempo vivimos con nuestras expresiones artísticas. La propuesta es descubrir nuestras propias sonoridades y huellas y divertirse con ellas.',
+      url: '1028-cs9.mp4'
+    },
+    { id: 1029,
+      autor: 'Ministerio de Cultura - Maguaré - MaguaRED',
+      coleccion: 'Cuerpo Sonoro',
+      titulo: 'Explorar la sensibilidad',
+      describe: 'Cuerpo Sonoro nos invita a estimular y recuperar la capacidad de asombro con las cosas bellas y sencillas de la vida.',
+      url: '1029-cs10.mp4'
+    },
+    { id: 1030,
+      autor: 'Ministerio de Cultura - Maguaré - MaguaRED',
+      coleccion: 'Cuerpo Sonoro',
+      titulo: 'Los sentidos permiten viajar a mundos posibles',
+      describe: 'En Cuerpo Sonoro los sentidos permiten viajar a mundos posibles y multidimensionales: texturas, olores, sabores, sonidos y movimientos hacen parte de un proceso formativo que, una vez inicia, permanece.',
+      url: '1030-cs11.mp4'
+    },
+    { id: 1031,
+      autor: 'Ministerio de Cultura - Maguaré - MaguaRED',
+      coleccion: 'Cuerpo Sonoro',
+      titulo: 'Ser conscientes de cómo piensan, participan y se expresan los niños',
+      describe: 'Ser conscientes de las maneras como los niños piensan, conocen, actúan, participan y se expresan es una forma efectiva de acercarse a ellos de maneras distintas.',
+      url: '1031-cs12.mp4'
     }
+
 
   ],
   /*Serie 1100*/
@@ -286,8 +406,21 @@ const getters = {
     librosDerechosOrientaciones: state => {
       return state.otrosdocumentos.filter(libro => libro.coleccion == 'Derechos y Orientaciones Culturales para la Primera Infancia')
     },
+    /*GETTERS VIDEOS MAGUARED*/
+    videosQuePiensan: state => {
+      return state.videos.filter(video => video.coleccion == '¿Qué piensan los expertos?')
+    },
+    videosPrincipios: state => {
+      return state.videos.filter(video => video.coleccion == 'Principios')
+    },
+    videosCuerposonoro: state => {
+      return state.videos.filter(video => video.coleccion == 'Cuerpo Sonoro')
+    },
 
 }
+
+//
+
 export default {
   namespaced: true,
   state,

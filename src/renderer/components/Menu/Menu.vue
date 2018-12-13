@@ -225,10 +225,56 @@
 <v-divider></v-divider>
 <img id="logo" src="static/maguared.png" alt="electron-vue" class="logominim">
 
+
+<!--GRUPO VIDEOS MAGUARED -->
+
+<!-- MAGUARÉ GRUPO VIDEOS -->
+    <v-list-group no-action>
+    <v-list-tile slot="activator">
+      <v-list-tile-action>
+        <v-icon medium color="magnaranja">fas fa-play-circle</v-icon>
+      </v-list-tile-action>
+      <v-list-tile-content>
+        <v-list-tile-title class="menu_videos">VIDEOS</v-list-tile-title>
+      </v-list-tile-content>
+    </v-list-tile>
+
+    <v-list-tile :to="{name: 'magvid', params: { id: 'videosQuePiensan'}}">
+    <v-list-tile-content>
+        <v-list-tile-title>¿Qué piensan los expertos?</v-list-tile-title>
+      </v-list-tile-content>
+    </v-list-tile>
+
+    <v-list-tile :to="{name: 'magvid', params: { id: 'videosPrincipios'}}">
+    <v-list-tile-content>
+        <v-list-tile-title>Principios EDCPI</v-list-tile-title>
+      </v-list-tile-content>
+    </v-list-tile>
+
+    <v-list-tile :to="{name: 'magvid', params: { id: 'videosCuerposonoro'}}">
+    <v-list-tile-content>
+        <v-list-tile-title>Cuerpo Sonoro</v-list-tile-title>
+      </v-list-tile-content>
+    </v-list-tile>
+
+    <v-list-tile :to="{name: 'magvid', params: { id: 'all'}}" exact>
+    <v-list-tile-content>
+        <v-list-tile-title>Todos los videos</v-list-tile-title>
+      </v-list-tile-content>
+    </v-list-tile>
+
+    </v-list-group>
+
+<!--GRUPO VIDEOS MAGUARED -->
+
+
+<!-- ViejoaccesoVideosMaguaRED
 <v-list-tile :to="{path: '/videosmaguared'}" >
       <v-list-tile-action><v-icon medium color="magnaranja">fas fa-play-circle</v-icon></v-list-tile-action>
       <v-list-tile-content><v-list-tile-title>Videos</v-list-tile-title></v-list-tile-content>
 </v-list-tile>
+-->
+
 <!-- MAGUARÉ GRUPO INTERACTIVOS -->
     <v-list-group no-action>
     <v-list-tile slot="activator" ripple>

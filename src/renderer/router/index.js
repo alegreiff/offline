@@ -26,7 +26,7 @@ export default new Router({
     },
     { path: '/acercade', component: AboutUs },
     { path: '/sugerencias', component: Sugerencias },
-    { path: '/videosmaguared', component: MaguaREDVideos },
+    { path: '/videosmaguared/:id', component: MaguaREDVideos, name: 'magvid' },
     { path: '/tutorialesmaguared', component: MaguaREDTutoriales },
     { path: '/descargablesmaguare', component: DescargablesMaguare },
     { path: '/politicas', component: Politicas },
