@@ -1,8 +1,8 @@
 {
-  "name": "maguare_v0.84",
+  "name": "maguare",
   "version": "0.8.4",
   "author": "Jaime de Greiff <alegreiff@gmail.com>",
-  "description": "Maguaré en Offline",
+  "description": "Maguaré Offline",
   "license": null,
   "main": "./dist/electron/main.js",
   "scripts": {
@@ -19,7 +19,7 @@
     "postinstall": ""
   },
   "build": {
-    "productName": "maguare",
+    "productName": "Maguare",
     "appId": "com.alegreiff.maguare",
     "directories": {
       "output": "build"
