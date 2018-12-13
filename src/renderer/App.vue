@@ -15,7 +15,7 @@
 
     </v-toolbar-title>
     <v-spacer></v-spacer>
-          Versión 0.8 &nbsp;<v-icon large class="bigcola" :color="coloricono" @click="infoffline=true">{{ iconobarra }}</v-icon>
+          Versión 0.84 &nbsp;<v-icon large class="bigcola" :color="coloricono" @click="infoffline=true">{{ iconobarra }}</v-icon>
   </v-toolbar>
   <v-content>
     <v-container fluid ma-0 pa-0>
