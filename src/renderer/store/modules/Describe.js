@@ -52,6 +52,38 @@ const state = {
       titulobreve: 'Videos MaguaRED',
       descripcion: 'Varios autores hablan sobre la primera infancia, las expresiones artísticas y la diversidad'
     },
+    {
+      id: 701,
+      clase: 'maguared',
+      seccion: 'Videos',
+      subseccion: 'Videos',
+      titulobreve: 'Videos MaguaRED - Principios',
+      descripcion: 'Cinco principios de la Estrategia Digital en Cultura y primera infancia del Ministerio de Cultura'
+    },
+    {
+      id: 702,
+      clase: 'maguared',
+      seccion: 'Videos',
+      subseccion: 'Videos',
+      titulobreve: 'Videos MaguaRED - Cuerpo Sonoro',
+      descripcion: 'Estrategia pedagógica de Cuerpo Sonoro, diplomado del Ministerio de Cultura, y algunas experiencias en primera infancia'
+    },
+    {
+      id: 703,
+      clase: 'maguared',
+      seccion: 'Videos',
+      subseccion: 'Videos',
+      titulobreve: 'Videos MaguaRED - ¿Qué recomiendan los expertos?',
+      descripcion: 'Recomendaciones para potenciar el desarrollo integral de los niños'
+    },
+    {
+      id: 704,
+      clase: 'maguared',
+      seccion: 'Videos',
+      subseccion: 'Videos',
+      titulobreve: 'Videos MaguaRED - ¿Qué piensan los expertos?',
+      descripcion: 'Sobre la primera infancia, sus trabajos y sobre la importancia de pensar en los derechos culturales de los niños'
+    },
     /* Descargables Serie 400 */
     {
       id: 400,

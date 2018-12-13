@@ -189,6 +189,90 @@ const state = {
       titulo: 'Ser conscientes de cómo piensan, participan y se expresan los niños',
       describe: 'Ser conscientes de las maneras como los niños piensan, conocen, actúan, participan y se expresan es una forma efectiva de acercarse a ellos de maneras distintas.',
       url: '1031-cs12.mp4'
+    },
+    { id: 1300,
+      autor: 'Ministerio de Cultura - Maguaré - MaguaRED',
+      coleccion: '¿Qué recomiendan los expertos?',
+      titulo: '¿Qué recomienda Irene Vasco?',
+      describe: 'La autora y promotora de lectura Irene Vasco recomienda mantener "la palabra viva" para transmitirla a los niños.',
+      url: '1301-irenevasco.mp4'
+    },
+    { id: 1301,
+      autor: 'Ministerio de Cultura - Maguaré - MaguaRED',
+      coleccion: '¿Qué recomiendan los expertos?',
+      titulo: '¿Qué recomienda León David Cobo?',
+      describe: 'El artista sonoro León David Cobo recomienda pensar y sentir "la escucha" para que los niños vivan y entiendan otros universos desde la diversidad.',
+      url: '1301-leondavidcobo.mp4'
+    },
+    { id: 1302,
+      autor: 'Ministerio de Cultura - Maguaré - MaguaRED',
+      coleccion: '¿Qué recomiendan los expertos?',
+      titulo: '¿Qué recomienda Jorge Raedo?',
+      describe: 'El artista y profesor de arte Jorge Raedo comparte algunas claves para crear espacios adecuados para la primera infancia.',
+      url: '1302-jorgeraedo.mp4'
+    },
+    { id: 1303,
+      autor: 'Ministerio de Cultura - Maguaré - MaguaRED',
+      coleccion: '¿Qué recomiendan los expertos?',
+      titulo: '¿Qué recomienda Antonia Agreda?',
+      describe: 'La profesora intercultural Antonia Agreda habla de la importancia de los adultos mayores en el desarrollo integral de los niños de primera infancia.',
+      url: '1303-antoniaagreda.mp4'
+    },
+    { id: 1304,
+      autor: 'Ministerio de Cultura - Maguaré - MaguaRED',
+      coleccion: '¿Qué recomiendan los expertos?',
+      titulo: '¿Qué recomienda Carmenza Botero?',
+      describe: 'La pedagoga musical Carmenza Botero insta a los adultos a que dejen que los niños sean curiosos con el sonido en todos sus niveles.',
+      url: '1304-carmenzabotero.mp4'
+    },
+    { id: 1305,
+      autor: 'Ministerio de Cultura - Maguaré - MaguaRED',
+      coleccion: '¿Qué recomiendan los expertos?',
+      titulo: '¿Qué recomienda Fabiola Uribe?',
+      describe: 'La arquitecta Fabiola Uribe insta a los adultos a que piensen la ciudad como un juguete gigante y para que la transmitan desde la arquitectura a los niños como una posibilidad para crear, explorar y participar.',
+      url: '1305-fabiolauribe.mp4'
+    },
+    { id: 1306,
+      autor: 'Ministerio de Cultura - Maguaré - MaguaRED',
+      coleccion: '¿Qué recomiendan los expertos?',
+      titulo: '¿Qué recomienda Juan Carlos Velásquez?',
+      describe: 'El artista Juan Carlos Velásquez recomienda volver a ser niños para posibilitar mejores espacios para los niños.',
+      url: '1306-juancarlosvelasquez.mp4'
+    },
+    { id: 1307,
+      autor: 'Ministerio de Cultura - Maguaré - MaguaRED',
+      coleccion: '¿Qué recomiendan los expertos?',
+      titulo: '¿Qué recomienda Diana Rubiano?',
+      describe: 'La pedagoga Diana Rubiano recomienda creer en los niños y en sus capacidades para crear, reconocer y participar.',
+      url: '1307-dianarubiano.mp4'
+    },
+    { id: 1308,
+      autor: 'Ministerio de Cultura - Maguaré - MaguaRED',
+      coleccion: '¿Qué recomiendan los expertos?',
+      titulo: '¿Qué recomienda Daniel Feldman?',
+      describe: 'El arquitecto Daniel Feldman recomienda pensar los espacios adecuados para los niños desde la comunidad y no solo desde los educadores.',
+      url: '1308-danielfeldman.mp4'
+    },
+    { id: 1309,
+      autor: 'Ministerio de Cultura - Maguaré - MaguaRED',
+      coleccion: '¿Qué recomiendan los expertos?',
+      titulo: '¿Qué recomienda Maritza Sánchez?',
+      describe: 'La creadora de contenidos infantiles audiovisuales, Maritza Sánchez, recomienda el acompañamiento de los adultos mientras los niños ven contenidos infantiles.',
+      url: '1309-maritzasanchez.mp4'
+    },
+    { id: 1310,
+      autor: 'Ministerio de Cultura - Maguaré - MaguaRED',
+      coleccion: '¿Qué recomiendan los expertos?',
+      titulo: '¿Qué recomienda Carlos Benavides?',
+      describe: 'El arquitecto Carlos Benavides insta a pensar en la belleza de los espacios para los niños como un derecho vital en sus desarrollos.',
+      url: '1310-carlosbenavides.mp4'
+    },
+    { id: 1311,
+      autor: 'Ministerio de Cultura - Maguaré - MaguaRED',
+      coleccion: '¿Qué recomiendan los expertos?',
+      titulo: '¿Qué recomienda Amalia Satizabal?',
+      describe: 'La artista Amalia Satizabal recomienda que los niños tengan acceso a los libros en todos los lugares, en todas sus formas y en todas las situaciones.',
+      url: '1311-amaliasatizabal.mp4'
     }
 
 
@@ -415,6 +499,9 @@ const getters = {
     },
     videosCuerposonoro: state => {
       return state.videos.filter(video => video.coleccion == 'Cuerpo Sonoro')
+    },
+    videosQueRecomiendan: state => {
+      return state.videos.filter(video => video.coleccion == '¿Qué recomiendan los expertos?')
     },
 
 }

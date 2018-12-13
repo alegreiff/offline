@@ -239,12 +239,6 @@
       </v-list-tile-content>
     </v-list-tile>
 
-    <v-list-tile :to="{name: 'magvid', params: { id: 'videosQuePiensan'}}">
-    <v-list-tile-content>
-        <v-list-tile-title>¿Qué piensan los expertos?</v-list-tile-title>
-      </v-list-tile-content>
-    </v-list-tile>
-
     <v-list-tile :to="{name: 'magvid', params: { id: 'videosPrincipios'}}">
     <v-list-tile-content>
         <v-list-tile-title>Principios EDCPI</v-list-tile-title>
@@ -256,6 +250,19 @@
         <v-list-tile-title>Cuerpo Sonoro</v-list-tile-title>
       </v-list-tile-content>
     </v-list-tile>
+
+    <v-list-tile :to="{name: 'magvid', params: { id: 'videosQuePiensan'}}">
+    <v-list-tile-content>
+        <v-list-tile-title>¿Qué piensan los expertos?</v-list-tile-title>
+      </v-list-tile-content>
+    </v-list-tile>
+
+    <v-list-tile :to="{name: 'magvid', params: { id: 'videosQueRecomiendan'}}">
+    <v-list-tile-content>
+        <v-list-tile-title>¿Qué recomiendan los expertos?</v-list-tile-title>
+      </v-list-tile-content>
+    </v-list-tile>
+
 
     <v-list-tile :to="{name: 'magvid', params: { id: 'all'}}" exact>
     <v-list-tile-content>

@@ -103,7 +103,7 @@ export default {
   computed: {
     ...mapState('Maguared', ['videos']),
     ...mapState('Describe', ['describe']),
-    ...mapGetters('Maguared', ['videosQuePiensan', 'videosPrincipios', 'videosCuerposonoro']),
+    ...mapGetters('Maguared', ['videosQuePiensan', 'videosPrincipios', 'videosCuerposonoro', 'videosQueRecomiendan']),
 
   },
   methods: {
@@ -122,14 +122,17 @@ export default {
         this.$refs.playame1.pause()
       }*/
       if(id =='videosQuePiensan'){
-        this.datosgenerales = this.describe.filter(dato => dato.id == 700)
+        this.datosgenerales = this.describe.filter(dato => dato.id == 704)
         this.coleccion = this.videosQuePiensan
       }else if (id =='videosPrincipios') {
-        this.datosgenerales = this.describe.filter(dato => dato.id == 700)
+        this.datosgenerales = this.describe.filter(dato => dato.id == 701)
         this.coleccion = this.videosPrincipios
       }else if (id =='videosCuerposonoro') {
-        this.datosgenerales = this.describe.filter(dato => dato.id == 700)
+        this.datosgenerales = this.describe.filter(dato => dato.id == 702)
         this.coleccion = this.videosCuerposonoro
+      }else if (id =='videosQueRecomiendan') {
+        this.datosgenerales = this.describe.filter(dato => dato.id == 703)
+        this.coleccion = this.videosQueRecomiendan
       }else{
         this.coleccion = this.videos
         this.datosgenerales = this.describe.filter(dato => dato.id == 700)
