@@ -1,12 +1,12 @@
 <template>
-<div class="pa-4 secciondescargables">
+<div class="pa-4 secciondescargables seccionprincipal">
   <v-layout row wrap>
   <v-flex xs3 v-for="(app, index) in descargablesmaguarepdf" :key="index" class="pa-1">
     <v-card>
             <v-img :src="'static/miniaturas/'+app.id+'.jpg'" :alt="app.titulo" ></v-img>
             <v-card-title primary-title style="height:auto">
               <div>
-                <h3 class="mb-0">{{ app.id }} ::  {{ app.titulo }}</h3>
+                <h3 class="mb-0">{{ app.titulo }}</h3>
                 <div style="height: 100px">{{ app.describe }}</div>
               </div>
             </v-card-title>
@@ -19,14 +19,8 @@
 
             </v-card-actions>
       </v-card>
-
-
-
-
   </v-flex>
-
   </v-layout>
-
 </div>
 </template>
 
@@ -67,15 +61,3 @@ export default {
 }
 }
 </script>
-
-<style>
-.secciondescargables{
-  background-image: url("~@/assets/azul.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  min-height: calc(100vh - 164px);
-}
-
-</style>

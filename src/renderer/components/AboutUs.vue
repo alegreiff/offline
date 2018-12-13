@@ -1,9 +1,9 @@
 <template>
-  <div class="pa-4 acercade">
+  <div class="pa-4 acercade seccionprincipal">
     <v-layout>
     <v-flex xs12 sm8 offset-sm2>
       <v-card class="cardo">
-        <v-img
+        <!--<v-img
           class="white--text"
           height="200px"
           src="static/creditos.jpg">
@@ -14,7 +14,7 @@
               </v-flex>
             </v-layout>
           </v-container>
-        </v-img>
+        </v-img>-->
         <v-card-text>
           <v-tabs>
             <v-tab>
@@ -184,34 +184,3 @@
     }
   }
 </script>
-
-<style scoped>
-
-
-.container{
-  backgroound-color: lime !important;
-  min-height: 100% !important;
-}
-.wrapper{
-  background-color: orange !important;
-}
-.logosm{
-  display: grid;
-  padding: 1em;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 1em;
-}
-.logosmag{
-  width: 100%;
-  margin: 0 auto;
-}
-
-.acercade{
-  background-image: url("~@/assets/rojo.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
-  background-attachment: fixed;
-  min-height: calc(100vh - 10px);
-}
-</style>

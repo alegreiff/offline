@@ -1,11 +1,11 @@
 <template>
-<div class="pa-4 secciondescargables">{{ sugerenciaspdf.length }}
+<div class="pa-4 secciondescargables seccionprincipal">
   <v-layout row wrap>
     <v-flex xs3 v-for="(app, index) in sugerenciaspdf" :key="index" class="pa-1">
         <v-card  height="100%" class="flexcard" ripple hover>
           <div class="grow">
             <v-img :src="'static/miniaturas/'+app.id+'.jpg'" class="card-imagen"></v-img>
-            <v-card-title><h2 class="card-titulo">{{ index+1 }} :: {{ app.id }} :: {{ app.titulo }}</h2></v-card-title>
+            <v-card-title><h2 class="card-titulo">{{ app.titulo }}</h2></v-card-title>
             <v-card-text class="card-texto">{{ app.describe }}</v-card-text>
           </div>
           <v-card-actions class="justify-center accionescard">
@@ -115,15 +115,3 @@ export default {
 }
 }
 </script>
-
-<style>
-.secciondescargables{
-  background-image: url("~@/assets/azul.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  min-height: calc(100vh - 164px);
-}
-
-</style>

@@ -1,5 +1,5 @@
 <template>
-<div class="pa-4 seccionaudios">
+<div class="pa-4 seccionaudios seccionprincipal">
   <v-layout row wrap>
         <v-flex xs12 pa-1>
           <v-card class="pa-1">
@@ -25,15 +25,17 @@
         </v-card>
       </v-flex>
       <v-flex xs6 class="pa-2 text-xs-center">
-        <v-card dark color="white" class="text-xs-center">
-          <img :src="'static/miniaturas/'+cancionactiva.id+'.jpg'"
+        <v-card color="white" class="text-xs-center">
+          <!--<img :src="'static/miniaturas/'+cancionactiva.id+'.jpg'"
           :alt="cancionactiva.titulo"
           class="miniatura">
 
           <v-card-text class="px-0 grey--text">
             <h3 class="describe text-xs-left pa-2">{{ cancionactiva.describe }}</h3>
 
-          </v-card-text>
+          </v-card-text>-->
+          <v-img :src="'static/miniaturas/'+cancionactiva.id+'.jpg'" class="card-imagen"></v-img>
+          <v-card-text class="card-texto text-xs-left">{{ cancionactiva.describe }}</v-card-text>
 
 
         </v-card>
@@ -197,39 +199,5 @@ export default {
 </script>
 
 <style>
-audio{
-  min-width: 100%;
-}
-  p.lyrics{
-    padding: 1em;
-    margin: 0 auto;
-    white-space:pre-line;
-    font-size: 1.2em;
 
-  }
-  img.miniatura{
-    max-width: 100%;
-    border-radius: 0.5em !important;
-    margin: 1em auto;
-    cursor: pointer;
-  }
-  .imagenesmodelo{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1em;
-
-  }
-p.describe{
-  padding: 0.6em;
-
-}
-
-.seccionaudios{
-  background-image: url("~@/assets/lima.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
-  background-attachment: fixed;
-  min-height: calc(100vh - 10px);
-}
 </style>

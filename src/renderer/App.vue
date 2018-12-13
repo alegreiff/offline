@@ -15,7 +15,7 @@
 
     </v-toolbar-title>
     <v-spacer></v-spacer>
-          <v-icon large class="bigcola" :color="coloricono" @click="infoffline=true">{{ iconobarra }}</v-icon>
+          Versión 0.8 &nbsp;<v-icon large class="bigcola" :color="coloricono" @click="infoffline=true">{{ iconobarra }}</v-icon>
   </v-toolbar>
   <v-content>
     <v-container fluid ma-0 pa-0>
@@ -171,7 +171,7 @@ export default {
 }
 *, html{
 /*select or not to select text*/
-  /*user-select: none;*/
+  user-select: none;
 }
 
 .container{
@@ -247,5 +247,50 @@ img.imlogo {
 ::-webkit-scrollbar-corner {
       background-color: black;
 }
+.seccionprincipal{
 
+  background-repeat: repeat;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: calc(100vh - 140px);
+
+}
+
+.card-texto{
+  font-size: 1.0em;
+}
+audio{
+  min-width: 100%;
+}
+p.lyrics{
+  padding: 1em;
+  margin: 0 auto;
+  white-space:pre-line;
+  font-size: 1.2em;
+}
+
+.centrovideo {
+    margin-left: auto;
+    margin-right: auto;
+    display: block
+}
+/*MARCADORES COLOR SECCION*/
+.seccionaudios{
+  background-image: url("~@/assets/lima.png");
+}
+.acercade{
+  background-image: url("~@/assets/rojo.png");
+}
+.secciondescargables{
+  background-image: url("~@/assets/azul.png");
+}
+.seccioninteractivos{
+  background-image: url("~@/assets/morado.png");
+}
+.seccionlibros{
+  background-image: url("~@/assets/azul.png");
+}
+.seccionvideos{
+  background-image: url("~@/assets/naranja.png");
+}
 </style>

@@ -478,7 +478,7 @@ const state = {
         id: 9010,
         titulo: 'Arrullos',
         autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
-        describe: '¡Sana que sana, colita de rana, si no sana hoy, sanará mañana! Aquí están disponibles las sugerencias de actividades para sanar con la musicalidad de las palabras.',
+        describe: '¿Cuál es la mejor canción para dormir a un niño despierto?. En estas sugerencias de uso les contamos cuáles son las canciones especiales y qué actividades implementar para dormir al más despierto.',
         url: 'sugerencias/sugerencias-de-uso-9010-arrullos.pdf',
         descarga: 'Sugerencia-de-uso-arrullos'
       },
@@ -530,7 +530,7 @@ const state = {
         id: 9017,
         titulo: 'Sana que sana',
         autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
-        describe: '¿Cuál es la mejor canción para dormir a un niño? En estas sugerencias de uso les contamos cuáles son las canciones especiales y qué actividades implementar para dormir al más despierto.',
+        describe: '¡Sana que sana, colita de rana, si no sana hoy, sanará mañana!. Aquí están disponibles las sugerencias de actividades para sanar con la musicalidad de las palabras.',
         url: 'sugerencias/sugerencias-de-uso-9017-sanaquesana.pdf',
         descarga: 'Sugerencia-de-uso-sanaquesana'
       },
@@ -581,28 +581,28 @@ const state = {
         id: 9024,
         titulo: 'Arma tu cuento',
         autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
-        describe: '',
+        describe: 'Aquí encuentran 4 actividades para fomentar los lenguajes expresivos en los niños a partir de animales reales y fantásticos. ¡Vamos todos a armar cuentos!',
         url: 'sugerencias/sugerencias-de-uso-9024-armatucuento.pdf',
         descarga: 'Sugerencia-de-uso-armatucuento'
       },{
         id: 9025,
         titulo: 'Juega con canciones',
         autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
-        describe: '',
+        describe: 'Aquí encuentran 8 actividades para fomentar los lenguajes expresivos en los niños a través de un interactivo con el que se puede crear música mientras se juega.',
         url: 'sugerencias/sugerencias-de-uso-9025-juegaconcanciones.pdf',
         descarga: 'Sugerencia-de-uso-juegaconcacniones'
       },{
         id: 9026,
         titulo: 'Juegos interactivos',
         autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
-        describe: '',
+        describe: '¡Nuevas sugerencias sobre cómo usar los contenidos de Maguaré! Aquí encontrarán 10 actividades para disfrutar, descubrir y crear con los juegos interactivos favoritos de Saimiri y sus amigos.',
         url: 'sugerencias/sugerencias-de-uso-9026-juegosinteractivos.pdf',
         descarga: 'Sugerencia-de-uso-juegosinteractivos'
       },{
         id: 9027,
         titulo: 'Videos musicales',
         autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
-        describe: '',
+        describe: '¿Quieren ver un video? en Maguaré tienen más de veinte videos musicales con ritmos diferentes y técnicas de animación distintas… pero además les sugerimos cómo utilizarlos en la casa o en la escuela, para que los niños de primera infancia descubran e imaginen historias.',
         url: 'sugerencias/sugerencias-de-uso-9027-videosmusicales.pdf',
         descarga: 'Sugerencia-de-uso-videosmusicales'
       }

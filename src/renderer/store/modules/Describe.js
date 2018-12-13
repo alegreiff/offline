@@ -25,7 +25,7 @@ const state = {
       titulobreve: 'Inicio',
       descripcion: 'Bienvenidos a la Estrategia Digital de Cultura y Primera Infancia del Ministerio de Cultura'
     },
-    /* MAGUARED tutoriales SERIE 800 */
+    /* MAGUARED tutoriales SERIE 900 */
     {
       id: 900,
       clase: 'maguared',

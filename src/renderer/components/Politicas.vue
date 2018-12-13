@@ -1,5 +1,5 @@
 <template>
-  <div class="pa-4 politicas">
+  <div class="pa-4 politicas seccionprincipal">
     <v-layout>
     <v-flex xs12 sm8 offset-sm2>
       <v-card class="cardo">
@@ -77,14 +77,10 @@ export default {
 }
 </script>
 
-<style lang="css" scoped>
+<style lang="css">
 .politicas{
   background-image: url("~@/assets/rojo.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
-  background-attachment: fixed;
-  min-height: calc(100vh - 10px);
+  
 }
 
 </style>

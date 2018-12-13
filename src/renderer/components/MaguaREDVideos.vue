@@ -1,57 +1,53 @@
 <template>
-<div class="pa-4 seccionvideos">
-  <v-layout row wrap>
-        <v-flex xs12>
-          <v-card class="pa-1">
-            <v-select class="px-4 ma-0"
-              :items="coleccion"
-              v-model="selected"
-              color="primary"
-              item-text="titulo"
-              item-value="id"
-              hide-selected
-              label="Seleccione un video">
-            </v-select>
+<div class="pa-4 seccionvideos seccionprincipal">
 
+    <v-layout row wrap>
+          <v-flex xs12>
+            <v-card class="pa-1">
+              <v-select class="px-4 ma-0"
+                :items="coleccion"
+                v-model="selected"
+                color="primary"
+                item-text="titulo"
+                item-value="id"
+                hide-selected
+                label="Seleccione un video">
+              </v-select>
+
+            </v-card>
+          </v-flex>
+        </v-layout>
+        <v-layout row wrap v-if="cancionactiva">
+          <v-flex xs12>
+          <v-card dark color="primary">
+            <v-card-text class="pa-2">
+              <h2 class="" ref="tituloref">{{ cancionactiva.titulo }}</h2> <h5>{{ cancionactiva.autor }}</h5>
+            </v-card-text>
           </v-card>
         </v-flex>
-      </v-layout>
-      <v-layout row wrap v-if="cancionactiva">
-        <v-flex xs12>
-        <v-card dark color="primary">
-          <v-card-text class="pa-2">
-            <h2 class="" ref="tituloref">{{ cancionactiva.titulo }}</h2> <h5>{{ cancionactiva.autor }}</h5>
-          </v-card-text>
-        </v-card>
-      </v-flex>
-      <v-flex xs4 class="pa-2 grey--text">
-        <v-card dark color="white" class="text-xs-center">
-          <img :src="'static/miniaturas/'+cancionactiva.id+'.jpg'"
-          :alt="cancionactiva.titulo"
-          class="miniatura">
+        <v-flex xs4 class="pa-2 grey--text">
+          <v-card color="white" class="text-xs-center">
 
-          <v-card-text class="px-0 grey--text">
-            <h3 class="describe text-xs-center pa-1">{{ cancionactiva.describe }}</h3>
-
-          </v-card-text>
-
-
-        </v-card>
-
-      </v-flex>
-      <v-flex xs8 class="pa-2">
-          <v-card>
-              <video
-              @ended='findepista'
-              width="100%" height="auto" ref="playame1" controls autoplay v-if="quesuena!=''" controlsList="nodownload nofullscreen">
-                  <source :src="quesuena" type="video/mp4">
-              Your browser does not support the video tag.
-              </video>
+            <v-img :src="'static/miniaturas/'+cancionactiva.id+'.jpg'" class="card-imagen"></v-img>
+            <v-card-text class="card-texto">{{ cancionactiva.describe }}</v-card-text>
 
           </v-card>
-        </v-flex>
 
-      </v-layout>
+        </v-flex>
+        <v-flex xs8 class="pa-2">
+            <v-card>
+                <video
+                @ended='findepista'
+                width="100%" height="auto" ref="playame1" controls autoplay v-if="quesuena!=''" controlsList="nodownload nofullscreen">
+                    <source :src="quesuena" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
+
+            </v-card>
+          </v-flex>
+
+        </v-layout>
+
 </div>
 </template>
 
@@ -156,13 +152,3 @@ export default {
 }
 }
 </script>
-<style>
-.seccionvideos{
-  background-image: url("~@/assets/naranja.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  min-height: calc(100vh - 10px);
-}
-</style>

@@ -1,19 +1,8 @@
 <template>
-<div class="pa-4 seccionvideos">
+<div class="pa-4 seccionvideos seccionprincipal">
   <v-layout row wrap >
-<!--
-<v-flex xs12 class="text-xs-center py-2">
-  <v-card>
-          <v-card-title primary-title style="height:auto" class="magnaranja">
-            <div>
-              <div>{{ datosgenerales[0].descripcion }}</div>
-            </div>
-          </v-card-title>
-    </v-card>
-</v-flex>
--->
         <v-flex xs12 pa-1>
-          
+
           <v-card class="pa-1">
             <v-select class="px-4 ma-0"
               :items="coleccion"
@@ -37,14 +26,11 @@
         </v-card>
       </v-flex>
       <v-flex xs4 class="pa-2 text-xs-center">
-        <v-card dark color="white" class="text-xs-center">
-          <img :src="'static/miniaturas/'+cancionactiva.id+'.jpg'"
-          :alt="cancionactiva.titulo"
-          class="miniatura">
+        <v-card color="white" class="text-xs-center">
 
-          <v-card-text class="px-0 grey--text">
-            <h3 class="describe text-xs-left pa-2">{{ cancionactiva.describe }}</h3>
-          </v-card-text>
+          <v-img :src="'static/miniaturas/'+cancionactiva.id+'.jpg'" class="card-imagen"></v-img>
+          <v-card-text class="card-texto">{{ cancionactiva.describe }}</v-card-text>
+
         </v-card>
       </v-flex>
       <v-flex xs8 class="pa-2">
@@ -168,51 +154,3 @@ export default {
 }
 }
 </script>
-
-<style lang="css" scoped>
-
-  .internamusica{
-    background-color: white;
-    display: grid;
-    grid-template-columns: 4fr 3fr;
-  }
-  p.lyrics{
-    padding: 1em;
-    margin: 0 auto;
-    white-space:pre-line;
-    height: 40vw;
-    width: 95%;
-    overflow: auto;
-
-  }
-  h1.titulo{
-    padding-left: 1em;
-    padding-top: 1em;
-  }
-  img.miniatura{
-    max-width: 100%;
-    border: 2px white solid;
-    border-radius: 0.5em;
-    margin: 0 auto;
-    cursor: pointer;
-  }
-  .imagenesmodelo{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1em;
-
-  }
-p.describe{
-  padding: 0.6em;
-
-}
-
-.seccionvideos{
-  background-image: url("~@/assets/naranja.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  min-height: calc(100vh - 10px);
-}
-</style>
