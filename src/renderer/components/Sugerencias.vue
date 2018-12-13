@@ -1,5 +1,5 @@
 <template>
-<div class="pa-4 secciondescargables">
+<div class="pa-4 secciondescargables">{{ sugerenciaspdf.length }}
   <v-layout row wrap>
     <v-flex xs3 v-for="(app, index) in sugerenciaspdf" :key="index" class="pa-1">
         <v-card  height="100%" class="flexcard" ripple hover>

@@ -474,14 +474,14 @@ const state = {
         url: 'sugerencias/sugerencias-de-uso-9009-adivinanzas.pdf',
         descarga: 'Sugerencia-de-uso-adivinanzas'
       },
-      /*{
+      {
         id: 9010,
         titulo: 'Arrullos',
         autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
         describe: '¡Sana que sana, colita de rana, si no sana hoy, sanará mañana! Aquí están disponibles las sugerencias de actividades para sanar con la musicalidad de las palabras.',
         url: 'sugerencias/sugerencias-de-uso-9010-arrullos.pdf',
         descarga: 'Sugerencia-de-uso-arrullos'
-      },*/
+      },
       {
         id: 9011,
         titulo: 'Crea con colores',
@@ -525,7 +525,7 @@ const state = {
         url: 'sugerencias/sugerencias-de-uso-9016-sai.pdf',
         descarga: 'Sugerencia-de-uso-sai'
       },
-      /*
+
       {
         id: 9017,
         titulo: 'Sana que sana',
@@ -534,13 +534,13 @@ const state = {
         url: 'sugerencias/sugerencias-de-uso-9017-sanaquesana.pdf',
         descarga: 'Sugerencia-de-uso-sanaquesana'
       },
-      */
+
       {
         id: 9018,
         titulo: 'Buen comienzo',
         autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
         describe: 'Ya están disponibles las actividades de la colección musical Buen Comienzo, que hace parte del programa para primera infancia de la Alcaldía de Medellín.',
-        url: 'sugerencias/sugerencias-de-uso-9018-buencomienzo.pdf',
+        url: 'REVISARsugerencias/sugerencias-de-uso-9018-buencomienzo.pdf',
         descarga: 'Sugerencia-de-uso-buencomienzo'
       },{
         id: 9019,
@@ -577,9 +577,36 @@ const state = {
         describe: 'Aquí encuentran 5 actividades para fomentar los lenguajes expresivos en los niños a través de tardes de karaokes, de creación de títeres o de jugar con palabras para hacer retahílas.',
         url: 'sugerencias/sugerencias-de-uso-9023-cancionesmaguare.pdf',
         descarga: 'Sugerencia-de-uso-cancionesmaguare'
-      },
+      },{
+        id: 9024,
+        titulo: 'Arma tu cuento',
+        autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
+        describe: '',
+        url: 'sugerencias/sugerencias-de-uso-9024-armatucuento.pdf',
+        descarga: 'Sugerencia-de-uso-armatucuento'
+      },{
+        id: 9025,
+        titulo: 'Juega con canciones',
+        autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
+        describe: '',
+        url: 'sugerencias/sugerencias-de-uso-9025-juegaconcanciones.pdf',
+        descarga: 'Sugerencia-de-uso-juegaconcacniones'
+      },{
+        id: 9026,
+        titulo: 'Juegos interactivos',
+        autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
+        describe: '',
+        url: 'sugerencias/sugerencias-de-uso-9026-juegosinteractivos.pdf',
+        descarga: 'Sugerencia-de-uso-juegosinteractivos'
+      },{
+        id: 9027,
+        titulo: 'Videos musicales',
+        autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
+        describe: '',
+        url: 'sugerencias/sugerencias-de-uso-9027-videosmusicales.pdf',
+        descarga: 'Sugerencia-de-uso-videosmusicales'
+      }
     ],
-
 }
 
 const getters = {

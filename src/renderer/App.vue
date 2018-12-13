@@ -171,7 +171,7 @@ export default {
 }
 *, html{
 /*select or not to select text*/
-  user-select: none;
+  /*user-select: none;*/
 }
 
 .container{
