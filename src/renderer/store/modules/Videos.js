@@ -288,7 +288,7 @@ const state = {
     },{ id: 139,
       autor: 'Ministerio de Cultura - Maguaré - Audio de María del Sol Peralta / Cantaclaro',
       coleccion: 'Karaokes',
-      titulo: 'Mi pequeño morral - Video',
+      titulo: 'Mi pequeño morral - Karaoke',
       describe: 'Una almohada, una carpa, una cobija, un vestido, miles de cosas caben en un pequeño morral cuando se tiene mucha imaginación. En este karaoke puedes conocer cuántas cosas es posible llevar en un morral para recorrer el mundo. ¿Qué te gusta guardar en tu pequeño morral?',
       url: '139-morral.mp4'
     },{ id: 140,
