@@ -111,7 +111,12 @@
       EventBus.$emit('ICONOBARRA', 'fas fa-home', 'white');
     },
     watch: {
-
+      videoedcpi (val) {
+            //!val && alert('Dialog is closing')
+            if(this.$refs.vidtutto && !val){
+              this.$refs.vidtutto.pause()
+            }
+      },
       drawer: function(value){
 
       }

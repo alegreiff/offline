@@ -14,9 +14,6 @@ import AboutUs from '@/components/AboutUs'
 import Ceiba from '@/components/Ceiba'
 import SingleVideo from '@/components/SingleVideo'
 
-
-
-
 Vue.use(Router)
 
 export default new Router({

@@ -15,7 +15,7 @@
 
     </v-toolbar-title>
     <v-spacer></v-spacer>
-          Versión 0.91 &nbsp;<v-icon large class="bigcola" :color="coloricono" @click="infoffline=true">{{ iconobarra }}</v-icon>
+          Versión 0.9.5 &nbsp;<v-icon large class="bigcola" :color="coloricono" @click="infoffline=true">{{ iconobarra }}</v-icon>
   </v-toolbar>
   <v-content>
     <v-container fluid ma-0 pa-0>
@@ -110,10 +110,10 @@ export default {
       });
     },
     webexterna (link) {
-      //this.enlace = link
+      this.enlace = link
       //alert(link)
-      this.$electron.shell.openExternal(link)
-      //this.dialog=true
+      //this.$electron.shell.openExternal(link)
+      this.dialog=true
 
     },
     abreenlaceexterno(){
