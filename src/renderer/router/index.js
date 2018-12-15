@@ -12,6 +12,7 @@ import MaguaREDTutoriales from '@/components/MaguaREDTutoriales'
 import MaguaREDLibros from '@/components/MaguaREDLibros'
 import AboutUs from '@/components/AboutUs'
 import Ceiba from '@/components/Ceiba'
+import SingleVideo from '@/components/SingleVideo'
 
 
 
@@ -19,6 +20,9 @@ import Ceiba from '@/components/Ceiba'
 Vue.use(Router)
 
 export default new Router({
+  scrollBehavior() {
+    return { x: 0, y: 0 };
+  },
   routes: [
     {
       path: '/',
@@ -37,6 +41,7 @@ export default new Router({
     { path: '/audios/:id', component: Audios, name: 'coleccion' },
     { path: '/librosmaguare/:id', component: LibrosMaguare, name: 'lib' },
     { path: '/librosmaguared/:id', component: MaguaREDLibros, name: 'maglib' },
+    { path: '/vervideo/:id', component: SingleVideo, name: 'idvideo' },
     {
       path: '*',
       redirect: '/'

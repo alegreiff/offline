@@ -15,7 +15,7 @@
 
     </v-toolbar-title>
     <v-spacer></v-spacer>
-          Versión 0.84 &nbsp;<v-icon large class="bigcola" :color="coloricono" @click="infoffline=true">{{ iconobarra }}</v-icon>
+          Versión 0.91 &nbsp;<v-icon large class="bigcola" :color="coloricono" @click="infoffline=true">{{ iconobarra }}</v-icon>
   </v-toolbar>
   <v-content>
     <v-container fluid ma-0 pa-0>
@@ -293,5 +293,9 @@ p.lyrics{
 }
 .seccionvideos{
   background-image: url("~@/assets/naranja.png");
+}
+.allvideoslista{
+  padding: 0.2em;
+  margin-bottom: 0.2em;
 }
 </style>

@@ -1,12 +1,19 @@
 const state = {
   describe: [
     {
+      id: 665,
+      clase: 'maguared',
+      seccion: 'VIDEOS',
+      subseccion: 'VIDEOS',
+      titulobreve: 'VIDEO',
+      descripcion: 'VER VIDEO'
+    },/* VARIOS SERIE 500 */{
       id: 666,
       clase: 'maguared',
       seccion: 'Ceiba',
       subseccion: 'Ceiba',
       titulobreve: 'Conoce Maguaré en La Ceiba',
-      descripcion: 'C IVA'
+      descripcion: 'Estos son los personajes de Maguaré en La Ceiba'
     },/* VARIOS SERIE 500 */
     {
       id: 500,

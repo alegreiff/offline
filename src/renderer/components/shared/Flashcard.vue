@@ -4,7 +4,7 @@
 
             <div class="card-content center">
                 <p v-bind:style="{fontSize: textSizeFront,fontWeight: 'bold'}">{{front}}</p>
-                <img v-if="imgFront!=''" :src="imgFront" width="80%" height="auto">
+                <img v-if="imgFront!=''" :src="imgFront" class="imagenfrontalflashcards">
             </div>
 
         </div>
@@ -16,11 +16,6 @@
                 <p v-bind:style="{fontSize: textSizeBack, fontWeight: 'bold'}" class="lyrics text-xs-left textoatras">{{back}}</p>
                 <img v-if="imgBack!=''" :src="imgBack" width="200" height="auto">
             </div>
-
-
-
-
-
         </div>
     </div>
 </template>
@@ -146,5 +141,11 @@ export default {
 .flipInX {
     backface-visibility: visible !important;
     animation-name: flipInX;
+}
+.imagenfrontalflashcards{
+  border-radius: 1.0em;
+  width:80%;
+  
+  height:auto;
 }
 </style>

@@ -14,7 +14,7 @@
 
     <img id="logo" src="static/maguare.png" alt="electron-vue" class="logomini">
 
-    <v-list-tile :to="{path: '/ceiba'}" >
+    <v-list-tile :to="{name: 'idvideo', params: { id: 1309}}" >
           <v-list-tile-action><v-icon medium color="magnaranja">fas fa-play-circle</v-icon></v-list-tile-action>
           <v-list-tile-content><v-list-tile-title>¿Qué es Maguaré?</v-list-tile-title></v-list-tile-content>
     </v-list-tile>
@@ -234,6 +234,11 @@
 <!-- <v-subheader inset>MaguaRED</v-subheader> -->
 <v-divider></v-divider>
 <img id="logo" src="static/maguared.png" alt="electron-vue" class="logominim">
+
+<v-list-tile :to="{name: 'idvideo', params: { id: 1008}}" >
+      <v-list-tile-action><v-icon medium color="magnaranja">fas fa-play-circle</v-icon></v-list-tile-action>
+      <v-list-tile-content><v-list-tile-title>¿Qué es MaguaRED?</v-list-tile-title></v-list-tile-content>
+</v-list-tile>
 
 
 <!--GRUPO VIDEOS MAGUARED -->
