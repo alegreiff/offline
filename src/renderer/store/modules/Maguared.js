@@ -5,7 +5,7 @@ const state = {
       autor: 'Ministerio de Cultura - Maguaré - MaguaRED',
       coleccion: '¿Qué piensan los expertos?',
       titulo: 'Fabiola Uribe y la arquitectura en la infancia.',
-      describe: 'Diana Rubiano es la Coordinadora Pedagógica de aeioTU, una fundación que trabaja en el desarrollo integral de los niños de 0 a 5 años. En este video explica cómo ha cambiado el papel de la escuela en la primera infancia.',
+      describe: 'Cuando los niños reconocen lo que les rodea ellos pueden transformar el mundo. Así lo explica Fabiola Uribe, arquitecta y directora de Lunárquicos: práctica experimental de arquitectura para niños.',
       url: '100-ribe.mp4'
     },
     { id: 1001,
@@ -117,7 +117,7 @@ const state = {
       autor: 'Ministerio de Cultura - Maguaré - MaguaRED',
       coleccion: 'Cuerpo Sonoro',
       titulo: 'El monstruo de colores',
-      describe: 'Las emociones se pueden expresar a través de monstruos de colores! Así lo hicieron los niños de Rionegro, Antioquia, quienes exploraron sus entornos y representaron sus sentimientos a través del cuerpo.',
+      describe: '¡Las emociones se pueden expresar a través de monstruos de colores! Así lo hicieron los niños de Rionegro, Antioquia, quienes exploraron sus entornos y representaron sus sentimientos a través del cuerpo.',
       url: '1021-cs2.mp4'
     },
     { id: 1022,
@@ -195,7 +195,7 @@ const state = {
       coleccion: '¿Qué recomiendan los expertos?',
       titulo: '¿Qué recomienda Irene Vasco?',
       describe: 'La autora y promotora de lectura Irene Vasco recomienda mantener "la palabra viva" para transmitirla a los niños.',
-      url: '1301-irenevasco.mp4'
+      url: '1300-irenevasco.mp4'
     },
     { id: 1301,
       autor: 'Ministerio de Cultura - Maguaré - MaguaRED',
@@ -364,7 +364,7 @@ const state = {
   otrosdocumentos: [
     {
       id: 1200,
-      titulo: 'Cuerpo Sonoro: expresiones artísticas y primera infancia.',
+      titulo: 'Cuerpo Sonoro: expresiones artísticas y primera infancia',
       autor: 'Ministerio de Cultura',
       coleccion: 'Cuerpo Sonoro',
       describe: 'Cuerpo Sonoro: expresiones artísticas y primera infancia recoge las orientaciones pedagógicas que fundamentan Cuerpo Sonoro.',
@@ -372,7 +372,7 @@ const state = {
       descarga: 'Cuerpo-Sonoro-expresiones-primera-infancia'
     },{
       id: 1201,
-      titulo: 'Cuentos Derechos: historias para hablar con los niños sobre sus derechos.',
+      titulo: 'Cuentos Derechos: historias para hablar con los niños sobre sus derechos',
       autor: 'Ministerio de Cultura',
       coleccion: 'Cuentos Derechos',
       describe: 'Cuentos Derechos es un libro digital que reúne las voces y experiencias de niños y adultos sobre los derechos de los niños.',
@@ -380,15 +380,15 @@ const state = {
       descarga: 'Cuentos-Derechos'
     },{
       id: 1202,
-      titulo: 'Experiencia gráfica de Cuerpo Sonoro: arquitecturas sonoras.',
+      titulo: 'Experiencia gráfica de Cuerpo Sonoro: arquitecturas sonoras',
       autor: 'Ministerio de Cultura',
       coleccion: 'Cuerpo Sonoro',
       describe: 'Esta experiencia de Cuerpo Sonoro permite que los adultos vivan la integralidad a través del cuerpo y las expresiones artísticas.',
       url: 'librosmaguare/1202.pdf',
-      descarga: ''
+      descarga: 'Cuerpo-Sonoro-arquitecturas-sonoras'
     },{
       id: 1203,
-      titulo: 'Experiencia gráfica de Cuerpo Sonoro: materia y materiales.',
+      titulo: 'Experiencia gráfica de Cuerpo Sonoro: materia y materiales',
       autor: 'Ministerio de Cultura',
       coleccion: 'Cuerpo Sonoro',
       describe: 'Esta experiencia de Cuerpo Sonoro promueve la creatividad para que los adultos entiendan y vivan la exploración en primera infancia.',
@@ -396,7 +396,7 @@ const state = {
       descarga: 'Cuerpo-Sonoro-materia-materiales'
     },{
       id: 1204,
-      titulo: 'Experiencia gráfica de Cuerpo Sonoro: el juego.',
+      titulo: 'Experiencia gráfica de Cuerpo Sonoro: el juego',
       autor: 'Ministerio de Cultura',
       coleccion: 'Cuerpo Sonoro',
       describe: 'A través de esta experiencia de Cuerpo Sonoro los adultos pueden entender por qué el juego es fundamental para el desarrollo de los niños.',
@@ -404,15 +404,15 @@ const state = {
       descarga: 'Cuerpo-Sonoro-eljuego'
     },{
       id: 1205,
-      titulo: 'Experiencia gráfica de Cuerpo Sonoro: animación de objetos.',
+      titulo: 'Experiencia gráfica de Cuerpo Sonoro: animación de objetos',
       autor: 'Ministerio de Cultura',
       coleccion: 'Cuerpo Sonoro',
       describe: 'Cuerpo Sonoro propone en esta experiencia un ejercicio para que los adultos exploren el juego simbólico desde la vivencia.',
       url: 'librosmaguare/1205.pdf',
-      descarga: 'Cuerpo-Sonoro-animacion-objeros'
+      descarga: 'Cuerpo-Sonoro-animacion-objetos'
     },{
       id: 1206,
-      titulo: 'Experiencia gráfica de Cuerpo Sonoro: la banda sonora.',
+      titulo: 'Experiencia gráfica de Cuerpo Sonoro: la banda sonora',
       autor: 'Ministerio de Cultura',
       coleccion: 'Cuerpo Sonoro',
       describe: 'En esta experiencia de Cuerpo Sonoro los adultos pueden reconocer las distintas formas de escucha y, así, vivirlas a través de los niños.',
@@ -420,7 +420,7 @@ const state = {
       descarga: 'Cuerpo-Sonoro-banda-sonora'
     },{
       id: 1207,
-      titulo: 'Experiencia gráfica de Cuerpo Sonoro: el espacio en la primera infancia. ',
+      titulo: 'Experiencia gráfica de Cuerpo Sonoro: el espacio en la primera infancia',
       autor: 'Ministerio de Cultura',
       coleccion: 'Cuerpo Sonoro',
       describe: 'Cuerpo Sonoro creó esta experiencia para que los adultos reinventen el espacio que comparten con los niños.',
@@ -436,7 +436,7 @@ const state = {
       publico: 'maguared',
       describe: 'Este libro recoge orientaciones en torno a la relación de los niños con las bibliotecas y el sentido de la lectura y la literatura en sus desarrollos integrales.',
       url: 'librosmaguare/2001-lectura-libro-bibliotecas.pdf',
-      descarga: ''
+      descarga: 'derechos-lectura-libro-bibliotecas'
     },
     {
       id: 2002,
@@ -446,7 +446,7 @@ const state = {
       publico: 'maguared',
       describe: 'En este libro se reflexiona sobre las condiciones de los ambientes para potenciar el gozo de la lectura, el juego y la exploración.',
       url: 'librosmaguare/2002-lenguajes-ambientes-lectura.pdf',
-      descarga: ''
+      descarga: 'derechos-lenguajes-ambientres-lectura'
     },
     {
       id: 2003,
@@ -456,7 +456,7 @@ const state = {
       publico: 'maguared',
       describe: 'En este libro se recogen reflexiones en torno a la música, la poesía y los lenguajes audiovisuales como parte esencial del desarrollo integral de los niños.',
       url: 'librosmaguare/2003-musica-poesia-lenguajesaudiovisuales.pdf',
-      descarga: ''
+      descarga: 'derechos-musica-poesia-audiovisual'
     },
     {
       id: 2004,
@@ -466,7 +466,7 @@ const state = {
       publico: 'maguared',
       describe: 'El libro acerca al lector a la comprensión de la diversidad cultural desde las lenguas maternas de Colombia y su relación con la primera infancia.',
       url: 'librosmaguare/2004-lenguas-nativas-primera-infancia.pdf',
-      descarga: ''
+      descarga: 'derechos-lenguas-nativas-primera-infancia'
     },
     {
       id: 2005,
@@ -476,7 +476,7 @@ const state = {
       publico: 'maguared',
       describe: 'Varios autores reflexionan sobre el concepto histórico de niñez, sobre el ejercicio de ciudadanía de los niños, y sobre los museos y su papel educativo en los niños.',
       url: 'librosmaguare/2005-historia-primera-infancia.pdf',
-      descarga: ''
+      descarga: 'derechos-historia-primera-infancia'
     },
   ]
 }

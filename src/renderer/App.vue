@@ -36,7 +36,7 @@
       v-on:click="webexterna('https://maguare.gov.co/')"> </v-flex>
     <v-flex xs2> <img class="imlogo" id="logo" src="~@/assets/logosfooter/maguared.png"
       v-on:click="webexterna('https://maguared.gov.co/')"> </v-flex>
-    <v-flex xs2> <img class="imlogo" id="logo" src="~@/assets/logosfooter/premio.png"> </v-flex>
+    <v-flex xs2> <img class="imlogo" id="logo" src="~@/assets/logosfooter/premio.png" v-on:click="webexterna('https://maguared.gov.co/maguare-y-maguared-reciben-distincion-en-el-festival-comkids/')"> </v-flex>
 
   </v-footer>
       <v-dialog v-model="dialog"max-width="450">
@@ -110,9 +110,10 @@ export default {
       });
     },
     webexterna (link) {
-      this.enlace = link
-      //this.$electron.shell.openExternal(link)
-      this.dialog=true
+      //this.enlace = link
+      alert(link)
+      this.$electron.shell.openExternal(link)
+      //this.dialog=true
 
     },
     abreenlaceexterno(){
@@ -278,7 +279,7 @@ p.lyrics{
 .seccionaudios{
   background-image: url("~@/assets/lima.png");
 }
-.acercade{
+.acercade, .rojomg{
   background-image: url("~@/assets/rojo.png");
 }
 .secciondescargables{

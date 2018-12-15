@@ -14,6 +14,16 @@
 
     <img id="logo" src="static/maguare.png" alt="electron-vue" class="logomini">
 
+    <v-list-tile :to="{path: '/ceiba'}" >
+          <v-list-tile-action><v-icon medium color="magnaranja">fas fa-play-circle</v-icon></v-list-tile-action>
+          <v-list-tile-content><v-list-tile-title>¿Qué es Maguaré?</v-list-tile-title></v-list-tile-content>
+    </v-list-tile>
+
+    <v-list-tile :to="{path: '/ceiba'}" >
+          <v-list-tile-action><v-icon medium color="magrojo">far fa-id-badge</v-icon></v-list-tile-action>
+          <v-list-tile-content><v-list-tile-title>Conoce a Saimiri y sus amigos</v-list-tile-title></v-list-tile-content>
+    </v-list-tile>
+
   <!-- MAGUARÉ GRUPO VIDEOS -->
       <v-list-group no-action>
       <v-list-tile slot="activator">

@@ -100,7 +100,7 @@ const state = {
         descarga: 'LEMC-romeoyjulieta'
       },{
         id: 502,
-        autor: 'AUTOR',
+        autor: 'Anónimo',
         titulo: 'Cuentos de Las mil y una noches',
         coleccion: 'Leer es mi cuento',
         edad: 10,
@@ -110,7 +110,7 @@ const state = {
         descarga: 'LEMC-cuentosdelasmilyunanoches'
       },{
         id: 505,
-        autor: 'Hermanos Grimm, Charles Perrault, Agustín Jaramillo Londoño, Infante Don Juan Manuel, Félix María Samaniego, Rafael Pombo, Rubén Darío, Víctor Eduardo Caro, Federico García Lorca',
+        autor: 'Varios',
         titulo: 'De viva voz',
         coleccion: 'Leer es mi cuento',
         edad: 1,
@@ -120,7 +120,7 @@ const state = {
         descarga: 'LEMC-viva-voz'
       },{
         id: 507,
-        autor: 'Hans Christian Andersen,  Alexander Pushkin, Joseph Jacobs, Oscar Wilde, Hermanos Grimm - Ilustración: Rafael Yockteng y Daniel Gómez.',
+        autor: 'Varios',
         titulo: 'Puro cuento',
         coleccion: 'Leer es mi cuento',
         edad: 1,
@@ -130,7 +130,7 @@ const state = {
         descarga: 'LEMC-puro-cuento'
       },{
         id: 515,
-        autor: 'Autores varios ',
+        autor: 'Varios',
         titulo: 'Canta palabras',
         coleccion: 'Leer es mi cuento',
         edad: 1,
@@ -150,7 +150,7 @@ const state = {
         descarga: 'LEMC-barbas-pelos-cenizas'
       },{
         id: 539,
-        autor: 'María Eastman- Rafael Jaramillo - Gabriela Mercedes Arciniegas - Santiago Pérez- Rocío Vélez',
+        autor: 'Varios',
         titulo: 'De animales y de niños',
         coleccion: 'Leer es mi cuento',
         edad: 7,
@@ -281,7 +281,7 @@ const state = {
         descarga: 'LEMC-donquijote'
       },{
         id: 1226,
-        autor: 'Autores varios',
+        autor: 'Varios',
         titulo: 'Poesía en español',
         coleccion: 'Leer es mi cuento',
         edad: 10,
@@ -321,7 +321,7 @@ const state = {
         descarga: 'LEMC-aventurasdeulises'
       },{
         id: 1230,
-        autor: 'Fernán Caballeros',
+        autor: 'Fernán Caballero',
         titulo: 'Don Juan Bolondrón',
         coleccion: 'Leer es mi cuento',
         edad: 10,
@@ -331,7 +331,7 @@ const state = {
         descarga: 'LEMC-donjuanbolondron'
       },{
         id: 612,
-        autor: 'Autores varios',
+        autor: 'Varios',
         titulo: 'Canciones, rondas, nanas, retahílas y adivinanzas',
         coleccion: 'Leer es mi cuento',
         edad: 1,
@@ -540,7 +540,7 @@ const state = {
         titulo: 'Buen comienzo',
         autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
         describe: 'Ya están disponibles las actividades de la colección musical Buen Comienzo, que hace parte del programa para primera infancia de la Alcaldía de Medellín.',
-        url: 'REVISARsugerencias/sugerencias-de-uso-9018-buencomienzo.pdf',
+        url: 'sugerencias/sugerencias-de-uso-9018-buencomienzo.pdf',
         descarga: 'Sugerencia-de-uso-buencomienzo'
       },{
         id: 9019,
@@ -562,7 +562,7 @@ const state = {
         autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
         describe: '¡A jugar dentro y fuera de casa, en las escuelas o en los Centros de Desarrollo con estas divertidas actividades inspiradas en la serie animada Chigüiro!',
         url: 'sugerencias/sugerencias-de-uso-9021-chiguiro.pdf',
-        descarga: 'Sugerencia-de-uso-trabalenguas'
+        descarga: 'Sugerencia-de-uso-chiguiro'
       },{
         id: 9022,
         titulo: 'Cuentos de Maguaré',

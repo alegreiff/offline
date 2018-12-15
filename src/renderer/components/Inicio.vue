@@ -12,9 +12,9 @@
       <h2 class="text-xs-center">Bienvenidos a la Estrategia Digital de Cultura y Primera Infancia del Ministerio de Cultura</h2>
 
       <div class="intromg">
-        <p>La Estrategia Digital de Cultura y Primera Infancia del Ministerio de Cultura ofrece contenidos especializados y de calidad en el entorno digital dirigidos a niños menores de seis años, sus padres, familias, y maestros y en general para  todos los cuidadores de primera infancia.</p>
+        <p>La Estrategia Digital de Cultura y Primera Infancia del Ministerio de Cultura ofrece contenidos especializados y de calidad en el entorno digital dirigido a niños menores de seis años y sus padres, familias, maestros y en general para todos los cuidadores de primera infancia.</p>
 
-        <p>En esta versión digital que no necesita conexión a internet, encontrarán una selección de los mejores contenidos de Maguaré y MaguaRED que promueven los derechos culturales y los lenguajes expresivos de los niños.</p>
+        <p>En esta versión digital, que no necesita conexión a Internet, encontrarán una selección de los mejores contenidos de Maguaré y MaguaRED que promueven los derechos culturales y los lenguajes expresivos de los niños.</p>
 
         <p>A través del menú de la izquierda <v-icon>fas fa-bars</v-icon> tendrán acceso a más de 200 videos, audios, libros y material descargable, completamente gratuito. </p>
 

@@ -1,6 +1,13 @@
 const state = {
   describe: [
-    /* VARIOS SERIE 500 */
+    {
+      id: 666,
+      clase: 'maguared',
+      seccion: 'Ceiba',
+      subseccion: 'Ceiba',
+      titulobreve: 'Conoce Maguaré en La Ceiba',
+      descripcion: 'C IVA'
+    },/* VARIOS SERIE 500 */
     {
       id: 500,
       clase: 'maguared',
@@ -50,7 +57,7 @@ const state = {
       seccion: 'Videos',
       subseccion: 'Videos',
       titulobreve: 'Videos MaguaRED',
-      descripcion: 'Varios autores hablan sobre la primera infancia, las expresiones artísticas y la diversidad'
+      descripcion: 'Encuentren aquí todos los videos de MaguaRED'
     },
     {
       id: 701,
@@ -66,7 +73,7 @@ const state = {
       seccion: 'Videos',
       subseccion: 'Videos',
       titulobreve: 'Videos MaguaRED - Cuerpo Sonoro',
-      descripcion: 'Estrategia pedagógica de Cuerpo Sonoro, diplomado del Ministerio de Cultura, y algunas experiencias en primera infancia'
+      descripcion: 'Encuentren aquí algunas estrategias pedagógicas y experiencias de Cuerpo Sonoro'
     },
     {
       id: 703,

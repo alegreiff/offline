@@ -29,7 +29,7 @@
         <v-card color="white" class="text-xs-center">
 
           <v-img :src="'static/miniaturas/'+cancionactiva.id+'.jpg'" class="card-imagen"></v-img>
-          <v-card-text class="card-texto">{{ cancionactiva.describe }}</v-card-text>
+          <v-card-text class="card-texto text-xs-left">{{ cancionactiva.describe }}</v-card-text>
 
         </v-card>
       </v-flex>

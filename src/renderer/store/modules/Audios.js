@@ -247,35 +247,30 @@ Oh Merily`
       titulo: 'Madudu - Mariposa azul',
       describe: 'Una bella mariposa azul tiene hambre y va por la montaña danzando para buscar su alimento. Esta bella canción del pueblo piapoco que se asienta en los departamentos del Vichada y Guainía, enamora con su poesía.',
       url: '256-madudu.mp3',
-      letra: `London bridge is falling down
-Falling down
-Falling down
-London bridge is falling down
-Oh Merily
+      letra: `Abetzua madudu
+manuitzu keba 
+mapitzua mapitzua
+Ualanikawa ualanikawa
+analima inataba upilieniwa
+icebecatay, tzuiuikatei
+tzuiuikatei, icebecatay
+idaliku, idaliku.
 
-Call for the light to light out the house
-Light out the house
-Light out the house
-Call for the light to light out the house
-Oh Merily
+Madudu capiraletzua pielawa,
+pielawa, pielawa, pielawa
+Ibalokawa aiku ibainakoa
+uwali, uwali, uwali, uwali.
 
-Call for the broom to broom up the house
-Broom up the house
-Broom up the house
-Call for the broom to broom up the house
-Oh Merily
+Una mariposa grande y hambrienta
+vuela por la montaña y danza... 
+en lo mojado, en lo seco 
+en lo seco, en lo mojado
+en la canoa, en la canoa.
 
-Call for the mop to mop up the house
-Mop up the house
-Mop up the house
-Call for the mop to mop up the house
-Oh Merily
-
-Call for the ax to ax off the head
-Ax off the head
-Ax off the head
-Call for the ax to ax off the head
-Oh Merily`
+Mariposa azul vuela, 
+vuela, vuela, vuela 
+se para en la hoja del árbol, en ella,
+en ella, en ella, en ella, en ella.`
     },
     { id: 259,
       autor: 'Ministerio de Cultura - ICBF - Audio de Tortuguita, vení bailá',
