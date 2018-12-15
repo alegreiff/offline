@@ -5,20 +5,20 @@
       <img id="logo" src="static/maguare.png" alt="electron-vue" class="logosmag">
     </v-flex>
     <v-flex xs6>
-<img id="logo" src="static/maguared.png" alt="electron-vue" class="logosmag" >
+      <img id="logo" src="static/maguared.png" alt="electron-vue" class="logosmag logomaguared" >
     </v-flex>
     <v-flex xs10 offset-xs1>
 
       <h2 class="text-xs-center">Bienvenidos a la Estrategia Digital de Cultura y Primera Infancia del Ministerio de Cultura</h2>
 
       <div class="intromg">
-        <p>La Estrategia Digital de Cultura y Primera Infancia del Ministerio de Cultura ofrece contenidos especializados y de calidad en el entorno digital dirigido a niños menores de seis años y sus padres, familias, maestros y en general para todos los cuidadores de primera infancia.</p>
+        <p>La Estrategia Digital de Cultura y Primera Infancia del Ministerio de Cultura, EDCPI, ofrece contenidos especializados y de calidad en el entorno digital dirigido a niños menores de seis años y sus padres, familias, maestros y en general para todos los cuidadores de primera infancia.</p>
 
         <p>En esta versión digital, que no necesita conexión a Internet, encontrarán una selección de los mejores contenidos de Maguaré y MaguaRED que promueven los derechos culturales y los lenguajes expresivos de los niños.</p>
 
-        <p>A través del menú de la izquierda <v-icon>fas fa-bars</v-icon> tendrán acceso a más de 200 videos, audios, libros y material descargable, completamente gratuito. </p>
+        <p>A través del menú de la izquierda <v-icon>fas fa-bars</v-icon> tendrán acceso a más de 250 videos, audios, libros y material descargable, completamente gratuito. </p>
 
-        <p>Los invitamos a descubrir más contenidos y recursos en <v-btn flat style="text-transform: none; padding: 0; margin: 0" small v-on:click="webexterna('https://www.maguare.gov.co')">www.maguare.gov.co</v-btn> y <v-btn flat style="text-transform: none; padding: 0; margin: 0" small v-on:click="webexterna('https://www.maguared.gov.co')">www.maguared.gov.co</v-btn>, y a unirse a la comunidad a través de las redes sociales.</p>
+        <p>Los invitamos a descubrir más contenidos y recursos en <v-btn flat style="text-transform: none; padding: 0; margin: 0; color: #137786; font-weight: bolder" small v-on:click="webexterna('https://www.maguare.gov.co')">www.maguare.gov.co</v-btn> y <v-btn flat style="text-transform: none; padding: 0; margin: 0; color: #137786; font-weight: bolder" small v-on:click="webexterna('https://www.maguared.gov.co')">www.maguared.gov.co</v-btn>, y a unirse a la comunidad a través de las redes sociales.</p>
       </div>
     </v-flex>
     <v-flex xs6 offset-xs3 class="text-xs-center">
@@ -33,7 +33,11 @@
       <v-btn dark small color="#ED3833" @click="webexterna('https://youtube.com/maguared')">YouTube &nbsp;
         <v-icon dark>fab fa-youtube-square</v-icon>
       </v-btn>
-
+    </v-flex>
+    <v-flex xs4 offset-xs4 class="text-xs-center">
+      <v-btn dark color="magnaranja" large @click="muestravideo">¿Qué es la EDCPI? &nbsp;
+      <v-icon dark large>fas fa-play-circle</v-icon>
+    </v-btn>
     </v-flex>
   </v-layout>
   <v-dialog v-model="dialog"max-width="450">
@@ -52,6 +56,33 @@
     </v-card>
   </v-dialog>
 
+  <v-dialog v-model="videoedcpi" max-width="85%">
+    <v-card>
+      <v-card-title><h2>{{ videosque[2].titulo }}</h2> </v-card-title>
+
+      <v-card-text>
+        <p>{{ videosque[2].describe}}</p>
+
+          <video autoplay
+          @ended='videoedcpi=false'
+          class="centrovideo"
+          width="80%" height="auto" controls autoplay
+          ref="vidtutto"
+          controlsList="nodownload nofullscreen">
+              <source src="static/video/1402.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+
+
+      </v-card-text>
+      <v-card-actions class="justify-center accionescard">
+          <v-btn color="magazul" small @click="videoedcpi=false">Cerrar</v-btn>
+      </v-card-actions>
+
+    </v-card>
+  </v-dialog>
+
+
 
   </div>
 </template>
@@ -68,7 +99,8 @@
       return {
         datosgenerales: [],
         dialog: false,
-        enlace: ''
+        enlace: '',
+        videoedcpi: false
 
       }
     },
@@ -89,8 +121,20 @@
     computed: {
 
       ...mapState('Describe', ['describe']),
+      ...mapState('Queesvideos', ['videosque']),
     },
     methods: {
+      muestravideo(video){
+        this.videoedcpi = true
+        //this.tutorialactivo=video
+        //this.$refs.vidtutto.play()
+        //this.videotutorial = 'static/video/'+video.video
+        if(this.$refs.vidtutto){
+          this.$refs.vidtutto.load()
+          //this.$refs.playame1.play()
+
+        }
+      },
       open (link) {
         console.log(link)
         /*this.$electron.shell.openExternal(link)*/
@@ -135,7 +179,10 @@
 
 .logosmag{
   max-width: 100%;
-
+}
+.logomaguared{
+  padding-top: 3em;
+  max-width: 300px;
 }
 .iniciomg{
   background-image: url("~@/assets/gris.png");

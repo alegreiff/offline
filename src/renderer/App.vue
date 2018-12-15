@@ -111,7 +111,7 @@ export default {
     },
     webexterna (link) {
       //this.enlace = link
-      alert(link)
+      //alert(link)
       this.$electron.shell.openExternal(link)
       //this.dialog=true
 

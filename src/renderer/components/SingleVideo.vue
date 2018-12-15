@@ -71,7 +71,7 @@ export default {
 
     EventBus.$emit('ICONOBARRA', 'fas fa-play-circle', 'magnaranja');
     this.videoactivo = this.$route.params.id;
-    this.allvideos=this.videos.concat(this.fullmaguarevideos);
+    this.allvideos=this.videos.concat(this.fullmaguarevideos).concat(this.videosque);
     this.allvideos = _.sortBy(this.allvideos, ['titulo']);
     //this.media = this.allvideos.filter(dato => dato.id == this.videoactivo)
     this.cambioVideo(this.videoactivo)
@@ -80,6 +80,7 @@ export default {
   computed: {
       ...mapState('Maguared', ['videos']),
       ...mapGetters('Videos', ['fullmaguarevideos']),
+      ...mapState('Queesvideos', ['videosque']),
       ...mapState('Describe', ['describe']),
     },
     methods: {
@@ -101,7 +102,7 @@ export default {
 
           EventBus.$emit('SECCION', this.cancionactiva[0].titulo);
         }else{
-          EventBus.$emit('SECCION', "Su madre, pirobo");
+          EventBus.$emit('SECCION', "-----------------");
         }
 
 
