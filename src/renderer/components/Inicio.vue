@@ -110,6 +110,7 @@
       EventBus.$emit('SECCION', this.datosgenerales[0].descripcion);
       EventBus.$emit('ICONOBARRA', 'fas fa-home', 'white');
     },
+
     watch: {
       videoedcpi (val) {
             //!val && alert('Dialog is closing')
@@ -128,7 +129,11 @@
       ...mapState('Describe', ['describe']),
       ...mapState('Queesvideos', ['videosque']),
     },
+
     methods: {
+      play () {
+    	this.wavesurfer.playPause()
+    },
       muestravideo(video){
         this.videoedcpi = true
         //this.tutorialactivo=video

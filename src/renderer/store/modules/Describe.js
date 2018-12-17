@@ -1,6 +1,13 @@
 const state = {
   describe: [
     {
+      id: 664,
+      clase: 'maguare',
+      seccion: 'AUDIOS',
+      subseccion: 'AUDIOS',
+      titulobreve: 'AUDIO',
+      descripcion: 'AUDIOS'
+    },{
       id: 665,
       clase: 'maguared',
       seccion: 'VIDEOS',

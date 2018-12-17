@@ -13,6 +13,7 @@ import MaguaREDLibros from '@/components/MaguaREDLibros'
 import AboutUs from '@/components/AboutUs'
 import Ceiba from '@/components/Ceiba'
 import SingleVideo from '@/components/SingleVideo'
+import SingleAudio from '@/components/SingleAudio'
 
 Vue.use(Router)
 
@@ -32,6 +33,7 @@ export default new Router({
     { path: '/tutorialesmaguared', component: MaguaREDTutoriales },
     { path: '/descargablesmaguare', component: DescargablesMaguare },
     { path: '/politicas', component: Politicas },
+    { path: '/sonidos', component: SingleAudio },
     { path: '/ceiba', component: Ceiba },
     { path: '/interactivos/:id', component: Interactivos, name: 'app' },
     { path: '/videos/:id', component: Videos, name: 'vid' },

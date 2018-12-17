@@ -1929,7 +1929,6 @@ const getters = {
       return state.canciones.filter(cancion => cancion.coleccion == 'Fiesta de la lectura')
     },
 
-
     audiosSincoleccion: state => {
       return state.canciones.filter(cancion => cancion.coleccion == '')
     },
