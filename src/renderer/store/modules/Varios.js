@@ -85,7 +85,7 @@ const state = {
         coleccion: 'Leer es mi cuento',
         edad: 1,
         publico: 'maguare',
-        describe: 'Recuerda los cuentos de infancia y lee con tus niños: Mirringa Mirronga, El renacuajo paseador, Juan Chunguero, Pastorcita, Juan Matachín, Tía Pasitrote y muchos más.',
+        describe: 'Recuerden los cuentos de infancia de Rafael Pombo y lean junto con los niños. Aquí encuentran cuentos como Mirringa Mirronga, El renacuajo paseador, Juan Matachín, entre otros.',
         url: 'librosmaguare/499-pomboplatillos.pdf',
         descarga: 'LEMC-pombo-platillos'
       },{
@@ -95,7 +95,7 @@ const state = {
         coleccion: 'Leer es mi cuento',
         edad: 10,
         publico: 'maguared',
-        describe: 'Obra maestra de William Shakespeare, genio de la lengua inglesa, es la historia de amor más hermosa y trágica que jamás se haya escrito. Esta versión de los hermanos Lamb ha sido especialmente escrita para los jóvenes. ',
+        describe: 'Esta obra maestra de William Shakespeare, genio de la literatura inglesa, cuenta la historia de amor más hermosa y trágica que jamás se haya escrito. Esta versión de los hermanos Lamb se escribió especialmente para los jóvenes.',
         url: 'leeresmicuento/501-romeoyjulieta.pdf',
         descarga: 'LEMC-romeoyjulieta'
       },{
@@ -105,7 +105,7 @@ const state = {
         coleccion: 'Leer es mi cuento',
         edad: 10,
         publico: 'maguared',
-        describe: 'Los relatos que cada noche cuenta Sherezada al sultán constituyen uno de los libros que más ha entretenido a niños y adultos durante siglos.  Aquí encontrarás tres de estos relatos llenos de aventuras, sueños e historias de amor.',
+        describe: 'Los relatos que cada noche cuenta Sherezada constituyen uno de los libros que más ha entretenido a niños y adultos durante siglos. Aquí encontrarán tres de estos relatos llenos de aventuras, sueños e historias de amor.',
         url: 'leeresmicuento/502-milyunanoches.pdf',
         descarga: 'LEMC-cuentosdelasmilyunanoches'
       },{
@@ -115,7 +115,7 @@ const state = {
         coleccion: 'Leer es mi cuento',
         edad: 1,
         publico: 'maguare',
-        describe: 'Los cuentos, poemas y fábulas que presentamos en este libro tienen como propósito hacer que los lectores, niños y grandes, adquieran el gusto por las palabras. ',
+        describe: 'Los cuentos, poemas y fábulas de este libro tienen como propósito hacer que los lectores, niños y grandes, adquieran el gusto por las palabras. ',
         url: 'librosmaguare/505-vivavoz.pdf',
         descarga: 'LEMC-viva-voz'
       },{
@@ -125,7 +125,7 @@ const state = {
         coleccion: 'Leer es mi cuento',
         edad: 1,
         publico: 'maguare',
-        describe: 'Este título te invita a disfrutar con tus niños de las historias tradicionales que los familias europeas se contaban durante los fríos y largos inviernos.',
+        describe: 'Este libro los invita a disfrutar junto con los niños historias tradicionales que las familias europeas narraban durante los fríos y largos inviernos.',
         url: 'librosmaguare/507-purocuento.pdf',
         descarga: 'LEMC-puro-cuento'
       },{
@@ -135,7 +135,7 @@ const state = {
         coleccion: 'Leer es mi cuento',
         edad: 1,
         publico: 'maguare',
-        describe: 'Canta y juega con tus niños las canciones, rondas, poemas, trabalenguas, dichos, retahílas y repeticiones. Encontrarás relatos e historias de reconocidos autores latinoamericanos.',
+        describe: 'Canten y jueguen con los niños canciones, rondas, poemas, trabalenguas, dichos y retahílas. Aquí encontrarán relatos e historias de reconocidos autores latinoamericanos.',
         url: 'librosmaguare/515-cantapalabras.pdf',
         descarga: 'LEMC-canta-palabras'
       },{
@@ -145,7 +145,7 @@ const state = {
         coleccion: 'Leer es mi cuento',
         edad: 7,
         publico: 'maguare',
-        describe: 'Disfruta con tus niños historias de fantasía como Barba azul de Charles Perrault y Los tres pelos de oro del diablo y La Cenicienta de Los Hermanos Grimm.',
+        describe: 'Disfruten junto con los niños historias de fantasía como Barba azul de Charles Perrault y Los tres pelos de oro del diablo y La Cenicienta de Los Hermanos Grimm.',
         url: 'librosmaguare/538-barbas.pdf',
         descarga: 'LEMC-barbas-pelos-cenizas'
       },{
@@ -155,7 +155,7 @@ const state = {
         coleccion: 'Leer es mi cuento',
         edad: 7,
         publico: 'maguare',
-        describe: 'Caballos, monos, niños, ratones, familias, cucarachitas, matas de mora, vaqueros, selvas, loras, gatos y hasta dulces de icaco viven en estas páginas. ¡Vamos a leer!.',
+        describe: 'Caballos, monos, niños, familias, cucarachitas, matas de mora, vaqueros, selvas, loras, gatos y hasta dulces de icaco viven en estas páginas.',
         url: 'librosmaguare/539-animalesninos.pdf',
         descarga: 'LEMC-animales-ninos'
       },{
@@ -195,7 +195,7 @@ const state = {
         coleccion: 'Leer es mi cuento',
         edad: 7,
         publico: 'maguare',
-        describe: 'Encuentra 30 fábulas de Félix María Samaniego como La cigarra y la hormiga, El león y el ratón, El ciervo en la fuente y muchas otras. Se trata de pequeños cuentos en los que hablan y actúan los animales, y que llevan a conclusiones morales.',
+        describe: 'Encuentren aquí 30 fábulas de Félix María Samaniego. Algunos de los títulos son La cigarra y la hormiga, El león y el ratón y el Ciervo en la fuente y muchas otras. Se trata de pequeños cuentos en los que hablan y actúan los animales, y que llevan a conclusiones morales.',
         url: 'librosmaguare/543-fabulas.pdf',
         descarga: 'LEMC-fabulas'
       },{
@@ -215,7 +215,7 @@ const state = {
         coleccion: 'Leer es mi cuento',
         edad: 7,
         publico: 'maguare',
-        describe: 'Con estos dos cuentos los niños gozarán y se divertirán viendo cómo y por qué las cosas son como son. ¿No será, acaso, que el elefante tiene trompa y el leopardo manchas porque les pasó lo que él cuenta que les pasó?.',
+        describe: 'Con estos dos cuentos los niños gozarán y se divertirán viendo cómo y por qué las cosas son como son. ¿No será, acaso, que el elefante tiene trompa y el leopardo manchas porque les pasó lo que él cuenta que les pasó?',
         url: 'librosmaguare/611-elefantetrompa.pdf',
         descarga: 'LEMC-elefante-trompa'
       },
@@ -276,7 +276,7 @@ const state = {
         coleccion: 'Leer es mi cuento',
         edad: 10,
         publico: 'maguared',
-        describe: 'Aquí encuentra los apítulos 1 y 7 de la obra literaria más famosa que se haya escrito en español.',
+        describe: 'Aquí encuentran los capítulos 1 y 7 de la obra literaria más famosa que se haya escrito en español.',
         url: 'leeresmicuento/1223-quijote.pdf',
         descarga: 'LEMC-donquijote'
       },{
@@ -336,7 +336,7 @@ const state = {
         coleccion: 'Leer es mi cuento',
         edad: 1,
         publico: 'maguare',
-        describe: 'Juguemos con las palabras, canta con ellas, traba la lengua y destrábala otra vez, vamos: "Pedro Pérez Pereira, pobre pintor portugués, pinta paisajes por poco precio, para poder pasar por París". ¿Pudiste decirlo? ¡Ahora dilo aún más rápido!.',
+        describe: 'Jueguen con las palabras, canten con ellas y destrábenlas una y otra vez.',
         url: 'librosmaguare/612-cancionesrondas.pdf',
         descarga: 'LEMC-canciones-rondas'
       },{
@@ -605,7 +605,56 @@ const state = {
         describe: '¿Quieren ver un video? en Maguaré tienen más de veinte videos musicales con ritmos diferentes y técnicas de animación distintas… pero además les sugerimos cómo utilizarlos en la casa o en la escuela, para que los niños de primera infancia descubran e imaginen historias.',
         url: 'sugerencias/sugerencias-de-uso-9027-videosmusicales.pdf',
         descarga: 'Sugerencia-de-uso-videosmusicales'
-      }
+      },{
+        id: 9028,
+        titulo: 'Así me lo contaron',
+        autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
+        describe: '',
+        url: 'sugerencias/sugerencias-de-uso-9028-asimelocontaron.pdf',
+        descarga: 'Sugerencia-de-uso-asi-me-lo-contaron'
+      },{
+        id: 9029,
+        titulo: 'Rompecabezas',
+        autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
+        describe: '',
+        url: 'sugerencias/sugerencias-de-uso-9029-rompecabezas.pdf',
+        descarga: 'Sugerencia-de-uso-rompecabezas'
+      },{
+        id: 9030,
+        titulo: 'Rondas',
+        autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
+        describe: '',
+        url: 'sugerencias/sugerencias-de-uso-9030-rondas.pdf',
+        descarga: 'Sugerencia-de-uso-rondas'
+      },{
+        id: 9031,
+        titulo: 'Fiesta de la lectura',
+        autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
+        describe: '',
+        url: 'sugerencias/sugerencias-de-uso-9031-fiestadelalectura.pdf',
+        descarga: 'Sugerencia-de-uso-fiesta-de-la-lectura'
+      },{
+        id: 9032,
+        titulo: 'Cuentazos con efectazos',
+        autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
+        describe: '',
+        url: 'sugerencias/sugerencias-de-uso-9032-cuentazos.pdf',
+        descarga: 'Sugerencia-de-uso-cuentazos-con-efectazos'
+      },{
+        id: 9033,
+        titulo: 'Leer es mi cuento',
+        autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
+        describe: '',
+        url: 'sugerencias/sugerencias-de-uso-9033-lemc.pdf',
+        descarga: 'Sugerencia-de-uso-leer-es-mi-cuento'
+      }/*,{
+        id: 9028,
+        titulo: '',
+        autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
+        describe: '',
+        url: 'sugerencias/wwwwwwww.pdf',
+        descarga: 'Sugerencia-de-uso-xxxxx'
+      }*/
     ],
 }
 

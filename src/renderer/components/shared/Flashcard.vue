@@ -13,8 +13,9 @@
             <!--<div class="card-content center bakccard" :style="{ backgroundImage: `url('${bgback}')` }">-->
             <div class="card-content center bakccard">
               <h3>{{front}}</h3>
+                <img v-if="imgBack!=''" :src="imgBack" width="300" height="auto">
                 <p v-bind:style="{fontSize: textSizeBack, fontWeight: 'bold'}" class="lyrics text-xs-left textoatras">{{back}}</p>
-                <img v-if="imgBack!=''" :src="imgBack" width="200" height="auto">
+
             </div>
         </div>
     </div>
@@ -145,7 +146,7 @@ export default {
 .imagenfrontalflashcards{
   border-radius: 1.0em;
   width:80%;
-  
+
   height:auto;
 }
 </style>

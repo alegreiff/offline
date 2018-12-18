@@ -189,6 +189,50 @@ export default {
 
 }
 
+.accionescard{
+  background: var(--magfondogris);
+}
+.card-titulo{
+  font-size: 1.0em;
+  text-align: center;
+  margin: 0 auto;
+}
+.card-imagen{
+  max-width: 100%;
+  margin: 0.2em auto;
+  border-radius: 0.3em;
+}
+.card-texto{
+  font-size: 0.9em;
+}
+  img.logomini{
+    max-height: 60px;
+    margin: 0.5em auto;
+    display: block;
+  }
+  img.logominim{
+    max-height: 40px;
+    margin: 0.5em auto;
+    display: block;
+  }
+  .menu_interactivos{
+    border-bottom: var(--magmorado) 3px solid;
+  }
+  .menu_videos{
+    border-bottom: var(--magnaranja) 3px solid;
+  }
+  .menu_audios{
+    border-bottom: var(--maglima) 3px solid;
+  }
+  .menu_libros{
+    border-bottom: var(--magazul) 3px solid;
+  }
+span.authormag{
+  font-size: 0.8em;
+  color: var(--maggris);
+  font-weight: 800;
+}
+
 img.imlogo {
   max-width: 100%;
   cursor: pointer;
@@ -297,5 +341,8 @@ p.lyrics{
 .allvideoslista{
   padding: 0.2em;
   margin-bottom: 0.2em;
+}
+.botonestrategia{
+  margin: -20px 0 1em 0;
 }
 </style>

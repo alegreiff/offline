@@ -129,11 +129,24 @@ export default {
           },
           height: 600,
           frame: true,
-          transparent: false,
+          titleBarStyle: 'hidden',
+          transparent: true,
           width: 800,
           backgroundColor: '#e0541e',
           show: false
         })
+        /*
+        this.ventana = new BrowserWindow({
+            webPreferences: {
+            },
+            height: 600,
+            frame: true,
+            transparent: true,
+            width: 800,
+            backgroundColor: '#e0541e',
+            show: false
+          })
+        */
         this.ventana.on('closed', () => {
           this.ventana = null
         })

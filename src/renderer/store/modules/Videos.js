@@ -178,8 +178,8 @@ const state = {
     { id: 632,
       autor: 'Ministerio de Cultura - Maguaré - Ricardo Prado - Neyber Lenis',
       coleccion: 'Karaokes de Maguaré en La Ceiba',
-      titulo: 'La fiesta de Arma DJ - Karaoke',
-      describe: 'Arma DJ es un armadillo que desde temprano toca su música para que todos se pongan a cantar y a bailar. Es el mejor DJ de La Ceiba y todos aman asistir a sus fiestas. ¿Y a ti, te gustó esta canción?',
+      titulo: 'La fiesta de Arma - DJ - Karaoke',
+      describe: 'Arma - DJ es un armadillo que desde temprano toca su música para que todos se pongan a cantar y a bailar. Es el mejor DJ de La Ceiba y todos aman asistir a sus fiestas. ¿Y a ti, te gustó esta canción?',
       url: '632-armadj.mp4'
     },
     { id: 633,

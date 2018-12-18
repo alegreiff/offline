@@ -4,7 +4,7 @@ const state = {
         id: 0,
         order: 1,
         nombre: 'Saimiri',
-        describe: 'En la copa de la ceiba vive el pequeño Saimiri y su familia de monos ardilla que emigraron desde el Amazonas. Saimiri tiene 5 años y es un chiquillo muy tierno, sensible, amable y empático, se preocupa por los problemas de todos, es conciliador, dulce y está muy apegado a su familia. Graba todo lo que hacen los habitantes de la ceiba. Ese es su lenguaje expresivo principal, aunque no lo sabe, explora las expresiones de los demás y le gustaría encontrar su gran talento, porque admira mucho el de los demás.',
+        describe: 'En la copa de la ceiba vive el pequeño Saimiri y su familia de monos ardilla que emigraron desde el Amazonas. Saimiri tiene 5 años y es un chiquillo muy tierno, sensible, amable y empático, se preocupa por los problemas de todos, es conciliador, dulce y está muy apegado a su familia. Graba todo lo que hacen los habitantes de la ceiba. Ese es su lenguaje expresivo principal, aunque no lo sabe, explora las expresiones de los demás y le gustaría encontrar su gran talento, porque admira mucho el de sus vecinos.',
         imagen: 'B01.jpg',
         imagenback: 'bg-00.png'
     },
@@ -19,8 +19,8 @@ const state = {
     {
         id: 2,
         order: 3,
-        nombre: 'Edilberto y Bertilda',
-        describe: 'Los tíos, como les dicen todos, son una pareja muy trabajadora. Se conocieron desde muy jóvenes, se entienden y respetan profundamente, pero sobre todo son una pareja que está súper sincronizada para ayudarse con las funciones del hogar y la crianza de sus hijas adoptivas, las trillizas, su hijo el bebé mono y Saimiri su sobrino. Cada labor para ellos es como una misión que debe ser planeada hasta en el más pequeño detalle Pero todo plan de los tíos tiene su punto débil: las terrillizas. Tienen un debilidad por la cocina, les encanta cocinar, y aunque son unos meros aficionados, de vez en cuando logran unos platos dignos de cualquier profesional.',
+        nombre: 'Bertilda y Edilberto',
+        describe: 'Los tíos, como les dicen todos, son una pareja muy trabajadora. Se conocieron desde muy jóvenes, se entienden y respetan profundamente, pero sobre todo son una pareja que está súper sincronizada para ayudarse con las funciones del hogar y la crianza de sus hijas adoptivas, las trillizas, su hijo el bebé mono y Saimiri su sobrino. Cada labor para ellos es como una misión que debe ser planeada hasta en el más pequeño detalle. Tienen un debilidad por la cocina, les encanta cocinar, y aunque son unos meros aficionados, de vez en cuando logran unos platos dignos de cualquier profesional.',
         imagen: 'B10.jpg',
         imagenback: 'bg-02.png'
     },
@@ -44,7 +44,7 @@ const state = {
         id: 5,
         order: 6,
         nombre: 'Arma - DJ',
-        describe: 'Nació en las sabanas de los llanos orientales. A Arma - DJ todo le rima, habla rapeando. Es el más popular de la comunidad, el amigo de todos, él encuentra la musicalidad en todo el entorno, en frases que dicen los demás, está siempre muy enfocado en todo lo que suena, porque en la selva todo tiene ritmo musical: el viento, el agua, la lluvia, la madera, las hojas, etc. Está abstraído y muy distraído con esa tarea. Como un dj en medio de una fiesta, siempre está concentrado en lo que hace y escucha.',
+        describe: 'Nació en las sabanas de los llanos orientales. A Arma - DJ todo le rima, habla rapeando. Es el más popular de la comunidad, el amigo de todos, él encuentra la musicalidad en todo el entorno o en frases que dicen los demás. Está siempre muy enfocado en todo lo que suena, porque en la selva todo tiene ritmo musical: el viento, el agua, la lluvia, la madera, las hojas, etc. Está siempre abstraído y muy distraído con esa tarea.',
         imagen: 'B04.jpg',
         imagenback: 'bg-05.png'
     },
@@ -86,7 +86,9 @@ const state = {
         id: 10,
         order: 11,
         nombre: 'Linio y Tulita',
-        describe: 'Tulita es profesora. Le gusta enseñar y es buena en ello; cuando ella habla todos callan y ponen atención, es su don. Cuando llega de trabajar le ayuda a Linio, su esposo que es amo de casa, a calmar a sus 27 hijos, leyéndoles un cuento. Son una pareja de cuyes que vinieron desde Nariño con su familia que cada vez es mayor. Ellos son los melosos de la comunidad. Suspiran cuando se miran, siempre se están diciendo piropos de postres de frutas selváticas, mezclados con elementos de la selva: “Postrecito de savia de árbol... dime, pastelito de bayas silvestres”.',
+        describe: `Tulita es profesora. Le gusta enseñar y es buena en ello; cuando ella habla todos callan y ponen atención, es su don. Cuando llega de trabajar le ayuda a Linio, su esposo que es amo de casa, a calmar a sus 27 hijos leyéndoles un cuento. Son una pareja de cuyes que vinieron desde Nariño con su familia que cada vez es mayor. Ellos son los melosos de la comunidad. Suspiran cuando se miran, siempre se están diciendo piropos de postres de frutas selváticas, mezclados con elementos de la selva:
+        - Postrecito de savia de árbol...
+        - Dime, pastelito de bayas silvestres...`,
         imagen: 'B02.jpg',
         imagenback: 'bg-10.png'
     },
@@ -94,7 +96,7 @@ const state = {
         id: 11,
         order: 12,
         nombre: 'Gildardo el olinguito',
-        describe: 'Es del departamento de Antioquia y es el vendedor que va de pueblo en pueblo con su mercado ambulante de mercancías, trayendo las novedades de productos innovadores de otras partes del mundo. Siempre que llega a Maguaré en la Ceiba, todos los chicos corren rápido para ver qué novedades ha traído. Cuando Gildardo llega no solo trae objetos, sino historias fantásticas del mundo que deja boquiabiertos a la mayoría de los habitantes de la comunidad.',
+        describe: 'Es del departamento de Antioquia y es el vendedor que va de pueblo en pueblo con su mercado ambulante de mercancías, trayendo las novedades de productos innovadores de otras partes del mundo. Siempre que llega a La Ceiba, todos los chicos corren rápido para ver qué novedades ha traído. Cuando Gildardo llega no solo trae objetos, sino historias fantásticas del mundo que deja boquiabiertos a la mayoría de los habitantes de la comunidad.',
         imagen: 'B07.jpg',
         imagenback: 'bg-11.png'
     }

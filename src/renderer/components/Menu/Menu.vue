@@ -22,6 +22,10 @@
           <v-list-tile-action><v-icon medium color="magrojo">far fa-id-badge</v-icon></v-list-tile-action>
           <v-list-tile-content><v-list-tile-title>MusiK</v-list-tile-title></v-list-tile-content>
     </v-list-tile>
+    <v-list-tile :to="{path: '/game'}" >
+          <v-list-tile-action><v-icon medium color="magrojo">far fa-id-badge</v-icon></v-list-tile-action>
+          <v-list-tile-content><v-list-tile-title>JuegoK</v-list-tile-title></v-list-tile-content>
+    </v-list-tile>
     <v-list-tile :to="{path: '/ceiba'}" >
           <v-list-tile-action><v-icon medium color="magrojo">far fa-id-badge</v-icon></v-list-tile-action>
           <v-list-tile-content><v-list-tile-title>Conoce a Saimiri y sus amigos</v-list-tile-title></v-list-tile-content>
@@ -404,58 +408,5 @@
   </div>
 </template>
 <style >
-/*
-magcafe:      '#772705',
-magrojo:      '#e0541e',
-magnaranja:   '#f19741',
-maglima:      '#c6c74f',
-magverde:     '#8bceaf',
-magazul:      '#1db5cc',
-magmorado:    '#785395'
-*/
 
-
-
-.accionescard{
-  background: var(--magfondogris);
-}
-.card-titulo{
-  font-size: 1.0em;
-  text-align: center;
-}
-.card-imagen{
-  max-width: 100%;
-  margin: 0.2em auto;
-  border-radius: 0.3em;
-}
-.card-texto{
-  font-size: 0.9em;
-}
-  img.logomini{
-    max-height: 60px;
-    margin: 0.5em auto;
-    display: block;
-  }
-  img.logominim{
-    max-height: 40px;
-    margin: 0.5em auto;
-    display: block;
-  }
-  .menu_interactivos{
-    border-bottom: var(--magmorado) 3px solid;
-  }
-  .menu_videos{
-    border-bottom: var(--magnaranja) 3px solid;
-  }
-  .menu_audios{
-    border-bottom: var(--maglima) 3px solid;
-  }
-  .menu_libros{
-    border-bottom: var(--magazul) 3px solid;
-  }
-span.authormag{
-  font-size: 0.8em;
-  color: var(--maggris);
-  font-weight: 800;
-}
 </style>

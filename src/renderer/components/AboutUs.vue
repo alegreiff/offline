@@ -82,6 +82,8 @@
             </v-tab>
             <v-tab-item>
 
+              <p class="cred-persona">Marcela Benavides Estévez</p>
+              <p class="cred-cargo">Coordinadora Estrategia Digital de Cultura y Primera Infancia Maguaré y MaguaRED</p>
               <p class="cred-persona">Edna Katerine Moreno Velandia</p>
               <p class="cred-cargo">Selección y curaduría de contenidos - Maguaré</p>
               <p class="cred-persona">Juan Sebastián Salazar Piedrahita</p>

@@ -14,13 +14,22 @@ const state = {
       subseccion: 'VIDEOS',
       titulobreve: 'VIDEO',
       descripcion: 'VER VIDEO'
-    },/* VARIOS SERIE 500 */{
+    },/* VARIOS SERIE 500 */
+    {
       id: 666,
       clase: 'maguared',
       seccion: 'Ceiba',
       subseccion: 'Ceiba',
-      titulobreve: 'Conoce Maguaré en La Ceiba',
+      titulobreve: 'Conoce a Saimiri y sus amigos',
       descripcion: 'Estos son los personajes de Maguaré en La Ceiba'
+    },
+    {
+      id: 667,
+      clase: 'maguared',
+      seccion: 'Ceiba',
+      subseccion: 'Ceiba',
+      titulobreve: 'Conoce a Saimiri y sus amigos',
+      descripcion: 'Juguemos con los personajes de Maguaré en La Ceiba'
     },/* VARIOS SERIE 500 */
     {
       id: 500,

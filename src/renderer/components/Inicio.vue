@@ -14,6 +14,8 @@
       <div class="intromg">
         <p>La Estrategia Digital de Cultura y Primera Infancia del Ministerio de Cultura, EDCPI, ofrece contenidos especializados y de calidad en el entorno digital dirigido a niños menores de seis años y sus padres, familias, maestros y en general para todos los cuidadores de primera infancia.</p>
 
+        <p class="text-xs-center botonestrategia"><v-btn dark color="magnaranja" small @click="muestravideo">¿Qué es la EDCPI? &nbsp;<v-icon small large>fas fa-play-circle</v-icon></v-btn></p>
+
         <p>En esta versión digital, que no necesita conexión a Internet, encontrarán una selección de los mejores contenidos de Maguaré y MaguaRED que promueven los derechos culturales y los lenguajes expresivos de los niños.</p>
 
         <p>A través del menú de la izquierda <v-icon>fas fa-bars</v-icon> tendrán acceso a más de 250 videos, audios, libros y material descargable, completamente gratuito. </p>
@@ -34,11 +36,7 @@
         <v-icon dark>fab fa-youtube-square</v-icon>
       </v-btn>
     </v-flex>
-    <v-flex xs4 offset-xs4 class="text-xs-center">
-      <v-btn dark color="magnaranja" large @click="muestravideo">¿Qué es la EDCPI? &nbsp;
-      <v-icon dark large>fas fa-play-circle</v-icon>
-    </v-btn>
-    </v-flex>
+
   </v-layout>
   <v-dialog v-model="dialog"max-width="450">
     <v-card>

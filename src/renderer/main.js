@@ -11,6 +11,7 @@ Vue.use(VueLodash)
 
 import Vuetify from 'vuetify'
 //Vue.use(Vuetify)
+Vue.use(require('vue-moment'));
 Vue.use(Vuetify, {
   theme: {
     magnaranja:   '#f19741',

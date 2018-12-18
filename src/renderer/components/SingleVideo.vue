@@ -30,7 +30,7 @@
             </v-flex>
 
           </v-layout>
-          <v-layout row wrap>
+          <v-layout row wrap v-if="$route.params.id<1400">
             <v-flex xs3 v-for="(video, index) in allvideos" class="allvideoslista">
               <v-card color="white" class="text-xs-center" height="100%" ripple hover>
                 <v-img :src="'static/miniaturas/'+video.id+'.jpg'" class="card-imagen" @click="cambioVideo(video.id)"></v-img>

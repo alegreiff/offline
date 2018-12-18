@@ -14,6 +14,7 @@ import AboutUs from '@/components/AboutUs'
 import Ceiba from '@/components/Ceiba'
 import SingleVideo from '@/components/SingleVideo'
 import SingleAudio from '@/components/SingleAudio'
+import Game from '@/components/Game'
 
 Vue.use(Router)
 
@@ -35,6 +36,7 @@ export default new Router({
     { path: '/politicas', component: Politicas },
     { path: '/sonidos', component: SingleAudio },
     { path: '/ceiba', component: Ceiba },
+    { path: '/game', component: Game },
     { path: '/interactivos/:id', component: Interactivos, name: 'app' },
     { path: '/videos/:id', component: Videos, name: 'vid' },
     { path: '/audios/:id', component: Audios, name: 'coleccion' },
