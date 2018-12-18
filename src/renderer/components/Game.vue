@@ -5,7 +5,6 @@
     <div class="info magazul">
       <div><span class="label">Tiempo:</span><span class="value">{{ time }} </span></div>
       <div><span class="label">Turnos:</span><span class="value">{{ turns }} </span></div>
-      <button class="newGame" @click="resetGame()">Volver a jugar</button>
     </div>
   </v-flex>
   <v-flex xs12>
