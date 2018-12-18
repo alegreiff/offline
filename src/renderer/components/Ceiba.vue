@@ -2,7 +2,7 @@
   <div class="pa-4 rojomg seccionprincipal">
     <v-layout row wrap>
       <v-flex xs12>
-         <v-btn to="/game">Tinder</v-btn>
+
         <Flashcard
           imgFront="static/ceiba/ceiba.jpg"
           front="Maguaré en La Ceiba"
@@ -36,7 +36,12 @@ Todos los días el abuelo Emiliano toca el maguaré y los animales que viven en 
           <p class="lyrics">{{ person.describe }}</p>-->
 
       </v-flex>
+<v-flex xs-12>
 
+  <v-btn to="/game" block dark small color="#4267b2" >Juega reconociendo a los personajes de Maguaré en La Ceiba &nbsp;
+    <v-icon dark>fas fa-gamepad</v-icon>
+  </v-btn>
+</v-flex>
 
 
   </v-layout>

@@ -619,14 +619,16 @@ const state = {
         describe: '',
         url: 'sugerencias/sugerencias-de-uso-9029-rompecabezas.pdf',
         descarga: 'Sugerencia-de-uso-rompecabezas'
-      },{
+      },
+      /*{
         id: 9030,
         titulo: 'Rondas',
         autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
         describe: '',
         url: 'sugerencias/sugerencias-de-uso-9030-rondas.pdf',
         descarga: 'Sugerencia-de-uso-rondas'
-      },{
+      },*/
+      {
         id: 9031,
         titulo: 'Fiesta de la lectura',
         autor: 'Ministerio de Cultura - MaguaRED - Maguaré',

@@ -18,14 +18,6 @@
           <v-list-tile-action><v-icon medium color="magnaranja">fas fa-play-circle</v-icon></v-list-tile-action>
           <v-list-tile-content><v-list-tile-title>¿Qué es Maguaré?</v-list-tile-title></v-list-tile-content>
     </v-list-tile>
-    <v-list-tile :to="{path: '/sonidos'}" >
-          <v-list-tile-action><v-icon medium color="magrojo">far fa-id-badge</v-icon></v-list-tile-action>
-          <v-list-tile-content><v-list-tile-title>MusiK</v-list-tile-title></v-list-tile-content>
-    </v-list-tile>
-    <v-list-tile :to="{path: '/game'}" >
-          <v-list-tile-action><v-icon medium color="magrojo">far fa-id-badge</v-icon></v-list-tile-action>
-          <v-list-tile-content><v-list-tile-title>JuegoK</v-list-tile-title></v-list-tile-content>
-    </v-list-tile>
     <v-list-tile :to="{path: '/ceiba'}" >
           <v-list-tile-action><v-icon medium color="magrojo">far fa-id-badge</v-icon></v-list-tile-action>
           <v-list-tile-content><v-list-tile-title>Conoce a Saimiri y sus amigos</v-list-tile-title></v-list-tile-content>

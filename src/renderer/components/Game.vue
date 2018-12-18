@@ -177,7 +177,7 @@ export default {
       this.datosgenerales = this.describe.filter(dato => dato.id == 667)
       EventBus.$emit('TITULO', this.datosgenerales[0].titulobreve);
       EventBus.$emit('SECCION', this.datosgenerales[0].descripcion);
-      EventBus.$emit('ICONOBARRA', 'fas fa-gamepad', 'white');
+      EventBus.$emit('ICONOBARRA', 'fas fa-gamepad', 'magrojo');
   		this.resetGame();
   	},
     computed: {
@@ -282,7 +282,7 @@ export default {
   transform: rotateY(0deg);
 }
 .cards .card.found {
-  /*opacity: 0.3;*/
+  opacity: 0.6;
 }
 
 .splash {

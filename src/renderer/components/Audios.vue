@@ -56,7 +56,12 @@
             </v-card-text>
           </v-card>
         </v-flex>
+        <!--<v-flex xs-12>
 
+          <v-btn to="/sonidos" block dark small color="#4267b2" >Ver todas las canciones &nbsp;
+            <v-icon dark>fas fa-music</v-icon>
+          </v-btn>
+        </v-flex>-->
       </v-layout>
 </div>
 </template>
