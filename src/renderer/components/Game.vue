@@ -12,7 +12,7 @@
     <div class="cards">
       <div class="card" v-for="card in cards" :class="{ flipped: card.flipped, found: card.found }" @click="flipCard(card)">
         <div class="back"></div>
-        <div class="front" :style="{ backgroundImage: 'url(' + card.image + ')' }"></div>
+        <div class="front" :style="{ backgroundImage: 'url(static/ceiba/' + card.image + ')' }"></div>
       </div>
     </div>
   </v-flex>
@@ -34,15 +34,15 @@ import EventBus from './eventos';
 import { mapState } from 'vuex'
 
 var CardTypes = [
-{ name: "abuelo", image: "/static/ceiba/card-abuelo.png" },
-{ name: "arma", image: "/static/ceiba/card-arma.png" },
-{ name: "saimiri", image: "/static/ceiba/card-saimiri.png" },
-{ name: "cuya", image: "/static/ceiba/card-cuya.png" },
-{ name: "camaleon", image: "/static/ceiba/card-cama.png" },
-{ name: "rana", image: "/static/ceiba/card-rana.png" },
-{ name: "chip", image: "/static/ceiba/card-perezosa.png" },
-{ name: "gildardo", image: "/static/ceiba/card-olinguito.png" },
-{ name: "maya", image: "/static/ceiba/card-lora.png" }];
+{ name: "abuelo", image: "card-abuelo.png" },
+{ name: "arma", image: "card-arma.png" },
+{ name: "saimiri", image: "card-saimiri.png" },
+{ name: "cuya", image: "card-cuya.png" },
+{ name: "camaleon", image: "card-cama.png" },
+{ name: "rana", image: "card-rana.png" },
+{ name: "chip", image: "card-perezosa.png" },
+{ name: "gildardo", image: "card-olinguito.png" },
+{ name: "maya", image: "card-lora.png" }];
 
 
 
@@ -255,7 +255,7 @@ export default {
   cursor: pointer;
 }
 .cards .card .back {
-  background-image: url("/static/ceiba/card.png");
+  background-image: url("~@/assets/card.png");
   background-size: 90%;
   background-position: center;
   background-repeat: no-repeat;

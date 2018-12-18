@@ -26,7 +26,7 @@ function createWindow () {
 
   })
   /*ACTIVA devTools en produccion*/
-  /*mainWindow.webContents.openDevTools()*/
+  mainWindow.webContents.openDevTools()
 
   mainWindow.loadURL(winURL)
 

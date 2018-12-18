@@ -2,6 +2,7 @@
   <div class="pa-4 rojomg seccionprincipal">
     <v-layout row wrap>
       <v-flex xs12>
+         <v-btn to="/game">Tinder</v-btn>
         <Flashcard
           imgFront="static/ceiba/ceiba.jpg"
           front="Maguaré en La Ceiba"
@@ -11,7 +12,7 @@ Una avalancha causada por la minería pirata provocó que muchos animales de dif
 
 Replicando una barriada, cuadra o conjunto de vecinos, Maguaré es una vecindad que maneja ciertas normas necesarias para el manejo del orden, en un grupo donde confluyen varias culturas, formas de ser, de reaccionar y de sentir.
 
-Todos los días el abuelo Emiliano toca el maguaré y los animales que viven en La Ceiba, como es su costumbre, acuden al llamado, pero cuando están reunidos el abuelo ha olvidado el importante motivo por el que los ha convocado. La convocatoria es aprovechada por la mayoría de los animales para exponer problemas, contar algo nuevo que ha pasado en sus vidas o quejarse, como hace  siempre Rosalinda, la camaleona, una de las vecinas de Maguaré, que aprovecha que todos están reunidos para dirimir algún conflicto que tiene con uno de los vecinos. "
+Todos los días el abuelo Emiliano toca el maguaré y los animales que viven en La Ceiba, como es su costumbre, acuden al llamado, pero cuando están reunidos el abuelo ha olvidado el importante motivo por el que los ha convocado. La convocatoria es aprovechada por la mayoría de los animales para exponer problemas, contar algo nuevo que ha pasado en sus vidas o quejarse, como hace  siempre Rosalinda, la camaleona, una de las vecinas de Maguaré, que aprovecha que todos están reunidos para dirimir algún conflicto que tiene con uno de los vecinos."
 
           >
         </Flashcard>
