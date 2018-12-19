@@ -9,41 +9,41 @@ const state = {
       describe: 'El hermano araña y el hermano Tigre estaban trabajando juntos y decidieron llevar una lata de mantequilla para el almuerzo. Pero cuando fueron a comer ¡ya no había mantequilla! ¿Quién se la comió? Este relato de la comunidad raizal del Archipiélago de San Andrés, Providencia y Santa Catalina, está en lengua creole.',
       url: '22-breda-nancy.mp3',
       letra: `Wataim Breda Nancy and Breda Taiga gaan work, bot dehkerwa pan a buta deheet wen den don work. Waildeh wen deh work Breda Nancy baal out an se:
-—Breda taiga den deh call mih go bless uahbieby. 
+—Breda taiga den deh call mih go bless uahbieby.
 
-Wen Breda Nancy kombak, Breda Taiga aksim: 
-—Da wehunugi di biebiniem? 
-Breda Nancy se: 
-—Tap Gaan. 
+Wen Breda Nancy kombak, Breda Taiga aksim:
+—Da wehunugi di biebiniem?
+Breda Nancy se:
+—Tap Gaan.
 
 Fi a wail Breda Nancy baal out agen:
 —Breda taiga, den deh call mihfogo bless uahnadahbieby. Bot a no guain.
 Breda Taiga se:
-—Go man. 
+—Go man.
 
-So Breda Nancy gaanagen. Wen Breda Nancy komebak, Breda Taiga aksimagen: 
+So Breda Nancy gaanagen. WenBreda Nancy komebak, Breda Taiga aksimagen:
 —Da wehunugi di biebiniem dis taim?
-Nancy se: 
-—Miglegaan. 
+Nancy se:
+—Miglegaan.
 
-Deh stat work agen. Den Fi a wail Breda Nancy baal out agen: 
-—Breda Taiga den deh call mihfogo bless uahnadahbieby. Bot a no guainataal. 
-Breda Taiga se: 
-—Gwa man. 
+Deh stat work agen. Den Fi a wail Breda Nancy baal out agen:
+—Breda Taiga den deh call mihfogo bless uahnadahbieby. Bot a no guainataal.
+Breda Taiga se:
+—Gwa man.
 
-So Breda Nancy gaanagen. Wen Breda Nancy komebak, breda taiga aksimagen: 
+So Breda Nancy gaanagen. WenBreda Nancy komebak, breda taiga aksimagen:
 —Da wehunugi di biebiniem dis taim?
-Nancy se: 
-—Aalgaan. 
+Nancy se:
+—Aalgaan.
 
-Wentaime eat, non botanevadeh in a di pan, Breda Taiga get vex an stat tell Breda Nancy se da Him eet out di bota, an Breda Nancy se da beda Taiga, so dehdisaid fain out dah huu. 
-So Breda Taiga tell Breda Nancy: 
-—Mek we liedonginadihson and we wese who de buta stat run out from. 
+Wentaime eat, non botanevadeh in a di pan, Breda Taiga get vex an stat tell Breda Nancy se da Him eet out di bota, an Breda Nancy se da beda Taiga, so dehdisaid fain out dah huu.
+So Breda Taiga tell Breda Nancy:
+—Mek we liedonginadihson and we wese who de buta stat run out from.
 
 Dehliedonginadih son an Breda Taiga weh so taiyadihdrap a sleep. So Breda Nancy get up, ah teck some bota out a dih pan an rub ih da Taiga ba y an ihmout, an den ih wake up Taiga and se:
-—Yosi dah yu, de bota de come out a yu. 
+—Yosi dah yu, de bota de come out a yu.
 
-Breda Taiga weh so fool, ih se: 
+Breda Taiga weh so fool, ih se:
 —Ent dah mosa me. `
     },
     { id: 27,
@@ -62,7 +62,7 @@ ay o Rrom trailas pe sa e lumia, ay kana zhalas pele dromá, yek shavogo perelas
 
 Hace muchos, muchos años un gitano viajaba con su familia. Su caballo era flaco y sus patas estaban tan débiles que ya casi no podía tirar la pesada carreta. Pero la familia continuaba creciendo.
 
-A medida que la familia crecía, el caballo tenía que esforzarse más y más y llegó el momento en que ya casi no podía caminar. Pero debía seguir el camino, que estaba lleno de huecos. El caballo iba y venía, se mecía de derecha a izquierda y de la carreta caían muchas cosas: las ollas, los tapetes, la ropa y de vez en cuando hasta los niños se golpeaban la cabeza con el suelo.  No había ningún problema cuando era de día, pues sus padres los levantaban. El problema más grave era de noche, cuando no se podía ver nada.
+A medida que la familia crecía, el caballo tenía que esforzarse más y más y llegó el momento en que ya casi no podía caminar. Pero debía seguir el camino, que estaba lleno de huecos. El caballo iba y venía, se mecía de derecha a izquierda y de la carreta caían muchas cosas: las ollas, los tapetes, la ropa y de vez en cuando hasta los niños se golpeaban la cabeza con el suelo. No había ningún problema cuando era de día, pues sus padres los levantaban. El problema más grave era de noche, cuando no se podía ver nada.
 El Rrom viajó por todos los caminos y en todos cayeron una niña aquí, un niño allá y otro más lejos. Así fue como los Rrom nos dispersamos por el mundo. `
     },
     { id: 38,
@@ -248,7 +248,7 @@ Oh Merily`
       describe: 'Una bella mariposa azul tiene hambre y va por la montaña danzando para buscar su alimento. Esta bella canción del pueblo piapoco que se asienta en los departamentos del Vichada y Guainía, enamora con su poesía.',
       url: '256-madudu.mp3',
       letra: `Abetzua madudu
-manuitzu keba 
+manuitzu keba
 mapitzua mapitzua
 Ualanikawa ualanikawa
 analima inataba upilieniwa
@@ -262,13 +262,13 @@ Ibalokawa aiku ibainakoa
 uwali, uwali, uwali, uwali.
 
 Una mariposa grande y hambrienta
-vuela por la montaña y danza... 
-en lo mojado, en lo seco 
+vuela por la montaña y danza...
+en lo mojado, en lo seco
 en lo seco, en lo mojado
 en la canoa, en la canoa.
 
-Mariposa azul vuela, 
-vuela, vuela, vuela 
+Mariposa azul vuela,
+vuela, vuela, vuela
 se para en la hoja del árbol, en ella,
 en ella, en ella, en ella, en ella.`
     },
@@ -278,34 +278,34 @@ en ella, en ella, en ella, en ella.`
       titulo: 'Al otro lado del río toparon... un repentismo',
       describe: 'Esta canción surgió de un juego de los niños campesinos de Coyaima, Tolima, en el que promueven el “repentismo”: el improvisar una respuesta divertida, rimando el nombre de uno de los participantes con lo que se les ocurra.',
       url: '259-otroladodelrio.mp3',
-      letra: `Al otro lado del río, 
-al otro lado del río 
-toparon un burro muerto, 
+      letra: `Al otro lado del río,
+al otro lado del río
+toparon un burro muerto,
 toparon un burro muerto.
 
 Olelolelolaila, toparon un burro muerto.
-Y del buche le sacaron 
-y del buche le sacaron 
-el retrato de Ruperto, 
+Y del buche le sacaron
+y del buche le sacaron
+el retrato de Ruperto,
 el retrato de Ruperto.
 Olelolelolaila, el retrato de Ruperto.
 
-Oleloleilelolalolelolaila 
+Oleloleilelolalolelolaila
 lelolelolelolaila ¡ay! el retrato de Ruperto.
 
-Al otro lado del río, 
-al otro lado del río 
-toparon un cocodrilo, 
+Al otro lado del río,
+al otro lado del río
+toparon un cocodrilo,
 toparon un cocodrilo.
 Olelolelolaila, toparon un cocodrilo.
 
-Y del buche le sacaron 
-y del buche le sacaron 
-el retrato de Camilo, 
+Y del buche le sacaron
+y del buche le sacaron
+el retrato de Camilo,
 el retrato de Camilo.
 Olelolelolaila, el retrato de Camilo.
 
-Oleloleilelolalolelolaila 
+Oleloleilelolalolelolaila
 lelolelolelolaila ¡ay! el retrato de Camilo. `
     },
     { id: 272,
@@ -344,20 +344,20 @@ Yes, cho'weh the biebi`
       letra: `Una vez el hermano Araña y el hermano Tigre estaban trabajando juntos y decidieron llevar una lata de mantequilla para el almuerzo.
 Pero el hermano Araña era muy astuto y mientras trabajaban le dijo al Tigre: -Hermano Tigre, me están llamando para bautizar a un niño. Y se fue.
 
-Cuando regresó, Tigre le preguntó: -¿Cómo se llama el niño que bautizaste?  Y Araña le dijo: -Lodearriba Seacabó. 
+Cuando regresó, Tigre le preguntó: -¿Cómo se llama el niño que bautizaste? Y Araña le dijo: -Lodearriba Seacabó.
 
-Al rato empieza la araña otra vez a decirle a Tigre: —Me están llamando para bautizar a un niño pero no quiero ir. 
+Al rato empieza la araña otra vez a decirle a Tigre: —Me están llamando para bautizar a un niño pero no quiero ir.
 —Vete, vete. Necesitas ir –le respondió Tigre.
 
-Cuando Araña regresó, el hermano Tigre le preguntó: —¿Cómo se llama el niño que bautizaste? Y el hermano Araña le dijo: -Lodelmedio Seacabó. 
+Cuando Araña regresó, el hermano Tigre le preguntó: —¿Cómo se llama el niño que bautizaste? Y el hermano Araña le dijo: -Lodelmedio Seacabó.
 
-Al rato empieza Araña otra vez a decirle al hermano Tigre: —Me están llamando para bautizar a un niño pero esta vez no voy. Así que el hermano Tigre le dijo: -No te preocupes, ve que yo sigo trabajando. 
+Al rato empieza Araña otra vez a decirle al hermano Tigre: —Me están llamando para bautizar a un niño pero esta vez no voy.Así que el hermano Tigre le dijo: -No te preocupes, ve que yo sigo trabajando.
 
-Cuando regresó, el hermano Tigre le preguntó: -¿Cómo se llama el niño que bautizaste? Y el hermano Araña le dijo: -Todo Seacabó. 
+Cuando regresó, el hermano Tigre le preguntó: -¿Cómo se llama el niño que bautizaste?Y el hermano Araña le dijo: -Todo Seacabó.
 
-Al rato, cuando llegó la hora de almorzar, fueron a buscar su lata de mantequilla. Pero no había nada. El hermano Tigre se enojó muchísimo y acusó al hermano Araña de haberse comido toda la mantequilla. Pero este se puso furioso y acusó al hermano Tigre.
+Al rato, cuando llegó la hora de almorzar, fueron a buscar su lata de mantequilla. Pero no había nada.El hermano Tigre se enojó muchísimo y acusó al hermano Araña de haberse comido toda la mantequilla. Pero este se puso furioso y acusó al hermano Tigre.
 
-Entonces, el hermano Tigre le dijo: -Acostémonos al sol y cuando caliente, la mantequilla se derretirá y empezará a fluir, así nos daremos cuenta de quién se la comió. 
+Entonces, el hermano Tigre le dijo: -Acostémonos al sol y cuando caliente, la mantequilla se derretirá y empezará a fluir, así nos daremos cuenta de quién se la comió.
 
 Pero el hermano Tigre había trabajado mucho y estaba muy cansado, así que tan pronto se acostaron se durmió. Entonces, el hermano Araña cogió la mantequilla que había quedado en la lata y se la untó en la boca y el cuerpo al hermano Tigre.
 
@@ -369,33 +369,33 @@ Luego lo despertó: -¡Vea de dónde está saliendo la mantequilla! –le dijo, 
       titulo: 'Brother Nancy, Brother Tiger and the butter lunch',
       describe: 'El hermano Araña y el hermano Tigre estaban trabajando juntos y decidieron llevar una lata de mantequilla para el almuerzo. Pero cuando fueron a comer ¡ya no había mantequilla! ¿Quién se la comió? Este relato de la comunidad raizal del Archipiélago de San Andrés, Providencia y Santa Catalina, está en inglés.',
       url: '292-brithernancy.mp3',
-      letra: `Once upon a time Brother Nancy and Brother Tiger went to work and carried between them one pan of butter to eat once they had finished their work. While they were working, Brother Nancy cried out,
-—Brother Tiger, they’re calling me to bless a baby–, and off he went. 
+      letra: `Once upon a time Brother Nancy and Brother Tiger went to work and carried between them one pan of butter to eat once they had finished their work.While they were working, Brother Nancy cried out,
+—Brother Tiger, they’re calling me to bless a baby–, and off he went.
 
 When Brother Nancy got back, Brother Tiger asked him,
 —What name did you all give the baby? And Nancy said,
-—Top gone. 
+—Top gone.
 
 After a while, Brother Nancy called out again,
-—Tiger, they’re calling me to go and bless another baby, but I’m not going. Brother Tiger responded, —No man, you need to go!
+—Tiger, they’re calling me to go and bless another baby, but I’m not going. Brother Tiger responded,—No man, you need to go!
 So Nancy went off again.
 
 When he returned, Brother Tiger asked him, —What name did you all give the baby this time?
-Nancy responded, —Middle Gone. 
+Nancy responded,—Middle Gone.
 
-Then, they started to work again, and after a while, Brother Nancy once more called out, —They’re calling me again to bless an- other baby, but there is not way that I’m going this time.
-But Tiger said, —Go, man, go! So Brother Nancy went off again.
+Then, they started to work again, and after a while, Brother Nancy once more called out,—They’re calling me again to bless an- other baby, but there is not way that I’m going this time.
+But Tiger said,—Go, man, go!So Brother Nancy went off again.
 
-When Nancy got back, Brother Tiger asked him, —Now what name did you all give this baby? Nancy replied, —All gone! 
+When Nancy got back, Brother Tiger asked him,—Now what name did you all give this baby? Nancy replied,—All gone!
 
 When it was time to eat their lunch of butter, there was nothing left in the pan. Brother Tiger got really angry and said that Nancy had eaten the butter. But Brother Nancy insisted that it was Tiger rather who had eaten the butter.
 
 So they decided that they would find out who it was that ate it. Brother Nancy suggested,
-—Let’s both lie down in the sun and the one from whom the butter melts, for sure, is the one who ate it. 
+—Let’s both lie down in the sun and the one from whom the butter melts, for sure, is the one who ate it.
 
 Now Brother Tiger was so tired from all his work that he immediately dropped off to sleep. Nancy meanwhile got up, took some leftover butter out of the pan and smeared it on Tiger’s mouth and body.
 
-Then, Brother Nancy woke up Brother Tiger and said, —Look, here is the one who ate the butter! It’s melting out of you all over! Tiger was so fooled that he said, —Yes, you’re right; it had to be me. I ate the butter. `
+Then, Brother Nancy woke up Brother Tiger and said,—Look, here is the one who ate the butter! It’s melting out of you all over!Tiger was so fooled that he said,—Yes, you’re right; it had to be me.I ate the butter. `
     },
     { id: 294,
       autor: 'Ministerio de Cultura - ICBF - Audio de Tortuguita, vení bailá',
@@ -407,7 +407,7 @@ Then, Brother Nancy woke up Brother Tiger and said, —Look, here is the one w
 Bay kumun mikeywin
 
 Juga migutana me'zanundi
-Kumun mitkeywin 
+Kumun mitkeywin
 Nanay, nanay
 
 Juga migutana me'zanundi
@@ -418,26 +418,26 @@ Mikuyun, sigue murogwi zeyzey
 Me'zari jwisin nankwa ni
 
 Juga migutana me'zanundi
-Kumun mitkeywin 
+Kumun mitkeywin
 Nanay, nanay
 
 Hijito, si estás cansado,
 vamos a dormir, te digo.
 
 Hijito, si estás cansado,
-duérmete, te digo. 
+duérmete, te digo.
 ya, ya...
 
 Hijito, si estás cansado,
 vamos a dormir, te digo.
 
-Como te dice la luna: 
+Como te dice la luna:
 esta noche, te voy a acompañar
-para mañana temprano 
+para mañana temprano
 darle al sol la mano.
 
 Hijito, si estás cansado,
-duérmete, te digo. 
+duérmete, te digo.
 ya, ya... `
     },
     { id: 298,
@@ -446,22 +446,22 @@ ya, ya... `
       titulo: 'Dormite, mi niño',
       describe: 'Dormite, mi niño..., cantan dulcemente las mamás del Eje Cafetero. Ellas quieren que el pequeñito se duerma pronto porque tienen muchas cosas para hacer: cocinar la sopita, lavar pañales y coser.',
       url: '298-dormite.mp3',
-      letra: `Dormite mi niño 
+      letra: `Dormite mi niño
 que estás en la cuna,
 que no hay mazamorra
 ni leche ninguna.
 
-Dormite mi niño 
+Dormite mi niño
 que estás en la hamaca,
 que no hay mazamorra
 ni leche de vaca.
 
-Dormite mi niño 
+Dormite mi niño
 que tengo que hacer;
-matar la gallina 
+matar la gallina
 y hacer de comer.
 
-Dormite, mi niño 
+Dormite, mi niño
 que tengo que hacer,
 lavar los pañales
 ponerme a coser. `

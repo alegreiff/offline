@@ -609,14 +609,14 @@ const state = {
         id: 9028,
         titulo: 'Así me lo contaron',
         autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
-        describe: '',
+        describe: 'Conozcan al Conde Olinos, descubran de qué está hecho el nuevo traje de un emperador y sorpréndanse con la arveja que cambió la vida de una princesa en estas nuevas sugerencias de uso de los contenidos de Maguaré.',
         url: 'sugerencias/sugerencias-de-uso-9028-asimelocontaron.pdf',
         descarga: 'Sugerencia-de-uso-asi-me-lo-contaron'
       },{
         id: 9029,
         titulo: 'Rompecabezas',
         autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
-        describe: '',
+        describe: 'Armar rompecabezas es muy importante en la primera infancia ya que los niños observan las imágenes, identifican detalles y clasifican piezas según sus características. ¡Descubran cuatro actividades para jugar con los bebés y los niños más grandes!',
         url: 'sugerencias/sugerencias-de-uso-9029-rompecabezas.pdf',
         descarga: 'Sugerencia-de-uso-rompecabezas'
       },
@@ -624,7 +624,7 @@ const state = {
         id: 9030,
         titulo: 'Rondas',
         autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
-        describe: '',
+        describe: '¡Grandes éxitos de distintas generaciones se toman Maguaré! Los pollos de mi cazuela, Las hormigas o Mayaya O son algunas de las rondas para desarrollar actividades plásticas, dramáticas o audiovisuales con los niños.',
         url: 'sugerencias/sugerencias-de-uso-9030-rondas.pdf',
         descarga: 'Sugerencia-de-uso-rondas'
       },*/
@@ -632,21 +632,21 @@ const state = {
         id: 9031,
         titulo: 'Fiesta de la lectura',
         autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
-        describe: '',
+        describe: '¿Qué escuchan los niños colombianos al nacer y durante sus primeros años?. Aquí les sugerimos 5 actividades para promover la expresión de los niños a partir de los cantos, nanas y rondas que distintas comunidades étnicas de Colombia le cantan a sus niños.',
         url: 'sugerencias/sugerencias-de-uso-9031-fiestadelalectura.pdf',
         descarga: 'Sugerencia-de-uso-fiesta-de-la-lectura'
       },{
         id: 9032,
         titulo: 'Cuentazos con efectazos',
         autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
-        describe: '',
+        describe: 'Llegan nuevas sugerencias para aprovechar al máximo los capítulos de la serie Cuentazos con efectazos y promover en los niños su capacidad creativa y expresiva. ¡Vamos a contar cuentos!',
         url: 'sugerencias/sugerencias-de-uso-9032-cuentazos.pdf',
         descarga: 'Sugerencia-de-uso-cuentazos-con-efectazos'
       },{
         id: 9033,
         titulo: 'Leer es mi cuento',
         autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
-        describe: '',
+        describe: 'Explorar lugares, jugar al eco o hacer un club de dibujos son algunas de las actividades que sugerimos para aprovechar al máximo los libros gratuitos de la serie Leer es mi cuento. ¡Vamos a leer y jugar!',
         url: 'sugerencias/sugerencias-de-uso-9033-lemc.pdf',
         descarga: 'Sugerencia-de-uso-leer-es-mi-cuento'
       }/*,{
