@@ -21,7 +21,7 @@
         <v-flex xs12 pa-1>
         <v-card dark color="primary">
           <v-card-text class="pa-2">
-            <h2 class="" ref="tituloref">{{ cancionactiva.titulo }}</h2> <h5>{{ cancionactiva.autor }}</h5>
+            <h2 class="" ref="tituloref">{{ cancionactiva.titulo }}</h2> <h4>{{ cancionactiva.autor }}</h4>
           </v-card-text>
         </v-card>
       </v-flex>

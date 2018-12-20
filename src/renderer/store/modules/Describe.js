@@ -37,7 +37,7 @@ const state = {
       seccion: 'Tutoriales',
       subseccion: 'Tutoriales',
       titulobreve: 'Políticas de uso',
-      descripcion: 'TEXTO Políticas de uso'
+      descripcion: 'Políticas de uso'
     },
     {
       id: 501,
@@ -45,7 +45,7 @@ const state = {
       seccion: 'Tutoriales',
       subseccion: 'Tutoriales',
       titulobreve: 'Acerca de',
-      descripcion: 'TEXTO Acerca de'
+      descripcion: 'Aplicación "offline" Maguaré - MaguaRED'
     },
     {
       id: 502,

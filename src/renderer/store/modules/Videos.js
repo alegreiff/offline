@@ -300,7 +300,7 @@ const state = {
     },{ id: 281,
       autor: 'Ministerio de Cultura - Maguaré - audio de fundación Uaman Luar',
       coleccion: 'Karaokes',
-      titulo: 'Saludo bonito',
+      titulo: 'Saludo bonito - Karaoke',
       describe: 'A los niños indígenas de Colombia les encanta cantar y en este video comparten una canción en la que un niño saluda a su tío que se encuentra a su paso. Nuestros mayores siempre tienen mucho que enseñarnos, escucha esta canción y pídele a quien te esté acompañando que te cuente lo que significa en español. ¿Qué te gusta que te cuenten tus mayores?',
       url: '281-saludobonito.mp4'
     },{ id: 67,

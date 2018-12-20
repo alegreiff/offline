@@ -6,23 +6,75 @@
 
         <v-card-text>
           <div class="text-xs-justify">
-            <ul>
-              <li>Los presentes Condiciones de Uso regulan el acceso y uso que el usuario hace del aplicativo de Maguaré y MaguaRED en su versión offline. Este aplicativo es propiedad del Ministerio de Cultura, en específico de la Estrategia Digital de Cultura y Primera Infancia, en adelante “EDCPI”.</li>
-              <li>Este aplicativo desarrollado por la EDCPI es personal e intransferible, de cada usuario depende su correcto uso.</li>
+            <v-list three-line>
 
-              <li>El usuario podrá hacer uso pleno de los contenidos desde el dispositivo USB en el que se encuentra el contenido solo para uso cultural o pedagógico.</li>
-              <li>Este aplicativo no requiere de conexión a Internet para su correcto funcionamiento.</li>
+              <v-list-tile-content>
+                <v-list-tile-sub-title>Los presentes Condiciones de Uso regulan el acceso y uso que el usuario hace del aplicativo de Maguaré y MaguaRED en su versión offline (no necesita conexión a internet). Este aplicativo es propiedad del Ministerio de Cultura, en específico de la Estrategia Digital de Cultura y Primera Infancia, en adelante <strong>EDCPI</strong>.
+                </v-list-tile-sub-title>
+              </v-list-tile-content>
+              <v-divider></v-divider>
 
-              <li>Los contenidos del aplicativo son de uso libre para los usuarios; sin embargo, los contenidos se deben reproducir desde el dispositivo entregado y hacer correcto uso del mismo.</li>
-              <li>Si al conectarse a Internet presiona algunos de los íconos y se suscribe a las redes sociales o al boletín y remite la información a la EDCPI por medio de algún formulario, el usuario acepta que está utilizando un método confiable y apropiado a dichos efectos y por lo tanto el mensaje de datos que se envíe estará firmado conforme a los términos de la Ley 527 de 1999, artículo 7º.</li>
-              <li>La EDCPI no se hace responsable por las actualizaciones de los contenidos, datos e informaciones que se encuentran en el aplicativo.</li>
-              <li>La EDCPI no se hace responsable por el acceso y uso que terceras personas hagan del aplicativo.
-              Cualquier uso indebido, intento de violación del sistema o en general cualquier acción que tenga por objeto dañar, desmontar o remplazar el aplicativo dará lugar a las sanciones previstas en las normas vigentes.</li>
-              <li>Se prohíbe cualquier forma de uso de las obras contenidas en el aplicativo, a menos que se hubiere sido previa y expresamente autorizado por la EDCPI.</li>
-              <li>El material digital del aplicativo es de distribución gratuita con fines didácticos y culturales. Queda prohibida su reproducción total o parcial con fines de lucro, por cualquier sistema o medio electrónico sin la autorización expresa para ello.</li>
-              <li>La EDCPI no es responsable de los problemas ocasionados por errores de carácter técnico en los dispositivos o de los sistemas operativos en los que se cargue el aplicativo.</li>
-              <li>Para mayor información sobre los contenidos y su uso, enviar un mensaje de correo a: </li>
-            </ul>
+              <v-list-tile-content>
+                <v-list-tile-sub-title>El material digital del aplicativo es de distribución gratuita con fines didácticos y culturales. Queda prohibida su reproducción total o parcial con fines de lucro por cualquier sistema o medio electrónico sin la autorización expresa para ello.
+                </v-list-tile-sub-title>
+              </v-list-tile-content>
+              <v-divider></v-divider>
+
+              <v-list-tile-content>
+                <v-list-tile-sub-title>Este aplicativo desarrollado por la <strong>EDCPI</strong> es de uso libre para los usuarios de modo  personal e intransferible. El usuario podrá hacer uso pleno de los contenidos licenciados desde el dispositivo USB en el que se encuentran los videos, libros, interactivos, actividades sugeridas, que son de exclusivamente culturales  y de utilidad pedagógica.
+                </v-list-tile-sub-title>
+              </v-list-tile-content>
+              <v-divider></v-divider>
+
+              <v-list-tile-content>
+                <v-list-tile-sub-title>Este aplicativo no requiere de conexión a Internet para su correcto funcionamiento.
+                </v-list-tile-sub-title>
+              </v-list-tile-content>
+              <v-divider></v-divider>
+
+              <v-list-tile-content>
+                <v-list-tile-sub-title>Si el usuario está conectado a Internet y presiona algunos de los íconos o logos que se encuentran en el inicio del aplicativo, estos se dirigirán a las redes sociales oficiales o plataformas de la <strong>EDCPI</strong>. Si el usuario se suscribe a las redes sociales o decide recibir el boletín mensual, debe saber que: 1. Sus datos serán guardados con la mayor seguridad de acuerdo a la ley; 2. al completar alguno de los formularios de las plataformas, el usuario acepta que está utilizando un método confiable y apropiado y por lo tanto el mensaje de datos que se envíe estará amparado conforme al Artículo 7° de la Ley 527 de 1999.
+                </v-list-tile-sub-title>
+              </v-list-tile-content>
+              <v-divider></v-divider>
+
+
+              <v-list-tile-content>
+                <v-list-tile-sub-title>La <strong>EDCPI</strong> no se hace responsable por las actualizaciones de los contenidos, datos e informaciones que se encuentran en el aplicativo.
+                </v-list-tile-sub-title>
+              </v-list-tile-content>
+              <v-divider></v-divider>
+
+              <v-list-tile-content>
+                <v-list-tile-sub-title>La <strong>EDCPI</strong> no se hace responsable por el acceso y uso que terceras personas hagan del aplicativo.
+                </v-list-tile-sub-title>
+              </v-list-tile-content>
+              <v-divider></v-divider>
+
+              <v-list-tile-content>
+                <v-list-tile-sub-title>Cualquier uso indebido, intento de violación del sistema o en general cualquier acción que tenga por objeto dañar, desmontar, reemplazar, copiar o duplicar el aplicativo dará lugar a las sanciones previstas en las normas vigentes.
+                </v-list-tile-sub-title>
+              </v-list-tile-content>
+              <v-divider></v-divider>
+
+              <v-list-tile-content>
+                <v-list-tile-sub-title>Se prohíbe cualquier comercialización o uso indebido de las obras contenidas en el aplicativo, a menos que se hubiere sido previa y expresamente autorizado por la <strong>EDCPI</strong>.
+                </v-list-tile-sub-title>
+              </v-list-tile-content>
+              <v-divider></v-divider>
+
+              <v-list-tile-content>
+                <v-list-tile-sub-title>La <strong>EDCPI</strong> no es responsable de los problemas ocasionados por errores de carácter técnico en los dispositivos o de los sistemas operativos en los que se cargue el aplicativo.
+                </v-list-tile-sub-title>
+              </v-list-tile-content>
+              <v-divider></v-divider>
+
+              <v-list-tile-content>
+                <v-list-tile-sub-title>Para mayor información sobre los contenidos y su licenciamiento enviar un mensaje de correo a: maguared@gmail.com, escribiendo en el asunto: Información sobre el offline Maguaré.
+                </v-list-tile-sub-title>
+              </v-list-tile-content>
+              <v-divider></v-divider>
+            </v-list>
           </div>
 
         </v-card-text>
@@ -80,7 +132,7 @@ export default {
 <style lang="css">
 .politicas{
   background-image: url("~@/assets/rojo.png");
-  
+
 }
 
 </style>

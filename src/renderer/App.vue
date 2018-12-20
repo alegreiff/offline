@@ -15,7 +15,8 @@
 
     </v-toolbar-title>
     <v-spacer></v-spacer>
-          Versión 0.9.5 &nbsp;<v-icon large class="bigcola" :color="coloricono" @click="infoffline=true">{{ iconobarra }}</v-icon>
+          <!--Versión 0.9.5 &nbsp;<v-icon large class="bigcola" :color="coloricono" @click="infoffline=true">{{ iconobarra }}</v-icon>-->
+          Versión 0.9.7 &nbsp;<v-icon large class="bigcola" :color="coloricono">{{ iconobarra }}</v-icon>
   </v-toolbar>
   <v-content>
     <v-container fluid ma-0 pa-0>
@@ -159,16 +160,16 @@ export default {
 */
 :root {
   --main-bg-color: brown;
-  --magcafe:      #772705;
-  --magrojo:      #e0541e;
-  --magnaranja:   #f19741;
-  --maglima:      #c6c74f;
-  --magverde:     #8bceaf;
-  --magazul:      #1db5cc;
-  --magmorado:    #785395;
-  --magfondogris: #f2f2f2;
-  --magfondocards: #e9f9fc;
-  --maggris:      #137786
+  --magcafe:        #772705;
+  --magrojo:        #e0541e;
+  --magnaranja:     #f19741;
+  --maglima:        #c6c74f;
+  --magverde:       #8bceaf;
+  --magazul:        #1db5cc;
+  --magmorado:      #785395;
+  --magfondogris:   #f2f2f2;
+  --magfondocards:  #e9f9fc;
+  --maggris:        #137786
 }
 *, html{
 /*select or not to select text*/
@@ -203,7 +204,7 @@ export default {
   border-radius: 0.3em;
 }
 .card-texto{
-  font-size: 0.9em;
+  font-size: 1.3em !important;
 }
   img.logomini{
     max-height: 60px;
