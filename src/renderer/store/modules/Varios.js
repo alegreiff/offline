@@ -620,14 +620,14 @@ const state = {
         url: 'sugerencias/sugerencias-de-uso-9029-rompecabezas.pdf',
         descarga: 'Sugerencia-de-uso-rompecabezas'
       },
-      /*{
+      {
         id: 9030,
         titulo: 'Rondas',
         autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
         describe: '¡Grandes éxitos de distintas generaciones se toman Maguaré! Los pollos de mi cazuela, Las hormigas o Mayaya O son algunas de las rondas para desarrollar actividades plásticas, dramáticas o audiovisuales con los niños.',
         url: 'sugerencias/sugerencias-de-uso-9030-rondas.pdf',
         descarga: 'Sugerencia-de-uso-rondas'
-      },*/
+      },
       {
         id: 9031,
         titulo: 'Fiesta de la lectura',
@@ -649,14 +649,22 @@ const state = {
         describe: 'Explorar lugares, jugar al eco o hacer un club de dibujos son algunas de las actividades que sugerimos para aprovechar al máximo los libros gratuitos de la serie Leer es mi cuento. ¡Vamos a leer y jugar!',
         url: 'sugerencias/sugerencias-de-uso-9033-lemc.pdf',
         descarga: 'Sugerencia-de-uso-leer-es-mi-cuento'
-      }/*,{
-        id: 9028,
-        titulo: '',
+      },{
+        id: 9034,
+        titulo: 'Kronicas Helefantilez',
         autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
         describe: '',
-        url: 'sugerencias/wwwwwwww.pdf',
-        descarga: 'Sugerencia-de-uso-xxxxx'
-      }*/
+        url: 'sugerencias/sugerencias-de-uso-9034-cronicas-elefantiles.pdf',
+        descarga: 'Sugerencia-de-uso-las-cronicas-elefantiles'
+      },
+      {
+        id: 9035,
+        titulo: 'Juan & el gato ON',
+        autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
+        describe: '',
+        url: 'sugerencias/sugerencias-de-uso-9035-juanigaton.pdf',
+        descarga: 'Sugerencia-de-uso-juani-gaton'
+      }
     ],
 }
 
