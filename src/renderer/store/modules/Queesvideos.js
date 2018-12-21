@@ -11,7 +11,7 @@ const state = {
       autor: 'Ministerio de Cultura - Maguaré - MaguaRED',
       coleccion: '',
       titulo: '¿Qué es MaguaRED?',
-      describe: 'MaguaRED (www.maguared.gov.co) es una página web que comparte contenidos especializados en primera infancia para familias, maestros, cuidadores y, en general, para todos los amigos de la primera infancia.',
+      describe: 'MaguaRED es una página web que comparte contenidos especializados en primera infancia para familias, maestros, cuidadores y, en general, para todos los amigos de la primera infancia.',
       url: '1401.mp4'
     },
     { id: 1402,

@@ -4,7 +4,7 @@
             <v-flex xs12>
             <v-card dark color="primary">
               <v-card-text class="pa-2">
-                <h2 class="" ref="tituloref">{{ cancionactiva.titulo }}</h2> <h5>{{ cancionactiva.autor }}</h5>
+                <h2 class="" ref="tituloref">{{ cancionactiva.titulo }}</h2> <h4>{{ cancionactiva.autor }}</h4>
               </v-card-text>
             </v-card>
           </v-flex>
@@ -19,8 +19,9 @@
           </v-flex>
           <v-flex xs8 class="pa-2">
               <v-card>
+                <!-- @ended='findepista' -->
                   <video
-                  @ended='findepista'
+
                   width="100%" height="auto" ref="playame1" controls autoplay v-if="quesuena!=''" controlsList="nodownload nofullscreen">
                       <source :src="quesuena" type="video/mp4">
                   Your browser does not support the video tag.

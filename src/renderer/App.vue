@@ -204,7 +204,7 @@ export default {
   border-radius: 0.3em;
 }
 .card-texto{
-  font-size: 1.3em !important;
+  font-size: 1.2em !important;
 }
   img.logomini{
     max-height: 60px;
