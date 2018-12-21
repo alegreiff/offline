@@ -346,4 +346,9 @@ p.lyrics{
 .botonestrategia{
   margin: -20px 0 1em 0;
 }
+
+
+.politicasdeuso{
+margin-bottom: 1em;
+}
 </style>
