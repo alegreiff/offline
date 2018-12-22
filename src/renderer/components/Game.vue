@@ -1,5 +1,5 @@
 <template>
-<div class="rojomg seccionprincipal">
+<div class="grismg seccionprincipal">
 <v-layout row wrap>
   <v-flex xs12>
     <div class="info magazul">

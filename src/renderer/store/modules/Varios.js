@@ -651,17 +651,17 @@ const state = {
         descarga: 'Sugerencia-de-uso-leer-es-mi-cuento'
       },{
         id: 9034,
-        titulo: 'Kronicas Helefantilez',
+        titulo: 'Las Crónicas Elefantiles',
         autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
-        describe: '',
+        describe: 'Cinco nuevas actividades para utilizar los contenidos de series de televisión tan exitosas como Las Crónicas Elefantiles. ¡Anímense a dibujar, escribir y sobre todo, a imaginar!',
         url: 'sugerencias/sugerencias-de-uso-9034-cronicas-elefantiles.pdf',
         descarga: 'Sugerencia-de-uso-las-cronicas-elefantiles'
       },
       {
         id: 9035,
-        titulo: 'Juan & el gato ON',
+        titulo: 'Juani & Gatón',
         autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
-        describe: '',
+        describe: 'Encuentren cuatro actividades para descubrir animales, elaborar huevos o salir en busca de huellas de animales fantásticos. Los niños de primera infancia pasarán ratos muy divertidos al usar los capítulos de Juani & Gatón para detonar su expresión plástica, musical o literaria.',
         url: 'sugerencias/sugerencias-de-uso-9035-juanigaton.pdf',
         descarga: 'Sugerencia-de-uso-juani-gaton'
       }
