@@ -38,8 +38,8 @@ Todos los días el abuelo Emiliano toca el maguaré y los animales que viven en 
       </v-flex>
 <v-flex xs-12>
 
-  <v-btn to="/game" block dark small color="#4267b2" >Juega reconociendo a los personajes de Maguaré en La Ceiba &nbsp;
-    <v-icon dark>fas fa-gamepad</v-icon>
+  <v-btn to="/game" block small color="white" class="juegoboton">Juega reconociendo a los personajes de Maguaré en La Ceiba &nbsp;
+    <v-icon dark large>fas fa-gamepad</v-icon>
   </v-btn>
 </v-flex>
 
@@ -103,5 +103,9 @@ Todos los días el abuelo Emiliano toca el maguaré y los animales que viven en 
 }
 div.intromg{
   margin-top: 1em;
+}
+.juegoboton{
+  min-height: 4em;
+  font-size: 1.3em;
 }
 </style>

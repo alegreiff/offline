@@ -18,9 +18,9 @@
   <div class="splash" v-if="showSplash">
     <div class="overlay"></div>
     <div class="content">
-      <div class="title">¡Has ganado! Eres todo un conocedor de los personajes de Maguaré en La Ceiba</div>
+      <div class="title">¡Has ganado! <br /><br />Eres todo un conocedor de los personajes de Maguaré en La Ceiba</div>
       <div class="score">Puntaje: {{ score }}</div>
-      <button class="newGame" @click="resetGame()">Volver a jugar</button>
+      <button class="newGame" @click="resetGame()">Jugar de nuevo</button>
     </div>
   </div>
 </v-layout>
@@ -177,7 +177,7 @@ export default {
       this.datosgenerales = this.describe.filter(dato => dato.id == 667)
       EventBus.$emit('TITULO', this.datosgenerales[0].titulobreve);
       EventBus.$emit('SECCION', this.datosgenerales[0].descripcion);
-      EventBus.$emit('ICONOBARRA', 'fas fa-gamepad', 'magrojo');
+      EventBus.$emit('ICONOBARRA', 'fas fa-gamepad', 'white');
   		this.resetGame();
   	},
     computed: {

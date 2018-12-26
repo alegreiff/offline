@@ -90,8 +90,16 @@
               <p class="cred-cargo">Selección y curaduría de contenidos - MaguaRED</p>
               <p class="cred-persona">Mario Cubillos Peña</p>
               <p class="cred-cargo">Producción general</p>
-              <p class="cred-persona">Jaime Augusto de <span @click="sumajaime()">Greiff Cabezas</span></p>
+              <p class="cred-persona">Jaime Augusto de Greiff Cabezas</p>
               <p class="cred-cargo">Diseño, desarrollo y programación</p>
+            </v-tab-item>
+            <v-tab>
+              Herramientas
+            </v-tab>
+            <v-tab-item>
+              <span @click="sumajaime()"><img class="imlogo" id="logo" src="~@/assets/tools.png"></span>
+
+
             </v-tab-item>
           </v-tabs>
 
@@ -102,8 +110,9 @@
 
 
               <v-card-text class="white--text text-xs-center" style="font-size: 3em;">
-                <br><br>
+                
                 <img class="imlogo" id="logo" src="~@/assets/futbol.jpg">
+                <p style="font-size: 0.5em">Diseño, desarrollo, programación: Jaime de Greiff - Noviembre - diciembre de 2018</p>
                 <br><br>
               </v-card-text>
 
