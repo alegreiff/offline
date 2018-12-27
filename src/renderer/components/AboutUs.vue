@@ -92,12 +92,14 @@
               <p class="cred-cargo">Producción general</p>
               <p class="cred-persona">Jaime Augusto de Greiff Cabezas</p>
               <p class="cred-cargo">Diseño, desarrollo y programación</p>
+              <hr>
+              <p class="cred-persona">Diciembre de 2018. Versión 1.29.12.18</p>
             </v-tab-item>
             <v-tab>
               Herramientas
             </v-tab>
             <v-tab-item>
-              <span @click="sumajaime()"><img class="imlogo" id="logo" src="~@/assets/tools.png"></span>
+              <span @click="sumajaime()"><img class="toolsimagen" id="logo" src="~@/assets/tools.png"></span>
 
 
             </v-tab-item>
@@ -110,7 +112,7 @@
 
 
               <v-card-text class="white--text text-xs-center" style="font-size: 3em;">
-                
+
                 <img class="imlogo" id="logo" src="~@/assets/futbol.jpg">
                 <p style="font-size: 0.5em">Diseño, desarrollo, programación: Jaime de Greiff - Noviembre - diciembre de 2018</p>
                 <br><br>

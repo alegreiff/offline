@@ -190,12 +190,12 @@ const state = {
         descarga: 'LEMC-menique'
       },{
         id: 543,
-        autor: 'F.M Samaniego',
+        autor: 'F.M. Samaniego',
         titulo: 'Fábulas',
         coleccion: 'Leer es mi cuento',
         edad: 7,
         publico: 'maguare',
-        describe: 'Encuentren aquí 30 fábulas de Félix María Samaniego. Algunos de los títulos son La cigarra y la hormiga, El león y el ratón y el Ciervo en la fuente y muchas otras. Se trata de pequeños cuentos en los que hablan y actúan los animales, y que llevan a conclusiones morales.',
+        describe: 'Encuentren aquí 30 fábulas de Félix María Samaniego. Algunos de los títulos son La cigarra y la hormiga, El león y el ratón, y El ciervo en la fuente.',
         url: 'librosmaguare/543-fabulas.pdf',
         descarga: 'LEMC-fabulas'
       },{
@@ -205,7 +205,7 @@ const state = {
         coleccion: 'Leer es mi cuento',
         edad: 7,
         publico: 'maguare',
-        describe: 'Esta bella historia recuerda la tolerancia y la aceptación y habla sobre cómo la belleza de una persona no esta en su físico sino en su forma de ser, porque lo más importante es la belleza del corazón.',
+        describe: 'Esta historia recuerda la tolerancia y la aceptación, y habla sobre cómo la belleza de una persona no está en su físico sino en su forma de ser, porque lo más importante es la belleza del corazón.',
         url: 'librosmaguare/544-bellabestia.pdf',
         descarga: 'LEMC-bella-bestia'
       },{

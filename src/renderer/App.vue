@@ -16,7 +16,7 @@
     </v-toolbar-title>
     <v-spacer></v-spacer>
           <!--Versión 0.9.5 &nbsp;<v-icon large class="bigcola" :color="coloricono" @click="infoffline=true">{{ iconobarra }}</v-icon>-->
-          Versión 0.9.95 BETA &nbsp;<v-icon large class="bigcola" :color="coloricono">{{ iconobarra }}</v-icon>
+          Versión 0.9.96 BETA &nbsp;<v-icon large class="bigcola" :color="coloricono">{{ iconobarra }}</v-icon>
   </v-toolbar>
   <v-content>
     <v-container fluid ma-0 pa-0>
@@ -238,7 +238,9 @@ img.imlogo {
   max-width: 100%;
   cursor: pointer;
 }
-
+img.toolsimagen{
+  max-width: 100%;
+}
 
 .flexcard {
   display: flex !important;

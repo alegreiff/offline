@@ -290,7 +290,7 @@ const state = {
     { id: 1101,
       autor: 'Ministerio de Cultura - Artista: Carlos Velásquez - Fotógrafo: Sebastián Ocampo.',
       titulo: '¿Cómo hacer un títere de sombras?',
-      describe: 'En este tutorial los niños, junto a los adultos, pueden crear un títere de sombras para jugar crear y potenciar sus habilidades expresivas.',
+      describe: 'En este tutorial los niños, junto a los adultos, pueden crear un títere de sombras para jugar, crear y potenciar sus habilidades expresivas.',
       url: 'tutoriales/1101.pdf',
       descarga: 'tutorial-titere-sombras',
       video: '1101.mp4'

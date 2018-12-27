@@ -24,7 +24,7 @@
 
               <v-list-tile-content>
                 <v-list-tile-sub-title class="politicasdeuso">
-                  Este aplicativo desarrollado por la <strong>EDCPI</strong> es de uso libre para los usuarios de modo  personal e intransferible. El usuario podrá hacer uso pleno de los contenidos licenciados desde el dispositivo USB en el que se encuentran los videos, libros, interactivos, actividades sugeridas, que son de exclusivamente culturales  y de utilidad pedagógica.
+                  Este aplicativo desarrollado por la <strong>EDCPI</strong> es de uso libre para los usuarios de modo  personal e intransferible. El usuario podrá hacer uso pleno de los contenidos licenciados desde el dispositivo USB en el que se encuentran los videos, libros, interactivos, actividades sugeridas, que son exclusivamente culturales y de utilidad pedagógica.
                 </v-list-tile-sub-title>
               </v-list-tile-content>
               <v-divider></v-divider>
@@ -67,7 +67,7 @@
 
               <v-list-tile-content>
                 <v-list-tile-sub-title class="politicasdeuso">
-                  Se prohíbe cualquier comercialización o uso indebido de las obras contenidas en el aplicativo, a menos que se hubiere sido previa y expresamente autorizado por la <strong>EDCPI</strong>.
+                  Se prohíbe cualquier comercialización o uso indebido de las obras contenidas en el aplicativo, salvo autorización previa y expresa de la <strong>EDCPI</strong>.
                 </v-list-tile-sub-title>
               </v-list-tile-content>
               <v-divider></v-divider>

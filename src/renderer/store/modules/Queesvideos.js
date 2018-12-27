@@ -18,7 +18,7 @@ const state = {
       autor: 'Ministerio de Cultura - Maguaré - MaguaRED',
       coleccion: '',
       titulo: '¿Qué es la EDCPI?',
-      describe: 'La Estrategia Digital de Cultura y Primera Infancia (EDCPI) es un proyecto del Ministerio de Cultura que brinda a los niños de primera infancia la posibilidad de crecer y explorar actividades y contenidos digitales relacionados con las expresiones artísticas, el patrimonio cultural y la lectura.',
+      describe: 'La Estrategia Digital de Cultura y Primera Infancia (EDCPI), conformado por Maguaré y MaguaRED, es un proyecto del Ministerio de Cultura de Colombia que brinda a los niños de primera infancia la posibilidad de explorar actividades y contenidos digitales relacionados con las expresiones artísticas, el patrimonio cultural y la lectura. Así mismo, permite que los adultos encuentren herramientas para potenciar el desarrollo integral de los niños a través de información, experiencias, recomendaciones y actividades sugeridas.',
       url: '1402.mp4'
     },
     ],

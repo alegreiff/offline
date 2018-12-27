@@ -39,7 +39,7 @@ const state = {
       autor: 'Ministerio de Cultura - Maguaré - Audio de Yeny Tandioy Chindoy',
       coleccion: 'Karaokes',
       titulo: 'Bacetemëng Oyejuayëng (Niños Felices) - Karaoke',
-      describe: 'Escucha una lengua diferente, la lengua del grupo indígena Kamëntšá o Kamsá que viven en el Valle del Sibundoy en el Putumayo. Ellos tienen mucho por enseñarte con sus tradiciones. ¿Has escuchado otras canciones en lenguas nativas?',
+      describe: 'Los niños del pueblo indígena Kamëntšá o Kamsá que viven en el Valle del Sibundoy en el Putumayo, están muy felices porque están recuperando su lengua materna a través de la música y las canciones. ¡Vamos todos a cantar en una lengua diferente!',
       url: '137-ninosfelices.mp4'
     },
     { id: 138,
@@ -102,7 +102,7 @@ const state = {
       autor: 'Ministerio de Cultura - ICBF - Maguaré - Audio de Tortuguita, Vení bailá',
       coleccion: 'Fiesta de la lectura',
       titulo: 'Palmita con manteca - Karaoke',
-      describe: 'Conoce a un pequeño niño y su familia en la costa colombiana. El papá de este bebé morenito que vive en San Basilio de Palenque ya no le dio más chancleta de la que pega, sino que se la entregó en la mano y el bebé corrió hacia su mamá, riendo.',
+      describe: 'Conoce a un pequeño niño y su familia en la costa colombiana. El papá de este bebé que vive en San Basilio de Palenque ya no le dio más chancleta de la que pega, sino que se la entregó en la mano y el bebé corrió hacia su mamá, riendo.',
       url: '288-palmita.mp4'
     },
     { id: 418,
