@@ -26,3 +26,18 @@
 *** Juegos interactivos
 *** Sana que sana
 *** Videos musicales
+
+
+AUDIO           55
+VIDEO           101 91
+PDF             105
+Ceiba           1
+Juego Ceiba     1
+Interactivos    25
+
+Suma            278
+Miniaturas      271
+
+Sin miniatura
+Ceiba           1
+Juego Ceiba     1
