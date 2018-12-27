@@ -1,8 +1,8 @@
 {
   "name": "maguare",
-  "version": "0.996",
+  "version": "0.9.96",
   "author": "Jaime de Greiff <alegreiff@gmail.com>",
-  "description": "Maguaré Offline",
+  "description": "Maguaré Offline - EDCPI - Diciembre de 2018",
   "license": null,
   "main": "./dist/electron/main.js",
   "scripts": {
