@@ -14,9 +14,7 @@
     <v-toolbar-title ><strong>Maguaré - MaguaRED - {{ tituloapp }}</strong> <span class="seccion_describe">{{ seccion_describe }}</span>
 
     </v-toolbar-title>
-    <v-spacer></v-spacer>
-          <!--Versión 0.9.5 &nbsp;<v-icon large class="bigcola" :color="coloricono" @click="infoffline=true">{{ iconobarra }}</v-icon>-->
-          Versión 0.9.96 BETA &nbsp;<v-icon large class="bigcola" :color="coloricono">{{ iconobarra }}</v-icon>
+    <v-spacer></v-spacer><v-icon large class="bigcola" :color="coloricono">{{ iconobarra }}</v-icon>
   </v-toolbar>
   <v-content>
     <v-container fluid ma-0 pa-0>

@@ -16,6 +16,8 @@
           </v-container>
         </v-img>-->
         <v-card-text>
+          <hr>
+          <p class="cred-persona">Diciembre de 2018. Versión {{ vers }} {{ platform }}</p>
           <v-tabs>
             <v-tab>
               Maguaré - MaguaRED
@@ -84,7 +86,7 @@
 
               <p class="cred-persona">Marcela Benavides Estévez</p>
               <p class="cred-cargo">Coordinadora Estrategia Digital de Cultura y Primera Infancia Maguaré y MaguaRED</p>
-              <p class="cred-persona">Edna Katerine Moreno Velandia</p>
+              <p class="cred-persona" @click="sumaequipo()">Edna Katerine Moreno Velandia</p>
               <p class="cred-cargo">Selección y curaduría de contenidos - Maguaré</p>
               <p class="cred-persona">Juan Sebastián Salazar Piedrahita</p>
               <p class="cred-cargo">Selección y curaduría de contenidos - MaguaRED</p>
@@ -92,8 +94,8 @@
               <p class="cred-cargo">Producción general</p>
               <p class="cred-persona">Jaime Augusto de Greiff Cabezas</p>
               <p class="cred-cargo">Diseño, desarrollo y programación</p>
-              <hr>
-              <p class="cred-persona">Diciembre de 2018. Versión 1.29.12.18</p>
+
+
             </v-tab-item>
             <v-tab>
               Herramientas
@@ -124,6 +126,23 @@
               </v-card-actions>
             </v-card>
           </v-dialog>
+          <v-dialog v-model="equipo">
+            <v-card class="magmorado">
+
+
+              <v-card-text class="white--text text-xs-center">
+
+                <img style="max-width: 800px" id="logo" src="~@/assets/equipo.jpg">
+
+                <br><br>
+              </v-card-text>
+
+              <v-card-actions>
+                <v-spacer></v-spacer>
+
+              </v-card-actions>
+            </v-card>
+          </v-dialog>
         </v-card-actions>
       </v-card>
     </v-flex>
@@ -136,20 +155,32 @@
   import EventBus from './eventos';
   const electron = require('electron');
   import path from 'path'
+  import {version} from '../../../package.json';
 
   export default {
     data: function () {
       return {
         jaime: false,
+        equipo: false,
         cuenta: 0,
+        cuentaequipo: 0,
         drawer: null,
-        datosgenerales: []
+        datosgenerales: [],
+        platform: require('os').platform(),
+        vers: version
       }
     },
     watch: {
       cuenta: function (id) {
         if(id === 21){
           this.jaime = true;
+        }
+
+
+      },
+      cuentaequipo: function (id) {
+        if(id === 21){
+          this.equipo = true;
         }
 
 
@@ -166,6 +197,9 @@
     methods: {
       sumajaime(){
         this.cuenta++
+      },
+      sumaequipo(){
+        this.cuentaequipo++
       },
       open (link) {
         console.log(link)
