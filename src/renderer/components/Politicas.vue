@@ -10,7 +10,7 @@
 
               <v-list-tile-content>
                 <v-list-tile-sub-title class="politicasdeuso">
-                  Los presentes Condiciones de Uso regulan el acceso y uso que el usuario hace del aplicativo de Maguaré y MaguaRED en su versión offline (no necesita conexión a internet). Este aplicativo es propiedad del Ministerio de Cultura, en específico de la Estrategia Digital de Cultura y Primera Infancia, en adelante <strong>EDCPI</strong>.
+                  Las presentes Condiciones de Uso regulan el acceso y uso que el usuario hace del aplicativo de Maguaré y MaguaRED en su versión offline (no necesita conexión a internet). Este aplicativo es propiedad del Ministerio de Cultura, en específico de la Estrategia Digital de Cultura y Primera Infancia, en adelante <strong>EDCPI</strong>.
                 </v-list-tile-sub-title>
               </v-list-tile-content>
               <v-divider></v-divider>
