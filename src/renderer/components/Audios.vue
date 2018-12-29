@@ -42,11 +42,14 @@
       </v-flex>
       <v-flex xs6 class="pa-2">
           <v-card dark color="white" class="my-0 px-2">
-            <!-- @timeupdate='onTimeUpdateListener' -->
+            <!-- @timeupdate='onTimeUpdateListener'
+          controlsList="nodownload"
+        -->
                 <audio
 
                 @ended='findepista'
-                controls ref="playame1" class="audiofull" autoplay v-if="quesuena!=''" controlsList="nodownload">
+                
+                controls ref="playame1" class="audiofull" autoplay v-if="quesuena!=''" >
                   <source :src="quesuena" type="audio/mpeg">
                   Este producto NO es compatible con su computador
                 </audio>

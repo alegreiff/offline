@@ -305,9 +305,7 @@ img.toolsimagen{
 .card-texto{
   font-size: 1.0em;
 }
-audio{
-  min-width: 100%;
-}
+
 p.lyrics{
   padding: 1em;
   margin: 0 auto;
@@ -350,5 +348,26 @@ p.lyrics{
 
 .politicasdeuso{
 margin-bottom: 1em;
+}
+
+
+
+audio::-webkit-media-controls-volume-slider{
+
+  cursor: pointer;
+}
+audio::-webkit-media-controls-timeline{
+
+  cursor: pointer;
+}
+
+audio{
+  min-width: 100%;
+}
+
+
+
+audio::-webkit-media-controls-enclosure {
+    overflow:hidden;
 }
 </style>
