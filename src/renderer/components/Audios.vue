@@ -48,7 +48,7 @@
                 <audio
 
                 @ended='findepista'
-                
+                controlsList='nodownload'
                 controls ref="playame1" class="audiofull" autoplay v-if="quesuena!=''" >
                   <source :src="quesuena" type="audio/mpeg">
                   Este producto NO es compatible con su computador

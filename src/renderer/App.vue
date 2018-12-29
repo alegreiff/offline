@@ -355,6 +355,8 @@ audio::-webkit-media-controls-volume-slider, video::-webkit-media-controls-volum
   cursor: pointer;
 }
 audio::-webkit-media-controls-timeline, video::-webkit-media-controls-timeline{
+
+  max-width: 30%;
   cursor: pointer;
 }
 video::-webkit-media-controls-play-button, audio::-webkit-media-controls-play-button{
