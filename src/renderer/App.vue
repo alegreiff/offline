@@ -351,15 +351,22 @@ margin-bottom: 1em;
 }
 
 
-
-audio::-webkit-media-controls-volume-slider{
-
+audio::-webkit-media-controls-volume-slider, video::-webkit-media-controls-volume-slider{
   cursor: pointer;
 }
-audio::-webkit-media-controls-timeline{
-
+audio::-webkit-media-controls-timeline, video::-webkit-media-controls-timeline{
   cursor: pointer;
 }
+video::-webkit-media-controls-play-button, audio::-webkit-media-controls-play-button{
+  cursor: pointer;
+}
+video::-webkit-media-controls-mute-button, audio::-webkit-media-controls-mute-button{
+  cursor: pointer;
+}
+
+
+
+
 
 audio{
   min-width: 100%;
