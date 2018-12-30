@@ -4,7 +4,7 @@ const state = {
       autor: 'Ministerio de Cultura - Maguaré - MaguaRED',
       coleccion: '',
       titulo: '¿Qué es Maguaré?',
-      describe: 'Maguaré es un portal para niños menores de 6 años, sus padres, cuidadores y agentes educativos que cuenta con más de 600 contenidos gratuitos entre canciones, videos, cuentos narrados, libros descargables, interactivos y aplicaciones, que fomentan el disfrute de la cultura colombiana y promueve los lenguajes expresivos de los niños.',
+      describe: 'Maguaré es un portal para niños menores de 6 años, sus padres, cuidadores y agentes educativos que cuenta con más de 600 contenidos gratuitos entre canciones, videos, cuentos narrados, libros descargables, interactivos y aplicaciones, que fomentan el disfrute de la cultura colombiana y promueven los lenguajes expresivos de los niños.',
       url: '1400.mp4'
     },
     { id: 1401,

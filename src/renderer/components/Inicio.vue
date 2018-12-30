@@ -12,13 +12,13 @@
       <h2 class="text-xs-center">Bienvenidos a la Estrategia Digital de Cultura y Primera Infancia del Ministerio de Cultura</h2>
 
       <div class="intromg">
-        <p>La Estrategia Digital de Cultura y Primera Infancia del Ministerio de Cultura, EDCPI, ofrece contenidos especializados y de calidad en el entorno digital dirigido a niños menores de seis años y sus padres, familias, maestros y en general para todos los cuidadores de primera infancia.</p>
+        <p>La Estrategia Digital de Cultura y Primera Infancia del Ministerio de Cultura, EDCPI, ofrece contenidos especializados y de calidad en el entorno digital dirigidos a niños menores de seis años y sus padres, familias, maestros y en general para todos los cuidadores de primera infancia.</p>
 
         <p class="text-xs-center botonestrategia"><v-btn dark color="magnaranja" small @click="muestravideo">¿Qué es la EDCPI? &nbsp;<v-icon small large>fas fa-play-circle</v-icon></v-btn></p>
 
-        <p>En esta versión digital, que no necesita conexión a Internet, encontrarán una selección de los mejores contenidos de Maguaré y MaguaRED que promueven los derechos culturales y los lenguajes expresivos de los niños.</p>
+        <p>En esta versión digital, que no necesita conexión a internet, encontrarán una selección de los mejores contenidos de Maguaré y MaguaRED que promueven los derechos culturales y los lenguajes expresivos de los niños.</p>
 
-        <p>A través del menú ubicado arriba a la izquierda <v-icon>fas fa-bars</v-icon> tendrán acceso a más de 250 videos, audios, libros y material descargable, completamente gratuito. </p>
+        <p>A través del menú ubicado arriba a la izquierda <v-icon>fas fa-bars</v-icon> tendrán acceso completamente gratuito a más de 250 videos, audios, libros y material descargable, . </p>
 
         <p>Los invitamos a descubrir más contenidos y recursos en <v-btn flat style="text-transform: none; padding: 0; margin: 0; color: #137786; font-weight: bolder; font-size: 1.22em" small v-on:click="webexterna('https://www.maguare.gov.co')">www.maguare.gov.co</v-btn> y <v-btn flat style="text-transform: none; padding: 0; margin: 0; color: #137786; font-weight: bolder; font-size: 1.22em" small v-on:click="webexterna('https://www.maguared.gov.co')">www.maguared.gov.co</v-btn>, y a unirse a la comunidad a través de las redes sociales.</p>
       </div>
