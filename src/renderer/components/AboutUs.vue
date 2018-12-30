@@ -116,7 +116,8 @@
               <v-card-text class="white--text text-xs-center" style="font-size: 3em;">
 
                 <img class="imlogo" id="logo" src="~@/assets/futbol.jpg">
-                <p style="font-size: 0.5em">Diseño, desarrollo, programación: Jaime de Greiff - Noviembre - diciembre de 2018</p>
+                <p style="font-size: 0.5em">Diseño, desarrollo y programación: Jaime de Greiff - noviembre - diciembre de 2018</p>
+                <p>Corrección de estilo ad-honorem: <strong>Lucho</strong> </p>
                 <br><br>
               </v-card-text>
 

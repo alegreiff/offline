@@ -4,7 +4,7 @@ const state = {
         id: 0,
         order: 1,
         nombre: 'Saimiri',
-        describe: 'En la copa de la ceiba viven el pequeño Saimiri y su familia de monos ardilla que emigraron desde el Amazonas. Saimiri tiene 5 años y es un chiquillo muy tierno, sensible, amable y empático; se preocupa por los problemas de todos, es conciliador, dulce y está muy apegado a su familia. Graba todo lo que hacen los habitantes de La Ceiba. Ese es su lenguaje expresivo principal, aunque no lo sabe, explora las expresiones de los demás y le gustaría encontrar su gran talento, porque admira mucho el de sus vecinos.',
+        describe: 'En la copa de la ceiba viven el pequeño Saimiri y su familia de monos ardilla que emigraron desde el Amazonas. Saimiri tiene 5 años y es un chiquillo muy tierno, sensible, amable y empático; se preocupa por los problemas de todos, es conciliador, dulce y está muy apegado a su familia. Graba todo lo que hacen los habitantes de La Ceiba, ese es su lenguaje principal, aunque no lo sabe, explora las expresiones de los demás y le gustaría encontrar su gran talento, porque admira mucho el de sus vecinos.',
         imagen: 'B01.jpg',
         imagenback: 'bg-00.png'
     },
