@@ -117,7 +117,8 @@
 
                 <img class="imlogo" id="logo" src="~@/assets/futbol.jpg">
                 <p style="font-size: 0.5em">Diseño, desarrollo y programación: Jaime de Greiff - noviembre - diciembre de 2018</p>
-                <p>Corrección de estilo ad-honorem: <strong>Lucho</strong> </p>
+                <hr>
+                <p style="font-size: 0.5em">Corrección de estilo ad-honorem: <strong>Luis C. Urrutia</strong> </p>
                 <br><br>
               </v-card-text>
 
