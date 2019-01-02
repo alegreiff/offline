@@ -36,16 +36,16 @@ const state = {
       },{
         id: 491,
         autor: 'ICBF Instituto Colombiano de Bienestar Familiar - Ministerio de Cultura - Fundalectura',
-        titulo: 'Tortuguita, vení bailá - libro',
+        titulo: '¡Tortuguita, vení bailá! - libro',
         coleccion: 'Fiesta de la lectura',
         publico: 'maguare',
-        describe: 'Este libro te invita a disfrutar la voz y la música de los pueblos nativos de Colombia. En ¡Tortuguita, vení bailá!, se recogen las palabras y las melodías con las que en Colombia se le da la bienvenida a los hijos en cinco pueblos indígenas.',
+        describe: 'Este libro te invita a disfrutar la voz y la música de los pueblos nativos de Colombia. En ¡Tortuguita, vení bailá! se recogen las palabras y las melodías con las que en Colombia se le da la bienvenida a los hijos en cinco pueblos indígenas.',
         url: 'librosmaguare/491-tortuguita.pdf',
         descarga: 'FIESTA-tortuguitavenibaila'
       },{
         id: 493,
         autor: 'ICBF Instituto Colombiano de Bienestar Familiar - Ministerio de Cultura - Fundalectura',
-        titulo: 'Putunkaa serruma duérmete, pajarito',
+        titulo: 'Putunkaa serruma duérmete, pajarito blanco',
         coleccion: 'Fiesta de la lectura',
         publico: 'maguare',
         describe: 'En esta edición bilingüe, el ICBF y Fundalectura recopilan algunos arrullos y cuentos en español, piapoco, arhuaco, kamëntsá, uitoto y wayúu, lenguas que guardan la memoria.',
@@ -54,7 +54,7 @@ const state = {
       },{
         id: 495,
         autor: 'ICBF Instituto Colombiano de Bienestar Familiar - Ministerio de Cultura - Fundalectura',
-        titulo: 'Una morena en la ronda',
+        titulo: 'Una morena en la ronda...',
         coleccion: 'Fiesta de la lectura',
         publico: 'maguare',
         describe: 'En esta edición multilingüe se recopilan algunos arrullos, juegos y relatos con los que papás, mamás y abuelos afrocolombianos reciben a sus bebés y les acompañan durante la infancia. ',
@@ -75,7 +75,7 @@ const state = {
         titulo: 'Tiki, tiki, tai - libro',
         coleccion: 'Fiesta de la lectura',
         publico: 'maguare',
-        describe: 'En esta edición bilingüe se recopilan algunos arrullos, secretos y relatos en español y en el idioma del pueblo Rrom, una lengua que recuerda cada camino por el que este pueblo ha trasegado en su ir y venir por el mundo, amantes ante todo de la libertad y la vida.',
+        describe: 'En esta edición bilingüe se recopilan algunos arrullos, secretos y relatos en español y en el idioma del pueblo Rrom, una lengua que recuerda cada camino por el que este pueblo ha trasegado en su ir y venir por el mundo, amante ante todo de la libertad y la vida.',
         url: 'librosmaguare/511-tikitikitai.pdf',
         descarga: 'FIESTA-tikitikitai'
       },{
@@ -85,7 +85,7 @@ const state = {
         coleccion: 'Leer es mi cuento',
         edad: 1,
         publico: 'maguare',
-        describe: 'Recuerden los cuentos de infancia de Rafael Pombo y lean junto con los niños. Aquí encuentran cuentos como Mirringa Mirronga, El renacuajo paseador, Juan Matachín, entre otros.',
+        describe: 'Disfruten la selección de los mejores cuentos de Rafael Pombo: Mirringa Mirronga, El renacuajo paseador y Juan Matachín, entre otros.',
         url: 'librosmaguare/499-pomboplatillos.pdf',
         descarga: 'LEMC-pombo-platillos'
       },{
@@ -135,7 +135,7 @@ const state = {
         coleccion: 'Leer es mi cuento',
         edad: 1,
         publico: 'maguare',
-        describe: 'Canten y jueguen con los niños canciones, rondas, poemas, trabalenguas, dichos y retahílas. Aquí encontrarán relatos e historias de reconocidos autores latinoamericanos.',
+        describe: 'Canten y jueguen con los niños canciones, rondas, poemas, trabalenguas, dichos y retahílas. Aquí encuentran relatos e historias de reconocidos autores latinoamericanos.',
         url: 'librosmaguare/515-cantapalabras.pdf',
         descarga: 'LEMC-canta-palabras'
       },{
@@ -165,7 +165,7 @@ const state = {
         coleccion: 'Leer es mi cuento',
         edad: 1,
         publico: 'maguare',
-        describe: 'Este libro es una recopilación de las mejores adivinanzas escritas por el poeta caucano Horacio Benavides, muchas de sus adivinanzas están relacionadas con mitologías o con historias antiguas.',
+        describe: 'Este libro es una recopilación de las mejores adivinanzas escritas por el poeta caucano Horacio Benavides. Muchas de sus adivinanzas están relacionadas con mitologías o con historias antiguas.',
         url: 'librosmaguare/540-grano.pdf',
         descarga: 'LEMC-abrete-grano'
       },{
@@ -175,7 +175,7 @@ const state = {
         coleccion: 'Leer es mi cuento',
         edad: 7,
         publico: 'maguare',
-        describe: 'Este cuento clásico de Hans Christian Andersen, ha sido leído desde hace muchos años con emoción por lectores de todas las edades y recuerda la necesidad de aceptar a quienes piensan diferente y pertenecen a otra raza, cultura o religión.',
+        describe: 'Este cuento clásico de Hans Christian Andersen ha sido leído desde hace muchos años con emoción por personas de diferentes edades y recuerda la necesidad de aceptar a quienes piensan diferente y pertenecen a otra raza, cultura o religión.',
         url: 'librosmaguare/541-patitofeo.pdf',
         descarga: 'LEMC-patito-feo'
       },{
@@ -195,7 +195,7 @@ const state = {
         coleccion: 'Leer es mi cuento',
         edad: 7,
         publico: 'maguare',
-        describe: 'Encuentren aquí 30 fábulas de Félix María Samaniego. Algunos de los títulos son La cigarra y la hormiga, El león y el ratón, y El ciervo en la fuente.',
+        describe: 'Encuentren aquí 30 fábulas de Félix María Samaniego. Algunos de los títulos son La cigarra y la hormiga, El león y el ratón y El ciervo en la fuente.',
         url: 'librosmaguare/543-fabulas.pdf',
         descarga: 'LEMC-fabulas'
       },{
@@ -226,7 +226,7 @@ const state = {
         coleccion: 'Leer es mi cuento',
         edad: 7,
         publico: 'maguare',
-        describe: 'En este libro encontrarán los clásicos de Los Hermanos Grimm: Hansel y Gretel, Caperucita Roja, Blanca Nieves y La bella durmiente.',
+        describe: 'En este libro encuentran cuatro clásicos de Los Hermanos Grimm: Hansel y Gretel, Caperucita Roja, Blanca Nieves y La bella durmiente.',
         url: 'librosmaguare/bosqueadentro.pdf',
         descarga: 'LEMC-bosque-adentro'
       },{
@@ -246,7 +246,7 @@ const state = {
         coleccion: 'Leer es mi cuento',
         edad: 10,
         publico: 'maguared',
-        describe: 'Este cuento de Tomás Carrasquilla narra la historia de Peralta, un campesino a quien se le aparece Jesús y San Pedro.',
+        describe: 'Este cuento de Tomás Carrasquilla narra la historia de Peralta, un campesino a quien se le aparecen Jesús y San Pedro.',
         url: 'leeresmicuento/1220-diestradiospadre.pdf',
         descarga: 'LEMC-enladiestradediospadre'
       },{
@@ -345,8 +345,8 @@ const state = {
         titulo: 'El frenético baile de Chip',
         coleccion: 'Maguaré en La Ceiba',
         publico: 'maguare',
-        describe: 'Chip la perezosa se levantó muy dispuesta para dar su clase de aeróbicos y para hacer deporte se mantiene muy bien hidratada. Pero Chip ha tomado más agua de la cuenta… ¡Un baño, por favor!',
-        url: 'librosmaguare/maguare-frenetico-baile-chip.pdf',
+        describe: 'Chip la perezosa se levantó muy dispuesta para dar su clase de aeróbicos y para hacer deporte se mantiene muy bien hidratada. Pero Chip ha tomado más agua de la cuenta... ¡Un baño,por favor!',
+        url:  'librosmaguare/maguare-frenetico-baile-chip.pdf',
         urlbn: 'librosmaguare/maguare-frenetico-baile-chipBN.pdf',
         descarga: 'CEIBA-elbailefreneticodechip'
       },
@@ -367,7 +367,7 @@ const state = {
         titulo: 'El viaje de la familia Cuy',
         coleccion: 'Maguaré en La Ceiba',
         publico: 'maguare',
-        describe: '¿Cómo hacen Linio y Tulita los dos papás cuyes para salir de paseo con sus hijos?. No debe ser nada fácil… porque son ¡27 cuyecitos!',
+        describe: '¿Cómo hacen Linio y Tulita los dos papás cuyes para salir de paseo con sus hijos?. No debe ser nada fácil... ¡porque son 27 cuyecitos!',
         url: 'librosmaguare/maguare-viaje-familia-cuy.pdf',
         urlbn: 'librosmaguare/maguare-viaje-familia-cuyBN.pdf',
         descarga: 'CEIBA-elviajedelafamiliacuy'
@@ -378,7 +378,7 @@ const state = {
         titulo: 'El cumpleaños de Rosalinda',
         coleccion: 'Maguaré en La Ceiba',
         publico: 'maguare',
-        describe: 'Rosalinda la camaleona cambia de color según como se sienta y hoy está azul porque parece que todos olvidaron su cumpleaños. En todo el día no ha recibido ni un abrazo ni un te quiero. ¿Cómo hacer para que se ponga feliz, color arcoiris?',
+        describe: 'Rosalinda la camaleona cambia de color según como se sienta y hoy está azul porque parece que todos olvidaron su cumpleaños. En todo el día no ha recibido ni un abrazo ni un te quiero. ¿Cómo hacer para que se ponga feliz, color arcoíris?',
         url: 'librosmaguare/maguare-rosalinda.pdf',
         urlbn: 'librosmaguare/maguare-rosalindaBN.pdf',
         descarga: 'CEIBA-elcumpleanosderosalinda'
@@ -389,7 +389,7 @@ const state = {
         titulo: 'La memoria del abuelo',
         coleccion: 'Maguaré en La Ceiba',
         publico: 'maguare',
-        describe: 'El abuelo Emiliano lo olvida todo, todo, todo… bueno no se le olvidan las cosas que averguenzan a Rani y a Gildardo. ¡Abuelo Emiliano ejercita tu memoria con un sudoku!',
+        describe: 'El abuelo Emiliano lo olvida stodo, todo, todo... bueno no e le olvidan las cosas que avergüenzan a Rani y a Gildardo. ¡Abuelo Emiliano, ejercita tu memoria con un sudoku!',
         url: 'librosmaguare/maguare-memoria-abuelo.pdf',
         urlbn: 'librosmaguare/maguare-memoria-abueloBN.pdf',
         descarga: 'CEIBA-lamemoriadelabuelo'
@@ -399,7 +399,7 @@ const state = {
         titulo: 'Una sopa para la fiesta',
         coleccion: 'Maguaré en La Ceiba',
         publico: 'maguare',
-        describe: '¡Las trillizas Adriana, Juliana y Eliana son terribles!. No se quedan quietas nunca y sus travesuras desesperan a más de uno en la Ceiba. Sin embargo parecen tener un don especial para transformar cualquier situación por crítica que parezca. ¿Qué hicieron ahora estas Terrillizas?.',
+        describe: '¡Las trillizas Adriana, Juliana y Eliana son terribles! No se quedan quietas nunca y sus travesuras desesperan a más de uno en La Ceiba. Sin embargo, parecen tener un don especial para transformar cualquier situación por crítica que parezca. ¿Qué hicieron ahora estas Terrillizas?.',
         url: 'librosmaguare/maguare-sopa-fiesta.pdf',
         urlbn: 'librosmaguare/maguare-sopa-fiestaBN.pdf',
         descarga: 'CEIBA-unasopaparalafiesta'
@@ -421,7 +421,7 @@ const state = {
         id: 9002,
         titulo: 'Tu Rockcito',
         autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
-        describe: 'Presentamos una serie de actividades para niños de primera infancia basadas en la música de Tu Rockcito: ¡puro rock n roll!',
+        describe: 'Presentamos una serie de actividades para niños de primera infancia basadas en la música de Tu Rockcito: ¡puro rock and roll!',
         url: 'sugerencias/sugerencias-de-uso-9002-turockcito.pdf',
         descarga: 'Sugerencia-de-uso-turockcito'
       },{
@@ -447,7 +447,7 @@ const state = {
         descarga: 'Sugerencia-de-uso-tamborecos'
       },{
         id: 9006,
-        titulo: 'Pipo',
+        titulo: 'Pipo, mi amigo imaginario',
         autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
         describe: 'Aquí encuentran una serie de actividades para niños de primera infancia que promueven la exploración del entorno, el juego y el disfrute de las palabras y el lenguaje. ¡A jugar con Pipo, mi amigo imaginario!',
         url: 'sugerencias/sugerencias-de-uso-9006-pipo.pdf',
@@ -478,7 +478,7 @@ const state = {
         id: 9010,
         titulo: 'Arrullos',
         autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
-        describe: '¿Cuál es la mejor canción para dormir a un niño despierto?. En estas sugerencias de uso les contamos cuáles son las canciones especiales y qué actividades implementar para dormir al más despierto.',
+        describe: '¿Cuál es la mejor canción para dormir a un niño? En estas sugerencias de uso les contamos cuáles son las canciones especiales y qué actividades implementar para dormir al más despierto.',
         url: 'sugerencias/sugerencias-de-uso-9010-arrullos.pdf',
         descarga: 'Sugerencia-de-uso-arrullos'
       },
@@ -493,7 +493,7 @@ const state = {
         id: 9012,
         titulo: 'Cuentos al oído',
         autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
-        describe: 'Aquí están disponibles las actividades para niños de primera infancia basadas en la colección Cuentos al oído; ésta promueven las experiencias artísticas, el juego y el disfrute de las palabras.',
+        describe: 'Aquí están disponibles las actividades para niños de primera infancia basadas en la colección Cuentos al oído, que promueve las experiencias artísticas, el juego y el disfrute de las palabras.',
         url: 'sugerencias/sugerencias-de-uso-9012-cuentosaloido.pdf',
         descarga: 'Sugerencia-de-uso-cuentosaloido'
       },{
@@ -530,7 +530,7 @@ const state = {
         id: 9017,
         titulo: 'Sana que sana',
         autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
-        describe: '¡Sana que sana, colita de rana, si no sana hoy, sanará mañana!. Aquí están disponibles las sugerencias de actividades para sanar con la musicalidad de las palabras.',
+        describe: '¡Sana que sana, colita de rana, si no sana hoy, sanará mañana! Aquí están disponibles las sugerencias de actividades para sanar con la musicalidad de las palabras.',
         url: 'sugerencias/sugerencias-de-uso-9017-sanaquesana.pdf',
         descarga: 'Sugerencia-de-uso-sanaquesana'
       },
@@ -553,7 +553,7 @@ const state = {
         id: 9020,
         titulo: 'Trabalenguas',
         autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
-        describe: 'Aquí encuentran una serie de activdades basadas en trabalenguas para que los niños jueguen, hagan mímicas, se pinten la lengua de colores o usen tarros como si fueran tambores.',
+        describe: 'Aquí encuentran una serie de actividades basadas en trabalenguas, para que los niños jueguen, hagan mímicas, se pinten la lengua de colores o usen tarros como si fueran tambores.',
         url: 'sugerencias/sugerencias-de-uso-9020-trabalenguas.pdf',
         descarga: 'Sugerencia-de-uso-trabalenguas'
       },{
@@ -602,14 +602,14 @@ const state = {
         id: 9027,
         titulo: 'Videos musicales',
         autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
-        describe: '¿Quieren ver un video? en Maguaré tienen más de veinte videos musicales con ritmos diferentes y técnicas de animación distintas… pero además les sugerimos cómo utilizarlos en la casa o en la escuela, para que los niños de primera infancia descubran e imaginen historias.',
+        describe: '¿Quieren ver un video? En Maguaré tienen más de veinte videos musicales con ritmos diferentes y técnicas de animación distintas... lpero además es sugerimos cómo utilizarlos en la casa o en la escuela, para que los niños de primera infancia descubran e imaginen historias.',
         url: 'sugerencias/sugerencias-de-uso-9027-videosmusicales.pdf',
         descarga: 'Sugerencia-de-uso-videosmusicales'
       },{
         id: 9028,
         titulo: 'Así me lo contaron',
         autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
-        describe: 'Conozcan al Conde Olinos, descubran de qué está hecho el nuevo traje de un emperador y sorpréndanse con la arveja que cambió la vida de una princesa en estas nuevas sugerencias de uso de los contenidos de Maguaré.',
+        describe: 'Conozcan al conde Olinos, descubran de qué está hecho el nuevo traje de un emperador y sorpréndanse con la arveja que cambió la vida de una princesa en estas nuevas sugerencias de uso de los contenidos de Maguaré.',
         url: 'sugerencias/sugerencias-de-uso-9028-asimelocontaron.pdf',
         descarga: 'Sugerencia-de-uso-asi-me-lo-contaron'
       },{
@@ -632,7 +632,7 @@ const state = {
         id: 9031,
         titulo: 'Fiesta de la lectura',
         autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
-        describe: '¿Qué escuchan los niños colombianos al nacer y durante sus primeros años?. Aquí les sugerimos 5 actividades para promover la expresión de los niños a partir de los cantos, nanas y rondas que distintas comunidades étnicas de Colombia le cantan a sus niños.',
+        describe: '¿Qué escuchan los niños colombianos al nacer y durante sus primeros años? Aquí les sugerimos 5 actividades para promover la expresión de los niños a partir de los cantos, nanas y rondas que distintas comunidades étnicas de Colombia les cantan a sus niños.',
         url: 'sugerencias/sugerencias-de-uso-9031-fiestadelalectura.pdf',
         descarga: 'Sugerencia-de-uso-fiesta-de-la-lectura'
       },{
@@ -653,7 +653,7 @@ const state = {
         id: 9034,
         titulo: 'Las Crónicas Elefantiles',
         autor: 'Ministerio de Cultura - MaguaRED - Maguaré',
-        describe: 'Cinco nuevas actividades para utilizar los contenidos de series de televisión tan exitosas como Las Crónicas Elefantiles. ¡Anímense a dibujar, escribir y sobre todo, a imaginar!',
+        describe: 'Cinco nuevas actividades para utilizar los contenidos de una serie de televisión tan exitosa como Las Crónicas Elefantiles. ¡Anímense a dibujar, escribir y sobre todo, a imaginar!',
         url: 'sugerencias/sugerencias-de-uso-9034-cronicas-elefantiles.pdf',
         descarga: 'Sugerencia-de-uso-las-cronicas-elefantiles'
       },

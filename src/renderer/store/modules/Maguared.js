@@ -25,8 +25,8 @@ const state = {
     { id: 1003,
       autor: 'Ministerio de Cultura - Maguaré - MaguaRED',
       coleccion: '¿Qué piensan los expertos?',
-      titulo: 'Diana Rubiano y la educación inicial en primera infancia',
-      describe: 'Diana Rubiano es la Coordinadora Pedagógica de aeioTU, una fundación que trabaja en el desarrollo integral de los niños de 0 a 5 años. En este video explica cómo ha cambiado el papel de la escuela en la primera infancia.',
+      titulo: 'Diana Rubiano y la eduxcación inicial en primera infancia',
+      describe: 'Diana Rubiano es la coordinadora pedagógica de aeioTÜ, una fundación que trabaja en el desarrollo integral de los niños de 0 a 5 años. En este video explica cómo ha cambiado el papel de la escuela en la primera infancia.',
       url: '1003-rubiano.mp4'
     },
     { id: 1004,
@@ -54,7 +54,7 @@ const state = {
       autor: 'Ministerio de Cultura - Maguaré - MaguaRED',
       coleccion: '¿Qué piensan los expertos?',
       titulo: 'Luis Pescetti y la vitalidad en los niños',
-      describe: 'Luis Pescetti es músico y escritor de literatura infantil. En este video habla sobre la lectura y el humor en la infancia: ¡una combinación súper poderosa!',
+      describe: 'Luis Pescetti es músico y escritor de literatura infantil. En este video habla sobre la lectura y el humor en la infancia: ¡una combinación superpoderosa!',
       url: '1007-pescetti.mp4'
     },
     { id: 1008,
@@ -207,8 +207,8 @@ const state = {
     { id: 1302,
       autor: 'Ministerio de Cultura - Maguaré - MaguaRED',
       coleccion: '¿Qué recomiendan los expertos?',
-      titulo: '¿Qué recomienda Jorge Raedo?',
-      describe: 'El artista y profesor de arte Jorge Raedo comparte algunas claves para crear espacios adecuados para la primera infancia.',
+      titulo: '¿Qué recomienda Jorge Raedó?',
+      describe: 'El artista y profesor de arte Jorge Raedó comparte algunas claves para crear espacios adecuados para la primera infancia.',
       url: '1302-jorgeraedo.mp4'
     },
     { id: 1303,
@@ -257,7 +257,7 @@ const state = {
       autor: 'Ministerio de Cultura - Maguaré - MaguaRED',
       coleccion: '¿Qué recomiendan los expertos?',
       titulo: '¿Qué recomienda Maritza Sánchez?',
-      describe: 'La creadora de contenidos infantiles audiovisuales, Maritza Sánchez, recomienda el acompañamiento de los adultos mientras los niños ven contenidos infantiles.',
+      describe: 'La creadora de contenidos infantiles Maritza Sánchez recomienda el acompañamiento de los adultos mientras los niños ven contenidos infantiles.',
       url: '1309-maritzasanchez.mp4'
     },
     { id: 1310,
@@ -270,8 +270,8 @@ const state = {
     { id: 1311,
       autor: 'Ministerio de Cultura - Maguaré - MaguaRED',
       coleccion: '¿Qué recomiendan los expertos?',
-      titulo: '¿Qué recomienda Amalia Satizabal?',
-      describe: 'La artista Amalia Satizabal recomienda que los niños tengan acceso a los libros en todos los lugares, en todas sus formas y en todas las situaciones.',
+      titulo: '¿Qué recomienda Amalia Satizábal?',
+      describe: 'La artista Amalia Satizábal recomienda que los niños tengan acceso a los libros en todos los lugares, en todas sus formas y en todas las situaciones.',
       url: '1311-amaliasatizabal.mp4'
     }
 
@@ -322,7 +322,7 @@ const state = {
     { id: 1105,
       autor: 'Ministerio de Cultura - Artista: Carlos Velásquez - Fotógrafo: Sebastián Ocampo.',
       titulo: '¿Cómo hacer un juego de cubos?',
-      describe: 'Por medio de este tutorial los niños pueden manipular la materia y entender las estructuras y cómo éstas se relacionan con sus entornos.',
+      describe: 'Por medio de este tutorial, los niños pueden manipular la materia y entender las estructuras y cómo estas se relacionan con sus entornos.',
       url: 'tutoriales/1105.pdf',
       descarga: 'tutorial-juego-cubos',
       video: '1105.mp4'
@@ -338,7 +338,7 @@ const state = {
     { id: 1107,
       autor: 'Ministerio de Cultura - Artista: Carlos Velásquez - Fotógrafo: Sebastián Ocampo.',
       titulo: '¿Cómo hacer un tablero de fieltro?',
-      describe: 'Crear personajes, paisajes, objetos o contar historias son algunas de las actividades que se pueden hacer con este tablero interactivo.',
+      describe: 'Crear personajes, paisajes, objetos o contar historias son algunas de las actividades que pueden hacerse con este tablero interactivo.',
       url: 'tutoriales/1107.pdf',
       descarga: 'tutorial-tablero-fieltro',
       video: '1107.mp4'
@@ -346,7 +346,7 @@ const state = {
     { id: 1108,
       autor: 'Ministerio de Cultura - Artista: Carlos Velásquez - Fotógrafo: Sebastián Ocampo.',
       titulo: '¿Cómo convertir una cuchara en una actriz?',
-      describe: 'A través de un paso a paso sencillo ustedes, junto a los niños, pueden crear un personaje animado a partir de una cuchara de palo.',
+      describe: 'A través de un paso a paso sencillo, ustedes, junto a los niños, pueden crear un personaje animado a partir de una cuchara de palo.',
       url: 'tutoriales/1108.pdf',
       descarga: 'tutorial-cuchara-actriz',
       video: '1108.mp4'
@@ -474,7 +474,7 @@ const state = {
       titulo: 'Historia y primera infancia',
       coleccion: 'Derechos y Orientaciones Culturales para la Primera Infancia',
       publico: 'maguared',
-      describe: 'Varios autores reflexionan sobre el concepto histórico de niñez, sobre el ejercicio de ciudadanía de los niños, y sobre los museos y su papel educativo en los niños.',
+      describe: 'Varios autores reflexionan sobre el concepto histórico de niñez, sobre el ejercicio de ciudadanía de los niños y sobre los museos y su papel educativo en los niños.',
       url: 'librosmaguare/2005-historia-primera-infancia.pdf',
       descarga: 'derechos-historia-primera-infancia'
     },

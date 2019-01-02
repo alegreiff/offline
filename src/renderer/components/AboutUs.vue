@@ -17,7 +17,7 @@
         </v-img>-->
         <v-card-text>
           <hr>
-          <p class="cred-persona">Diciembre de 2018. Versión {{ vers }} {{ platform }}</p>
+          <p class="cred-persona">Diciembre de 2018. Versión {{ vers }} {{ platform==='darwin' ? 'MAC' : 'PC' }}</p>
           <v-tabs>
             <v-tab>
               Maguaré - MaguaRED
@@ -88,12 +88,13 @@
               <p class="cred-cargo">Coordinadora Estrategia Digital de Cultura y Primera Infancia Maguaré y MaguaRED</p>
               <p class="cred-persona" @click="sumaequipo()">Edna Katerine Moreno Velandia</p>
               <p class="cred-cargo">Selección y curaduría de contenidos - Maguaré</p>
-              <p class="cred-persona">Juan Sebastián Salazar Piedrahita</p>
+              <p class="cred-persona">Juan Sebastián Salazar Piedrahíta</p>
               <p class="cred-cargo">Selección y curaduría de contenidos - MaguaRED</p>
               <p class="cred-persona">Mario Cubillos Peña</p>
               <p class="cred-cargo">Producción general</p>
               <p class="cred-persona">Jaime Augusto de Greiff Cabezas</p>
               <p class="cred-cargo">Diseño, desarrollo y programación</p>
+              <p class="cred-cargo" @click="sumalucho()"><v-icon>fas fa-user-friends</v-icon> </p>
 
 
             </v-tab-item>
@@ -101,7 +102,8 @@
               Herramientas
             </v-tab>
             <v-tab-item>
-              <span @click="sumajaime()"><img class="toolsimagen" id="logo" src="~@/assets/tools.png"></span>
+              <p class="text-xs-center">
+              <span @click="sumajaime()"><img class="toolsimagen" id="logo" src="~@/assets/tools.png"></span></p>
 
 
             </v-tab-item>
@@ -118,7 +120,7 @@
                 <img class="imlogo" id="logo" src="~@/assets/futbol.jpg">
                 <p style="font-size: 0.5em">Diseño, desarrollo y programación: Jaime de Greiff - noviembre - diciembre de 2018</p>
                 <hr>
-                <p style="font-size: 0.5em">Corrección de estilo ad-honorem: <strong>Luis C. Urrutia</strong> </p>
+
                 <br><br>
               </v-card-text>
 
@@ -135,6 +137,26 @@
               <v-card-text class="white--text text-xs-center">
 
                 <img style="max-width: 800px" id="logo" src="~@/assets/equipo.jpg">
+
+                <br><br>
+              </v-card-text>
+
+              <v-card-actions>
+                <v-spacer></v-spacer>
+
+              </v-card-actions>
+            </v-card>
+          </v-dialog>
+          <v-dialog v-model="lucho">
+            <v-card class="magazul">
+
+
+              <v-card-text class="white--text text-xs-center">
+                <h2>Muchas gracias</h2>
+                <p style="font-size: 1em">Corrección de estilo ad-honorem: <strong>Luis Carlos Urrutia</strong> </p>
+                <img style="max-width: 800px" id="logo" src="~@/assets/luciana.jpg">
+                <p>Dibujo de Luciana Urrutia Rodríguez</p>
+
 
                 <br><br>
               </v-card-text>
@@ -164,8 +186,10 @@
       return {
         jaime: false,
         equipo: false,
+        lucho: false,
         cuenta: 0,
         cuentaequipo: 0,
+        cuentalucho: 0,
         drawer: null,
         datosgenerales: [],
         platform: require('os').platform(),
@@ -173,6 +197,24 @@
       }
     },
     watch: {
+      lucho (val) {
+            //!val && alert('Dialog is closing')
+            if(!val){
+              this.cuentalucho = 0;
+            }
+          },
+      jaime (val) {
+                //!val && alert('Dialog is closing')
+                if(!val){
+                  this.cuenta = 0;
+                }
+              },
+        equipo (val) {
+            //!val && alert('Dialog is closing')
+            if(!val){
+              this.cuentaequipo = 0;
+            }
+          },
       cuenta: function (id) {
         if(id === 21){
           this.jaime = true;
@@ -183,6 +225,13 @@
       cuentaequipo: function (id) {
         if(id === 21){
           this.equipo = true;
+        }
+
+
+      },
+      cuentalucho: function (id) {
+        if(id === 10){
+          this.lucho = true;
         }
 
 
@@ -202,6 +251,9 @@
       },
       sumaequipo(){
         this.cuentaequipo++
+      },
+      sumalucho(){
+        this.cuentalucho++
       },
       open (link) {
         console.log(link)

@@ -4,7 +4,7 @@ const state = {
       autor: 'Ministerio de Cultura - Maguaré',
       titulo: 'Baila con el Arma - DJ',
       coleccion: 'Juegos',
-      describe: 'Si te gusta mover tu cuerpo este juego es especial para tí. Elige uno de los personajes del universo de Maguaré: Saimiri, la rana, la osa perezosa, el olinguito o la camaleona, mientras el Arma - DJ mezcla con sus sintetizadores y los hace bailar a ellos y a ti. ¿Cuál es la música que más te gusta bailar?',
+      describe: 'Si te gusta mover tu cuerpo, este juego es especial para ti. Elige uno de los personajes del universo de Maguaré: Saimiri, la rana, la osa perezosa, el olinguito o la camaleona, mientras el Arma - DJ mezcla con sus sintetizadores y los hace bailar a ellos y a ti. ¿Cuál es la música que más te gusta bailar?',
       url: 'bailaconelarmadj/index.html'
     },
     { id: 207,
@@ -18,14 +18,14 @@ const state = {
       autor: 'Ministerio de Cultura - Maguaré',
       titulo: 'Trabalenguas - El coco',
       coleccion: 'Trabalenguas',
-      describe: 'Juguemos con las palabras, repite una y otra vez hasta que se destrabe tu lengua: Compadre cómpreme un coco. Compadre no como coco porque...',
+      describe: 'Juguemos con las palabras, repite una y otra vez hasta que se destrabe tu lengua: Compadre, cómpreme un coco. Compadre, no como coco, porque...',
       url: 'trabalenguas/el_coco/index.html'
     },
     { id: 209,
       autor: 'Ministerio de Cultura - Maguaré',
       titulo: 'Trabalenguas - María Chucena',
       coleccion: 'Trabalenguas',
-      describe: 'Juguemos con las palabras, repite una y otra vez hasta que se destrabe tu lengua: María Chucena techaba su techo, y un techador que por ahí pasaba, le dijo...',
+      describe: 'Juguemos con las palabras, repite una y otra vez hasta que se destrabe tu lengua: María Chucena techaba su techo y un techador que por allí pasaba le dijo...',
       url: 'trabalenguas/maria_chucena/index.html'
     },
     { id: 210,
@@ -88,7 +88,7 @@ const state = {
       autor: 'Ministerio de Cultura - Maguaré - Centro Ático',
       titulo: 'Adivinanza 02',
       coleccion: 'Adivinanzas',
-      describe: 'Adivina adivinador, juguemos con palabras y descubre el acertijo: Cinco hermanos muy unidos que no se pueden mirar, cuando riñen aunque quieras no los puedes separar.',
+      describe: 'Adivina adivinador, juguemos con palabras y descubre el acertijo: Cinco hermanos muy unidos que no se pueden mirar, cuando riñen, aunque quieras, no los puedes separar.',
       url: 'adivinanzas/dedos/index.html'
     },
     { id: 219,
@@ -109,7 +109,7 @@ const state = {
       autor: 'Ministerio de Cultura - Maguaré - Centro Ático',
       titulo: 'Adivinanza 05',
       coleccion: 'Adivinanzas',
-      describe: 'Adivina adivinador, juguemos con palabras y descubre el acertijo: Cabeza de hierro, cuerpo de madera si te piso un dedo, ¡tremendo grito pegas!',
+      describe: 'Adivina adivinador, juguemos con palabras y descubre el acertijo: Cabeza de hierro, cuerpo de madera, si te piso un dedo, ¡tremendo grito pegas!',
       url: 'adivinanzas/martillo/index.html'
     },
     { id: 222,
