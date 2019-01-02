@@ -4,7 +4,7 @@ const state = {
       autor: 'Ministerio de Cultura - Maguaré - The Bucket - Audio de María del Sol Peralta',
       coleccion: 'Karaokes',
       titulo: 'El piojo - Karaoke',
-      describe: 'El piojo chef ama cocinar, aunque utiliza ingredientes que se encuentra en las cabezas. Un divertido y colorido video animado que ilustra la variedad de platos "muy especiales" que prepara este chef para tí. ¿Cuál es la receta que más te gusta?',
+      describe: 'El piojo chef ama cocinar, aunque utiliza ingredientes que se encuentra en las cabezas. Un divertido y colorido video animado que ilustra la variedad de platos "muy especiales" que prepara este chef para ti. ¿Cuál es la receta que más te gusta?',
       url: '70-elpiojo.mp4'
     },
     { id: 118,
@@ -25,7 +25,7 @@ const state = {
       autor: 'Ministerio de Cultura - Maguaré - Audio de Jorge Luis Valencia Chica / Canturriando',
       coleccion: 'Karaokes',
       titulo: 'Poema a la lluvia - Karaoke',
-      describe: 'Cuando llueve suceden muchas cosas, por ejemplo, las nubes grises y gordas vuelan por ahí junto con las hojas que bailan y giran con el viento. Y tú ¿qué haces cuando te mojas con la lluvia?',
+      describe: 'Cuando llueve, suceden muchas cosas. Por ejemplo, las nubes grises y gordas vuelan por ahí junto con las hojas que bailan y giran con el viento. Y tú, ¿qué haces cuando te mojas con la lluvia?',
       url: '132-poemalluvia.mp4'
     },
     { id: 134,
@@ -39,21 +39,21 @@ const state = {
       autor: 'Ministerio de Cultura - Maguaré - Audio de Yeny Tandioy Chindoy',
       coleccion: 'Karaokes',
       titulo: 'Bacetemëng Oyejuayëng (Niños Felices) - Karaoke',
-      describe: 'Los niños del pueblo indígena Kamëntšá o Kamsá que viven en el Valle del Sibundoy en el Putumayo, están muy felices porque están recuperando su lengua materna a través de la música y las canciones. ¡Vamos todos a cantar en una lengua diferente!',
+      describe: 'Los niños del pueblo indígena kamëntšá o kamsá que viven en el Valle del Sibundoy en el Putumayo, están muy felices porque están recuperando su lengua materna a través de la música y las canciones. ¡Vamos todos a cantar en una lengua diferente!',
       url: '137-ninosfelices.mp4'
     },
     { id: 138,
       autor: 'Ministerio de Cultura - Maguaré - Observatorio del Caribe Colombiano',
       coleccion: 'Sweet songs fi piknini. Canciones dulces para niños.',
       titulo: 'Clap han - Karaoke',
-      describe: 'El creole es la lengua que hablan los habitante nativos del Archipiélago de San Andrés y Providencia. Este karaoke te enseña una canción adaptada a esta lengua para la hora de ir a dormir.  ¿Qué te gusta que te canten cuando te vas a dormir?',
+      describe: 'El creole es la lengua que hablan los habitante nativos del Archipiélago de San Andrés, Providencia y Santa Catalina. Este karaoke te enseña una canción adaptada a esta lengua para la hora de ir a dormir.  ¿Qué te gusta que te canten cuando vas a dormirte?',
       url: '138-claphan.mp4'
     },
     { id: 176,
       autor: 'Ministerio de Cultura - Maguaré - Observatorio del Caribe Colombiano',
       coleccion: 'Sweet songs fi piknini. Canciones dulces para niños.',
       titulo: 'Out and through the window - Karaoke',
-      describe: 'Esta ronda nos cuenta una historia de amor que inicia en una ventana en el Archipiélago de San Andrés y Providencia y cruza el océano. La música isleña se nutre de la historia de los ingleses que colonizaron el Caribe y los africanos que llegaron allí a trabajar. ¡Vamos a cantar al ritmo de las olas del mar!',
+      describe: 'Esta ronda nos cuenta una historia de amor que inicia en una ventana en el Archipiélago de San Andrés, Providencia y Santa Catalina y cruza el océano. La música isleña se nutre de la historia de los ingleses que colonizaron el Caribe y los africanos que llegaron allí a trabajar. ¡Vamos a cantar al ritmo de las olas del mar!',
       url: '176-out.mp4'
     },
     { id: 282,
@@ -109,7 +109,7 @@ const state = {
       autor: 'Ministerio de Cultura - Rafael Pombo',
       coleccion: 'Cuentos narrados',
       titulo: 'Pastorcita - Video',
-      describe: 'Pastorcita perdió a sus ovejas. Cuando ellas solas regresaron no tenían colas, estaban secándose al sol en las ramas de un viejo árbol. Pastorcita las tomó y una a una todas las colas a sus dueñas devolvió. ¿Cómo sacarías a pasear tantas ovejas?',
+      describe: 'Pastorcita perdió sus ovejas. Cuando regresaron no tenían colas, estaban secándose al sol en las ramas de un viejo árbol. Pastorcita las tomó y una a una todas las colas a sus dueñas devolvió. ¿Cómo sacarías a pasear tantas ovejas?',
       url: '418-pastorcita.mp4'
     },
     { id: 419,
@@ -123,21 +123,21 @@ const state = {
       autor: 'Ministerio de Cultura - Rafael Pombo',
       coleccion: 'Cuentos narrados',
       titulo: 'Juaco el ballenero - Video',
-      describe: 'El capitán de Juaco quería cazar una enorme ballena, pero ella dio un sacudón y mandó al barco y al capitán hasta la luna. Juaco no lo ha podido visitar porque no sabe el camino y tampoco tiene dinero para llegar. ¿Te imaginas cómo sería tener una amiga ballena?',
+      describe: 'El capitán Juaco quería cazar una enorme ballena, pero ella dio un sacudón y mandó al barco y al capitán hasta la luna. Juaco no lo ha podido visitar porque no sabe el camino y tampoco tiene dinero para llegar. ¿Te imaginas cómo sería tener una amiga ballena?',
       url: '420-joacoelballenero.mp4'
     },
     { id: 421,
       autor: 'Ministerio de Cultura - Rafael Pombo',
       coleccion: 'Cuentos narrados',
       titulo: 'La marrana peripuesta - Video',
-      describe: 'Un mono adornó con flores a una marrana y ella, al verse tan hermosa, se empezó a contonear en medio de todos los animales. ¿Qué le pasaría a la marrana adornada?, ¿cómo adornarías tú a tu animal favorito?',
+      describe: 'Un mono adornó con flores a una marrana y ella, al verse tan hermosa, empezó a contonearse en medio de todos los animales. ¿Qué le pasaría a la marrana adornada?, ¿cómo adornarías tú a tu animal favorito?',
       url: '421-marrana.mp4'
     },
     { id: 422,
       autor: 'Ministerio de Cultura - Rafael Pombo',
       coleccion: 'Cuentos narrados',
       titulo: 'Las siete vidas del gato - Video',
-      describe: 'El gato Mambrú conversa con el lebrel Perdonavidas pues el lebrel desea saber el gran secreto para tener siete vidas. Descubre el secreto del gato Mambrú. ¿Qué crees que hace un gato en cada una de sus vidas?',
+      describe: 'El lebrel Perdonavidas conversa con el gato Mambrú, pues desea saber el gran secreto para tener siete vidas. Descubre el secreto del gato Mambrú. ¿Qué crees que hace un gato en cada una de sus vidas?',
       url: '422-sietevidasgato.mp4'
     },
     { id: 423,
@@ -241,7 +241,7 @@ const state = {
       autor: 'Ministerio de Cultura - Maguaré - Zumba que zumba',
       coleccion: 'Karaokes',
       titulo: 'Cartas del río - Karaoke',
-      describe: 'Las cartas pueden atravesar ciudades y pueblos. De muy lejos llegan cartas y traen noticias muy divertidas de los pueblos de Colombia en este karaoke para cantar y bailar. ¿Qué te gustaría contarle en una carta a un niño de otro pueblo?',
+      describe: 'Las cartas pueden atravesar ciudades y pueblos. De muy lejos llegan cartas y traen noticias muy divertidas de los pueblos de Colombia, para cantar y bailar en este karaoke. ¿Qué te gustaría contarle en una carta a un niño de otro pueblo?',
       url: '114-cartasdelrio.mp4'
     },{ id: 115,
       autor: 'Ministerio de Cultura - Maguaré - Zumba que zumba',
@@ -253,25 +253,25 @@ const state = {
       autor: 'Ministerio de Cultura - Maguaré - Audio de Marta Inés Gómez Gómez',
       coleccion: 'Karaokes',
       titulo: 'Caminando va - Karaoke',
-      describe: 'Un caracol camina con su propia casa y descubre un camino lleno de curiosidades hasta el cansancio. Descubre en este karaoke qué es lo que más le gusta hacer al caracol cuando recorre nuevos caminos. ¿Qué te gusta hacer cuando exploras un nuevo lugar?',
+      describe: 'Un caracol camina con su propia casa hasta el cansancio y descubre un camino lleno de curiosidades. Descubre en este karaoke qué es lo que más le gusta hacer al caracol cuando recorre nuevos caminos. ¿Qué te gusta hacer cuando exploras un nuevo lugar?',
       url: '117-caminandova.mp4'
     },{ id: 109,
       autor: 'Ministerio de Cultura - Maguaré - Con mi cuento encanto',
       coleccion: 'Karaokes',
       titulo: 'Los ratones- Karaoke',
-      describe: 'Encontrarás divertidos ratones, sus quesos y gatos que juegan con ellos en este karaoke que te invita a conocer la suerte de algunos ratones. ¿Qué sabes sobre la vida de los ratones?',
+      describe: 'Este karaoke te invita a conocer la vida de algunos divertidos ratones, sus quesos y gatos que juegan con ellos. ¿Qué sabes sobre la vida de los ratones?',
       url: '109-losratones.mp4'
     },{ id: 120,
       autor: 'Ministerio de Cultura - Maguaré - Zumba que zumba ',
       coleccion: 'Karaokes',
       titulo: 'Zumba que zumba - Karaoke',
-      describe: 'Papá se ha comido unas pepitas que no son precisamente para comer, ¿quizás algún animal se entró a su barriga? Descubre que le pasó al papá en este karaoke. ¿Alguna vez has comido algo que te de dolor de barriga?',
+      describe: 'Papá se ha comido unas pepitas que no son precisamente para comer. ¿Será que algún animal entró a su barriga? Descubre qué le pasó a papá en este karaoke. ¿Alguna vez has comido algo que te dé dolor de barriga?',
       url: '120-zumbaquezumba.mp4'
     },{ id: 121,
       autor: 'Ministerio de Cultura - Maguaré - Zumba que zumba ',
       coleccion: 'Karaokes',
       titulo: 'La casa de Valentín - Karaoke',
-      describe: 'Un glotón se comió la casita de Valentín, chiquitín y ahora no tiene donde vivir. Este karaoke te invita a cantar con la historia de esta deliciosa casita que terminó en la panza del glotón. ¿Cómo construirías una casa para Valentín?',
+      describe: 'Un glotón se comió la casita de Valentín chiquitín y ahora no tiene dónde vivir. Este karaoke te invita a cantar con la historia de esta deliciosa casita que terminó en la panza del glotón. ¿Cómo construirías una casa para Valentín?',
       url: '121-valentin.mp4'
     },{ id: 135,
       autor: 'Ministerio de Cultura - Maguaré - Con mi cuento encanto',
@@ -283,7 +283,7 @@ const state = {
       autor: 'Ministerio de Cultura - Maguaré - Con mi cuento encanto',
       coleccion: 'Karaokes',
       titulo: 'Niña bonita - Karaoke',
-      describe: 'Imagina un conejo un poco travieso que cae en una piscina de tinta. ¿Quieres saber qué le pasó? Este karaoke te cuenta que pasó con el conejito. ¿Alguna vez te has untado de tinta?, ¿qué sentiste?',
+      describe: 'Imagina un conejo un poco travieso que cae en una piscina de tinta. Este karaoke te cuenta qué pasó con el conejito. ¿Alguna vez te has untado de tinta?, ¿qué sentiste?',
       url: '136-ninabonita.mp4'
     },{ id: 139,
       autor: 'Ministerio de Cultura - Maguaré - Audio de María del Sol Peralta / Cantaclaro',
@@ -301,7 +301,7 @@ const state = {
       autor: 'Ministerio de Cultura - Maguaré - audio de fundación Uaman Luar',
       coleccion: 'Karaokes',
       titulo: 'Saludo bonito - Karaoke',
-      describe: 'A los niños indígenas de Colombia les encanta cantar y en este video comparten una canción en la que un niño saluda a su tío que se encuentra a su paso. Nuestros mayores siempre tienen mucho que enseñarnos, escucha esta canción y pídele a quien te esté acompañando que te cuente lo que significa en español. ¿Qué te gusta que te cuenten tus mayores?',
+      describe: 'A los niños indígenas de Colombia les encanta cantar. En este video comparten una canción en la que un niño saluda a su tío, que se encuentra a su paso. Nuestros mayores siempre tienen mucho que enseñarnos; escucha esta canción y pídele a quien te esté acompañando que te cuente lo que significa en español. ¿Qué te gusta que te cuenten tus mayores?',
       url: '281-saludobonito.mp4'
     },{ id: 67,
       autor: 'Ministerio de Cultura - Maguaré - Zumba que zumba ',
@@ -319,13 +319,13 @@ const state = {
       autor: 'Ministerio de Cultura - Maguaré - Zumba que zumba ',
       coleccion: 'Zumba que zumba',
       titulo: 'Tuc Nopa Pip - Video',
-      describe: 'La historia de un cocodrilo que vivía en una casa de palitos en el mar. En la casa del frente vio a diferentes corazones que sonaban distinto y los invitó a su casa a comer galletas. ¿Qué pasaría cuando se reunieron los corazones?',
+      describe: 'Esta es la historia de un cocodrilo que vivía en una casa de palitos en el mar. En la casa del frente vio a diferentes corazones que sonaban distinto y los invitó a su casa a comer galletas. ¿Qué crees que pasó cuando se reunieron los corazones?',
       url: '779-tucnopapip.mp4'
     },{ id: 780,
       autor: 'Ministerio de Cultura - Maguaré - Zumba que zumba ',
       coleccion: 'Zumba que zumba',
       titulo: 'Tiburón azul - Video',
-      describe: 'El tiburón azul tiene una profesora muy particular ¡Se trata de una cocodrila que le enseña a caminar! Mira este divertido cuento y descubre qué le pasó al tiburón cuando aprendía a dar sus pasos.',
+      describe: 'El tiburón azul tiene una profesora muy particular. ¡Se trata de una cocodrila que le enseña a caminar! Mira este divertido cuento y descubre qué le pasó al tiburón cuando aprendía a dar sus pasos.',
       url: '780-tiburon.mp4'
     }
   ]

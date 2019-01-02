@@ -50,7 +50,7 @@
                 <p class="cred-persona">Katerine Moreno Velandia</p>
                 <p class="cred-cargo">Directora de contenidos www.maguare.gov.co</p>
 
-                <p class="cred-persona">Juan Sebastián Salazar Piedrahita</p>
+                <p class="cred-persona">Juan Sebastián Salazar Piedrahíta</p>
                 <p class="cred-cargo">Director de contenidos www.MaguaRED.gov.co</p>
 
                 <p class="cred-persona">Nibeth Adriana Duarte Camacho</p>
@@ -75,7 +75,7 @@
                 <p class="cred-persona">Fredy Fernando Chaparro Sanabria</p>
                 <p class="cred-cargo">Director Unimedios</p>
 
-                <p class="cred-persona">Liseth Paola Sáyago Cortes</p>
+                <p class="cred-persona">Liseth Paola Sayago Cortés</p>
                 <p class="cred-cargo">Jefe Oficina de producción y realización audiovisual Unimedios</p>
               </div>
             </v-tab-item>

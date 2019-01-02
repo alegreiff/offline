@@ -99,7 +99,7 @@ With the alliguieta purs`
       autor: 'Ministerio de Cultura - Maguaré - Observatorio del Caribe Colombiano',
       coleccion: 'Sweet songs fi piknini. Canciones dulces para niños.',
       titulo: 'Out and through the window',
-      describe: 'Esta ronda nos cuenta una historia de amor que inicia en una ventana en el Archipiélago de San Andrés y Providencia y cruza el océano. La música isleña se nutre de la historia de los ingleses que colonizaron el Caribe y los africanos que llegaron allí a trabajar. ¡Vamos a cantar al ritmo de las olas del mar!',
+      describe: 'Esta ronda nos cuenta una historia de amor que inicia en una ventana en el Archipiélago de San Andrés, Providencia y Santa Catalina y cruza el océano. La música isleña se nutre de la historia de los ingleses que colonizaron el Caribe y los africanos que llegaron allí a trabajar. ¡Vamos a cantar al ritmo de las olas del mar!',
       url: '133-outanthrough.mp3',
       letra: `Out and through the window
 Out and through the window
@@ -130,7 +130,7 @@ To see your rose again`
       autor: 'Ministerio de Cultura - Maguaré - Observatorio del Caribe Colombiano',
       coleccion: 'Sweet songs fi piknini. Canciones dulces para niños.',
       titulo: 'A poco',
-      describe: '¡Escucha esta canción del Archipiélago de San Andrés y Providencia que te hará bailar!',
+      describe: '¡Escucha esta canción del Archipiélago de San Andrés, Providencia y Santa Catalina que te hará bailar!',
       url: '156-apoco.mp3',
       letra: `A poco, a paca, eleke, omoco
 Otoco, ataca, eleke, omoco
@@ -148,7 +148,7 @@ Atoco, a paca, eteke, omoco`
       autor: 'Ministerio de Cultura - Maguaré - Observatorio del Caribe Colombiano',
       coleccion: 'Sweet songs fi piknini. Canciones dulces para niños.',
       titulo: 'Drop a letter',
-      describe: '¡Disfruta con tus amigos esta ronda típica del Archipiélago de San Andrés y Providencia en nuestro caribe colombiano!',
+      describe: '¡Disfruta con tus amigos esta ronda típica del Archipiélago de San Andrés, Providencia y Santa Catalina en nuestro caribe colombiano!',
       url: '194-dropaletter.mp3',
       letra: `I drop a letter arround the ring
 Someone pick it up
@@ -159,7 +159,7 @@ All over`
       autor: 'Ministerio de Cultura - Maguaré - Observatorio del Caribe Colombiano',
       coleccion: 'Sweet songs fi piknini. Canciones dulces para niños.',
       titulo: 'Mayaya O',
-      describe: '¡Disfruta con tus amigos y cuidadores esta ronda típica del Archipiélago de San Andrés y Providencia en el caribe colombiano a ritmo de los tambores!',
+      describe: '¡Disfruta con tus amigos y cuidadores esta ronda típica del Archipiélago de San Andrés, Providencia y Santa Catalina en el caribe colombiano a ritmo de los tambores!',
       url: '199-mayaya.mp3',
       letra: `Mayaya lost him key
 Mayaya O
@@ -209,7 +209,7 @@ She look like a sugar inna ploom `
       autor: 'Ministerio de Cultura - Maguaré - Observatorio del Caribe Colombiano',
       coleccion: 'Sweet songs fi piknini. Canciones dulces para niños.',
       titulo: 'London bridge',
-      describe: 'Esta es una divertida ronda tradicional británica que se canta y juega en el Archipiélago de San Andrés y Providencia. ¡Vamos a bailar con tus amigos!',
+      describe: 'Esta es una divertida ronda tradicional británica que se canta y juega en el Archipiélago de San Andrés, Providencia y Santa Catalina. ¡Vamos a bailar con tus amigos!',
       url: '205-londonbridge.mp3',
       letra: `London bridge is falling down
 Falling down
@@ -312,7 +312,7 @@ lelolelolelolaila ¡ay! el retrato de Camilo. `
       autor: 'Ministerio de Cultura - Maguaré - Observatorio del Caribe Colombiano',
       coleccion: 'Sweet songs fi piknini. Canciones dulces para niños.',
       titulo: 'Clap han - audio',
-      describe: 'Esta es una canción tradicional inglesa que los habitantes raizales del Archipiélago de San Andrés y Providencia han cantado por generaciones... pero en creole, su lengua materna. Es una suave canción para la hora de irse a dormir mientras el Mar Caribe nos mece con sus olas.',
+      describe: 'Esta es una canción tradicional inglesa que los habitantes raizales del Archipiélago de San Andrés, Providencia y Santa Catalina han cantado por generaciones... pero en creole, su lengua materna. Es una suave canción para la hora de irse a dormir mientras el Mar Caribe nos mece con sus olas.',
       url: '272-claphan.mp3',
       letra: `Clap han, clap han
 Till papa con huom
